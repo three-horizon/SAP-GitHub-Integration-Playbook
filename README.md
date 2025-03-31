@@ -8,49 +8,7 @@ This playbook provides detailed, implementation-ready guidance for modernizing S
 
 ## Architecture
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                       Azure Cloud Environment                           │
-│  ┌────────────────┐     ┌─────────────────┐     ┌───────────────────┐   │
-│  │                │     │                 │     │                   │   │
-│  │  Microsoft     │◄────┤  API            │◄────┤  GitHub           │   │
-│  │  Sentinel      │     │  Management     │     │  Enterprise       │   │
-│  │                │     │                 │     │                   │   │
-│  └───────┬────────┘     └────────┬────────┘     └─────────┬─────────┘   │
-│          │                       │                        │             │
-│          │                       │                        │             │
-│          ▼                       ▼                        ▼             │
-│  ┌────────────────┐     ┌────────────────┐      ┌─────────────────┐    │
-│  │                │     │                │      │                 │    │
-│  │  Microsoft     │     │  Azure         │      │  GitHub         │    │
-│  │  Defender      │     │  Key Vault     │      │  Actions        │    │
-│  │                │     │                │      │                 │    │
-│  └────────────────┘     └────────────────┘      └─────────────────┘    │
-└─────────────────────────────────────────────────────────────────────────┘
-                │                  │                      │
-                │                  │                      │
-                │                  │                      │
-                ▼                  ▼                      ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│                        SAP Environment                                  │
-│                                                                         │
-│   ┌───────────────┐    ┌───────────────┐    ┌───────────────┐          │
-│   │               │    │               │    │               │          │
-│   │  DEV System   │    │  QAS System   │    │  PRD System   │          │
-│   │               │    │               │    │               │          │
-│   │  ┌─────────┐  │    │  ┌─────────┐  │    │  ┌─────────┐  │          │
-│   │  │ abapGit │  │    │  │ abapGit │  │    │  │ abapGit │  │          │
-│   │  └─────────┘  │    │  └─────────┘  │    │  └─────────┘  │          │
-│   │               │    │               │    │               │          │
-│   │  ┌─────────┐  │    │  ┌─────────┐  │    │  ┌─────────┐  │          │
-│   │  │   API   │  │    │  │   API   │  │    │  │   API   │  │          │
-│   │  │ Service │  │    │  │ Service │  │    │  │ Service │  │          │
-│   │  └─────────┘  │    │  └─────────┘  │    │  └─────────┘  │          │
-│   │               │    │               │    │               │          │
-│   └───────────────┘    └───────────────┘    └───────────────┘          │
-│                                                                         │
-└────────────────────────────────────────────────────────────────────────┘
-```
+![SAP-GitHub Integration Architecture](./assets/images/architecture/Playbook-Architecture-Diagram.png)
 
 The integration architecture connects three primary ecosystems:
 1. **SAP Development Environment** - S/4 HANA or ECC 6.0 systems in a typical DEV → QAS → PRD landscape

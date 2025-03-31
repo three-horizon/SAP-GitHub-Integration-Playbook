@@ -4,49 +4,7 @@ This document provides a comprehensive overview of the SAP-GitHub integration ar
 
 ## High-Level Architecture
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                       Azure Cloud Environment                           │
-│  ┌────────────────┐     ┌─────────────────┐     ┌───────────────────┐   │
-│  │                │     │                 │     │                   │   │
-│  │  Microsoft     │◄────┤  API            │◄────┤  GitHub           │   │
-│  │  Sentinel      │     │  Management     │     │  Enterprise       │   │
-│  │                │     │                 │     │                   │   │
-│  └───────┬────────┘     └────────┬────────┘     └─────────┬─────────┘   │
-│          │                       │                        │             │
-│          │                       │                        │             │
-│          ▼                       ▼                        ▼             │
-│  ┌────────────────┐     ┌────────────────┐      ┌─────────────────┐    │
-│  │                │     │                │      │                 │    │
-│  │  Microsoft     │     │  Azure         │      │  GitHub         │    │
-│  │  Defender      │     │  Key Vault     │      │  Actions        │    │
-│  │                │     │                │      │                 │    │
-│  └────────────────┘     └────────────────┘      └─────────────────┘    │
-└─────────────────────────────────────────────────────────────────────────┘
-                │                  │                      │
-                │                  │                      │
-                │                  │                      │
-                ▼                  ▼                      ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│                        SAP Environment                                  │
-│                                                                         │
-│   ┌───────────────┐    ┌───────────────┐    ┌───────────────┐          │
-│   │               │    │               │    │               │          │
-│   │  DEV System   │    │  QAS System   │    │  PRD System   │          │
-│   │               │    │               │    │               │          │
-│   │  ┌─────────┐  │    │  ┌─────────┐  │    │  ┌─────────┐  │          │
-│   │  │ abapGit │  │    │  │ abapGit │  │    │  │ abapGit │  │          │
-│   │  └─────────┘  │    │  └─────────┘  │    │  └─────────┘  │          │
-│   │               │    │               │    │               │          │
-│   │  ┌─────────┐  │    │  ┌─────────┐  │    │  ┌─────────┐  │          │
-│   │  │   API   │  │    │  │   API   │  │    │  │   API   │  │          │
-│   │  │ Service │  │    │  │ Service │  │    │  │ Service │  │          │
-│   │  └─────────┘  │    │  └─────────┘  │    │  └─────────┘  │          │
-│   │               │    │               │    │               │          │
-│   └───────────────┘    └───────────────┘    └───────────────┘          │
-│                                                                         │
-└────────────────────────────────────────────────────────────────────────┘
-```
+![SAP-GitHub Integration Architecture](../../assets/images/architecture/Playbook-Architecture-Diagram.png)
 
 The architecture above illustrates the end-to-end integration between SAP systems and GitHub Enterprise, with Microsoft services providing secure middleware and comprehensive security monitoring.
 

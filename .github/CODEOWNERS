@@ -1,0 +1,9 @@
+# Lines starting with '#' are comments.
+# Each line is a file pattern followed by one or more owners.
+
+# Global owner
+*       @YOUR_GITHUB_USERNAME_OR_TEAM # Replace with actual owners
+
+# Specific directory owners (example)
+/docs/security/       @security-team
+/scripts/             @devops-team

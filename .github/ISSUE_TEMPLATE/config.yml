@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a Question / Discussion
+    url: https://github.com/YOUR_ORG/YOUR_REPO/discussions # Placeholder: Update URL if using Discussions
+    about: Please ask and answer questions here.
+  - name: Documentation Issue
+    url: https://github.com/YOUR_ORG/YOUR_REPO/issues/new?template=documentation_issue.md # Placeholder: Create this template
+    about: Report an issue or suggest an improvement for the documentation.

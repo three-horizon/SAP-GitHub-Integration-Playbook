@@ -1,0 +1,214 @@
+{
+    "properties": {
+        "displayName": "SAP Systems Security Standards for GitHub Integration",
+        "policyType": "Custom",
+        "mode": "All",
+        "description": "This policy initiative sets security standards for SAP systems integrated with GitHub Enterprise via Microsoft APIM",
+        "metadata": {
+            "version": "1.0.0",
+            "category": "SAP Security"
+        },
+        "parameters": {
+            "allowedPorts": {
+                "type": "Array",
+                "metadata": {
+                    "displayName": "Allowed inbound ports for SAP systems",
+                    "description": "List of allowed inbound ports for SAP systems"
+                },
+                "defaultValue": [443, 3300, 3301, 3302, 8000, 8001, 8100, 50000, 50001, 50004]
+            },
+            "allowedServices": {
+                "type": "Array",
+                "metadata": {
+                    "displayName": "Allowed services for SAP systems",
+                    "description": "List of allowed services for SAP systems"
+                },
+                "defaultValue": ["icm/server", "GATEWAY", "SAPGUI", "ABAP", "RFC", "HTTP"]
+            },
+            "resourceGroupNames": {
+                "type": "Array",
+                "metadata": {
+                    "displayName": "SAP Resource Group names",
+                    "description": "Names of resource groups containing SAP systems"
+                },
+                "defaultValue": ["rg-sap-dev", "rg-sap-qas", "rg-sap-prd"]
+            },
+            "minTLSVersion": {
+                "type": "String",
+                "metadata": {
+                    "displayName": "Minimum TLS version",
+                    "description": "Minimum TLS version required for SAP systems"
+                },
+                "allowedValues": ["1.0", "1.1", "1.2"],
+                "defaultValue": "1.2"
+            },
+            "securityContactEmail": {
+                "type": "String",
+                "metadata": {
+                    "displayName": "Security contact email",
+                    "description": "Email address for security contacts"
+                },
+                "defaultValue": "security@example.com"
+            }
+        },
+        "policyDefinitions": [
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/501541f7-f7e7-4cd6-868c-4190fdad3ac9",
+                "policyDefinitionReferenceId": "NetworkSecurityGroupsOnVirtualMachines",
+                "parameters": {
+                    "effect": {
+                        "value": "Audit"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ac4a19c2-fa67-49b4-8ae5-0b2e78c49457",
+                "policyDefinitionReferenceId": "InternetFacingEndpointsShouldBeProtectedByWAF",
+                "parameters": {
+                    "effect": {
+                        "value": "Audit"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2c89a2e5-7285-40fe-afe0-ae8654b92fb2",
+                "policyDefinitionReferenceId": "OnlySecureTLSProtocolShouldBeEnabled",
+                "parameters": {
+                    "effect": {
+                        "value": "Audit"
+                    },
+                    "minTLSVersion": {
+                        "value": "[parameters('minTLSVersion')]"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6e2593d9-add6-4083-9c9b-4b7d2188c899",
+                "policyDefinitionReferenceId": "VirtualMachinesShouldEncryptTempDisks",
+                "parameters": {
+                    "effect": {
+                        "value": "Audit"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/123a3936-f020-408a-ba0c-47873fa8259b",
+                "policyDefinitionReferenceId": "EndpointProtectionShouldBeInstalled",
+                "parameters": {
+                    "effect": {
+                        "value": "AuditIfNotExists"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1f314764-cb73-4fc9-b863-8eca98ac36e9",
+                "policyDefinitionReferenceId": "SubnetsShouldBeAssociatedWithNSG",
+                "parameters": {
+                    "effect": {
+                        "value": "Audit"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a451c1ef-c6ca-483d-87ed-f49761e3ffb5",
+                "policyDefinitionReferenceId": "SQLManagedInstanceVulnerabilityAssessmentsShouldBeEnabled",
+                "parameters": {
+                    "effect": {
+                        "value": "AuditIfNotExists"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7be44f8a-40f1-4131-9ebd-c1b10d960161",
+                "policyDefinitionReferenceId": "SQLServerAdvancedDataSecurityShouldBeEnabled",
+                "parameters": {
+                    "effect": {
+                        "value": "AuditIfNotExists"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/48af4db5-9b8b-401c-8e74-076be876a430",
+                "policyDefinitionReferenceId": "MFAShouldBeEnabledOnAccountsWithWritePermissions",
+                "parameters": {
+                    "effect": {
+                        "value": "Audit"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/5f76cf89-fbf2-47fd-a3f4-b891fa780b60",
+                "policyDefinitionReferenceId": "AuditDeploymentOfMicrosoftIaaSAntimalware",
+                "parameters": {
+                    "effect": {
+                        "value": "AuditIfNotExists"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/f2b99ca8-2354-47a1-bcba-c077ea063b2e",
+                "policyDefinitionReferenceId": "VulnerabilityAssessmentShouldBeEnabledOnVM",
+                "parameters": {
+                    "effect": {
+                        "value": "AuditIfNotExists"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9e3a1b29-b8ed-4a0b-a9db-e1babadccce1",
+                "policyDefinitionReferenceId": "APIManagementServicesShouldUseVirtualNetwork",
+                "parameters": {
+                    "effect": {
+                        "value": "Audit"
+                    }
+                }
+            }
+        ],
+        "policyDefinitionGroups": [
+            {
+                "name": "Network-Security",
+                "displayName": "Network Security Controls",
+                "category": "Network Security",
+                "description": "Network security controls for SAP systems",
+                "additionalMetadataId": "NetworkSecurity"
+            },
+            {
+                "name": "Data-Security",
+                "displayName": "Data Security Controls",
+                "category": "Data Security",
+                "description": "Data security controls for SAP systems",
+                "additionalMetadataId": "DataSecurity"
+            },
+            {
+                "name": "Identity-Security",
+                "displayName": "Identity Security Controls",
+                "category": "Identity Security",
+                "description": "Identity security controls for SAP systems",
+                "additionalMetadataId": "IdentitySecurity"
+            },
+            {
+                "name": "Endpoint-Security",
+                "displayName": "Endpoint Security Controls",
+                "category": "Endpoint Security",
+                "description": "Endpoint security controls for SAP systems",
+                "additionalMetadataId": "EndpointSecurity"
+            }
+        ],
+        "nonComplianceMessages": [
+            {
+                "message": "SAP systems must have network security groups configured."
+            }
+        ]
+    },
+    "id": "/providers/Microsoft.Authorization/policySetDefinitions/SAP-Systems-Security-Standards",
+    "type": "Microsoft.Authorization/policySetDefinitions",
+    "name": "SAP-Systems-Security-Standards",
+    "systemData": {
+        "createdBy": "admin@example.com",
+        "createdByType": "User",
+        "createdAt": "2023-01-01T00:00:00.000Z",
+        "lastModifiedBy": "admin@example.com",
+        "lastModifiedByType": "User",
+        "lastModifiedAt": "2023-01-01T00:00:00.000Z"
+    }
+}

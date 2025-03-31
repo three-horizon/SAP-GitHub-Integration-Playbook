@@ -4,168 +4,249 @@ This document provides a comprehensive overview of the SAP-GitHub integration ar
 
 ## High-Level Architecture
 
-*[Placeholder for high-level architecture diagram - will be placed in diagrams/high-level-architecture.png]*
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                       Azure Cloud Environment                           │
+│  ┌────────────────┐     ┌─────────────────┐     ┌───────────────────┐   │
+│  │                │     │                 │     │                   │   │
+│  │  Microsoft     │◄────┤  API            │◄────┤  GitHub           │   │
+│  │  Sentinel      │     │  Management     │     │  Enterprise       │   │
+│  │                │     │                 │     │                   │   │
+│  └───────┬────────┘     └────────┬────────┘     └─────────┬─────────┘   │
+│          │                       │                        │             │
+│          │                       │                        │             │
+│          ▼                       ▼                        ▼             │
+│  ┌────────────────┐     ┌────────────────┐      ┌─────────────────┐    │
+│  │                │     │                │      │                 │    │
+│  │  Microsoft     │     │  Azure         │      │  GitHub         │    │
+│  │  Defender      │     │  Key Vault     │      │  Actions        │    │
+│  │                │     │                │      │                 │    │
+│  └────────────────┘     └────────────────┘      └─────────────────┘    │
+└─────────────────────────────────────────────────────────────────────────┘
+                │                  │                      │
+                │                  │                      │
+                │                  │                      │
+                ▼                  ▼                      ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                        SAP Environment                                  │
+│                                                                         │
+│   ┌───────────────┐    ┌───────────────┐    ┌───────────────┐          │
+│   │               │    │               │    │               │          │
+│   │  DEV System   │    │  QAS System   │    │  PRD System   │          │
+│   │               │    │               │    │               │          │
+│   │  ┌─────────┐  │    │  ┌─────────┐  │    │  ┌─────────┐  │          │
+│   │  │ abapGit │  │    │  │ abapGit │  │    │  │ abapGit │  │          │
+│   │  └─────────┘  │    │  └─────────┘  │    │  └─────────┘  │          │
+│   │               │    │               │    │               │          │
+│   │  ┌─────────┐  │    │  ┌─────────┐  │    │  ┌─────────┐  │          │
+│   │  │   API   │  │    │  │   API   │  │    │  │   API   │  │          │
+│   │  │ Service │  │    │  │ Service │  │    │  │ Service │  │          │
+│   │  └─────────┘  │    │  └─────────┘  │    │  └─────────┘  │          │
+│   │               │    │               │    │               │          │
+│   └───────────────┘    └───────────────┘    └───────────────┘          │
+│                                                                         │
+└────────────────────────────────────────────────────────────────────────┘
+```
 
-The integration architecture connects three primary ecosystems:
-1. **SAP Development Environment** - S/4 HANA or ECC 6.0 systems in a typical DEV → QAS → PRD landscape
-2. **GitHub Enterprise Environment** - Code repositories, CI/CD pipelines, security scanning
-3. **Microsoft Azure Security Services** - API Management, Sentinel, and Defender for comprehensive security
+The architecture above illustrates the end-to-end integration between SAP systems and GitHub Enterprise, with Microsoft services providing secure middleware and comprehensive security monitoring.
 
-## Core Components and Interactions
+### Core Components and Interactions
 
-### SAP Components
+#### SAP Components
 
-#### SAP Development System (DEV)
-* Hosts development objects (programs, classes, data dictionary objects, etc.)
-* Runs abapGit for version control connectivity
-* Exposes necessary APIs via ICF services
-* Functions as the primary development environment
+- **SAP Development Systems (DEV, QAS, PRD)**: Standard SAP landscape where ABAP development occurs
+- **abapGit**: Installed in each SAP system to enable Git-based version control for ABAP objects
+- **API Services**: ICF services and OData APIs exposed for integration with external systems
 
-#### SAP Quality Assurance System (QAS)
-* Testing environment for SAP changes
-* Receives transported objects through automated workflows
-* Used for integration and user acceptance testing
+#### GitHub Components
 
-#### SAP Production System (PRD)
-* Production environment for SAP applications
-* Final destination for fully tested code changes
-* Protected with strict deployment controls
+- **GitHub Enterprise**: Central code repository for ABAP and related code
+- **GitHub Actions**: CI/CD workflows that automate development processes
+- **GitHub Advanced Security**: Security scanning and vulnerability detection
 
-#### abapGit
-* Enables Git-based version control for ABAP development objects
-* Converts ABAP objects to XML format for storage in Git
-* Provides pull/push capabilities between SAP and GitHub
-* Basis for automated synchronization
+#### Microsoft Integration and Security Components
 
-### GitHub Enterprise Components
+- **API Management (APIM)**: Serves as the secure middleware between SAP and GitHub
+- **Azure Key Vault**: Secure storage for credentials and secrets
+- **Microsoft Sentinel**: Security information and event management (SIEM) 
+- **Microsoft Defender for Cloud**: Protection for cloud resources and APIs
 
-#### Repositories
-* Store ABAP code in XML format (from abapGit)
-* Structure follows SAP package hierarchy
-* Include configuration for branch protection, workflows, and security scanning
+## Data Flow
 
-#### Branch Strategy
-* Main/master branch corresponds to the PRD environment
-* QAS branch for quality assurance
-* DEV branch for active development
-* Feature branches for individual development tasks
+### 1. SAP to GitHub Flow (Code Synchronization)
 
-#### GitHub Actions
-* Power the CI/CD pipeline
-* Automate testing, validation, and transport processes
-* Connect with SAP systems through Microsoft APIM
-* Trigger deployments based on branch events
+```
+┌────────────┐    ┌─────────┐    ┌───────────────┐    ┌─────────┐    ┌──────────────┐
+│ SAP        │    │         │    │ Microsoft     │    │         │    │ GitHub       │
+│ Developer  ├───►│ abapGit ├───►│ API           ├───►│ GitHub  ├───►│ Repository   │
+│            │    │         │    │ Management    │    │ API     │    │              │
+└────────────┘    └─────────┘    └───────────────┘    └─────────┘    └──────────────┘
+```
 
-#### GitHub Advanced Security
-* Provides ABAP-specific code scanning
-* Detects secrets and credentials in code
-* Performs dependency reviews
-* Enforces security policies
+1. Developer creates or modifies ABAP objects in SAP
+2. abapGit serializes ABAP objects to XML format
+3. API Service sends objects to API Management
+4. API Management transforms and routes the data securely
+5. GitHub API receives the data
+6. Objects are stored in GitHub repository with version history
 
-#### GitHub Copilot
-* Offers AI-assisted coding for ABAP developers
-* Increases development efficiency and code quality
-* Integrates with the development workflow
+### 2. GitHub to SAP Flow (Deployment)
 
-### Microsoft Azure Services
+```
+┌──────────────┐    ┌──────────────┐    ┌───────────────┐    ┌─────────┐    ┌──────────┐
+│ GitHub       │    │ GitHub       │    │ Microsoft     │    │ SAP     │    │ SAP      │
+│ Pull Request ├───►│ Actions      ├───►│ API           ├───►│ API     ├───►│ Systems  │
+│              │    │              │    │ Management    │    │ Service │    │          │
+└──────────────┘    └──────────────┘    └───────────────┘    └─────────┘    └──────────┘
+```
 
-#### API Management (APIM)
-* Serves as the secure integration layer between GitHub and SAP
-* Provides API authentication, authorization, and rate limiting
-* Transforms requests/responses between systems
-* Logs and monitors all traffic
-* Offers API versioning and lifecycle management
+1. Developer creates a pull request in GitHub
+2. GitHub Actions workflow is triggered
+3. Workflow calls API Management endpoints
+4. API Management securely routes requests to SAP API Service
+5. API Service processes the requests
+6. Changes are deployed to appropriate SAP system
+7. Transport requests are created and released as needed
 
-#### Microsoft Sentinel
-* Provides security monitoring for the entire integration
-* Collects logs from SAP, GitHub, and APIM
-* Detects security threats and anomalies
-* Visualizes security posture
-* Enables automated response to security incidents
+### 3. Security Monitoring Flow
 
-#### Microsoft Defender for Cloud
-* Enhances protection for SAP systems and Azure services
-* Provides security recommendations and scores
-* Guards against threats to workloads
-* Offers integrated cloud security posture management
+```
+┌─────────────┐    ┌──────────────┐    ┌───────────────┐    ┌─────────────┐
+│ SAP and     │    │ API          │    │ Microsoft     │    │ Security    │
+│ GitHub      ├───►│ Management   ├───►│ Sentinel      ├───►│ Operations  │
+│ Activities  │    │ Logs         │    │               │    │             │
+└─────────────┘    └──────────────┘    └───────────────┘    └─────────────┘
+```
 
-## Data Flow and Process Interactions
+1. Activities occur in SAP systems and GitHub
+2. API Management logs all traffic and integration activities
+3. Microsoft Sentinel collects logs from all components
+4. Advanced correlation and analytics detect security threats
+5. Security operations team receives alerts and can remediate issues
 
-### Development Workflow
-1. Developer creates/modifies ABAP code in SAP DEV system
-2. abapGit converts ABAP objects to XML
-3. GitHub Action pulls changes via APIM
-4. Changes are committed to a feature branch in GitHub
-5. Pull request is created for code review
-6. Advanced Security performs code scanning
-7. After approval, code is merged to DEV branch
-8. CI/CD pipeline runs tests
-9. Upon successful testing, changes are promoted to QAS
-10. After QAS validation, changes are promoted to PRD
+## Key Architecture Principles
 
-### Security Integration Flow
-1. APIM logs all API calls between systems
-2. Sentinel collects logs from APIM, GitHub, and SAP
-3. Sentinel analyzes logs for security anomalies
-4. Defender monitors SAP and Azure resources for threats
-5. Security alerts trigger defined playbooks
-6. Reports and dashboards provide visibility
+### Security by Design
 
-## Component Communication
+The architecture implements multiple security layers:
 
-### Authentication and Authorization
-* APIM uses OAuth 2.0 for GitHub integration
-* SAP integration uses principal propagation or technical users with least privilege
-* All communications are encrypted using TLS 1.2+
-* Sentinel monitors authentication attempts and patterns
+1. **Authentication and Authorization**:
+   - OAuth 2.0 and certificate-based authentication between components
+   - Fine-grained permission model in GitHub
+   - Least privilege access throughout
 
-### API Endpoints
-* SAP exposes RFC and OData APIs for integration
-* GitHub uses REST and GraphQL APIs
-* APIM provides unified API surface for all integrations
+2. **Secret Management**:
+   - Centralized secret storage in Azure Key Vault
+   - Automated secret rotation
+   - Secret scanning in code repositories
+
+3. **Network Security**:
+   - Encrypted communications (TLS 1.2+)
+   - Private endpoints where possible
+   - IP restrictions and network isolation
+
+4. **Monitoring and Detection**:
+   - Comprehensive logging across all components
+   - Microsoft Sentinel for advanced threat detection
+   - Custom detection rules for SAP-specific threats
+
+### Integration Patterns
+
+The architecture uses these integration patterns:
+
+1. **API-First Integration**:
+   - Well-defined API contracts between all components
+   - API versioning for stability
+   - API Management for security, transformation, and monitoring
+
+2. **Event-Driven Architecture**:
+   - Webhooks for GitHub event notifications
+   - Event-based workflows in GitHub Actions
+   - Asynchronous processing for long-running operations
+
+3. **Idempotent Operations**:
+   - Safe retry mechanisms
+   - State tracking for operations
+   - Consistent handling of duplicate events
+
+### Scalability and Performance
+
+The architecture scales through:
+
+1. **Horizontal Scaling**:
+   - API Management scales based on load
+   - GitHub Actions runners can scale as needed
+   - Multiple SAP systems can be integrated
+
+2. **Optimized Data Transfer**:
+   - Incremental object transfers
+   - Compression for large payloads
+   - Caching where appropriate
+
+3. **Monitoring and Optimization**:
+   - Performance metrics collection
+   - Bottleneck identification
+   - Continuous optimization
+
+## Deployment Scenarios
+
+### Cloud-Based Deployment
+
+The primary deployment model with:
+- GitHub Enterprise Cloud
+- Azure-hosted API Management
+- Cloud-based security services
+- SAP systems in cloud or hybrid connectivity
+
+### On-Premises Deployment
+
+Alternative deployment with:
+- GitHub Enterprise Server (on-premises)
+- API Management self-hosted gateway
+- On-premises security monitoring
+- Secure connectivity to on-premises SAP systems
+
+### Hybrid Deployment
+
+Most common scenario with:
+- Mix of cloud and on-premises components
+- Secure connectivity between environments
+- Consistent security monitoring across boundaries
 
 ## Security Architecture
 
-*[Placeholder for security architecture diagram - will be placed in diagrams/security-architecture.png]*
+### Defense-in-Depth Strategy
 
-### Security Boundaries
-* Network segregation between environments
-* Strict API access controls
-* Comprehensive audit logging
-* Least-privilege access principles throughout
+The architecture implements multiple security layers:
 
-### Security Monitoring
-* Centralized monitoring in Sentinel
-* Custom detection rules for SAP-specific threats
-* Integration with organizational security operations
-* Automated incident response for common scenarios
+1. **Identity and Access Management**:
+   - Azure Active Directory integration
+   - GitHub Enterprise SSO
+   - Conditional access policies
 
-## Scalability and Performance
+2. **Data Protection**:
+   - Encryption in transit
+   - Encryption at rest where applicable
+   - Data classification and handling
 
-### Scaling Considerations
-* APIM scaling for high-volume environments
-* GitHub Enterprise sizing recommendations
-* SAP system performance impacts
+3. **Network Security**:
+   - Network segmentation
+   - Traffic filtering
+   - Private endpoints
 
-### Performance Optimization
-* API response time targets
-* Asynchronous processing patterns
-* Caching strategies
+4. **Application Security**:
+   - API security policies
+   - Input validation
+   - Output encoding
 
-## Resilience and Disaster Recovery
+5. **Continuous Monitoring**:
+   - Real-time security analytics
+   - Anomaly detection
+   - Threat intelligence
 
-### Failure Scenarios
-* Component failure handling
-* Data inconsistency resolution
-* Automated recovery processes
+## Next Steps
 
-### Business Continuity
-* Backup and restore procedures
-* Alternative workflow paths
-* Manual override capabilities
-
-## Reference Implementations
-Refer to the [examples/end-to-end](../../examples/end-to-end/) directory for complete reference implementations of this architecture.
+For detailed information on each component, refer to the [Components](./components.md) documentation. For implementation guidance, see the [Implementation Guide](../implementation/index.md).
 
 ---
 

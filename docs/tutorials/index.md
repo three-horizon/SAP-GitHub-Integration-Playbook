@@ -92,11 +92,11 @@ Advanced Topics
 
 ## Request a Tutorial
 
-Don't see a tutorial for your specific scenario? [Open an issue](https://github.com/YOUR_ORG/YOUR_REPO/issues/new?template=tutorial_request.md) with your tutorial request, and we'll consider adding it to our documentation.
+Don't see a tutorial for your specific scenario? [Open an issue](https://github.com/issues/new?template=tutorial_request.md) with your tutorial request, and we'll consider adding it to our documentation.
 
 ## Contributing to Tutorials
 
-We welcome contributions to our tutorials! Please see our [contribution guidelines](../CONTRIBUTING.md) for information on how to submit new tutorials or improvements to existing ones.
+We welcome contributions to our tutorials! Please see our [contribution guidelines](../../CONTRIBUTING.md) for information on how to submit new tutorials or improvements to existing ones.
 
 ---
 

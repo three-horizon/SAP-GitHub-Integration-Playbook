@@ -66,7 +66,7 @@ For a successful implementation, follow this recommended sequence:
 
 ## Implementation Validation
 
-After completing the implementation steps, validate your setup using the [Validation Checklist](../reference/validation-checklist.md) to ensure all components are properly configured and working together.
+After completing the implementation steps, validate your setup using the [Validation Checklist](../reference/workflows-reference/index.md#validation-checklist) to ensure all components are properly configured and working together.
 
 ---
 

@@ -22,14 +22,14 @@ Security is a cornerstone of this integration, providing comprehensive protectio
 * [Custom SAP Rules](./custom-sap-rules.md) - Implement SAP-specific detection rules
 * [Transport Anomaly Rules](./transport-rules.md) - Configure rules for transport anomalies
 * [Authentication Rules](./auth-rules.md) - Set up authentication and authorization rules
-* [API Anomaly Rules](./api-rules.md) - Configure API anomaly detection
+* [API Anomaly Rules](./standard-rules.md#api-anomalies) - Configure API anomaly detection
 
 ### Microsoft Defender for Cloud
 
-* [Defender Deployment](./defender-deployment.md) - Deploy Microsoft Defender for Cloud
-* [Defender for APIs](./defender-apis.md) - Configure Defender for APIs
-* [Defender for Servers](./defender-servers.md) - Set up Defender for SAP servers
-* [Defender for DevOps](./defender-devops.md) - Configure Defender for GitHub integration
+* [Defender for Cloud Setup](./security-governance.md#defender-configuration) - Deploy Microsoft Defender for Cloud
+* [API Protection](./security-governance.md#api-protection) - Configure protection for APIs
+* [Server Protection](./security-governance.md#server-protection) - Set up protection for SAP servers
+* [DevOps Security](./security-governance.md#devops-security) - Configure security for GitHub integration
 * [Regulatory Compliance](./compliance-setup.md) - Set up compliance standards
 
 ### Workbooks and Dashboards
@@ -41,24 +41,23 @@ Security is a cornerstone of this integration, providing comprehensive protectio
 
 ### SOAR Automation
 
-* [Playbook Deployment](./playbooks.md) - Deploy security orchestration playbooks
 * [Incident Response](./incident-response.md) - Configure incident response automation
 * [Remediation Actions](./remediation.md) - Set up automated remediation
 * [Notification Configuration](./notifications.md) - Configure security notifications
 
 ### GitHub Advanced Security
 
-* [Code Scanning Setup](./code-scanning.md) - Configure GitHub code scanning
-* [Secret Scanning](./secret-scanning.md) - Set up secret scanning capabilities
-* [Dependabot Configuration](./dependabot.md) - Configure Dependabot for dependency scanning
-* [ABAP Security Rules](./abap-rules.md) - Implement ABAP-specific security rules
+* [Advanced Security Setup](./security-governance.md#advanced-security) - Configure GitHub Advanced Security features
+* [Secret Management](./security-governance.md#secret-management) - Security for secrets and credentials
+* [Dependency Management](./security-governance.md#dependency-management) - Manage and secure dependencies
+* [ABAP Security Practices](./standard-rules.md#abap-security) - Implement ABAP-specific security practices
 
 ### Network Security
 
-* [Network Isolation](./network-isolation.md) - Implement network isolation between components
-* [Private Link Configuration](./private-link.md) - Configure Azure Private Link for services
-* [Firewall Configuration](./firewall-setup.md) - Set up Azure Firewall for protection
-* [Transport Encryption](./transport-encryption.md) - Ensure end-to-end encryption
+* [Network Security Configuration](./security-governance.md#network-security) - Comprehensive network security implementation
+* [Secure Connectivity](./security-governance.md#secure-connectivity) - Configure secure connection between components
+* [Security Boundaries](./security-governance.md#security-boundaries) - Establish and maintain security boundaries
+* [Data Protection](./security-governance.md#data-protection) - Ensure data protection in transit and at rest
 
 ## Implementation Checklist
 

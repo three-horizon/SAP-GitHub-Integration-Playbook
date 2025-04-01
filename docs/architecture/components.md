@@ -180,7 +180,7 @@ This document provides detailed descriptions of each major component in the SAP-
 
 ## Integration Touchpoints
 
-*[Placeholder for integration touchpoints diagram - will be placed in diagrams/integration-touchpoints.png]*
+For a detailed visual representation of integration touchpoints, please refer to the [Architecture Overview](./overview.md#integration-points) section which includes diagrams of the key integration points between systems.
 
 ### SAP to GitHub
 * abapGit serialization to XML

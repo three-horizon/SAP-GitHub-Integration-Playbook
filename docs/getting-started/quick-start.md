@@ -149,8 +149,8 @@ After becoming familiar with the basic workflows, explore:
 
 1. [Advanced GitHub Actions Workflows](../implementation/workflows/index.md)
 2. [Custom Security Rules](../implementation/security-setup/index.md)
-3. [Integration with Copilot](../implementation/github-setup/copilot.md)
-4. [Monitoring and Reporting](../maintenance/monitoring.md)
+3. [Integration with Copilot](../implementation/github-setup/copilot-integration.md)
+4. [Monitoring Setup](../implementation/security-setup/integration-dashboard.md)
 
 For more detailed guides, see the [Documentation Home](../index.md).
 

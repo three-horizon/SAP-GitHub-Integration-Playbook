@@ -60,10 +60,10 @@ Comprehensive documentation is available in the [docs](./docs/) directory:
 
 Working code examples are available in the [examples](./examples/) directory:
 
-- [GitHub Actions Workflows](./examples/github-actions/)
-- [abapGit Configurations](./examples/abapgit-config/)
-- [API Management Policies](./examples/apim-configs/)
-- [Security Configurations](./examples/security/)
+- [GitHub Actions Workflows](./examples/github-actions/sample-workflow.yml)
+- [abapGit Configurations](./examples/abapgit-config/sample-config.xml)
+- [API Management Policies](./examples/apim-configs/sample-policy.xml)
+- [Security Configurations](./examples/security/defender/sample-policy.json)
 
 ## Benefits
 

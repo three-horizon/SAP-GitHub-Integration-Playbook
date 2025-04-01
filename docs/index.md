@@ -12,7 +12,7 @@ Welcome to the comprehensive documentation for integrating SAP systems with GitH
 ### [Architecture](./architecture/overview.md)
 * [Overview](./architecture/overview.md) - End-to-end architecture and design principles
 * [Components](./architecture/components.md) - Detailed component descriptions
-* [Diagrams](./architecture/diagrams/) - Visual representations of the architecture
+* [System Architecture](./architecture/system-architecture.md) - Comprehensive system architecture details
 
 ### [Implementation Guides](./implementation/)
 * [GitHub Enterprise Setup](./implementation/github-setup/) - Setting up GitHub repositories and configuration

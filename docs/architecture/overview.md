@@ -204,8 +204,16 @@ The architecture implements multiple security layers:
 
 ## Next Steps
 
-For detailed information on each component, refer to the [Components](./components.md) documentation. For implementation guidance, see the [Implementation Guide](../implementation/index.md).
+For more detailed information on the integration architecture, please refer to:
+
+- [System Architecture](./system-architecture.md) - Detailed technical reference of system components, interactions, and design patterns
+- [Components](./components.md) - Detailed information on each component of the integration
+- [Implementation Guide](../implementation/index.md) - Step-by-step implementation guidance
 
 ---
 
-*Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Enterprise X.Y.Z, SAP S/4 HANA X.Y.Z, etc.]*
+**Document Metadata:**
+- Last Updated: 2023-09-01
+- Contributors: Architecture Team
+- Version: 1.1.0
+- Status: Published

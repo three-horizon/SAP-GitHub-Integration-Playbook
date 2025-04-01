@@ -24,3 +24,15 @@ jobs:
       # Add steps to validate example configurations or run basic tests
       - name: Validate Example Configs
         run: echo "Placeholder for validating example files"
+        
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check for broken links
+        uses: lycheeverse/lychee-action@v1.8.0
+        with:
+          args: --verbose --no-progress '**/*.md' '**/*.html'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

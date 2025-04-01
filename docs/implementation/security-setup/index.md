@@ -87,4 +87,8 @@ After completing security setup, proceed to [Workflows Setup](../workflows/index
 
 ---
 
-*Last Updated: [YYYY-MM-DD] for [Component Versions: Microsoft Sentinel X.Y.Z, Microsoft Defender for Cloud X.Y.Z, etc.]*
+**Document Metadata:**
+- Last Updated: 2023-09-01
+- Contributors: Security Team
+- Version: 1.0.0
+- Status: Published

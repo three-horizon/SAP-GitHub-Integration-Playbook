@@ -179,4 +179,8 @@ Once all prerequisites are met, proceed to the [Installation Guide](./installati
 
 ---
 
-*Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Enterprise X.Y.Z, SAP S/4 HANA X.Y.Z, etc.]*
+**Document Metadata:**
+- Last Updated: 2023-09-01
+- Contributors: Documentation Team
+- Version: 1.0.0
+- Status: Published

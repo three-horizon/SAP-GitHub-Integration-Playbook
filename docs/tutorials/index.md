@@ -100,4 +100,8 @@ We welcome contributions to our tutorials! Please see our [contribution guidelin
 
 ---
 
-*Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Enterprise X.Y.Z, SAP S/4 HANA X.Y.Z, etc.]*
+**Document Metadata:**
+- Last Updated: 2023-09-01
+- Contributors: Training Team
+- Version: 1.0.0
+- Status: Published

@@ -217,4 +217,8 @@ This document provides detailed descriptions of each major component in the SAP-
 
 ---
 
-*Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Enterprise X.Y.Z, SAP S/4 HANA X.Y.Z, etc.]*
+**Document Metadata:**
+- Last Updated: 2023-09-01
+- Contributors: Architecture Team
+- Version: 1.0.0
+- Status: Published

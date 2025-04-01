@@ -91,4 +91,7 @@ For security concerns or vulnerability reporting, please see [SECURITY.md](./SEC
 
 ---
 
-*Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Enterprise X.Y.Z, SAP S/4 HANA X.Y.Z, etc.]*
+**Document Metadata:**
+- Last Updated: 2023-09-01
+- Version: 1.0.0
+- Status: Published

@@ -215,4 +215,8 @@ Now that you have your first repository set up, consider these next steps:
 
 ---
 
-*Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Enterprise X.Y.Z, SAP NetWeaver X.Y.Z, etc.]* 
+**Document Metadata:**
+- Last Updated: 2023-09-01
+- Contributors: Implementation Team
+- Version: 1.0.0
+- Status: Published 

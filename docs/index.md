@@ -55,4 +55,8 @@ Welcome to the comprehensive documentation for integrating SAP systems with GitH
 
 This documentation is regularly updated to reflect the latest best practices and component versions. Each page includes a "Last Updated" timestamp and applicable version information.
 
-*Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Enterprise X.Y.Z, SAP S/4 HANA X.Y.Z, etc.]*
+**Document Metadata:**
+- Last Updated: 2023-09-01
+- Contributors: Documentation Team
+- Version: 1.0.0
+- Status: Published

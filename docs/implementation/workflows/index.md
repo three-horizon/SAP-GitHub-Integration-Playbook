@@ -90,4 +90,8 @@ After completing workflow setup, your SAP-GitHub integration is fully implemente
 
 ---
 
-*Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Actions X.Y.Z, etc.]*
+**Document Metadata:**
+- Last Updated: 2023-09-01
+- Contributors: DevOps Team
+- Version: 1.0.0
+- Status: Published

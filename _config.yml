@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 title: SAP-GitHub Integration Playbook
-description: Um guia abrangente para integração do SAP com GitHub Enterprise
+description: A comprehensive guide for SAP and GitHub Enterprise integration
 show_downloads: true
 plugins:
   - jekyll-relative-links

@@ -4,52 +4,52 @@ layout: default
 
 # SAP-GitHub Integration Playbook
 
-> Um guia abrangente para integração do SAP com GitHub Enterprise, permitindo desenvolvimento moderno e colaborativo.
+> A comprehensive guide for SAP and GitHub Enterprise integration, enabling modern and collaborative development.
 
-## Visão Geral
+## Overview
 
-Este playbook fornece uma abordagem padronizada e abrangente para criar documentação técnica de integração SAP-GitHub em vários domínios e tecnologias.
+This playbook provides a standardized, comprehensive approach to creating technical documentation for SAP-GitHub integration across various domains and technologies.
 
-### Propósito
+### Purpose
 
-Estabelecer uma fonte única de verdade para estratégias, padrões e implementações de integração SAP-GitHub que ajuda as organizações a otimizar fluxos de trabalho de desenvolvimento, aprimorar a colaboração e aproveitar todo o potencial de ambas as plataformas.
+To establish a single source of truth for SAP-GitHub integration strategies, patterns, and implementations that helps organizations streamline development workflows, enhance collaboration, and leverage the full potential of both platforms.
 
-### Principais Recursos
+### Key Features
 
-- Layout de repositório estruturado seguindo as melhores práticas da indústria
-- Padrões de documentação consistentes em todas as seções
-- Navegação e acessibilidade aprimoradas com organização clara
-- Melhores práticas de controle de versão para documentação como código
-- Compatibilidade multiplataforma para vários ambientes SAP e GitHub
+- Structured repository layout following industry best practices
+- Consistent documentation standards across all sections
+- Enhanced navigation and accessibility with clear organization
+- Version control best practices for documentation-as-code
+- Cross-platform compatibility for various SAP and GitHub environments
 
-## Estrutura do Repositório
+## Repository Structure
 
 ```
 SAP-GitHub-Integration-Playbook/
-├── README.md                 # Introdução principal do projeto
-├── EXECUTIVE-OVERVIEW.md     # Resumo executivo de alto nível
-├── CONTRIBUTING.md           # Diretrizes de contribuição
-├── LICENSE                   # Informações de licença
-├── SECURITY.md               # Política de segurança e relatórios
-├── docs/                     # Documentação abrangente
-│   ├── 1-architecture/       # Detalhes da arquitetura do sistema
-│   ├── 2-implementation-guide/ # Instruções de implementação
-│   ├── 3-developer-guide/    # Documentação específica para desenvolvedores
-│   ├── 4-operations-guide/   # Procedimentos operacionais
-│   ├── 5-reference/          # Materiais de referência
-│   └── 6-appendices/         # Documentos suplementares
-├── examples/                 # Exemplos de código e configuração
-├── scripts/                  # Scripts de utilidade e automação
-└── assets/                   # Recursos de mídia e visuais
-    └── images/               # Imagens de documentação
+├── README.md                 # Primary project introduction
+├── EXECUTIVE-OVERVIEW.md     # High-level executive summary
+├── CONTRIBUTING.md           # Contribution guidelines
+├── LICENSE                   # Licensing information
+├── SECURITY.md               # Security policy and reporting
+├── docs/                     # Comprehensive documentation
+│   ├── 1-architecture/       # System architecture details
+│   ├── 2-implementation-guide/ # Implementation instructions
+│   ├── 3-developer-guide/    # Developer-specific documentation
+│   ├── 4-operations-guide/   # Operational procedures
+│   ├── 5-reference/          # Reference materials
+│   └── 6-appendices/         # Supplementary documents
+├── examples/                 # Code and configuration examples
+├── scripts/                  # Utility and automation scripts
+└── assets/                   # Media and visual resources
+    └── images/               # Documentation images
 ```
 
-## Começando
+## Getting Started
 
-Para começar com este playbook:
+To get started with this playbook:
 
-1. Revise a [Visão Geral para Executivos](./EXECUTIVE-OVERVIEW.html) para informações estratégicas
-2. Explore a [Documentação de Arquitetura](./docs/1-architecture/) para entender o design da solução
-3. Siga o [Guia de Implementação](./docs/2-implementation-guide/) para instruções passo a passo
-4. Consulte o [Guia do Desenvolvedor](./docs/3-developer-guide/) para informações específicas para desenvolvedores
-5. Consulte o [Guia de Operações](./docs/4-operations-guide/) para procedimentos operacionais 
+1. Review the [Executive Overview](./EXECUTIVE-OVERVIEW.html) for strategic information
+2. Explore the [Architecture Documentation](./docs/1-architecture/) to understand the solution design
+3. Follow the [Implementation Guide](./docs/2-implementation-guide/) for step-by-step instructions
+4. Consult the [Developer Guide](./docs/3-developer-guide/) for developer-specific information
+5. Reference the [Operations Guide](./docs/4-operations-guide/) for operational procedures 

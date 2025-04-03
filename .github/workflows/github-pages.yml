@@ -32,9 +32,13 @@ jobs:
         with:
           node-version: '20'
           
+      - name: Create package.json
+        run: |
+          npm init -y
+          
       - name: Install dependencies
         run: |
-          npm install -g @11ty/eleventy markdown-it markdown-it-anchor markdown-it-toc-done-right
+          npm install @11ty/eleventy markdown-it markdown-it-anchor markdown-it-toc-done-right
           
       - name: Setup build directory
         run: |
@@ -219,7 +223,7 @@ jobs:
           
       - name: Build with Eleventy
         run: |
-          eleventy --config=.eleventy.js
+          npx eleventy --config=.eleventy.js
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

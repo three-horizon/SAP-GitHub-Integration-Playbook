@@ -39,17 +39,11 @@ jobs:
       - name: Setup build directory
         run: |
           mkdir -p _site
-          
-      - name: Create .nojekyll file
-        run: |
           touch _site/.nojekyll
           
-      - name: Create index file from README
+      - name: Copy content to build directory
         run: |
           cp README.md _site/index.md
-          
-      - name: Copy documentation files
-        run: |
           cp -r docs/ _site/docs/
           cp EXECUTIVE-OVERVIEW.md _site/executive-overview.md
           cp CONTRIBUTING.md _site/contributing.md

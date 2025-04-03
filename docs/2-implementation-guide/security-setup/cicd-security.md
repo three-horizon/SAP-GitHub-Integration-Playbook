@@ -484,7 +484,7 @@ Implement these security controls for SAP transport integration:
        deploy-transport:
          name: Deploy SAP Transport
          runs-on: ubuntu-latest
-         environment: ${{ github.event.inputs.environment }}
+         environment: {% raw %}${{ github.event.inputs.environment || 'not-specified' }}{% endraw %}
          steps:
            - uses: actions/checkout@v3
      

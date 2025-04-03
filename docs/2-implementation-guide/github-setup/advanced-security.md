@@ -480,7 +480,7 @@ GitHub Advanced Security includes several key components:
                  --output sap-vulnerabilities.json
            
            - name: Create issues for vulnerabilities
-             if: ${{ steps.scan.outputs.has-vulnerabilities == 'true' }}
+             if: {% raw %}${{ steps.scan.outputs.has-vulnerabilities == 'true' }}{% endraw %}
              uses: actions/github-script@v6
              with:
                script: |

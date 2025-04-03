@@ -292,8 +292,8 @@ jobs:
         with:
           sap-url: ${{ matrix.host }}
           sap-client: ${{ matrix.client }}
-          sap-username: ${{ secrets[format('SAP_{0}_USERNAME', matrix.system)] }}
-          sap-password: ${{ secrets[format('SAP_{0}_PASSWORD', matrix.system)] }}
+          sap-username: {% raw %}${{ secrets[format('SAP_{0}_USERNAME', matrix.system)] }}{% endraw %}
+          sap-password: {% raw %}${{ secrets[format('SAP_{0}_PASSWORD', matrix.system)] }}{% endraw %}
           repository-url: ${{ github.repository }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           config-file: ./merged_config/config.yml

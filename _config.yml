@@ -1,0 +1,19 @@
+theme: jekyll-theme-cayman
+title: SAP-GitHub Integration Playbook
+description: Um guia abrangente para integração do SAP com GitHub Enterprise
+show_downloads: true
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - CONTRIBUTING.md
+  - README.md
+  - LICENSE
+
+# GitHub Pages settings
+github:
+  is_project_page: true
+  repository_url: https://github.com/three-horizon/SAP-GitHub-Integration-Playbook
+  repository_name: SAP-GitHub-Integration-Playbook 

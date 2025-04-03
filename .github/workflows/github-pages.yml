@@ -1,9 +1,12 @@
-name: GitHub Pages
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+name: Deploy Jekyll with GitHub Pages
 
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches: [ main ]
-  # Allow manual trigger from Actions tab
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -12,225 +15,36 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
+  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
         with:
-          node-version: '20'
-          
-      - name: Create package.json
-        run: |
-          npm init -y
-          
-      - name: Install dependencies
-        run: |
-          npm install @11ty/eleventy markdown-it markdown-it-anchor markdown-it-toc-done-right
-          
-      - name: Setup build directory
-        run: |
-          mkdir -p _site
-          touch _site/.nojekyll
-          
-      - name: Copy content to build directory
-        run: |
-          cp README.md _site/index.md
-          cp -r docs/ _site/docs/
-          cp EXECUTIVE-OVERVIEW.md _site/executive-overview.md
-          cp CONTRIBUTING.md _site/contributing.md
-          cp LICENSE _site/license.md
-          cp SECURITY.md _site/security.md
-          mkdir -p _site/assets
-          [ -d "assets/images" ] && cp -r assets/images/ _site/assets/images/ || echo "No images directory found"
-          
-      - name: Create eleventy config
-        run: |
-          cat > .eleventy.js << 'EOF'
-          const markdownIt = require('markdown-it');
-          const markdownItAnchor = require('markdown-it-anchor');
-          const markdownItToc = require('markdown-it-toc-done-right');
-
-          module.exports = function(eleventyConfig) {
-            const mdOptions = {
-              html: true,
-              breaks: true,
-              linkify: true
-            };
-            
-            const mdLib = markdownIt(mdOptions)
-              .use(markdownItAnchor)
-              .use(markdownItToc);
-            
-            eleventyConfig.setLibrary('md', mdLib);
-            
-            // Copy static assets
-            eleventyConfig.addPassthroughCopy('_site/assets');
-            
-            // Process Markdown files
-            eleventyConfig.addTemplateFormats('md');
-            eleventyConfig.addExtension('md', {
-              outputFileExtension: 'html',
-              compile: async function (inputContent) {
-                return async (data) => {
-                  return mdLib.render(inputContent);
-                };
-              }
-            });
-            
-            // Add layout wrapper
-            eleventyConfig.addTransform('layout', async function(content, outputPath) {
-              if(outputPath && outputPath.endsWith('.html')) {
-                return `
-                <!DOCTYPE html>
-                <html lang="en">
-                <head>
-                  <meta charset="UTF-8">
-                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                  <title>SAP-GitHub Integration Playbook</title>
-                  <style>
-                    body {
-                      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-                      line-height: 1.6;
-                      color: #333;
-                      max-width: 900px;
-                      margin: 0 auto;
-                      padding: 20px;
-                    }
-                    header {
-                      background-color: #0366d6;
-                      color: white;
-                      padding: 20px;
-                      margin-bottom: 20px;
-                      border-radius: 5px;
-                    }
-                    nav {
-                      background-color: #f6f8fa;
-                      padding: 15px;
-                      margin-bottom: 20px;
-                      border-radius: 5px;
-                    }
-                    nav ul {
-                      list-style-type: none;
-                      padding: 0;
-                      display: flex;
-                      flex-wrap: wrap;
-                      gap: 15px;
-                    }
-                    nav a {
-                      color: #0366d6;
-                      text-decoration: none;
-                      font-weight: 500;
-                    }
-                    nav a:hover {
-                      text-decoration: underline;
-                    }
-                    main {
-                      background-color: white;
-                      padding: 20px;
-                      border-radius: 5px;
-                      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                    }
-                    h1, h2, h3 {
-                      color: #24292e;
-                    }
-                    a {
-                      color: #0366d6;
-                    }
-                    code {
-                      background-color: #f6f8fa;
-                      padding: 0.2em 0.4em;
-                      border-radius: 3px;
-                      font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
-                    }
-                    pre {
-                      background-color: #f6f8fa;
-                      padding: 16px;
-                      border-radius: 3px;
-                      overflow: auto;
-                      font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
-                    }
-                    table {
-                      border-collapse: collapse;
-                      width: 100%;
-                    }
-                    table, th, td {
-                      border: 1px solid #e1e4e8;
-                    }
-                    th, td {
-                      padding: 8px 16px;
-                      text-align: left;
-                    }
-                    th {
-                      background-color: #f6f8fa;
-                    }
-                    footer {
-                      text-align: center;
-                      margin-top: 40px;
-                      color: #586069;
-                      font-size: 0.9em;
-                    }
-                  </style>
-                </head>
-                <body>
-                  <header>
-                    <h1>SAP-GitHub Integration Playbook</h1>
-                  </header>
-                  <nav>
-                    <ul>
-                      <li><a href="/">Home</a></li>
-                      <li><a href="/executive-overview.html">Executive Overview</a></li>
-                      <li><a href="/docs/1-architecture/">Architecture</a></li>
-                      <li><a href="/docs/2-implementation-guide/">Implementation</a></li>
-                      <li><a href="/docs/3-developer-guide/">Developer Guide</a></li>
-                      <li><a href="/docs/4-operations-guide/">Operations</a></li>
-                      <li><a href="/docs/5-reference/">Reference</a></li>
-                      <li><a href="/docs/6-appendices/">Appendices</a></li>
-                    </ul>
-                  </nav>
-                  <main>${content}</main>
-                  <footer>
-                    <p>SAP-GitHub Integration Playbook | <a href="/contributing.html">Contributing</a> | <a href="/license.html">License</a> | <a href="/security.html">Security</a></p>
-                  </footer>
-                </body>
-                </html>
-                `;
-              }
-              return content;
-            });
-            
-            return {
-              dir: {
-                input: "_site",
-                output: "_site",
-                layouts: "_layouts"
-              }
-            };
-          };
-          EOF
-          
-      - name: Build with Eleventy
-        run: |
-          npx eleventy --config=.eleventy.js
-          
+          source: ./
+          destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "_site"
+          path: ./_site
 
+  # Deployment job
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:

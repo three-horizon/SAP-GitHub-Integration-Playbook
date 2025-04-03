@@ -1,3 +1,7 @@
+---
+render_with_liquid: false
+---
+
 # CI/CD Security for SAP-GitHub Integration
 
 ## Overview

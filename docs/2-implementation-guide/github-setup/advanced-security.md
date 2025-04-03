@@ -1,3 +1,7 @@
+---
+render_with_liquid: false
+---
+
 # GitHub Advanced Security Configuration
 
 ## Overview

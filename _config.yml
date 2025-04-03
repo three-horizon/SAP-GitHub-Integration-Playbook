@@ -12,6 +12,12 @@ include:
   - README.md
   - LICENSE
 
+# Liquid configuration to prevent parsing errors with GitHub Actions syntax
+liquid:
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
+
 # GitHub Pages settings
 github:
   is_project_page: true

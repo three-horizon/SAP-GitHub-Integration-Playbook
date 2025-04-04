@@ -1,62 +1,92 @@
+---
+layout: default
+title: SAP-GitHub Integration Playbook Documentation
+---
+
 # SAP-GitHub Integration Playbook Documentation
 
-Welcome to the comprehensive documentation for integrating SAP systems with GitHub Enterprise, enhanced by Microsoft security solutions. This documentation is structured to guide you through the entire implementation process, from understanding the architecture to advanced troubleshooting.
+This playbook provides comprehensive guidance for integrating SAP systems with GitHub Enterprise, enabling modern development practices for SAP teams.
 
-## 📚 Documentation Sections
+## Documentation Sections
 
-### [Getting Started](./getting-started/quick-start.md)
-* [Prerequisites](./getting-started/prerequisites.md) - System requirements and preparation
-* [Installation Guide](./getting-started/installation.md) - Step-by-step installation process
-* [Quick Start Guide](./getting-started/quick-start.md) - Fast track to a basic implementation
+The documentation is organized into logical sections based on implementation phases and user roles:
 
-### [Architecture](./architecture/overview.md)
-* [Overview](./architecture/overview.md) - End-to-end architecture and design principles
-* [Components](./architecture/components.md) - Detailed component descriptions
-* [System Architecture](./architecture/system-architecture.md) - Comprehensive system architecture details
+### [1. Architecture]({{ site.baseurl }}/docs/1-architecture/)
 
-### [Implementation Guides](./implementation/)
-* [GitHub Enterprise Setup](./implementation/github-setup/) - Setting up GitHub repositories and configuration
-* [SAP System Preparation](./implementation/sap-setup/) - Preparing SAP systems for integration
-* [Microsoft APIM Configuration](./implementation/apim-setup/) - Configuring Azure API Management
-* [Security Implementation](./implementation/security-setup/) - Security setup with Sentinel and Defender
-* [Workflow Implementation](./implementation/workflows/) - Setting up automated workflows
+The Architecture section covers the system design, connectivity patterns, and technical requirements for SAP-GitHub integration:
 
-### [Benefits Analysis](./benefits/comparison.md)
-* [Traditional vs. Modern Comparison](./benefits/comparison.md) - Comparing development approaches
-* [Performance Metrics](./benefits/metrics.md) - Quantifiable improvements
-* [Case Studies](./benefits/case-studies.md) - Real-world implementation stories
-* [ROI Calculator](./benefits/roi-calculator.md) - Tools to calculate return on investment
+- Reference architecture diagrams
+- Integration patterns and approaches
+- Security architecture
+- Scalability considerations
+- Enterprise connectivity models
 
-### [Reference Documentation](./reference/)
-* [SAP Notes Reference](./reference/sap-notes/) - Essential SAP Notes for implementation
-* [API Reference](./reference/api-reference/) - API documentation and specifications
-* [Workflow Reference](./reference/workflows-reference/) - Comprehensive workflow documentation
-* [Security Reference](./reference/security-reference/) - Security configuration reference
+### [2. Implementation Guide]({{ site.baseurl }}/docs/2-implementation-guide/)
 
-### [Additional Resources](./tutorials/)
-* [Tutorials](./tutorials/) - Step-by-step tutorials for common tasks
-* [Troubleshooting](./troubleshooting/) - Solutions for common issues
-* [Maintenance Guide](./maintenance/) - Ongoing maintenance procedures
-* [FAQ](./faq.md) - Frequently asked questions
+The Implementation Guide provides step-by-step instructions for setting up the integration:
 
-## 💡 How to Use This Documentation
+- [Getting Started]({{ site.baseurl }}/docs/2-implementation-guide/getting-started/) - Initial planning and preparation
+- [SAP Setup]({{ site.baseurl }}/docs/2-implementation-guide/sap-setup/) - Configuring SAP systems
+- [GitHub Setup]({{ site.baseurl }}/docs/2-implementation-guide/github-setup/) - GitHub Enterprise configuration
+- [Workflows]({{ site.baseurl }}/docs/2-implementation-guide/workflows/) - Development workflow setup
+- [Security Setup]({{ site.baseurl }}/docs/2-implementation-guide/security-setup/) - Security configuration
 
-1. **New Implementation**: Start with the [Prerequisites](./getting-started/prerequisites.md) to ensure your environment is ready, then follow the [Installation Guide](./getting-started/installation.md).
+### [3. Developer Guide]({{ site.baseurl }}/docs/3-developer-guide/)
 
-2. **Understanding the System**: Review the [Architecture Overview](./architecture/overview.md) and [Components](./architecture/components.md) sections to understand how all pieces fit together.
+The Developer Guide focuses on day-to-day usage for developers working with the integrated systems:
 
-3. **Specific Component Setup**: Use the dedicated implementation guides for each component (GitHub, SAP, APIM, Security).
+- Developer workflows
+- Code review processes
+- Pull request best practices
+- Branch management
+- Troubleshooting common issues
 
-4. **Reference Information**: Consult the reference documentation for detailed specifications, SAP Notes, and configuration details.
+### [4. Operations Guide]({{ site.baseurl }}/docs/4-operations-guide/)
 
-5. **Problem Solving**: If you encounter issues, check the [Troubleshooting](./troubleshooting/) section or [FAQ](./faq.md).
+The Operations Guide covers ongoing maintenance, monitoring, and operational procedures:
 
-## 🔄 Documentation Updates
+- Monitoring and alerting
+- Backup and recovery
+- Performance optimization
+- Troubleshooting
+- Update procedures
 
-This documentation is regularly updated to reflect the latest best practices and component versions. Each page includes a "Last Updated" timestamp and applicable version information.
+### [5. Reference]({{ site.baseurl }}/docs/5-reference/)
 
-**Document Metadata:**
-- Last Updated: 2023-09-01
-- Contributors: Documentation Team
-- Version: 1.0.0
-- Status: Published
+The Reference section provides detailed technical information and specifications:
+
+- API references
+- Configuration reference
+- Command references
+- Error codes and resolution
+- Glossary of terms
+
+### [6. Appendices]({{ site.baseurl }}/docs/6-appendices/)
+
+The Appendices include supplementary information and additional resources:
+
+- Case studies
+- Benchmark data
+- Migration guides
+- Integration with other systems
+- Additional resources
+
+## Using This Documentation
+
+This documentation is designed to be navigated based on your role and current implementation phase:
+
+1. Start with the [Architecture section]({{ site.baseurl }}/docs/1-architecture/) to understand the overall solution design
+2. Follow the [Implementation Guide]({{ site.baseurl }}/docs/2-implementation-guide/) for step-by-step setup instructions
+3. Refer to the role-specific guides ([Developer]({{ site.baseurl }}/docs/3-developer-guide/) or [Operations]({{ site.baseurl }}/docs/4-operations-guide/)) based on your responsibilities
+4. Use the [Reference section]({{ site.baseurl }}/docs/5-reference/) for detailed technical information
+
+## Contributing to This Documentation
+
+This documentation follows a documentation-as-code approach. To contribute:
+
+1. Review the [Documentation Guidelines]({{ site.baseurl }}/DOCUMENTATION_GUIDELINES.html)
+2. Fork the repository
+3. Make your changes following the established patterns
+4. Submit a pull request with a clear description of your changes
+
+For more information, see the [Contribution Guidelines]({{ site.baseurl }}/CONTRIBUTING.html).

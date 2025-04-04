@@ -78,7 +78,7 @@ This document provides comprehensive checklists for implementing the SAP-GitHub 
 
 - [ ] Create initial repositories for SAP code
 - [ ] Configure branch protection rules for main branch
-- [ ] Set up required labels and issue templates
+- [ ] Set up required labels
 - [ ] Configure repository-level security settings
 - [ ] Document repository structure and naming conventions
 

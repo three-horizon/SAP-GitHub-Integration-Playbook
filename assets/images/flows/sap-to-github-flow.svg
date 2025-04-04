@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="300px" viewBox="0 0 800 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SAP to GitHub Flow (Code Synchronization)</title>
+    <desc>Flow diagram showing the code synchronization process from SAP to GitHub</desc>
+    <defs>
+        <rect id="component-box" width="120" height="80" rx="4"></rect>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&amp;display=swap');
+            text {
+                font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                fill: #333333;
+            }
+            .title {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .subtitle {
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .component-label {
+                font-size: 14px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .component-sublabel {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+            .connector {
+                stroke: #0078d7;
+                stroke-width: 2;
+                fill: none;
+            }
+            .step-number {
+                font-size: 12px;
+                font-weight: 600;
+                text-anchor: middle;
+                fill: white;
+            }
+        </style>
+        
+        <!-- Arrow Markers -->
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#0078d7" />
+        </marker>
+    </defs>
+    
+    <!-- Background -->
+    <g id="background" fill="#f5f5f5">
+        <rect width="800" height="300" rx="0"></rect>
+    </g>
+    
+    <!-- Title -->
+    <text x="400" y="30" class="title" text-anchor="middle">SAP to GitHub Flow (Code Synchronization)</text>
+    
+    <!-- SAP Developer -->
+    <g transform="translate(60, 100)">
+        <use href="#component-box" fill="white" stroke="#0070f2" stroke-width="2"></use>
+        <text x="60" y="40" class="component-label" fill="#0070f2">SAP Developer</text>
+        <text x="60" y="60" class="component-sublabel">Creates/modifies code</text>
+    </g>
+    
+    <!-- abapGit -->
+    <g transform="translate(220, 100)">
+        <use href="#component-box" fill="white" stroke="#5d1038" stroke-width="2"></use>
+        <text x="60" y="40" class="component-label" fill="#5d1038">abapGit</text>
+        <text x="60" y="60" class="component-sublabel">Serializes objects</text>
+    </g>
+    
+    <!-- API Management -->
+    <g transform="translate(380, 100)">
+        <use href="#component-box" fill="white" stroke="#68217a" stroke-width="2"></use>
+        <text x="60" y="40" class="component-label" fill="#68217a">API Management</text>
+        <text x="60" y="60" class="component-sublabel">Routes securely</text>
+    </g>
+    
+    <!-- GitHub API -->
+    <g transform="translate(540, 100)">
+        <use href="#component-box" fill="white" stroke="#6e5494" stroke-width="2"></use>
+        <text x="60" y="40" class="component-label" fill="#6e5494">GitHub API</text>
+        <text x="60" y="60" class="component-sublabel">Processes requests</text>
+    </g>
+    
+    <!-- GitHub Repository -->
+    <g transform="translate(700, 100)">
+        <use href="#component-box" fill="white" stroke="#6e5494" stroke-width="2"></use>
+        <text x="60" y="40" class="component-label" fill="#6e5494">GitHub Repository</text>
+        <text x="60" y="60" class="component-sublabel">Stores code</text>
+    </g>
+    
+    <!-- Connector Lines -->
+    <line x1="180" y1="140" x2="220" y2="140" class="connector" marker-end="url(#arrowhead)"></line>
+    <line x1="340" y1="140" x2="380" y2="140" class="connector" marker-end="url(#arrowhead)"></line>
+    <line x1="500" y1="140" x2="540" y2="140" class="connector" marker-end="url(#arrowhead)"></line>
+    <line x1="660" y1="140" x2="700" y2="140" class="connector" marker-end="url(#arrowhead)"></line>
+    
+    <!-- Step Numbers -->
+    <g transform="translate(190, 140)">
+        <circle cx="10" cy="0" r="10" fill="#0078d7"></circle>
+        <text x="10" y="4" class="step-number">1</text>
+    </g>
+    
+    <g transform="translate(350, 140)">
+        <circle cx="10" cy="0" r="10" fill="#0078d7"></circle>
+        <text x="10" y="4" class="step-number">2</text>
+    </g>
+    
+    <g transform="translate(510, 140)">
+        <circle cx="10" cy="0" r="10" fill="#0078d7"></circle>
+        <text x="10" y="4" class="step-number">3</text>
+    </g>
+    
+    <g transform="translate(670, 140)">
+        <circle cx="10" cy="0" r="10" fill="#0078d7"></circle>
+        <text x="10" y="4" class="step-number">4</text>
+    </g>
+    
+    <!-- Process Description -->
+    <g transform="translate(60, 210)">
+        <rect width="700" height="60" rx="4" fill="white" stroke="#666666"></rect>
+        <text x="10" y="20" class="subtitle">Process Flow:</text>
+        <text x="10" y="45">1. Developer creates/modifies ABAP objects in SAP → 2. abapGit serializes objects to XML → 3. API Management securely routes → 4. GitHub stores with version history</text>
+    </g>
+</svg>

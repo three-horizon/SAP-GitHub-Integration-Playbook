@@ -61,7 +61,7 @@ For a new user, we recommend the following path through the documentation:
 
 ## Documentation Standards
 
-All documentation follows consistent standards defined in our [Documentation Standards](./documentation-standards.md). This ensures:
+All documentation follows consistent standards defined in our [Documentation Standards](./1-architecture/standards/documentation-standards.md). This ensures:
 
 - Consistent structure and formatting
 - Clear navigation between related documents

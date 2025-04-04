@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="600px" viewBox="0 0 1200 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>GitHub to SAP Data Flow</title>
+    <desc>Detailed data flow diagram showing the process of deploying code from GitHub to SAP systems</desc>
+    <defs>
+        <rect id="system-container" width="180" height="80" rx="4"></rect>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2" />
+            </feComponentTransfer>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0078d7"/>
+        </marker>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&amp;display=swap');
+            text {
+                font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                fill: #333333;
+            }
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .subtitle {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .component-title {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+                fill: white;
+            }
+            .component-subtitle {
+                font-size: 12px;
+                text-anchor: middle;
+                fill: #e0e0e0;
+            }
+            .flow-label {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+            .step-number {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+                fill: white;
+            }
+            .step-description {
+                font-size: 13px;
+                font-weight: 400;
+            }
+            .data-format {
+                font-size: 11px;
+                text-anchor: middle;
+                font-style: italic;
+                fill: #666666;
+            }
+        </style>
+    </defs>
+    
+    <!-- Background -->
+    <g id="background" fill="#f5f5f5">
+        <rect width="1200" height="600" rx="0"></rect>
+    </g>
+    
+    <!-- Title -->
+    <text x="600" y="50" class="title" text-anchor="middle">GitHub to SAP Data Flow</text>
+    <text x="600" y="80" class="subtitle" text-anchor="middle">Deployment Process</text>
+    
+    <!-- Main Flow -->
+    <g id="main-flow-components">
+        <!-- GitHub Pull Request -->
+        <g transform="translate(100, 200)">
+            <use href="#system-container" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="90" y="40" class="component-title">GitHub PR</text>
+            <text x="90" y="60" class="component-subtitle">Pull Request</text>
+        </g>
+        
+        <!-- GitHub Actions -->
+        <g transform="translate(340, 200)">
+            <use href="#system-container" fill="#2088ff" filter="url(#shadow)"></use>
+            <text x="90" y="40" class="component-title">GitHub Actions</text>
+            <text x="90" y="60" class="component-subtitle">CI/CD Workflows</text>
+        </g>
+        
+        <!-- API Management -->
+        <g transform="translate(580, 200)">
+            <use href="#system-container" fill="#68217a" filter="url(#shadow)"></use>
+            <text x="90" y="40" class="component-title">API Management</text>
+            <text x="90" y="60" class="component-subtitle">Integration Gateway</text>
+        </g>
+        
+        <!-- SAP API Service -->
+        <g transform="translate(820, 200)">
+            <use href="#system-container" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="90" y="40" class="component-title">SAP API Service</text>
+            <text x="90" y="60" class="component-subtitle">OData / RFC Service</text>
+        </g>
+        
+        <!-- SAP Systems -->
+        <g transform="translate(1060, 200)">
+            <use href="#system-container" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="90" y="40" class="component-title">SAP Systems</text>
+            <text x="90" y="60" class="component-subtitle">DEV, QAS, PRD</text>
+        </g>
+    </g>
+    
+    <!-- Connection Arrows -->
+    <g id="connection-arrows">
+        <!-- Pull Request to GitHub Actions -->
+        <path d="M280,240 L340,240" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        
+        <!-- GitHub Actions to API Management -->
+        <path d="M520,240 L580,240" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        
+        <!-- API Management to SAP API Service -->
+        <path d="M760,240 L820,240" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        
+        <!-- SAP API Service to SAP Systems -->
+        <path d="M1000,240 L1060,240" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    </g>
+    
+    <!-- Data Format Labels -->
+    <g id="data-formats">
+        <text x="310" y="225" class="data-format">Trigger Event</text>
+        <text x="550" y="225" class="data-format">API Requests</text>
+        <text x="790" y="225" class="data-format">SAP API Calls</text>
+        <text x="1030" y="225" class="data-format">Object Changes</text>
+    </g>
+    
+    <!-- Step Details -->
+    <g id="process-steps">
+        <!-- Step 1 -->
+        <g transform="translate(150, 320)">
+            <circle cx="20" cy="20" r="20" fill="#6e5494"></circle>
+            <text x="20" y="25" class="step-number">1</text>
+            <text x="50" y="15" class="step-description" font-weight="600">Create Pull Request</text>
+            <text x="50" y="35" class="step-description">Developer creates PR in GitHub</text>
+            <text x="50" y="55" class="step-description">with code changes to deploy</text>
+        </g>
+        
+        <!-- Step 2 -->
+        <g transform="translate(390, 320)">
+            <circle cx="20" cy="20" r="20" fill="#2088ff"></circle>
+            <text x="20" y="25" class="step-number">2</text>
+            <text x="50" y="15" class="step-description" font-weight="600">GitHub Workflow Execution</text>
+            <text x="50" y="35" class="step-description">Actions workflow runs validation</text>
+            <text x="50" y="55" class="step-description">and deployment pipeline</text>
+        </g>
+        
+        <!-- Step 3 -->
+        <g transform="translate(630, 320)">
+            <circle cx="20" cy="20" r="20" fill="#68217a"></circle>
+            <text x="20" y="25" class="step-number">3</text>
+            <text x="50" y="15" class="step-description" font-weight="600">API Processing</text>
+            <text x="50" y="35" class="step-description">API Management authenticates and</text>
+            <text x="50" y="55" class="step-description">routes requests to SAP securely</text>
+        </g>
+        
+        <!-- Step 4 -->
+        <g transform="translate(870, 320)">
+            <circle cx="20" cy="20" r="20" fill="#0070f2"></circle>
+            <text x="20" y="25" class="step-number">4</text>
+            <text x="50" y="15" class="step-description" font-weight="600">SAP API Processing</text>
+            <text x="50" y="35" class="step-description">SAP API services process import</text>
+            <text x="50" y="55" class="step-description">requests and create transports</text>
+        </g>
+        
+        <!-- Step 5 -->
+        <g transform="translate(1110, 320)">
+            <circle cx="20" cy="20" r="20" fill="#0070f2"></circle>
+            <text x="20" y="25" class="step-number">5</text>
+            <text x="50" y="15" class="step-description" font-weight="600">SAP Deployment</text>
+            <text x="50" y="35" class="step-description">Changes imported into SAP system</text>
+            <text x="50" y="55" class="step-description">and transported across landscape</text>
+        </g>
+    </g>
+    
+    <!-- Transport Management -->
+    <g id="transport-management">
+        <rect x="900" y="410" width="240" height="60" rx="4" fill="white" stroke="#0070f2" stroke-width="2"></rect>
+        <text x="1020" y="435" font-weight="600" text-anchor="middle" fill="#0070f2">Transport Management</text>
+        <text x="1020" y="455" text-anchor="middle" font-size="12">DEV → QAS → PRD</text>
+        
+        <path d="M1080,280 L1080,410" stroke="#0070f2" stroke-width="2" stroke-dasharray="5,5" fill="none"></path>
+    </g>
+    
+    <!-- Approval Gate -->
+    <g id="approval-gate">
+        <rect x="340" y="410" width="220" height="60" rx="4" fill="white" stroke="#2088ff" stroke-width="2"></rect>
+        <text x="450" y="435" font-weight="600" text-anchor="middle" fill="#2088ff">Approval Gates</text>
+        <text x="450" y="455" text-anchor="middle" font-size="12">Code Review and Validation</text>
+        
+        <path d="M430,280 L430,410" stroke="#2088ff" stroke-width="2" stroke-dasharray="5,5" fill="none"></path>
+    </g>
+    
+    <!-- Security Layer -->
+    <g id="security-layer">
+        <rect x="100" y="490" width="1040" height="60" rx="4" fill="white" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5"></rect>
+        <text x="150" y="525" font-weight="600" fill="#d13438">Security:</text>
+        <text x="230" y="525">Authentication</text>
+        <text x="400" y="525">Authorization</text>
+        <text x="550" y="525">Code Scanning</text>
+        <text x="700" y="525">Validation Gates</text>
+        <text x="850" y="525">Audit Logging</text>
+        <text x="1050" y="525">Monitoring</text>
+    </g>
+    
+    <!-- Legend -->
+    <g id="legend" transform="translate(100, 565) scale(0.9)">
+        <rect width="1110" height="30" rx="4" fill="white" stroke="#666666"></rect>
+        
+        <!-- GitHub Components -->
+        <rect x="20" y="10" width="15" height="15" rx="2" fill="#6e5494"></rect>
+        <text x="45" y="22" font-size="12">GitHub Components</text>
+        
+        <!-- Integration Components -->
+        <rect x="200" y="10" width="15" height="15" rx="2" fill="#68217a"></rect>
+        <text x="225" y="22" font-size="12">Integration Components</text>
+        
+        <!-- SAP Components -->
+        <rect x="380" y="10" width="15" height="15" rx="2" fill="#0070f2"></rect>
+        <text x="405" y="22" font-size="12">SAP Components</text>
+        
+        <!-- Data Flow -->
+        <line x1="520" y1="17" x2="550" y2="17" stroke="#0078d7" stroke-width="2" marker-end="url(#arrow)"></line>
+        <text x="575" y="22" font-size="12">Data Flow</text>
+        
+        <!-- Process Extension -->
+        <line x1="650" y1="17" x2="680" y2="17" stroke="#0070f2" stroke-width="2" stroke-dasharray="5,5"></line>
+        <text x="705" y="22" font-size="12">Process Extension</text>
+        
+        <!-- Security Controls -->
+        <line x1="820" y1="17" x2="850" y2="17" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5"></line>
+        <text x="875" y="22" font-size="12">Security Controls</text>
+    </g>
+</svg>

@@ -1,0 +1,70 @@
+<div class="search-container">
+  <input type="text" id="search-input" placeholder="Search the documentation...">
+  <div id="search-results"></div>
+</div>
+
+<script>
+  // Simple search functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-input');
+    const searchResults = document.getElementById('search-results');
+    
+    // When user types in search box
+    searchInput.addEventListener('input', function() {
+      const query = this.value.toLowerCase().trim();
+      
+      if (query.length < 2) {
+        searchResults.innerHTML = '';
+        return;
+      }
+      
+      // Fetch the search index (we'll create this file next)
+      fetch('{{ site.baseurl }}/assets/js/search-index.json')
+        .then(response => response.json())
+        .then(data => {
+          const results = data.filter(item => {
+            return item.title.toLowerCase().includes(query) || 
+                   item.content.toLowerCase().includes(query);
+          });
+          
+          displayResults(results, query);
+        })
+        .catch(error => {
+          console.error('Error fetching search index:', error);
+        });
+    });
+    
+    function displayResults(results, query) {
+      if (results.length === 0) {
+        searchResults.innerHTML = '<p>No results found for "' + query + '"</p>';
+        return;
+      }
+      
+      let html = '';
+      results.forEach(result => {
+        // Create snippet by finding the query in the content
+        let snippet = '';
+        const contentLower = result.content.toLowerCase();
+        const index = contentLower.indexOf(query);
+        
+        if (index !== -1) {
+          const start = Math.max(0, index - 50);
+          const end = Math.min(result.content.length, index + query.length + 50);
+          snippet = '...' + result.content.substring(start, end) + '...';
+        } else {
+          snippet = result.content.substring(0, 100) + '...';
+        }
+        
+        html += `
+          <div class="search-result">
+            <h3><a href="${result.url}">${result.title}</a></h3>
+            <div class="url">${result.url}</div>
+            <div class="snippet">${snippet}</div>
+          </div>
+        `;
+      });
+      
+      searchResults.innerHTML = html;
+    }
+  });
+</script> 

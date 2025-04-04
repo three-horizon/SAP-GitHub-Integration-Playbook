@@ -181,7 +181,6 @@ Configure these GitHub compliance controls:
    - Create repository security policies
    - Implement contribution guidelines
    - Configure SECURITY.md in repositories
-   - Set up standard issue templates
    - Establish security disclosure process
    - Document compliance artifacts
 

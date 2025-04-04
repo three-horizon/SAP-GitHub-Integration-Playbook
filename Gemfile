@@ -1,4 +1,6 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "github-pages", group: :jekyll_plugins
-gem "webrick", "~> 1.7" 
+gem 'github-pages', group: :jekyll_plugins
+gem 'webrick'
+gem 'jekyll-seo-tag'
+gem 'jekyll-titles-from-headings'

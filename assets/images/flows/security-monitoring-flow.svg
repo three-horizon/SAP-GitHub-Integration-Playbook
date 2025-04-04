@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="600px" viewBox="0 0 1200 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Security Monitoring Flow</title>
+    <desc>Comprehensive security monitoring flow for SAP-GitHub integration</desc>
+    <defs>
+        <rect id="system-container" width="200" height="90" rx="4"></rect>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2" />
+            </feComponentTransfer>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0078d7"/>
+        </marker>
+        <marker id="security-arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#d13438"/>
+        </marker>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&amp;display=swap');
+            text {
+                font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                fill: #333333;
+            }
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .subtitle {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .component-title {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+                fill: white;
+            }
+            .component-subtitle {
+                font-size: 12px;
+                text-anchor: middle;
+                fill: #e0e0e0;
+            }
+            .flow-label {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+            .step-number {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+                fill: white;
+            }
+            .step-description {
+                font-size: 13px;
+                font-weight: 400;
+            }
+            .security-label {
+                font-size: 12px;
+                text-anchor: middle;
+                fill: #d13438;
+            }
+        </style>
+    </defs>
+    
+    <!-- Background -->
+    <g id="background" fill="#f5f5f5">
+        <rect width="1200" height="600" rx="0"></rect>
+    </g>
+    
+    <!-- Title -->
+    <text x="600" y="50" class="title" text-anchor="middle">Security Monitoring Flow</text>
+    <text x="600" y="80" class="subtitle" text-anchor="middle">Comprehensive Security Monitoring for SAP-GitHub Integration</text>
+    
+    <!-- Main Components -->
+    <g id="main-flow-components">
+        <!-- SAP and GitHub Activities -->
+        <g transform="translate(125, 150)">
+            <use href="#system-container" fill="#0078d4" filter="url(#shadow)"></use>
+            <text x="100" y="45" class="component-title">SAP and GitHub</text>
+            <text x="100" y="65" class="component-subtitle">System Activities</text>
+        </g>
+        
+        <!-- API Management Logs -->
+        <g transform="translate(375, 150)">
+            <use href="#system-container" fill="#68217a" filter="url(#shadow)"></use>
+            <text x="100" y="45" class="component-title">API Management</text>
+            <text x="100" y="65" class="component-subtitle">Log Collection</text>
+        </g>
+        
+        <!-- Microsoft Sentinel -->
+        <g transform="translate(625, 150)">
+            <use href="#system-container" fill="#004e8c" filter="url(#shadow)"></use>
+            <text x="100" y="45" class="component-title">Microsoft Sentinel</text>
+            <text x="100" y="65" class="component-subtitle">SIEM Platform</text>
+        </g>
+        
+        <!-- Security Operations -->
+        <g transform="translate(875, 150)">
+            <use href="#system-container" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="100" y="45" class="component-title">Security Operations</text>
+            <text x="100" y="65" class="component-subtitle">Detection and Response</text>
+        </g>
+    </g>
+    
+    <!-- Connection Arrows -->
+    <g id="connection-arrows">
+        <!-- Activities to Logs -->
+        <path d="M325,195 L375,195" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        
+        <!-- Logs to Sentinel -->
+        <path d="M575,195 L625,195" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        
+        <!-- Sentinel to SecOps -->
+        <path d="M825,195 L875,195" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    </g>
+    
+    <!-- Data Source Details -->
+    <g id="data-source-details" transform="translate(50, 280)">
+        <rect width="250" height="240" rx="4" fill="white" stroke="#0078d4" stroke-width="2"></rect>
+        <text x="125" y="30" text-anchor="middle" font-weight="600">Activity Sources</text>
+        
+        <!-- SAP Sources -->
+        <g transform="translate(20, 60)">
+            <rect width="100" height="30" rx="4" fill="#0070f2"></rect>
+            <text x="50" y="20" class="component-subtitle" fill="white" text-anchor="middle">SAP Activities</text>
+        </g>
+        <text x="170" y="70" font-size="12">• Login Activities</text>
+        <text x="170" y="90" font-size="12">• Object Changes</text>
+        
+        <!-- GitHub Sources -->
+        <g transform="translate(20, 120)">
+            <rect width="100" height="30" rx="4" fill="#6e5494"></rect>
+            <text x="50" y="20" class="component-subtitle" fill="white" text-anchor="middle">GitHub Activities</text>
+        </g>
+        <text x="170" y="130" font-size="12">• Repository Activity</text>
+        <text x="170" y="150" font-size="12">• Access Events</text>
+        
+        <!-- Integration Sources -->
+        <g transform="translate(20, 180)">
+            <rect width="100" height="30" rx="4" fill="#68217a"></rect>
+            <text x="50" y="20" class="component-subtitle" fill="white" text-anchor="middle">API Activities</text>
+        </g>
+        <text x="170" y="190" font-size="12">• Request Logs</text>
+        <text x="170" y="210" font-size="12">• Authentication Events</text>
+    </g>
+    
+    <!-- Log Collection Details -->
+    <g id="log-collection-details" transform="translate(325, 280)">
+        <rect width="250" height="240" rx="4" fill="white" stroke="#68217a" stroke-width="2"></rect>
+        <text x="125" y="30" text-anchor="middle" font-weight="600">Log Collection</text>
+        
+        <!-- Application Logs -->
+        <text x="30" y="70" font-size="12" font-weight="600">Application Logs:</text>
+        <text x="50" y="90" font-size="12">• Request/Response Details</text>
+        <text x="50" y="110" font-size="12">• Performance Metrics</text>
+        
+        <!-- Security Logs -->
+        <text x="30" y="140" font-size="12" font-weight="600">Security Logs:</text>
+        <text x="50" y="160" font-size="12">• Authentication Events</text>
+        <text x="50" y="180" font-size="12">• Authorization Decisions</text>
+        <text x="50" y="200" font-size="12">• Policy Violations</text>
+        
+        <!-- Diagnostic Logs -->
+        <text x="30" y="230" font-size="12" font-weight="600">System Logs:</text>
+        <text x="50" y="250" font-size="12">• Gateway Diagnostics</text>
+        <text x="50" y="270" font-size="12">• Error Conditions</text>
+    </g>
+    
+    <!-- Sentinel Analytics -->
+    <g id="sentinel-analytics" transform="translate(600, 280)">
+        <rect width="250" height="240" rx="4" fill="white" stroke="#004e8c" stroke-width="2"></rect>
+        <text x="125" y="30" text-anchor="middle" font-weight="600">Sentinel Analytics</text>
+        
+        <!-- Detection Rules -->
+        <text x="30" y="70" font-size="12" font-weight="600">Detection Rules:</text>
+        <text x="50" y="90" font-size="12">• Suspicious Authentication</text>
+        <text x="50" y="110" font-size="12">• Unusual Access Patterns</text>
+        <text x="50" y="130" font-size="12">• Code Integrity Violations</text>
+        
+        <!-- Analytics -->
+        <text x="30" y="160" font-size="12" font-weight="600">Advanced Analytics:</text>
+        <text x="50" y="180" font-size="12">• Machine Learning Models</text>
+        <text x="50" y="200" font-size="12">• Behavioral Analytics</text>
+        <text x="50" y="220" font-size="12">• Correlation Engines</text>
+        
+        <!-- Enrichment -->
+        <text x="30" y="250" font-size="12" font-weight="600">Threat Intelligence:</text>
+        <text x="50" y="270" font-size="12">• IOC Matching</text>
+    </g>
+    
+    <!-- Security Operations -->
+    <g id="security-operations" transform="translate(875, 280)">
+        <rect width="250" height="240" rx="4" fill="white" stroke="#d13438" stroke-width="2"></rect>
+        <text x="125" y="30" text-anchor="middle" font-weight="600">Security Operations</text>
+        
+        <!-- Detection -->
+        <text x="30" y="70" font-size="12" font-weight="600">Detection:</text>
+        <text x="50" y="90" font-size="12">• Alert Triage</text>
+        <text x="50" y="110" font-size="12">• Incident Creation</text>
+        
+        <!-- Investigation -->
+        <text x="30" y="140" font-size="12" font-weight="600">Investigation:</text>
+        <text x="50" y="160" font-size="12">• Forensic Analysis</text>
+        <text x="50" y="180" font-size="12">• Impact Assessment</text>
+        
+        <!-- Response -->
+        <text x="30" y="210" font-size="12" font-weight="600">Response:</text>
+        <text x="50" y="230" font-size="12">• Containment Actions</text>
+        <text x="50" y="250" font-size="12">• Remediation Steps</text>
+        <text x="50" y="270" font-size="12">• Improvement Feedback</text>
+    </g>
+    
+    <!-- Feedback Loop -->
+    <path d="M950,150 C1050,50 1050,-50 600,-50 C150,-50 150,50 250,150" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#security-arrow)"></path>
+    <text x="600" y="-20" class="security-label" font-weight="600">Continuous Improvement Feedback Loop</text>
+    
+    <!-- Legend -->
+    <g id="legend" transform="translate(100, 540)">
+        <rect width="1000" height="40" rx="4" fill="white" stroke="#666666"></rect>
+        
+        <!-- Data Flow -->
+        <line x1="50" y1="20" x2="90" y2="20" stroke="#0078d7" stroke-width="2" marker-end="url(#arrow)"></line>
+        <text x="120" y="25">Operational Data Flow</text>
+        
+        <!-- Security Feedback -->
+        <line x1="300" y1="20" x2="340" y2="20" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#security-arrow)"></line>
+        <text x="370" y="25">Security Feedback</text>
+        
+        <!-- Components -->
+        <rect x="520" y="10" width="20" height="20" rx="4" fill="#0078d4"></rect>
+        <text x="550" y="25">System Source</text>
+        
+        <rect x="680" y="10" width="20" height="20" rx="4" fill="#68217a"></rect>
+        <text x="710" y="25">Integration</text>
+        
+        <rect x="820" y="10" width="20" height="20" rx="4" fill="#004e8c"></rect>
+        <text x="850" y="25">Analytics</text>
+        
+        <rect x="940" y="10" width="20" height="20" rx="4" fill="#d13438"></rect>
+        <text x="970" y="25">Security Ops</text>
+    </g>
+</svg>

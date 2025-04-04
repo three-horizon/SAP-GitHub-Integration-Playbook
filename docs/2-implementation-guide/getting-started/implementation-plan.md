@@ -134,7 +134,7 @@ The implementation is divided into ten key phases, designed to be executed seque
 2. **Repository Configuration (Week 1)**
    - [ ] Create initial repositories for SAP code
    - [ ] Configure branch protection rules
-   - [ ] Set up required labels and issue templates
+   - [ ] Set up required labels
    - [ ] Document repository structure and naming conventions
 
 3. **Authentication Setup (Week 1-2)**

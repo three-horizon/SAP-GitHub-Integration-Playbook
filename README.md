@@ -42,7 +42,7 @@ SAP-GitHub-Integration-Playbook/
 
 ## Documentation Standards
 
-All documentation in this repository follows [Markdown best practices](./docs/documentation-standards.md) to ensure consistency and readability.
+All documentation in this repository follows [Markdown best practices](./docs/1-architecture/standards/documentation-standards.md) to ensure consistency and readability.
 
 ## Getting Started
 
@@ -75,7 +75,7 @@ To enable GitHub Pages for this repository:
 3. Under "Source", select "GitHub Actions"
 4. The GitHub Pages workflow will build and deploy the site
 
-For detailed instructions, see [GitHub Pages Setup Guide](./docs/github-pages-setup.md).
+For detailed instructions, see [GitHub Pages Setup Guide](./docs/6-appendices/jekyll-setup/github-pages-setup.md).
 
 ## License
 

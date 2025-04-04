@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SAP-GitHub Integration Playbook - Color Palette</title>
+    <desc>Official color palette for diagrams and visual elements</desc>
+    <defs>
+        <rect id="rect-template" width="100" height="80" rx="4"></rect>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&amp;display=swap');
+            text {
+                font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                fill: #333333;
+            }
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .subtitle {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .label {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+            .hex-value {
+                font-size: 12px;
+                text-anchor: middle;
+                fill: #666666;
+            }
+        </style>
+    </defs>
+    <g id="background" fill="#f5f5f5">
+        <rect width="800" height="600" rx="0"></rect>
+    </g>
+    
+    <!-- Title -->
+    <text x="400" y="50" class="title" text-anchor="middle">SAP-GitHub Integration Playbook - Color Palette</text>
+    
+    <!-- Primary Colors -->
+    <text x="400" y="100" class="subtitle" text-anchor="middle">Primary Component Colors</text>
+    
+    <!-- SAP Color -->
+    <g transform="translate(100, 150)">
+        <use href="#rect-template" fill="#0070f2"></use>
+        <text x="50" y="45" class="label" fill="white">SAP Components</text>
+        <text x="50" y="65" class="hex-value" fill="white">#0070f2</text>
+    </g>
+    
+    <!-- GitHub Color -->
+    <g transform="translate(220, 150)">
+        <use href="#rect-template" fill="#6e5494"></use>
+        <text x="50" y="45" class="label" fill="white">GitHub Components</text>
+        <text x="50" y="65" class="hex-value" fill="white">#6e5494</text>
+    </g>
+    
+    <!-- Azure Color -->
+    <g transform="translate(340, 150)">
+        <use href="#rect-template" fill="#0078d4"></use>
+        <text x="50" y="45" class="label" fill="white">Azure Components</text>
+        <text x="50" y="65" class="hex-value" fill="white">#0078d4</text>
+    </g>
+    
+    <!-- Security Color -->
+    <g transform="translate(460, 150)">
+        <use href="#rect-template" fill="#d13438"></use>
+        <text x="50" y="45" class="label" fill="white">Security Components</text>
+        <text x="50" y="65" class="hex-value" fill="white">#d13438</text>
+    </g>
+    
+    <!-- Integration Color -->
+    <g transform="translate(580, 150)">
+        <use href="#rect-template" fill="#107c10"></use>
+        <text x="50" y="45" class="label" fill="white">Integration Components</text>
+        <text x="50" y="65" class="hex-value" fill="white">#107c10</text>
+    </g>
+    
+    <!-- Supporting Colors -->
+    <text x="400" y="280" class="subtitle" text-anchor="middle">Supporting Colors</text>
+    
+    <!-- Background Color -->
+    <g transform="translate(100, 330)">
+        <use href="#rect-template" fill="#f5f5f5" stroke="#666666"></use>
+        <text x="50" y="45" class="label">Background</text>
+        <text x="50" y="65" class="hex-value">#f5f5f5</text>
+    </g>
+    
+    <!-- Border Color -->
+    <g transform="translate(220, 330)">
+        <use href="#rect-template" fill="white" stroke="#666666" stroke-width="2"></use>
+        <text x="50" y="45" class="label">Borders</text>
+        <text x="50" y="65" class="hex-value">#666666</text>
+    </g>
+    
+    <!-- Text Color -->
+    <g transform="translate(340, 330)">
+        <use href="#rect-template" fill="white" stroke="#666666"></use>
+        <text x="50" y="45" class="label">Text</text>
+        <text x="50" y="65" class="hex-value">#333333</text>
+    </g>
+    
+    <!-- Flow Arrows Color -->
+    <g transform="translate(460, 330)">
+        <use href="#rect-template" fill="#0078d7"></use>
+        <text x="50" y="45" class="label" fill="white">Flow Arrows</text>
+        <text x="50" y="65" class="hex-value" fill="white">#0078d7</text>
+    </g>
+    
+    <!-- Highlight Color -->
+    <g transform="translate(580, 330)">
+        <use href="#rect-template" fill="#ffb900"></use>
+        <text x="50" y="45" class="label">Highlight</text>
+        <text x="50" y="65" class="hex-value">#ffb900</text>
+    </g>
+    
+    <!-- Specialized Colors -->
+    <text x="400" y="460" class="subtitle" text-anchor="middle">Specialized Component Colors</text>
+    
+    <!-- Sentinel Color -->
+    <g transform="translate(160, 510)">
+        <use href="#rect-template" fill="#004e8c"></use>
+        <text x="50" y="45" class="label" fill="white">Microsoft Sentinel</text>
+        <text x="50" y="65" class="hex-value" fill="white">#004e8c</text>
+    </g>
+    
+    <!-- Key Vault Color -->
+    <g transform="translate(280, 510)">
+        <use href="#rect-template" fill="#ffb900"></use>
+        <text x="50" y="45" class="label">Azure Key Vault</text>
+        <text x="50" y="65" class="hex-value">#ffb900</text>
+    </g>
+    
+    <!-- abapGit Color -->
+    <g transform="translate(400, 510)">
+        <use href="#rect-template" fill="#5d1038"></use>
+        <text x="50" y="45" class="label" fill="white">abapGit</text>
+        <text x="50" y="65" class="hex-value" fill="white">#5d1038</text>
+    </g>
+    
+    <!-- API Management Color -->
+    <g transform="translate(520, 510)">
+        <use href="#rect-template" fill="#68217a"></use>
+        <text x="50" y="45" class="label" fill="white">API Management</text>
+        <text x="50" y="65" class="hex-value" fill="white">#68217a</text>
+    </g>
+</svg>

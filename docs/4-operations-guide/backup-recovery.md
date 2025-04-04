@@ -121,10 +121,9 @@ This document provides comprehensive guidance for backing up and recovering the 
    - Back up workflow definitions
    - Implementation steps:
      ```
-     1. Use GitHub API to export repository settings
+     1. Use GitHub's migration API
      2. Document organization settings manually
      3. Store workflow YAML files separately
-     4. Export issue templates and documentation
      ```
 
 3. **GitHub Action Secrets Backup**:

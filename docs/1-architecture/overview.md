@@ -4,7 +4,7 @@ This document provides a comprehensive overview of the SAP-GitHub integration ar
 
 ## High-Level Architecture
 
-![SAP-GitHub Integration Architecture](../../assets/images/architecture/Playbook-Architecture-Diagram.png)
+![SAP-GitHub Integration Architecture](../../assets/images/architecture/high-level-architecture.svg)
 
 The architecture above illustrates the end-to-end integration between SAP systems and GitHub Enterprise, with Microsoft services providing secure middleware and comprehensive security monitoring.
 
@@ -33,13 +33,7 @@ The architecture above illustrates the end-to-end integration between SAP system
 
 ### 1. SAP to GitHub Flow (Code Synchronization)
 
-```
-┌────────────┐    ┌─────────┐    ┌───────────────┐    ┌─────────┐    ┌──────────────┐
-│ SAP        │    │         │    │ Microsoft     │    │         │    │ GitHub       │
-│ Developer  ├───►│ abapGit ├───►│ API           ├───►│ GitHub  ├───►│ Repository   │
-│            │    │         │    │ Management    │    │ API     │    │              │
-└────────────┘    └─────────┘    └───────────────┘    └─────────┘    └──────────────┘
-```
+![SAP to GitHub Code Synchronization Flow](../../assets/images/flows/sap-to-github-flow.svg)
 
 1. Developer creates or modifies ABAP objects in SAP
 2. abapGit serializes ABAP objects to XML format
@@ -50,13 +44,7 @@ The architecture above illustrates the end-to-end integration between SAP system
 
 ### 2. GitHub to SAP Flow (Deployment)
 
-```
-┌──────────────┐    ┌──────────────┐    ┌───────────────┐    ┌─────────┐    ┌──────────┐
-│ GitHub       │    │ GitHub       │    │ Microsoft     │    │ SAP     │    │ SAP      │
-│ Pull Request ├───►│ Actions      ├───►│ API           ├───►│ API     ├───►│ Systems  │
-│              │    │              │    │ Management    │    │ Service │    │          │
-└──────────────┘    └──────────────┘    └───────────────┘    └─────────┘    └──────────┘
-```
+![GitHub to SAP Deployment Flow](../../assets/images/flows/github-to-sap-flow.svg)
 
 1. Developer creates a pull request in GitHub
 2. GitHub Actions workflow is triggered
@@ -68,13 +56,7 @@ The architecture above illustrates the end-to-end integration between SAP system
 
 ### 3. Security Monitoring Flow
 
-```
-┌─────────────┐    ┌──────────────┐    ┌───────────────┐    ┌─────────────┐
-│ SAP and     │    │ API          │    │ Microsoft     │    │ Security    │
-│ GitHub      ├───►│ Management   ├───►│ Sentinel      ├───►│ Operations  │
-│ Activities  │    │ Logs         │    │               │    │             │
-└─────────────┘    └──────────────┘    └───────────────┘    └─────────────┘
-```
+![Security Monitoring Flow](../../assets/images/flows/security-monitoring-flow.svg)
 
 1. Activities occur in SAP systems and GitHub
 2. API Management logs all traffic and integration activities
@@ -213,7 +195,7 @@ For more detailed information on the integration architecture, please refer to:
 ---
 
 **Document Metadata:**
-- Last Updated: 2023-09-01
+- Last Updated: 2025-04-04
 - Contributors: Architecture Team
-- Version: 1.1.0
+- Version: 1.2.0
 - Status: Published

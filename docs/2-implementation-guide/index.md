@@ -34,6 +34,15 @@ The [API Management Setup](./apim-setup/index.md) guides cover the configuration
 - Routing Rules
 - Monitoring and Analytics
 
+### DevSecOps and CI/CD Lifecycle
+
+The [DevSecOps](./devsecops/cicd-lifecycle.md) guide covers the integrated development, security, and operations approach:
+
+- Complete DevSecOps lifecycle explanation
+- CI/CD components and integration points
+- Security integration throughout the lifecycle
+- Best practices for implementation
+
 ### Security Setup
 
 The [Security Setup](./security-setup/index.md) guides cover all security aspects of the integration:
@@ -58,11 +67,12 @@ The [Workflows](./workflows/index.md) section covers automated workflows:
 For a successful implementation, follow this recommended sequence:
 
 1. Complete the [Prerequisites](../getting-started/prerequisites.md)
-2. Configure your SAP environment using the [SAP Setup](./sap-setup/index.md) guides
-3. Set up GitHub Enterprise using the [GitHub Setup](./github-setup/index.md) guides
-4. Configure API Management using the [APIM Setup](./apim-setup/index.md) guides
-5. Implement security controls with the [Security Setup](./security-setup/index.md) guides
-6. Set up automated workflows using the [Workflows](./workflows/index.md) guides
+2. Review the [DevSecOps Lifecycle](./devsecops/cicd-lifecycle.md) to understand the complete process
+3. Configure your SAP environment using the [SAP Setup](./sap-setup/index.md) guides
+4. Set up GitHub Enterprise using the [GitHub Setup](./github-setup/index.md) guides
+5. Configure API Management using the [APIM Setup](./apim-setup/index.md) guides
+6. Implement security controls with the [Security Setup](./security-setup/index.md) guides
+7. Set up automated workflows using the [Workflows](./workflows/index.md) guides
 
 ## Implementation Validation
 

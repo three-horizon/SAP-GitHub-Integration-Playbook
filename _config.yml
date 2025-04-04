@@ -2,8 +2,11 @@ theme: jekyll-theme-cayman
 title: SAP-GitHub Integration Playbook
 description: A comprehensive guide for SAP and GitHub Enterprise integration
 show_downloads: true
+baseurl: /SAP-GitHub-Integration-Playbook
 plugins:
   - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-titles-from-headings
 relative_links:
   enabled: true
   collections: true
@@ -11,6 +14,8 @@ include:
   - CONTRIBUTING.md
   - README.md
   - LICENSE
+  - assets/images/**/*
+  - _includes/**/*
 
 # Liquid configuration to prevent parsing errors with GitHub Actions syntax
 liquid:
@@ -22,4 +27,18 @@ liquid:
 github:
   is_project_page: true
   repository_url: https://github.com/three-horizon/SAP-GitHub-Integration-Playbook
-  repository_name: SAP-GitHub-Integration-Playbook 
+  repository_name: SAP-GitHub-Integration-Playbook
+
+# Add defaults for all pages
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      search_exclude: false
+
+titles_from_headings:
+  enabled: true
+  strip_title: true
+  collections: true 

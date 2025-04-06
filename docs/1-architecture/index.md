@@ -19,6 +19,31 @@ The SAP-GitHub integration architecture consists of the following key components
 4. **Security Components** - Authentication and authorization mechanisms
 5. **Monitoring Systems** - Tools to track integration health and performance
 
+## Key Architecture Documentation
+
+### Overview and Reference Architecture
+- [System Architecture](./system-architecture.md) - Comprehensive system architecture details
+- [Components](./components.md) - Detailed component descriptions
+- [SAP Components Overview](./sap-components.md) - Overview of SAP technologies covered
+- [Traditional ABAP Architecture](./sap-abap-architecture.md) - Traditional ABAP architecture with/without CHARM
+
+### SAP Technology-Specific Architectures
+- [SAP CRM Architecture](./crm-architecture.md) - SAP CRM integration architecture
+- [SAP BTP Architecture](./btp-architecture.md) - SAP BTP integration patterns
+- [Fiori/UI5 Architecture](./fiori-ui5-architecture.md) - Fiori/UI5 architecture
+- [SAP HANA Architecture](./hana-architecture.md) - SAP HANA (XS Classic/Advanced) architecture
+
+### Integration Architecture
+- [Integration Architecture](./integration-architecture.md) - Integration architecture between SAP and GitHub
+- [MCP Integration](./mcp-integration.md) - Model Context Protocol integration details
+- [Context Store](./context-store.md) - Context preservation across systems
+- [API Extension Framework](./api-extension-framework.md) - API and extension points
+
+### Governance and Operational Architecture
+- [Enterprise Governance Model](./governance-model.md) - Governance framework for SAP-GitHub integration
+- [Disaster Recovery Architecture](./disaster-recovery-architecture.md) - DR and business continuity
+- [Standards](./standards/) - Architecture and implementation standards
+
 ## Integration Patterns
 
 ### Pattern 1: Direct Integration via abapGit
@@ -29,7 +54,7 @@ This pattern uses abapGit to directly connect SAP ABAP systems to GitHub reposit
 
 ### Pattern 2: API-Mediated Integration
 
-This pattern uses SAP API Management to broker communications between SAP systems and GitHub.
+This pattern uses API Management to broker communications between SAP systems and GitHub.
 
 ### Pattern 3: Event-Driven Integration
 

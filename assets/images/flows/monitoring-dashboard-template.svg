@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and Header -->
+  <rect width="900" height="700" fill="#F5F5F5" />
+  
+  <!-- Dashboard Header -->
+  <rect width="900" height="60" fill="#263238" />
+  <text x="30" y="38" font-family="Arial" font-size="20" fill="white" font-weight="bold">SAP-GitHub Integration Monitoring Dashboard</text>
+  
+  <!-- Dashboard Controls -->
+  <rect x="650" y="15" width="80" height="30" rx="5" ry="5" fill="#37474F" />
+  <text x="690" y="35" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Refresh</text>
+  
+  <rect x="750" y="15" width="120" height="30" rx="5" ry="5" fill="#37474F" />
+  <text x="810" y="35" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Last 24 Hours ▼</text>
+  
+  <!-- Top Row KPIs -->
+  <rect x="20" y="80" width="206" height="100" rx="5" ry="5" fill="white" stroke="#E0E0E0" stroke-width="1" />
+  <text x="30" y="100" font-family="Arial" font-size="14" fill="#546E7A">Total Integrations</text>
+  <text x="123" y="145" font-family="Arial" font-size="36" fill="#1976D2" font-weight="bold" text-anchor="middle">134</text>
+  <text x="123" y="170" font-family="Arial" font-size="12" fill="#4CAF50" font-weight="bold" text-anchor="middle">↑ 12%</text>
+  
+  <rect x="238" y="80" width="206" height="100" rx="5" ry="5" fill="white" stroke="#E0E0E0" stroke-width="1" />
+  <text x="248" y="100" font-family="Arial" font-size="14" fill="#546E7A">Success Rate</text>
+  <text x="341" y="145" font-family="Arial" font-size="36" fill="#43A047" font-weight="bold" text-anchor="middle">96.2%</text>
+  <text x="341" y="170" font-family="Arial" font-size="12" fill="#4CAF50" font-weight="bold" text-anchor="middle">↑ 3.5%</text>
+  
+  <rect x="456" y="80" width="206" height="100" rx="5" ry="5" fill="white" stroke="#E0E0E0" stroke-width="1" />
+  <text x="466" y="100" font-family="Arial" font-size="14" fill="#546E7A">Failed Integrations</text>
+  <text x="559" y="145" font-family="Arial" font-size="36" fill="#E53935" font-weight="bold" text-anchor="middle">5</text>
+  <text x="559" y="170" font-family="Arial" font-size="12" fill="#4CAF50" font-weight="bold" text-anchor="middle">↓ 25%</text>
+  
+  <rect x="674" y="80" width="206" height="100" rx="5" ry="5" fill="white" stroke="#E0E0E0" stroke-width="1" />
+  <text x="684" y="100" font-family="Arial" font-size="14" fill="#546E7A">Avg. Response Time</text>
+  <text x="777" y="145" font-family="Arial" font-size="36" fill="#FB8C00" font-weight="bold" text-anchor="middle">1.2s</text>
+  <text x="777" y="170" font-family="Arial" font-size="12" fill="#4CAF50" font-weight="bold" text-anchor="middle">↓ 8%</text>
+  
+  <!-- Middle Row - SAP System Integration Status -->
+  <rect x="20" y="200" width="430" height="230" rx="5" ry="5" fill="white" stroke="#E0E0E0" stroke-width="1" />
+  <text x="30" y="225" font-family="Arial" font-size="16" fill="#263238" font-weight="bold">SAP System Integration Status</text>
+  
+  <!-- Status Table -->
+  <rect x="30" y="240" width="410" height="30" fill="#ECEFF1" />
+  <text x="45" y="260" font-family="Arial" font-size="12" fill="#546E7A" font-weight="bold">System</text>
+  <text x="175" y="260" font-family="Arial" font-size="12" fill="#546E7A" font-weight="bold">Status</text>
+  <text x="275" y="260" font-family="Arial" font-size="12" fill="#546E7A" font-weight="bold">Last Sync</text>
+  <text x="375" y="260" font-family="Arial" font-size="12" fill="#546E7A" font-weight="bold">Health</text>
+  
+  <!-- Status Table Row 1 -->
+  <rect x="30" y="270" width="410" height="30" fill="white" stroke="#ECEFF1" stroke-width="1" />
+  <text x="45" y="290" font-family="Arial" font-size="12" fill="#263238">DEV</text>
+  <circle cx="175" cy="285" r="8" fill="#4CAF50" />
+  <text x="195" y="290" font-family="Arial" font-size="12" fill="#263238">Connected</text>
+  <text x="275" y="290" font-family="Arial" font-size="12" fill="#263238">5 min ago</text>
+  <rect x="345" y="278" width="50" height="15" rx="7" ry="7" fill="#4CAF50" />
+  <text x="370" y="290" font-family="Arial" font-size="10" fill="white" text-anchor="middle">100%</text>
+  
+  <!-- Status Table Row 2 -->
+  <rect x="30" y="300" width="410" height="30" fill="white" stroke="#ECEFF1" stroke-width="1" />
+  <text x="45" y="320" font-family="Arial" font-size="12" fill="#263238">QAS</text>
+  <circle cx="175" cy="315" r="8" fill="#4CAF50" />
+  <text x="195" y="320" font-family="Arial" font-size="12" fill="#263238">Connected</text>
+  <text x="275" y="320" font-family="Arial" font-size="12" fill="#263238">15 min ago</text>
+  <rect x="345" y="308" width="50" height="15" rx="7" ry="7" fill="#4CAF50" />
+  <text x="370" y="320" font-family="Arial" font-size="10" fill="white" text-anchor="middle">98%</text>
+  
+  <!-- Status Table Row 3 -->
+  <rect x="30" y="330" width="410" height="30" fill="white" stroke="#ECEFF1" stroke-width="1" />
+  <text x="45" y="350" font-family="Arial" font-size="12" fill="#263238">PRD</text>
+  <circle cx="175" cy="345" r="8" fill="#4CAF50" />
+  <text x="195" y="350" font-family="Arial" font-size="12" fill="#263238">Connected</text>
+  <text x="275" y="350" font-family="Arial" font-size="12" fill="#263238">20 min ago</text>
+  <rect x="345" y="338" width="50" height="15" rx="7" ry="7" fill="#4CAF50" />
+  <text x="370" y="350" font-family="Arial" font-size="10" fill="white" text-anchor="middle">100%</text>
+  
+  <!-- Status Table Row 4 -->
+  <rect x="30" y="360" width="410" height="30" fill="white" stroke="#ECEFF1" stroke-width="1" />
+  <text x="45" y="380" font-family="Arial" font-size="12" fill="#263238">SBX</text>
+  <circle cx="175" cy="375" r="8" fill="#FFC107" />
+  <text x="195" y="380" font-family="Arial" font-size="12" fill="#263238">Degraded</text>
+  <text x="275" y="380" font-family="Arial" font-size="12" fill="#263238">1h 5m ago</text>
+  <rect x="345" y="368" width="50" height="15" rx="7" ry="7" fill="#FFC107" />
+  <text x="370" y="380" font-family="Arial" font-size="10" fill="white" text-anchor="middle">76%</text>
+  
+  <!-- GitHub Integration Status -->
+  <rect x="460" y="200" width="420" height="230" rx="5" ry="5" fill="white" stroke="#E0E0E0" stroke-width="1" />
+  <text x="470" y="225" font-family="Arial" font-size="16" fill="#263238" font-weight="bold">GitHub Integration Status</text>
+  
+  <!-- GitHub Integration Chart (simplified representation) -->
+  <rect x="480" y="240" width="380" height="170" fill="#ECEFF1" stroke="#CFD8DC" stroke-width="1" />
+  
+  <!-- Chart X and Y axes -->
+  <line x1="480" y1="410" x2="860" y2="410" stroke="#90A4AE" stroke-width="1" />
+  <line x1="480" y1="240" x2="480" y2="410" stroke="#90A4AE" stroke-width="1" />
+  
+  <!-- X-axis labels -->
+  <text x="500" y="425" font-family="Arial" font-size="10" fill="#546E7A" text-anchor="middle">00:00</text>
+  <text x="580" y="425" font-family="Arial" font-size="10" fill="#546E7A" text-anchor="middle">06:00</text>
+  <text x="660" y="425" font-family="Arial" font-size="10" fill="#546E7A" text-anchor="middle">12:00</text>
+  <text x="740" y="425" font-family="Arial" font-size="10" fill="#546E7A" text-anchor="middle">18:00</text>
+  <text x="820" y="425" font-family="Arial" font-size="10" fill="#546E7A" text-anchor="middle">00:00</text>
+  
+  <!-- Y-axis labels -->
+  <text x="470" y="410" font-family="Arial" font-size="10" fill="#546E7A" text-anchor="end">0</text>
+  <text x="470" y="360" font-family="Arial" font-size="10" fill="#546E7A" text-anchor="end">10</text>
+  <text x="470" y="310" font-family="Arial" font-size="10" fill="#546E7A" text-anchor="end">20</text>
+  <text x="470" y="260" font-family="Arial" font-size="10" fill="#546E7A" text-anchor="end">30</text>
+  
+  <!-- Chart Data - Blue Line (Successful Integrations) -->
+  <polyline points="480,380 520,350 560,370 600,320 640,340 680,300 720,280 760,330 800,310 840,290" 
+            fill="none" stroke="#2196F3" stroke-width="2" />
+            
+  <!-- Chart Data - Red Line (Failed Integrations) -->
+  <polyline points="480,405 520,395 560,400 600,390 640,395 680,400 720,395 760,405 800,400 840,395" 
+            fill="none" stroke="#F44336" stroke-width="2" />
+            
+  <!-- Chart Legend -->
+  <rect x="600" y="250" width="12" height="12" fill="#2196F3" />
+  <text x="620" y="260" font-family="Arial" font-size="10" fill="#263238">Successful</text>
+  
+  <rect x="700" y="250" width="12" height="12" fill="#F44336" />
+  <text x="720" y="260" font-family="Arial" font-size="10" fill="#263238">Failed</text>
+  
+  <!-- Bottom Row - Recent Activities and Alerts -->
+  <rect x="20" y="450" width="540" height="230" rx="5" ry="5" fill="white" stroke="#E0E0E0" stroke-width="1" />
+  <text x="30" y="475" font-family="Arial" font-size="16" fill="#263238" font-weight="bold">Recent Integration Activities</text>
+  
+  <!-- Activity List -->
+  <rect x="30" y="490" width="520" height="30" fill="#ECEFF1" />
+  <text x="45" y="510" font-family="Arial" font-size="12" fill="#546E7A" font-weight="bold">Time</text>
+  <text x="125" y="510" font-family="Arial" font-size="12" fill="#546E7A" font-weight="bold">System</text>
+  <text x="200" y="510" font-family="Arial" font-size="12" fill="#546E7A" font-weight="bold">Activity</text>
+  <text x="400" y="510" font-family="Arial" font-size="12" fill="#546E7A" font-weight="bold">Status</text>
+  
+  <!-- Activity Item 1 -->
+  <rect x="30" y="520" width="520" height="30" fill="white" stroke="#ECEFF1" stroke-width="1" />
+  <text x="45" y="540" font-family="Arial" font-size="12" fill="#263238">09:45:22</text>
+  <text x="125" y="540" font-family="Arial" font-size="12" fill="#263238">DEV</text>
+  <text x="200" y="540" font-family="Arial" font-size="12" fill="#263238">Code push from SAP to GitHub</text>
+  <rect x="400" y="528" width="80" height="15" rx="7" ry="7" fill="#4CAF50" />
+  <text x="440" y="540" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Success</text>
+  
+  <!-- Activity Item 2 -->
+  <rect x="30" y="550" width="520" height="30" fill="white" stroke="#ECEFF1" stroke-width="1" />
+  <text x="45" y="570" font-family="Arial" font-size="12" fill="#263238">09:32:15</text>
+  <text x="125" y="570" font-family="Arial" font-size="12" fill="#263238">QAS</text>
+  <text x="200" y="570" font-family="Arial" font-size="12" fill="#263238">Pull request merged to main</text>
+  <rect x="400" y="558" width="80" height="15" rx="7" ry="7" fill="#4CAF50" />
+  <text x="440" y="570" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Success</text>
+  
+  <!-- Activity Item 3 -->
+  <rect x="30" y="580" width="520" height="30" fill="white" stroke="#ECEFF1" stroke-width="1" />
+  <text x="45" y="600" font-family="Arial" font-size="12" fill="#263238">09:15:38</text>
+  <text x="125" y="600" font-family="Arial" font-size="12" fill="#263238">DEV</text>
+  <text x="200" y="600" font-family="Arial" font-size="12" fill="#263238">CI pipeline triggered</text>
+  <rect x="400" y="588" width="80" height="15" rx="7" ry="7" fill="#4CAF50" />
+  <text x="440" y="600" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Success</text>
+  
+  <!-- Activity Item 4 -->
+  <rect x="30" y="610" width="520" height="30" fill="white" stroke="#ECEFF1" stroke-width="1" />
+  <text x="45" y="630" font-family="Arial" font-size="12" fill="#263238">08:55:04</text>
+  <text x="125" y="630" font-family="Arial" font-size="12" fill="#263238">SBX</text>
+  <text x="200" y="630" font-family="Arial" font-size="12" fill="#263238">Transport created in SAP</text>
+  <rect x="400" y="618" width="80" height="15" rx="7" ry="7" fill="#F44336" />
+  <text x="440" y="630" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Failed</text>
+  
+  <!-- System Alerts Panel -->
+  <rect x="580" y="450" width="300" height="230" rx="5" ry="5" fill="white" stroke="#E0E0E0" stroke-width="1" />
+  <text x="590" y="475" font-family="Arial" font-size="16" fill="#263238" font-weight="bold">System Alerts</text>
+  
+  <!-- Alert Item 1 -->
+  <rect x="590" y="490" width="280" height="60" rx="5" ry="5" fill="#FFEBEE" stroke="#FFCDD2" stroke-width="1" />
+  <circle cx="610" cy="510" r="10" fill="#F44336" />
+  <text x="610" y="513" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">!</text>
+  <text x="630" y="505" font-family="Arial" font-size="14" fill="#D32F2F" font-weight="bold">Sandbox Connectivity Issue</text>
+  <text x="630" y="525" font-family="Arial" font-size="12" fill="#263238">Network latency affecting SBX system</text>
+  <text x="630" y="540" font-family="Arial" font-size="10" fill="#757575">Detected 1 hour ago</text>
+  
+  <!-- Alert Item 2 -->
+  <rect x="590" y="560" width="280" height="60" rx="5" ry="5" fill="#FFF8E1" stroke="#FFECB3" stroke-width="1" />
+  <circle cx="610" cy="580" r="10" fill="#FFC107" />
+  <text x="610" y="584" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">!</text>
+  <text x="630" y="575" font-family="Arial" font-size="14" fill="#F57F17" font-weight="bold">GitHub Rate Limit Warning</text>
+  <text x="630" y="595" font-family="Arial" font-size="12" fill="#263238">API rate limit at 75% of threshold</text>
+  <text x="630" y="610" font-family="Arial" font-size="10" fill="#757575">Detected 30 minutes ago</text>
+  
+  <!-- Alert Item 3 -->
+  <rect x="590" y="630" width="280" height="40" rx="5" ry="5" fill="#E8F5E9" stroke="#C8E6C9" stroke-width="1" />
+  <circle cx="610" cy="650" r="10" fill="#4CAF50" />
+  <text x="610" y="654" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">✓</text>
+  <text x="630" y="645" font-family="Arial" font-size="14" fill="#2E7D32" font-weight="bold">All Systems Operational</text>
+  <text x="630" y="660" font-family="Arial" font-size="10" fill="#757575">Updated 5 minutes ago</text>
+</svg> 

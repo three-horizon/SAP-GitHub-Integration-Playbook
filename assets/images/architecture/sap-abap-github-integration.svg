@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and Title -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">SAP ABAP - GitHub Integration Architecture</text>
+  
+  <!-- SAP System (Blue) -->
+  <rect x="100" y="120" width="200" height="350" rx="10" ry="10" fill="#4285F4" fill-opacity="0.2" stroke="#4285F4" stroke-width="2" />
+  <text x="200" y="150" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">SAP ABAP System</text>
+  
+  <!-- GitHub (Green) -->
+  <rect x="500" y="120" width="200" height="350" rx="10" ry="10" fill="#34A853" fill-opacity="0.2" stroke="#34A853" stroke-width="2" />
+  <text x="600" y="150" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">GitHub</text>
+  
+  <!-- SAP Components -->
+  <rect x="120" y="180" width="160" height="60" rx="5" ry="5" fill="#4285F4" fill-opacity="0.7" stroke="#4285F4" stroke-width="1" />
+  <text x="200" y="215" font-family="Arial" font-size="14" text-anchor="middle" fill="white">ABAP Development</text>
+  
+  <rect x="120" y="260" width="160" height="60" rx="5" ry="5" fill="#4285F4" fill-opacity="0.7" stroke="#4285F4" stroke-width="1" />
+  <text x="200" y="295" font-family="Arial" font-size="14" text-anchor="middle" fill="white">abapGit Client</text>
+  
+  <rect x="120" y="340" width="160" height="60" rx="5" ry="5" fill="#4285F4" fill-opacity="0.7" stroke="#4285F4" stroke-width="1" />
+  <text x="200" y="375" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Transport Management</text>
+  
+  <rect x="120" y="420" width="160" height="30" rx="5" ry="5" fill="#4285F4" fill-opacity="0.5" stroke="#4285F4" stroke-width="1" />
+  <text x="200" y="440" font-family="Arial" font-size="12" text-anchor="middle" fill="white">SAP Gateway</text>
+  
+  <!-- GitHub Components -->
+  <rect x="520" y="180" width="160" height="60" rx="5" ry="5" fill="#34A853" fill-opacity="0.7" stroke="#34A853" stroke-width="1" />
+  <text x="600" y="215" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Git Repositories</text>
+  
+  <rect x="520" y="260" width="160" height="60" rx="5" ry="5" fill="#34A853" fill-opacity="0.7" stroke="#34A853" stroke-width="1" />
+  <text x="600" y="295" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Pull Requests</text>
+  
+  <rect x="520" y="340" width="160" height="60" rx="5" ry="5" fill="#34A853" fill-opacity="0.7" stroke="#34A853" stroke-width="1" />
+  <text x="600" y="360" font-family="Arial" font-size="14" text-anchor="middle" fill="white">GitHub Actions</text>
+  <text x="600" y="380" font-family="Arial" font-size="12" text-anchor="middle" fill="white">(CI/CD)</text>
+  
+  <rect x="520" y="420" width="160" height="30" rx="5" ry="5" fill="#34A853" fill-opacity="0.5" stroke="#34A853" stroke-width="1" />
+  <text x="600" y="440" font-family="Arial" font-size="12" text-anchor="middle" fill="white">GitHub API</text>
+  
+  <!-- Integration Layer (Purple) -->
+  <rect x="340" y="210" width="120" height="170" rx="10" ry="10" fill="#A142F4" fill-opacity="0.2" stroke="#A142F4" stroke-width="2" />
+  <text x="400" y="230" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Integration</text>
+  
+  <rect x="350" y="250" width="100" height="40" rx="5" ry="5" fill="#A142F4" fill-opacity="0.7" stroke="#A142F4" stroke-width="1" />
+  <text x="400" y="275" font-family="Arial" font-size="12" text-anchor="middle" fill="white">OAuth 2.0</text>
+  
+  <rect x="350" y="310" width="100" height="50" rx="5" ry="5" fill="#A142F4" fill-opacity="0.7" stroke="#A142F4" stroke-width="1" />
+  <text x="400" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="white">API</text>
+  <text x="400" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Gateway</text>
+  
+  <!-- Connection Arrows -->
+  <!-- SAP to Integration -->
+  <line x1="280" y1="290" x2="340" y2="290" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="340,290 335,285 335,295" fill="#666" />
+  
+  <!-- Integration to GitHub -->
+  <line x1="460" y1="290" x2="520" y2="290" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="520,290 515,285 515,295" fill="#666" />
+  
+  <!-- SAP Gateway to API Gateway -->
+  <line x1="280" y1="435" x2="350" y2="360" stroke="#666" stroke-width="2" />
+  <polygon points="350,360 342,362 347,370" fill="#666" />
+  
+  <!-- API Gateway to GitHub API -->
+  <line x1="450" y1="335" x2="520" y2="435" stroke="#666" stroke-width="2" />
+  <polygon points="520,435 515,428 510,435" fill="#666" />
+  
+  <!-- Legend -->
+  <rect x="100" y="500" width="600" height="70" rx="5" ry="5" fill="white" stroke="#ccc" stroke-width="1" />
+  <text x="110" y="520" font-family="Arial" font-size="14" font-weight="bold">Legend:</text>
+  
+  <rect x="110" y="530" width="20" height="20" fill="#4285F4" fill-opacity="0.7" />
+  <text x="140" y="545" font-family="Arial" font-size="12">SAP Components</text>
+  
+  <rect x="250" y="530" width="20" height="20" fill="#34A853" fill-opacity="0.7" />
+  <text x="280" y="545" font-family="Arial" font-size="12">GitHub Components</text>
+  
+  <rect x="420" y="530" width="20" height="20" fill="#A142F4" fill-opacity="0.7" />
+  <text x="450" y="545" font-family="Arial" font-size="12">Integration Components</text>
+  
+  <line x1="550" y1="540" x2="580" y2="540" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="590" y="545" font-family="Arial" font-size="12">Data Flow</text>
+</svg> 

@@ -2,11 +2,11 @@
 
 <div align="center" class="svg-container">
   <!-- Using both object and img as fallback for maximum compatibility -->
-  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
-    <img src="\1" alt="\1" width="700" />
+  <object type="image/svg+xml" data="images/architecture/high-level-architecture.svg" style="width: 700px; max-width: 100%;" aria-label="SAP-GitHub Integration Assets">
+    <img src="images/architecture/high-level-architecture.svg" alt="SAP-GitHub Integration Assets" width="700" />
   </object>
   
-  *\1*
+  *Visual resources and assets for the SAP-GitHub Integration Playbook*
 </div>
 
 ## 📋 Overview
@@ -58,6 +58,8 @@ We welcome contributions to this project! Please see our [Contributing Guide](..
 
 ## ⚡ License
 
-This project is licensed under the [MIT License](../LICENSE) - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
 
-🔄 Last updated: April 2025 | Contribute to this document through [Pull Requests](Pull Requests)
+---
+
+🔄 Last updated: April 2025 | Contribute to this document through [Pull Requests](https://github.com/your-org/sap-github-integration-playbook/pulls)

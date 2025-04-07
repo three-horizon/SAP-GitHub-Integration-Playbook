@@ -91,6 +91,8 @@ We welcome contributions to this project! Please see our [Contributing Guide](..
 
 ## ⚡ License
 
-This project is licensed under the [MIT License](../LICENSE) - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
 
-🔄 Last updated: April 2025 | Contribute to this document through [Pull Requests](Pull Requests)
+---
+
+🔄 Last updated: April 2025 | Contribute to this document through [Pull Requests](https://github.com/your-org/sap-github-integration-playbook/pulls)

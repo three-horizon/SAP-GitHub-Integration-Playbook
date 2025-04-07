@@ -45,7 +45,7 @@ This playbook emphasizes security at every step:
 ## Getting Started
 
 For those new to SAP-GitHub integration:
-- [Executive Overview](./docs/EXECUTIVE-OVERVIEW.md)
+- [Executive Overview](./docs/executive-overview.md)
 - [Implementation Quickstart](./docs/2-implementation-guide/getting-started/quick-start.md)
 - [Prerequisites](./docs/2-implementation-guide/getting-started/prerequisites.md)
 

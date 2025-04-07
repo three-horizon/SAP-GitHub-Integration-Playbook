@@ -64,12 +64,11 @@ The documentation follows a logical structure based on the different stages of u
 
 ## 🚀 Getting Started
 
-If you're new to the SAP-GitHub Integration Playbook, we recommend starting with:
+To get started with the documentation:
 
-1. [Executive Overview](../EXECUTIVE-OVERVIEW.md) - High-level introduction
-2. [Architecture Overview](./1-architecture/overview.md) - System architecture introduction
-3. [Quick Start Guide](./2-implementation-guide/getting-started/quick-start.md) - Fast implementation path
-4. [Prerequisites](./2-implementation-guide/getting-started/prerequisites.md) - Required components and setup
+1. [Executive Overview](./executive-overview.md) - High-level introduction
+2. [Architecture Overview](./1-architecture/README.md) - System design
+3. [Implementation Guide](./2-implementation-guide/README.md) - Step-by-step setup
 
 ## 🖼️ Visual Resources
 

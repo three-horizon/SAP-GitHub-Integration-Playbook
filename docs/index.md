@@ -95,7 +95,7 @@ This documentation is designed to be navigated based on your role and current im
 3. Refer to the role-specific guides ([👨‍💻 Developer]({{ site.baseurl }}/docs/3-developer-guide/) or [🛠️ Operations]({{ site.baseurl }}/docs/4-operations-guide/)) based on your responsibilities
 4. Use the [📚 Reference section]({{ site.baseurl }}/docs/5-reference/) for detailed technical information
 
-### [Executive Overview]({{ site.baseurl }}/docs/EXECUTIVE-OVERVIEW.html)
+### [Executive Overview]({{ site.baseurl }}/docs/executive-overview.html)
 
 For executives and decision-makers, our Executive Overview provides a high-level summary of the business benefits, implementation approach, and strategic considerations for SAP-GitHub integration.
 

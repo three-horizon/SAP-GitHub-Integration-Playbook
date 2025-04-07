@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![Example Implementations](../assets/images/flows/integration-decision-tree.svg)
+  <img src="../assets/images/flows/integration-decision-tree.svg" alt="Example Implementations" width="700">
   
   *Example implementations and templates for SAP-GitHub integration*
 </div>

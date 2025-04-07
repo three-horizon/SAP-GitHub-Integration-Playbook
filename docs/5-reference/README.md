@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![Reference Documentation](../../assets/images/architecture/high-level-architecture.svg)
+  <img src="../../assets/images/architecture/high-level-architecture.svg" alt="Reference Documentation" width="700">
   
   *Technical references and specifications for the SAP-GitHub integration*
 </div>

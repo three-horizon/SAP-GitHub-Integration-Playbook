@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![Appendices Overview](../../assets/images/flows/integration-decision-tree.svg)
+  <img src="../../assets/images/flows/integration-decision-tree.svg" alt="Appendices Overview" width="700">
   
   *Supplementary materials, templates, and resources*
 </div>

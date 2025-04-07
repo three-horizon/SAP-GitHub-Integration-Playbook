@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![abapGit Workflow](../../assets/images/architecture/abapgit-workflow.svg)
+  <img src="../../assets/images/architecture/abapgit-workflow.svg" alt="abapGit Workflow" width="700">
   
   *abapGit configuration and workflow for SAP-GitHub integration*
 </div>

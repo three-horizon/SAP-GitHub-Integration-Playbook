@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![API Management Architecture](../../../assets/images/architecture/api-implementation.svg)
+  <img src="../../../assets/images/architecture/api-implementation.svg" alt="API Management Architecture" width="700">
   
   *API Management configuration for SAP-GitHub integration*
 </div>

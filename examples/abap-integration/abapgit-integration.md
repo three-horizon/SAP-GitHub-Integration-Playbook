@@ -7,7 +7,7 @@ title: ABAP Integration with abapGit
 
 <div align="center">
   
-  ![abapGit Integration](../../assets/images/architecture/abapgit-workflow.svg)
+  <img src="../../assets/images/architecture/abapgit-workflow.svg" alt="abapGit Integration" width="700">
   
   *Complete implementation guide for SAP ABAP integration with GitHub*
 </div>

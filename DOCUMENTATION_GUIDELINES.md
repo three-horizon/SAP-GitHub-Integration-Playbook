@@ -49,7 +49,7 @@ Text description here.
 
 <div align="center">
   
-  ![Diagram Description](../path/to/diagram.svg)
+  <img src="../path/to/diagram.svg" alt="Diagram Description" width="700">
   
   *Caption text here*
 </div>

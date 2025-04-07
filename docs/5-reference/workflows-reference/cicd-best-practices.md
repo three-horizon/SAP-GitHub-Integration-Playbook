@@ -372,7 +372,7 @@ Add workflow status badges to your README:
 ```markdown
 <div align="center">
   
-![SAP CI Pipeline](https://github.com/your-org/repo/actions/workflows/sap-ci.yml/badge.svg)
+<img src="https://github.com/your-org/repo/actions/workflows/sap-ci.yml/badge.svg" alt="SAP CI Pipeline" width="700">
   
   *\1*
 </div>

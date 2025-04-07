@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![Developer Workflow](../../assets/images/flows/github-to-sap-flow.svg)
+  <img src="../../assets/images/flows/github-to-sap-flow.svg" alt="Developer Workflow" width="700">
   
   *Guidelines for developers working with the SAP-GitHub integration*
 </div>

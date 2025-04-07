@@ -18,7 +18,7 @@ This document provides a comprehensive overview of the SAP-GitHub integration ar
 
 <div align="center">
   
-![SAP-GitHub Integration Architecture](../../assets/images/architecture/high-level-architecture.svg)
+<img src="../../assets/images/architecture/high-level-architecture.svg" alt="SAP-GitHub Integration Architecture" width="700">
   
   *\1*
 </div>
@@ -52,7 +52,7 @@ The architecture above illustrates the end-to-end integration between SAP system
 
 <div align="center">
   
-![SAP to GitHub Code Synchronization Flow](../../assets/images/flows/sap-to-github-flow.svg)
+<img src="../../assets/images/flows/sap-to-github-flow.svg" alt="SAP to GitHub Code Synchronization Flow" width="700">
   
   *\1*
 </div>
@@ -68,7 +68,7 @@ The architecture above illustrates the end-to-end integration between SAP system
 
 <div align="center">
   
-![GitHub to SAP Deployment Flow](../../assets/images/flows/github-to-sap-flow.svg)
+<img src="../../assets/images/flows/github-to-sap-flow.svg" alt="GitHub to SAP Deployment Flow" width="700">
   
   *\1*
 </div>
@@ -85,7 +85,7 @@ The architecture above illustrates the end-to-end integration between SAP system
 
 <div align="center">
   
-![Security Monitoring Flow](../../assets/images/flows/security-monitoring-flow.svg)
+<img src="../../assets/images/flows/security-monitoring-flow.svg" alt="Security Monitoring Flow" width="700">
   
   *\1*
 </div>

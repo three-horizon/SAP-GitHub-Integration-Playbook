@@ -7,7 +7,7 @@ title: SAP-GitHub Integration Playbook Documentation
 
 <div align="center">
   
-  ![Integration Overview](../assets/images/architecture/playbook-overview.svg)
+  <img src="../assets/images/architecture/playbook-overview.svg" alt="Integration Overview" width="700">
   
   *Comprehensive guidance for integrating SAP systems with GitHub*
 </div>

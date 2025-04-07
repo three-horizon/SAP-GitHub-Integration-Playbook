@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![Section Overview](../../assets/images/path/to/overview.svg)
+  <img src="../../assets/images/path/to/overview.svg" alt="Section Overview" width="700">
   
   *Replace with a relevant diagram for this section*
 </div>[Placeholder content for approval workflows]

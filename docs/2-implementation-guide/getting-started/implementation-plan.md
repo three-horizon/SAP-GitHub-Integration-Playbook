@@ -28,7 +28,7 @@ The implementation is divided into ten key phases, designed to be executed seque
 
 <div align="center">
   
-![Implementation Phases](../../assets/images/implementation/implementation-phases.svg)
+<img src="../../assets/images/implementation/implementation-phases.svg" alt="Implementation Phases" width="700">
   
   *\1*
 </div>

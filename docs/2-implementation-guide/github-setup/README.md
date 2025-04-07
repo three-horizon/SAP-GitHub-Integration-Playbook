@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![GitHub Setup](../../../assets/images/flows/development-workflow.svg)
+  <img src="../../../assets/images/flows/development-workflow.svg" alt="GitHub Setup" width="700">
   
   *GitHub setup and configuration for SAP integration*
 </div>

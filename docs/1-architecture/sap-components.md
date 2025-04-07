@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![SAP Components](../../assets/images/components/sap-components.svg)
+  <img src="../../assets/images/components/sap-components.svg" alt="SAP Components" width="700">
   
   *Key SAP components for GitHub integration*
 </div>

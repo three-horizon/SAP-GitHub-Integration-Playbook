@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![DevSecOps Cycle](../../../assets/images/devsecops/devsecops-detailed.svg)
+  <img src="../../../assets/images/devsecops/devsecops-detailed.svg" alt="DevSecOps Cycle" width="700">
   
   *DevSecOps implementation for SAP-GitHub integration*
 </div>

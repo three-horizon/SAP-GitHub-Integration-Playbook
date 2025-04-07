@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![Workflow Configuration](../../../assets/images/flows/transport-decision-tree.svg)
+  <img src="../../../assets/images/flows/transport-decision-tree.svg" alt="Workflow Configuration" width="700">
   
   *Workflow configuration for SAP-GitHub integration*
 </div>

@@ -14,7 +14,7 @@
 
 <div align="center">
   
-  ![Checklist Banner](../../assets/images/path/to/checklist-banner.svg)
+  <img src="../../assets/images/path/to/checklist-banner.svg" alt="Checklist Banner" width="700">
   
   *Systematic approach to successful implementation*
 </div>
@@ -94,7 +94,7 @@ Before beginning this checklist:
 
 <div align="center">
   
-  ![Implementation Flow](../../assets/images/flows/implementation-flow.svg)
+  <img src="../../assets/images/flows/implementation-flow.svg" alt="Implementation Flow" width="700">
   
   *Visual representation of the implementation process*
 </div>
@@ -132,7 +132,7 @@ Before beginning this checklist:
 
 <div align="center">
   
-  ![Decision Tree](../../assets/images/flows/decision-tree.svg)
+  <img src="../../assets/images/flows/decision-tree.svg" alt="Decision Tree" width="700">
   
   *Decision tree for common implementation scenarios*
 </div>

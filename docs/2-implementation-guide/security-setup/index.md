@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![Security Workflow](../../../assets/images/flows/security-workflow.svg)
+  <img src="../../../assets/images/flows/security-workflow.svg" alt="Security Workflow" width="700">
   
   *Comprehensive security implementation for SAP-GitHub integration*
 </div>

@@ -4,7 +4,7 @@
 
 <div align="center">
   
-  ![Section Banner](../../assets/images/path/to/banner-image.svg)
+  <img src="../../assets/images/path/to/banner-image.svg" alt="Section Banner" width="700">
   
   *Modern integration for enterprise workflows*
 </div>
@@ -27,7 +27,7 @@
 
 <div align="center">
   
-  ![Overview Diagram](../../assets/images/path/to/overview-diagram.svg)
+  <img src="../../assets/images/path/to/overview-diagram.svg" alt="Overview Diagram" width="700">
   
   *Caption explaining the diagram and its significance*
 </div>
@@ -59,7 +59,7 @@ Before proceeding, ensure you have the following:
 
 <div align="center">
   
-  ![Process Flow](../../assets/images/flows/process-flow-diagram.svg)
+  <img src="../../assets/images/flows/process-flow-diagram.svg" alt="Process Flow" width="700">
   
   *Detailed workflow visualization*
 </div>
@@ -96,7 +96,7 @@ Key considerations:
 
 <div align="center">
   
-  ![Section Diagram](../../assets/images/path/to/section-diagram.svg)
+  <img src="../../assets/images/path/to/section-diagram.svg" alt="Section Diagram" width="700">
   
   *Caption explaining the image and its significance*
 </div>

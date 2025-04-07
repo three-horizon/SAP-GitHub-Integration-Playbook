@@ -7,7 +7,7 @@ title: GitHub Actions Workflow for ABAP
 
 <div align="center">
   
-  ![ABAP Pipeline](../../assets/images/flows/sap-github-workflow.svg)
+  <img src="../../assets/images/flows/sap-github-workflow.svg" alt="ABAP Pipeline" width="700">
   
   *Complete CI/CD workflow for SAP ABAP development with GitHub Actions*
 </div>

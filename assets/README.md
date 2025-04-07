@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![Asset Management](./images/resources/color-palette.svg)
+  <img src="./images/resources/color-palette.svg" alt="Asset Management" width="700">
   
   *Visual assets for the SAP-GitHub Integration Playbook*
 </div>
@@ -56,7 +56,7 @@ For centered images with captions, use:
 ```markdown
 <div align="center">
   
-  ![Description](/assets/images/category/image-name.svg)
+  <img src="/assets/images/category/image-name.svg" alt="Description" width="700">
   
   *Caption text here*
 </div>

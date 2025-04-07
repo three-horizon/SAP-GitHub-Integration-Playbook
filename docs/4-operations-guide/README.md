@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![Operations Overview](../../assets/images/flows/security-monitoring-flow.svg)
+  <img src="../../assets/images/flows/security-monitoring-flow.svg" alt="Operations Overview" width="700">
   
   *Maintaining and operating the SAP-GitHub integration*
 </div>

@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![Security Configuration](../../../assets/images/devsecops/security-components.svg)
+  <img src="../../../assets/images/devsecops/security-components.svg" alt="Security Configuration" width="700">
   
   *Security configuration for SAP-GitHub integration*
 </div>

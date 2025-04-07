@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![Documentation Overview](../assets/images/architecture/high-level-architecture.svg)
+  <img src="../assets/images/architecture/high-level-architecture.svg" alt="Documentation Overview" width="700">
   
   *Comprehensive guide for integrating SAP systems with GitHub*
 </div>

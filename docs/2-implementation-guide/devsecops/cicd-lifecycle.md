@@ -23,7 +23,7 @@ The SAP-GitHub integration follows a comprehensive DevSecOps approach that embed
 
 <div align="center">
   
-![DevSecOps Cycle](../../../assets/images/devsecops/devsecops-cycle.svg)
+<img src="../../../assets/images/devsecops/devsecops-cycle.svg" alt="DevSecOps Cycle" width="700">
   
   *\1*
 </div>

@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![Implementation Overview](../../assets/images/flows/sap-github-workflow.svg)
+  <img src="../../assets/images/flows/sap-github-workflow.svg" alt="Implementation Overview" width="700">
   
   *Step-by-step guidance for SAP-GitHub integration implementation*
 </div>

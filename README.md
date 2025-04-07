@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![SAP-GitHub Integration](./assets/images/architecture/playbook-overview.svg)
+  <img src="./assets/images/architecture/playbook-overview.svg" alt="SAP-GitHub Integration" width="700">
   
   *Comprehensive guide for integrating SAP systems with GitHub*
 </div>
@@ -66,7 +66,7 @@ This playbook emphasizes security at every step:
 
 <div align="center">
   
-  ![Security Components](./assets/images/devsecops/security-components.svg)
+  <img src="./assets/images/devsecops/security-components.svg" alt="Security Components" width="700">
   
   *Comprehensive security architecture for SAP-GitHub integration*
 </div>

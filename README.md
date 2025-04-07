@@ -1,12 +1,10 @@
 # 🔄 SAP-GitHub Integration Playbook
 
-<div align="center" class="svg-container">
-  <!-- Using both object and img as fallback for maximum compatibility -->
-  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
-    <img src="\1" alt="\1" width="700" />
-  </object>
+<div align="center">
   
-  *\1*
+  <img src="https://raw.githubusercontent.com/three-horizon/SAP-GitHub-Integration-Playbook/main/assets/images/architecture/playbook-overview.svg" alt="SAP-GitHub Integration" width="700">
+  
+  *Comprehensive guide for integrating SAP systems with GitHub*
 </div>
 
 ## 📋 Table of Contents
@@ -66,13 +64,11 @@ This playbook emphasizes security at every step:
 - [Authentication Configuration](./docs/2-implementation-guide/github-setup/authentication.md)
 - [Repository Security](./docs/2-implementation-guide/github-setup/repository-security.md)
 
-<div align="center" class="svg-container">
-  <!-- Using both object and img as fallback for maximum compatibility -->
-  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
-    <img src="\1" alt="\1" width="700" />
-  </object>
+<div align="center">
   
-  *\1*
+  <img src="https://raw.githubusercontent.com/three-horizon/SAP-GitHub-Integration-Playbook/main/assets/images/devsecops/security-components.svg" alt="Security Components" width="700">
+  
+  *Comprehensive security architecture for SAP-GitHub integration*
 </div>
 
 ## 🤝 Contributing

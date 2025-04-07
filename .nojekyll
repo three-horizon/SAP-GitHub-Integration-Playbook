@@ -1,1 +1,2 @@
-# This file tells GitHub Pages not to process this site with Jekyll 
+# This file disables Jekyll processing on GitHub Pages
+# It allows serving static HTML files directly 

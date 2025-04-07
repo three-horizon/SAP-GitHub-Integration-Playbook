@@ -20,7 +20,7 @@ For multilingual documentation:
 
 Example:
 ```
-documentation/
+docs/documentation/
 ├── guide.md                 # English version
 ├── de/                      # German translations
 │   └── guide.md

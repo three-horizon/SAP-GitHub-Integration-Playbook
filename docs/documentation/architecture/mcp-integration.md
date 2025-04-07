@@ -78,10 +78,4 @@ The Context Store provides persistent storage for development context:
 3. [SAP Cloud Integration patterns](https://api.sap.com/integrationflow) 
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

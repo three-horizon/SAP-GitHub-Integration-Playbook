@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="800"
+   height="600"
+   viewBox="0 0 800 600"
+   version="1.1"
+   id="svg-diagram">
+  
+  <!-- Metadata -->
+  <title>SAP-GitHub Integration Diagram</title>
+  <desc>Diagram template for SAP-GitHub Integration Playbook</desc>
+  
+  <!-- Styles -->
+  <defs>
+    <!-- Style definitions -->
+    <style type="text/css">
+      /* Base styles */
+      .diagram-background {
+        fill: white;
+      }
+      
+      /* SAP Components */
+      .sap-component {
+        fill: #0BAF51;
+        stroke: #097F3A;
+        stroke-width: 2;
+      }
+      
+      /* GitHub Components */
+      .github-component {
+        fill: #6E5494;
+        stroke: #4C3A68;
+        stroke-width: 2;
+      }
+      
+      /* Microsoft/Azure Components */
+      .microsoft-component {
+        fill: #0078D4;
+        stroke: #005A9E;
+        stroke-width: 2;
+      }
+      
+      /* Security Elements */
+      .security-component {
+        fill: #D13438;
+        stroke: #A62A2E;
+        stroke-width: 2;
+      }
+      
+      /* Integration Components */
+      .integration-component {
+        fill: #6B6B6B;
+        stroke: #4A4A4A;
+        stroke-width: 2;
+      }
+      
+      /* Developer/User Components */
+      .developer-component {
+        fill: #FF8C00;
+        stroke: #E57E00;
+        stroke-width: 2;
+      }
+      
+      /* Connections */
+      .connection {
+        stroke: #333333;
+        stroke-width: 2;
+        fill: none;
+      }
+      
+      /* Text styles */
+      .diagram-title {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        text-anchor: middle;
+      }
+      
+      .component-label {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: semibold;
+        text-anchor: middle;
+        fill: white;
+      }
+      
+      .note-text {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 12px;
+        font-style: italic;
+        text-anchor: start;
+      }
+    </style>
+    
+    <!-- Arrow markers -->
+    <marker
+       id="arrow"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto">
+      <path d="M 0,0 L 10,5 L 0,10 z" fill="#333333" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect
+     class="diagram-background"
+     width="800"
+     height="600"
+     x="0"
+     y="0"
+     rx="5"
+     ry="5" />
+  
+  <!-- Title -->
+  <text
+     class="diagram-title"
+     x="400"
+     y="40">
+    [Diagram Title]
+  </text>
+  
+  <!-- SAP System (Example) -->
+  <rect
+     class="sap-component"
+     x="100"
+     y="150"
+     width="150"
+     height="100"
+     rx="10"
+     ry="10" />
+  <text
+     class="component-label"
+     x="175"
+     y="200">
+    SAP System
+  </text>
+  
+  <!-- GitHub (Example) -->
+  <rect
+     class="github-component"
+     x="550"
+     y="150"
+     width="150"
+     height="100"
+     rx="10"
+     ry="10" />
+  <text
+     class="component-label"
+     x="625"
+     y="200">
+    GitHub
+  </text>
+  
+  <!-- Integration Component (Example) -->
+  <rect
+     class="integration-component"
+     x="325"
+     y="150"
+     width="150"
+     height="100"
+     rx="10"
+     ry="10" />
+  <text
+     class="component-label"
+     x="400"
+     y="200">
+    Integration
+  </text>
+  
+  <!-- Connection lines (Example) -->
+  <path
+     class="connection"
+     d="M 250,200 L 325,200"
+     marker-end="url(#arrow)" />
+  <path
+     class="connection"
+     d="M 475,200 L 550,200"
+     marker-end="url(#arrow)" />
+  
+  <!-- Notes on usage -->
+  <text
+     class="note-text"
+     x="100"
+     y="550">
+    Notes:
+  </text>
+  <text
+     class="note-text"
+     x="120"
+     y="570">
+    1. Replace placeholder components with actual components
+  </text>
+  <text
+     class="note-text"
+     x="120"
+     y="590">
+    2. Update diagram title and elements to match your specific diagram
+  </text>
+</svg> 

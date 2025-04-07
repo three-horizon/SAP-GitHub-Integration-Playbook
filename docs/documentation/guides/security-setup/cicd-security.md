@@ -1262,16 +1262,6 @@ After implementing CI/CD security, proceed to:
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-08-28
-- Contributors: DevOps Team, Security Team, SAP Integration Team
-- Version: 1.0.0 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

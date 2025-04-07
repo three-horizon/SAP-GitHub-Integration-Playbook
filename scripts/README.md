@@ -4,23 +4,7 @@ This folder contains utility scripts to support the integration between SAP syst
 
 ## Script Categories
 
-### 1. [Migration Utilities](migration-utilities/)
-
-Scripts to facilitate code and data migration between SAP systems and GitHub:
-
-- Legacy code conversion to Git-compatible formats
-- ABAP code extraction and transformation to modern repositories
-- Utilities for handling SAP metadata in GitHub repositories
-
-### 2. [Testing Scripts](testing-scripts/)
-
-Scripts for test automation in SAP-GitHub integration scenarios:
-
-- Integration tests for SAP-GitHub connectors
-- CI/CD flow validation between SAP and GitHub
-- Simulation of transport and deployment scenarios
-
-### 3. [Environment Setup Automation](environment-setup/)
+### 1. [Environment Setup Automation](environment-setup/)
 
 Scripts for quick and standardized development environment configuration:
 
@@ -28,13 +12,33 @@ Scripts for quick and standardized development environment configuration:
 - Automated installation of development tools
 - CI/CD environment provisioning for SAP-GitHub
 
-### 4. [Quality Validation Tools](quality-validation/)
+### 2. [Quality Validation Tools](quality-validation/)
 
 Scripts to ensure code and process quality in the integration:
 
 - ABAP code quality checks for GitHub
 - Development standards compliance validation
 - Audit tools for SAP-GitHub integration
+
+### 3. [Testing Scripts](testing-scripts/)
+
+Scripts for test automation in SAP-GitHub integration scenarios:
+
+- Integration tests for SAP-GitHub connectors
+- CI/CD flow validation between SAP and GitHub
+- Simulation of transport and deployment scenarios
+
+### 4. [Utilities](utilities/)
+
+General purpose utility scripts for the integration.
+
+### 5. [Validation](validation/)
+
+Configuration validation scripts.
+
+### 6. [Setup](setup/)
+
+Environment and dependency setup scripts.
 
 ## How to Use
 
@@ -54,10 +58,3 @@ Each script includes detailed documentation in comment format. For help on a spe
 ## Contribution
 
 See the [contribution guidelines](../CONTRIBUTING.md) for information on how to add or modify scripts.
-
----
-
-**Document Metadata:**
-- Last Updated: 2023-11-15
-- Version: 1.0.0
-- Status: Published 

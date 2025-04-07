@@ -147,32 +147,8 @@ All documents should include standardized metadata:
 ```markdown
 ---
 
-**Document Metadata:**
-- Last Updated: YYYY-MM-DD
-- Contributors: Names or teams
-- Version: X.Y.Z
-```
 
-## Accessibility Considerations
 
-- Use descriptive link text that makes sense out of context
-- Provide alt text for all images and diagrams
-- Use sufficient color contrast for text and diagrams
-- Create a logical heading structure
 
----
 
-**Document Metadata:**
-- Last Updated: 2023-09-01
-- Contributors: Documentation Team
-- Version: 1.0.0
 
----
-
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
-
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

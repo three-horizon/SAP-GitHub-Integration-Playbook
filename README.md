@@ -61,22 +61,3 @@ Please read our [Contributing Guidelines](./.github/CONTRIBUTING.md) for details
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
-
-## How to Reference Images
-
-### For direct GitHub viewing:
-```
-![Image Name](https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/your-image-name.svg)
-```
-
-### SVG images are preferred for better quality and scalability.
-
----
-
-<details>
-<summary><strong>Document Metadata</strong></summary>
-
-- **Last Updated:** 2023-04-07
-- **Version:** 2.0.0
-- **Maintained by:** SAP-GitHub Integration Team
-</details>

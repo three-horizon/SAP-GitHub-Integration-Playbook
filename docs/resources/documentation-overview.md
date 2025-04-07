@@ -97,11 +97,4 @@ When updating documentation, follow our [Documentation Guidelines](../DOCUMENTAT
 
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Author:** SAP-GitHub Integration Team
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

@@ -50,7 +50,7 @@ Updated broken references in key documents:
 
 Enhanced the documentation template:
 
-- **Template**: `/templates/documentation/document-template.md`
+- **Template**: `/docs/templates/documentation/document-template.md`
 - **Improvements**:
   - Added concrete examples section with proper code syntax highlighting
   - Enhanced metadata section with status and related document fields
@@ -109,10 +109,4 @@ This initial documentation remediation effort has addressed key issues with brok
 - Status: Completed
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

@@ -89,18 +89,6 @@ For detailed implementation instructions, refer to:
 
 *Note: This reference section is under active development. New workflow reference guides will be added in future releases. All workflow examples should be tested in a non-production environment before deploying to production systems.*
 
-**Document Metadata:**
-- Last Updated: 2023-09-01
-- Contributors: Documentation Team
-- Version: 1.0.0
-- Status: Published
 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

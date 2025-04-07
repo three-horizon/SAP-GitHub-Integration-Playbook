@@ -704,16 +704,6 @@ After implementing the executive dashboard, proceed to:
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-09-25
-- Contributors: Executive Reporting Team, Security Team, Dashboard Design Team
-- Version: 1.0.0 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

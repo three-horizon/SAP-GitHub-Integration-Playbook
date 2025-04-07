@@ -1280,10 +1280,4 @@ Based on real-world implementations, the following recommendations apply to envi
 5. NIST. (2025). "Security Guidelines for Enterprise Software Configuration."
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

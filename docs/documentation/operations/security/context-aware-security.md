@@ -628,10 +628,4 @@ Protect the context information itself:
 4. [GitHub Security Best Practices](https://docs.github.com/en/code-security) 
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

@@ -35,7 +35,7 @@ For each identified issue, classify by:
 
 ### 2. Content Creation
 When creating missing documentation:
-- Use the appropriate template from `templates/documentation/`
+- Use the appropriate template from `docs/templates/documentation/`
 - Research relevant information from internal resources first
 - If external references are needed, properly cite sources
 - Follow the [Documentation Style Guide](../documentation-style-guide.md) for consistent writing
@@ -88,16 +88,6 @@ When creating missing documentation:
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-09-01
-- Contributors: Documentation Team
-- Version: 1.0.0 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

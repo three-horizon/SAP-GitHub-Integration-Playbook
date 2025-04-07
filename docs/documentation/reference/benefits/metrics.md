@@ -25,7 +25,7 @@ Effective measurement of the SAP-GitHub integration benefits requires a structur
 
 <div align="center">
   
-![Metrics Framework](../assets/images/metrics-framework.png)
+![Metrics Framework](../../../../assets/images/architecture/metrics-framework.svg)
   
   *\1*
 </div>
@@ -289,10 +289,4 @@ For implementation assistance, refer to the [Implementation Guide](../implementa
 
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

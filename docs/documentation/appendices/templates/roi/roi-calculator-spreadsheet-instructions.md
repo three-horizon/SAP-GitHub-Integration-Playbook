@@ -177,10 +177,4 @@ After completing your analysis, compare your projected results with the case stu
 *Last Updated: [YYYY-MM-DD]*
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

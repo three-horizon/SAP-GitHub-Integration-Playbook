@@ -336,16 +336,6 @@ After configuring the SAP Security workbook, proceed to:
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-08-03
-- Contributors: SAP Security Team, Microsoft Sentinel Team
-- Version: 1.0.0 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

@@ -735,10 +735,4 @@ Based on real-world implementations, the following recommendations apply to BTP-
 5. Cloud Security Alliance. (2025). "Cloud Controls Matrix v4.0."
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

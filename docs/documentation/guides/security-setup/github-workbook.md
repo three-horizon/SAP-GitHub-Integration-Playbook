@@ -298,16 +298,6 @@ After configuring the GitHub Activity workbook, proceed to:
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-07-28
-- Contributors: Security Engineering Team, GitHub Integration Team
-- Version: 1.0.0 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

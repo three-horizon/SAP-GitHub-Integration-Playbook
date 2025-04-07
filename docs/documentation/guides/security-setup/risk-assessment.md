@@ -617,16 +617,6 @@ After completing the risk assessment, proceed to:
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-09-30
-- Contributors: Risk Management Team, Security Team, Compliance Team
-- Version: 1.1.0 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

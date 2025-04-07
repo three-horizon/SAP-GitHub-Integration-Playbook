@@ -606,17 +606,6 @@ After securing your API Management layer, consider these advanced configurations
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-09-01
-- Contributors: Security Team
-- Version: 1.0.0
-- Status: Published
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

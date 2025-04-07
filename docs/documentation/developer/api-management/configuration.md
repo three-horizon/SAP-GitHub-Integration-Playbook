@@ -370,10 +370,4 @@ After successful API Management configuration:
 **Last Updated:** 2023-09-01 
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

@@ -174,10 +174,4 @@ Once abapGit is installed, proceed to:
 *Last Updated: [YYYY-MM-DD] for [abapGit version X.Y.Z]* 
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

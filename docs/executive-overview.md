@@ -266,11 +266,4 @@ For a more detailed technical discussion, refer to the [Architecture](./1-archit
 
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-- **Audience:** Executives, IT Leadership, Solution Architects
-</details>

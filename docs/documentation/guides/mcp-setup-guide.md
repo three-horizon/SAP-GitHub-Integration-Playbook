@@ -461,10 +461,4 @@ The implementation will follow this architectural pattern:
 4. [SAP RFC SDK Documentation](https://support.sap.com/en/product/connectors/msnet.html) 
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

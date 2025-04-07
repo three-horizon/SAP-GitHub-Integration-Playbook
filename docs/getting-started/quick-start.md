@@ -167,18 +167,6 @@ For more detailed guides, see the [Documentation Home](../index.md).
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-09-01
-- Contributors: Documentation Team
-- Version: 1.0.0
-- Status: Published
 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

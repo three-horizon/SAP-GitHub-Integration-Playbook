@@ -722,16 +722,6 @@ This document provides comprehensive guidance for maintaining and updating the S
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-08-30
-- Contributors: Operations Team, DevOps Team, Support Team
-- Version: 1.0.0 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

@@ -234,18 +234,6 @@ For more detailed information on the integration architecture, please refer to:
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2025-04-04
-- Contributors: Architecture Team
-- Version: 1.2.0
-- Status: Published
 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

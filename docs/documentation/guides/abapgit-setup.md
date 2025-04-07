@@ -262,11 +262,4 @@ After completing the abapGit installation and configuration:
 
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Author:** SAP-GitHub Integration Team
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

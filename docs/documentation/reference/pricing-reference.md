@@ -281,17 +281,6 @@ For a detailed ROI calculator, see [SAP-GitHub Integration ROI Calculator](../6-
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-11-15
-- Version: 1.0.0
-- Status: Published
-- Disclaimer: All pricing is approximate and for reference only. Contact vendors for current pricing. 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

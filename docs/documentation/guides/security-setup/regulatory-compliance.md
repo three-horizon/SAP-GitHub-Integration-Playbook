@@ -640,16 +640,6 @@ After implementing regulatory compliance controls, proceed to:
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-10-05
-- Contributors: Compliance Team, Legal Team, IT Security Team
-- Version: 1.0.0 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

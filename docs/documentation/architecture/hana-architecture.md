@@ -831,10 +831,4 @@ Based on real-world implementations, the following recommendations apply to HANA
 5. SAP Developer Community. (2025). "XS Advanced Development Guide."
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

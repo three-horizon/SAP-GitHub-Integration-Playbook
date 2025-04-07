@@ -867,16 +867,6 @@ This document provides comprehensive troubleshooting guidance for the SAP-GitHub
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-08-28
-- Contributors: Support Team, DevOps Team, Security Team
-- Version: 1.0.0 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

@@ -309,10 +309,4 @@ async function linkContexts(sapContextId, githubContextId) {
 3. [GitHub Flow Development Model](https://docs.github.com/en/get-started/quickstart/github-flow) 
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

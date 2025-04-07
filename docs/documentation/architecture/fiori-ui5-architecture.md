@@ -792,10 +792,4 @@ Based on real-world implementations, the following recommendations apply to Fior
 5. SAPUI5 Documentation. (2025). "Deployment Options for SAPUI5 Applications."
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

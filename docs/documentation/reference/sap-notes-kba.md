@@ -430,17 +430,6 @@ Most SAP Notes and KBAs require valid S-user credentials to access. Ensure you h
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-12-10
-- Version: 1.1.0
-- Status: Published
-- Note: SAP Note numbers and KBAs used in this document are for illustration purposes. Always verify the latest notes from SAP Support Portal. 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

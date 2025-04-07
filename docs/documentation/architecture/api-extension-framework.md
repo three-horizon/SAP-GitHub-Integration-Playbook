@@ -61,7 +61,7 @@ The API architecture consists of the following layers:
 
 <div align="center">
   
-![API Interaction Patterns](../assets/images/architecture/api-interaction-patterns.png)
+![API Interaction Patterns](../../../assets/images/architecture/api-interaction-patterns.svg)
   
   *\1*
 </div>
@@ -468,17 +468,6 @@ The Extension Framework provides:
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-11-15
-- Version: 1.0.0
-- Status: Published
 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

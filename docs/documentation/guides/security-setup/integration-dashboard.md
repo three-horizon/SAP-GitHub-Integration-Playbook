@@ -576,16 +576,6 @@ After creating the integration dashboard, proceed to:
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-08-25
-- Contributors: Integration Team, Monitoring Team
-- Version: 1.2.0 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

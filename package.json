@@ -1,0 +1,35 @@
+{
+  "name": "sap-github-integration-playbook",
+  "version": "1.0.0",
+  "description": "Comprehensive Integration Playbook for SAP and GitHub Platforms",
+  "scripts": {
+    "validate-svg": "node scripts/svg-validation.js",
+    "convert-svg": "bash scripts/convert-svg-to-png.sh",
+    "svg-workflow": "npm run validate-svg && npm run convert-svg"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/three-horizon/SAP-GitHub-Integration-Playbook.git"
+  },
+  "keywords": [
+    "sap",
+    "github",
+    "integration",
+    "documentation",
+    "devops"
+  ],
+  "author": "Three Horizon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/issues"
+  },
+  "homepage": "https://github.com/three-horizon/SAP-GitHub-Integration-Playbook#readme",
+  "devDependencies": {
+    "chalk": "^4.1.2",
+    "xmldom": "^0.6.0"
+  },
+  "dependencies": {
+    "glob": "^11.0.1"
+  }
+}

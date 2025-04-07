@@ -182,10 +182,4 @@ This sample calculation represents a typical manufacturing organization with mod
 For implementation assistance, refer to the [Implementation Guide](../../docs/implementation/index.md) section of this playbook.
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

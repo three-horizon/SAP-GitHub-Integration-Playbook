@@ -716,10 +716,4 @@ Based on real-world implementations, the following recommendations apply to DR a
 5. ISO. (2025). "ISO 22301: Business Continuity Management Systems."
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

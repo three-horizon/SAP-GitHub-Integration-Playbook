@@ -531,10 +531,4 @@ Based on real-world implementations, the following recommendations apply to CRM-
 5. SAP TechEd. (2025). "CRM Implementation Case Studies."
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

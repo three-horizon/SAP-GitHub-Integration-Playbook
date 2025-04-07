@@ -457,16 +457,6 @@ After configuring authentication rules, proceed to:
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-08-18
-- Contributors: Security Operations Team, IAM Team
-- Version: 1.0.0 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

@@ -452,18 +452,3 @@ jobs:
 - Consult [SAP Notes and KBAs](../sap-notes-kba.md) for specific API implementation guidance
 
 ---
-
-**Document Metadata:**
-- Last Updated: 2023-11-15
-- Version: 1.0.0
-- Status: Published
-
----
-
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
-
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

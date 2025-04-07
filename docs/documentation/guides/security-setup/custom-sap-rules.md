@@ -426,16 +426,6 @@ After implementing custom SAP rules, proceed to:
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-08-15
-- Contributors: SAP Security Team, Sentinel Detection Engineering
-- Version: 1.1.0 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

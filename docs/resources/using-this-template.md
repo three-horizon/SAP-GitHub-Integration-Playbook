@@ -34,7 +34,7 @@ The template follows a logical structure:
 ### Basic Customization
 
 1. **Update README.md** with your project details
-2. **Modify documentation/architecture** with your specific architecture
+2. **Modify docs/documentation/architecture** with your specific architecture
 3. **Update all references** to the original SAP-GitHub Integration Playbook
 
 ### Advanced Customization

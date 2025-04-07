@@ -213,10 +213,4 @@ The Context Store is a central component of the Model Context Protocol (MCP) int
 3. [Azure Storage Security Best Practices](https://learn.microsoft.com/en-us/azure/storage/blobs/security-recommendations) 
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>

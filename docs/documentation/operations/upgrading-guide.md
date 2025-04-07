@@ -331,16 +331,6 @@ This document provides guidance for upgrading the components of the SAP-GitHub i
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-09-04
-- Contributors: Operations Team, Development Team, System Administrators
-- Version: 1.0.0 
----
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
 
-- **Last Updated:** 2025-04-07
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+

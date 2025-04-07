@@ -45,7 +45,7 @@ The Getting Started section provides everything you need to begin with SAP-GitHu
 
 ### [Documentation](./documentation/)
 
-The Documentation section contains detailed technical information:
+This section contains detailed technical documentation organized into the following categories:
 
 - [Architecture](./documentation/architecture/) - System design, components, and integration patterns
 - [Guides](./documentation/guides/) - Step-by-step implementation instructions
@@ -81,13 +81,3 @@ This documentation is designed to be navigated based on your role and current im
 2. Explore detailed information in the [Documentation](./documentation/) section
 3. Find working examples in the [Examples](./examples/) directory
 4. Refer to [Resources](./resources/) for documentation standards
-
----
-
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
-
-- **Last Updated:** 2025-04-07
-- **Version:** 2.0.0
-- **Status:** Published
-</details>

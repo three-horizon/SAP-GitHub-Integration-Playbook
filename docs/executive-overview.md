@@ -1,12 +1,7 @@
----
-layout: default
-title: Executive Overview
----
-
-# Executive Overview: SAP-GitHub Integration
+# 🔗 Executive Overview: SAP-GitHub Integration
 
 <div align="center">
-  <img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/high-level-architecture.svg?sanitize=true" width="700" alt="SAP-GitHub Integration Architecture">
+  <img src="../assets/images/architecture/high-level-architecture.svg" width="700" alt="SAP-GitHub Integration Architecture">
   
   *Strategic integration between SAP systems and GitHub for modern enterprise development*
 </div>
@@ -263,7 +258,5 @@ To proceed with SAP-GitHub integration:
 5. **Optimize**: Continuously refine processes and tooling based on feedback and metrics
 
 For a more detailed technical discussion, refer to the [Architecture](./1-architecture/README.md) and [Implementation Guide](./2-implementation-guide/README.md) sections of this playbook.
-
----
 
 

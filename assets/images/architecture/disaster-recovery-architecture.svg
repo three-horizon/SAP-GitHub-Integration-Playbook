@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Disaster Recovery Architecture</title>
+  <desc id="desc">Architecture diagram showing the disaster recovery setup for SAP-GitHub Integration</desc>
+  
+  <!-- Styles -->
+  <defs>
+    <!-- Arrow Markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#757575" />
+    </marker>
+    
+    <!-- Gradient Backgrounds -->
+    <linearGradient id="sapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1565C0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D47A1;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="githubGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8E24AA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6F42C1;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="msAzureGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#039BE5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0078D4;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="securityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E53935;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C62828;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="integrationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#388E3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Diagram Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#212121">Disaster Recovery Architecture</text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#757575">SAP-GitHub Integration with Resilience and Failover</text>
+  
+  <!-- Region Labels -->
+  <text x="200" y="120" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#212121">Primary Region</text>
+  <text x="600" y="120" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#212121">Secondary Region</text>
+  
+  <!-- Primary Region -->
+  <rect x="50" y="140" width="300" height="400" rx="10" ry="10" fill="#ECEFF1" stroke="#B0BEC5" stroke-width="2" />
+  
+  <!-- Secondary Region -->
+  <rect x="450" y="140" width="300" height="400" rx="10" ry="10" fill="#ECEFF1" stroke="#B0BEC5" stroke-width="2" />
+  
+  <!-- Primary SAP System -->
+  <rect x="80" y="180" width="120" height="70" rx="5" ry="5" fill="url(#sapGradient)" filter="url(#dropShadow)" />
+  <text x="140" y="215" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Primary</text>
+  <text x="140" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">SAP System</text>
+  
+  <!-- Secondary SAP System -->
+  <rect x="480" y="180" width="120" height="70" rx="5" ry="5" fill="url(#sapGradient)" filter="url(#dropShadow)" />
+  <text x="540" y="215" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Secondary</text>
+  <text x="540" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">SAP System</text>
+  
+  <!-- Primary Integration Layer -->
+  <rect x="80" y="280" width="120" height="70" rx="5" ry="5" fill="url(#integrationGradient)" filter="url(#dropShadow)" />
+  <text x="140" y="315" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Primary</text>
+  <text x="140" y="335" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Integration</text>
+  
+  <!-- Secondary Integration Layer -->
+  <rect x="480" y="280" width="120" height="70" rx="5" ry="5" fill="url(#integrationGradient)" filter="url(#dropShadow)" />
+  <text x="540" y="315" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Secondary</text>
+  <text x="540" y="335" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Integration</text>
+  
+  <!-- Primary API Management -->
+  <rect x="220" y="230" width="120" height="70" rx="5" ry="5" fill="url(#msAzureGradient)" filter="url(#dropShadow)" />
+  <text x="280" y="265" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Primary</text>
+  <text x="280" y="285" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">API Management</text>
+  
+  <!-- Secondary API Management -->
+  <rect x="620" y="230" width="120" height="70" rx="5" ry="5" fill="url(#msAzureGradient)" filter="url(#dropShadow)" />
+  <text x="680" y="265" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Secondary</text>
+  <text x="680" y="285" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">API Management</text>
+  
+  <!-- Data Replication -->
+  <line x1="200" y1="215" x2="480" y2="215" stroke="#757575" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
+  <text x="340" y="200" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#212121">Data Replication</text>
+  
+  <!-- Integration Sync -->
+  <line x1="200" y1="315" x2="480" y2="315" stroke="#757575" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
+  <text x="340" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#212121">Configuration Sync</text>
+  
+  <!-- API Config Sync -->
+  <line x1="340" y1="265" x2="620" y2="265" stroke="#757575" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
+  <text x="480" y="250" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#212121">Policy Sync</text>
+  
+  <!-- Load Balancer -->
+  <polygon points="400,380 450,410 400,440 350,410" fill="#FFFFFF" stroke="#212121" stroke-width="2" />
+  <text x="400" y="415" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#212121">Load Balancer</text>
+  
+  <!-- GitHub Connection -->
+  <rect x="340" y="480" width="120" height="70" rx="5" ry="5" fill="url(#githubGradient)" filter="url(#dropShadow)" />
+  <text x="400" y="515" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">GitHub</text>
+  <text x="400" y="535" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Enterprise</text>
+  
+  <!-- Connection Lines -->
+  <line x1="140" y1="250" x2="140" y2="280" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="200" y1="315" x2="220" y2="270" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="540" y1="250" x2="540" y2="280" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="600" y1="315" x2="620" y2="270" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <line x1="280" y1="300" x2="350" y2="410" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="680" y1="300" x2="450" y2="410" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <line x1="400" y1="440" x2="400" y2="480" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Monitoring Components -->
+  <rect x="80" y="380" width="120" height="70" rx="5" ry="5" fill="url(#securityGradient)" filter="url(#dropShadow)" />
+  <text x="140" y="415" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Primary</text>
+  <text x="140" y="435" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Monitoring</text>
+  
+  <rect x="480" y="380" width="120" height="70" rx="5" ry="5" fill="url(#securityGradient)" filter="url(#dropShadow)" />
+  <text x="540" y="415" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Secondary</text>
+  <text x="540" y="435" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Monitoring</text>
+  
+  <!-- Health Check Lines -->
+  <line x1="140" y1="350" x2="140" y2="380" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="540" y1="350" x2="540" y2="380" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Failover Line -->
+  <line x1="200" y1="415" x2="480" y2="415" stroke="#E53935" stroke-width="3" stroke-dasharray="10,5" marker-end="url(#arrowhead)" />
+  <text x="340" y="400" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#E53935">Failover Path</text>
+  
+  <!-- Legend -->
+  <g transform="translate(50, 560)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#212121">Legend:</text>
+    
+    <rect x="0" y="10" width="15" height="15" fill="url(#sapGradient)" />
+    <text x="20" y="22" font-family="Arial, sans-serif" font-size="10" fill="#212121">SAP Systems</text>
+    
+    <rect x="120" y="10" width="15" height="15" fill="url(#msAzureGradient)" />
+    <text x="140" y="22" font-family="Arial, sans-serif" font-size="10" fill="#212121">API Management</text>
+    
+    <rect x="250" y="10" width="15" height="15" fill="url(#integrationGradient)" />
+    <text x="270" y="22" font-family="Arial, sans-serif" font-size="10" fill="#212121">Integration Layer</text>
+    
+    <rect x="380" y="10" width="15" height="15" fill="url(#githubGradient)" />
+    <text x="400" y="22" font-family="Arial, sans-serif" font-size="10" fill="#212121">GitHub</text>
+    
+    <rect x="480" y="10" width="15" height="15" fill="url(#securityGradient)" />
+    <text x="500" y="22" font-family="Arial, sans-serif" font-size="10" fill="#212121">Monitoring</text>
+    
+    <line x1="580" y1="17" x2="620" y2="17" stroke="#E53935" stroke-width="2" stroke-dasharray="5,3" />
+    <text x="630" y="22" font-family="Arial, sans-serif" font-size="10" fill="#212121">Failover Path</text>
+  </g>
+</svg>

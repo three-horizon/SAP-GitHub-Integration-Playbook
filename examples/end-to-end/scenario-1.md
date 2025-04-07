@@ -1,3 +1,11 @@
+# 🔄 End-to-End Scenario 1: Transport Automation
+
+<div align="center">
+  <img src="../../assets/images/architecture/high-level-architecture.svg" width="700" alt="Transport Automation Architecture">
+  
+  *End-to-end implementation of SAP transport automation via GitHub*
+</div>
+
 # End-to-End Scenario: Customer Master Data Enhancement
 
 This document provides a comprehensive walkthrough of a complete end-to-end scenario using the SAP-GitHub integration. It covers the entire development lifecycle from initial requirement to production deployment, demonstrating all components of the integration working together.
@@ -412,7 +420,3 @@ POST /sap/transport/create
 This end-to-end scenario demonstrates how the complete SAP-GitHub integration works across the entire development lifecycle. The integration enables a modern, DevOps-oriented approach to SAP development while maintaining the robust governance and transport management capabilities of SAP systems.
 
 By following similar patterns, teams can implement efficient, automated workflows for all types of SAP development work, from small enhancements to major implementations.
-
----
-
-*Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Enterprise X.Y.Z, SAP S/4 HANA X.Y.Z, etc.]*

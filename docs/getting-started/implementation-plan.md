@@ -26,13 +26,10 @@ This implementation plan outlines the step-by-step approach for deploying the SA
 
 The implementation is divided into ten key phases, designed to be executed sequentially with some overlap where appropriate:
 
-<div align="center" class="svg-container">
-  <!-- Using both object and img as fallback for maximum compatibility -->
-  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
-    <img src="\1" alt="\1" width="700" />
-  </object>
+<div align="center">
+  <img src="../../assets/images/architecture/high-level-architecture.svg" width="700" alt="Implementation Plan">
   
-  *\1*
+  *Comprehensive implementation roadmap for SAP-GitHub Integration*
 </div>
 
 ## Phase 1: Preparation and Planning (2-4 Weeks)
@@ -518,11 +515,5 @@ The implementation is divided into ten key phases, designed to be executed seque
 | Resource constraints | Medium | Medium | Clear resource planning, management buy-in, prioritization |
 | Timeline delays | Medium | Medium | Buffer time in schedule, critical path management |
 | Technical expertise gaps | Medium | Medium | Early training, external expertise if needed |
-
----
-
-**Last Updated:** 2023-09-01 
-
----
 
 

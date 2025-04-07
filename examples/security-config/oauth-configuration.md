@@ -3,7 +3,13 @@ layout: default
 title: OAuth Configuration for SAP-GitHub Integration
 ---
 
-# OAuth Configuration for SAP-GitHub Integration
+# 🔐 OAuth 2.0 Configuration for SAP-GitHub Integration
+
+<div align="center">
+  <img src="../../assets/images/architecture/api-implementation.svg" width="700" alt="OAuth Integration Architecture">
+  
+  *OAuth 2.0 implementation for secure authentication between SAP and GitHub*
+</div>
 
 This document provides a comprehensive guide for implementing OAuth 2.0 authentication between SAP systems and GitHub, ensuring secure and authorized access for integration scenarios.
 
@@ -312,10 +318,3 @@ ENDCLASS.
 - Implement [GitHub Actions Workflows](../github-actions/ui5-build-pipeline.md) to automate your development processes
 - Set up [API Management](../api-management/sap-to-github.md) for comprehensive API governance
 - Configure [System Connectivity](../xml-config/system-connectivity.md) for robust system integration
-
----
-
-**Document Metadata:**
-- Last Updated: 2023-11-15
-- Version: 1.0.0
-- Status: Published 

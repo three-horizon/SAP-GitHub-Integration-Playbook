@@ -3,6 +3,14 @@ layout: default
 title: SAP to GitHub Integration with API Management
 ---
 
+# 🔌 SAP to GitHub API Management Configuration Guide
+
+<div align="center">
+  <img src="../../assets/images/architecture/api-implementation.svg" width="700" alt="API Implementation Architecture">
+  
+  *API Management configuration for secure SAP-GitHub integration*
+</div>
+
 # SAP to GitHub Integration with API Management
 
 This example demonstrates how to implement API management policies for secure and efficient integration between SAP systems and GitHub.
@@ -753,10 +761,3 @@ X-SAP-User: DEVELOPER1
 - Implement [GitHub Actions Workflows](../github-actions/ui5-build-pipeline.md) to automate development processes
 - Set up [Security Configurations](../security-config/oauth-configuration.md) for enhanced security
 - Configure [XML Integration Files](../xml-config/system-connectivity.md) for comprehensive system connectivity
-
----
-
-**Document Metadata:**
-- Last Updated: 2023-11-15
-- Version: 1.0.0
-- Status: Published 

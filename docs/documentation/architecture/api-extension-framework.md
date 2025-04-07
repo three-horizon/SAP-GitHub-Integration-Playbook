@@ -63,7 +63,7 @@ The API architecture consists of the following layers:
   
 ![API Interaction Patterns](../../../assets/images/architecture/api-interaction-patterns.svg)
   
-  *\1*
+  *API Interaction Patterns between SAP and GitHub Systems*
 </div>
 
 The following interaction patterns are supported:
@@ -124,9 +124,9 @@ The following interaction patterns are supported:
 
 <div align="center">
   
-![Extension Framework Components](../assets/images/architecture/extension-framework-components.png)
+![Extension Framework Components](../../../assets/images/architecture/api-extension-framework.svg)
   
-  *\1*
+  *API Extension Framework Architecture*
 </div>
 
 #### 1. Extension Registry
@@ -289,9 +289,9 @@ Security controls that:
 
 <div align="center">
   
-![API Gateway Architecture](../assets/images/architecture/api-gateway-architecture.png)
+![API Gateway Architecture](../../../assets/images/architecture/api-extension-framework.svg)
   
-  *\1*
+  *API Gateway and Extension Framework Architecture*
 </div>
 
 The API Gateway serves as the central point for:
@@ -310,9 +310,9 @@ Key components include:
 
 <div align="center">
   
-![Extension Framework Architecture](../assets/images/architecture/extension-framework-architecture.png)
+![Extension Framework Architecture](../../../assets/images/architecture/api-extension-framework.svg)
   
-  *\1*
+  *Extension Framework with Integration Components*
 </div>
 
 The Extension Framework provides:

@@ -1,7 +1,10 @@
----
-layout: default
-title: SAP-GitHub Integration Examples
----
+# 📝 SAP-GitHub Integration Examples Index
+
+<div align="center">
+  <img src="../assets/images/architecture/high-level-architecture.svg" width="700" alt="SAP-GitHub Integration Architecture">
+  
+  *Complete examples for implementing SAP-GitHub integration*
+</div>
 
 # SAP-GitHub Integration Examples
 
@@ -75,7 +78,12 @@ We welcome contributions of additional examples from the community. If you have 
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-11-15
-- Version: 1.0.0
-- Status: Published 
+## ⚡ Contributing
+
+We welcome contributions to this project! Please see our [Contributing Guide](../CONTRIBUTING.md) for more information.
+
+## ⚡ License
+
+This project is licensed under the [MIT License](../LICENSE) - see the LICENSE file for details.
+
+🔄 Last updated: April 2025 | Contribute to this document through [Pull Requests](Pull Requests)

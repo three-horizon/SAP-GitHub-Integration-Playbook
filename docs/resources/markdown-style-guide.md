@@ -27,9 +27,18 @@ This guide outlines the markdown formatting standards used in this repository.
 
 ## Images
 
-- Always include alt text: `![Alt text](image.png)`
-- For SVG images, use the full GitHub URL with `?sanitize=true` parameter
-- Include captions below images with italics
+- Always include alt text with descriptive content
+- Use SVG format for all diagrams and images when possible
+- Include captions below images with italics using the format: `*Caption text*`
+- For diagrams, use the standardized format:
+  ```markdown
+  <div align="center">
+
+  <img src="/assets/images/path/diagram-name.svg" alt="Descriptive Alt Text" width="800">
+
+  *Descriptive Caption for the Diagram*
+  </div>
+  ```
 
 ## Links
 

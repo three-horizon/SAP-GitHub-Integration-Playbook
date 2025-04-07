@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Governance Model Architecture</title>
+  <desc id="desc">Architecture diagram showing the governance model for SAP-GitHub integration</desc>
+  
+  <!-- Styles -->
+  <defs>
+    <!-- Arrow Markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#757575" />
+    </marker>
+    
+    <!-- Gradient Backgrounds -->
+    <linearGradient id="strategyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5E35B1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4527A0;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="governanceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1976D2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="controlsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#388E3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="processGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFA000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57F17;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="operationsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ACC1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00838F;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Diagram Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#212121">Governance Model Architecture</text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#757575">SAP-GitHub Integration Governance Framework</text>
+  
+  <!-- Governance Framework Layers -->
+  
+  <!-- 1. Strategy Layer -->
+  <g transform="translate(50, 120)">
+    <rect width="700" height="80" rx="8" ry="8" fill="url(#strategyGradient)" filter="url(#dropShadow)" />
+    <text x="350" y="35" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#FFFFFF">Strategic Governance</text>
+    <text x="350" y="60" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Vision, Direction, Principles, and Objectives</text>
+    
+    <!-- Strategy Components -->
+    <g transform="translate(20, 0)">
+      <rect x="0" y="20" width="100" height="40" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+      <text x="50" y="44" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Business Strategy</text>
+    </g>
+    
+    <g transform="translate(140, 0)">
+      <rect x="0" y="20" width="100" height="40" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+      <text x="50" y="44" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">IT Strategy</text>
+    </g>
+    
+    <g transform="translate(260, 0)">
+      <rect x="0" y="20" width="180" height="40" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+      <text x="90" y="44" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Technology Standards</text>
+    </g>
+    
+    <g transform="translate(460, 0)">
+      <rect x="0" y="20" width="220" height="40" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+      <text x="110" y="44" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Enterprise Architecture Alignment</text>
+    </g>
+  </g>
+  
+  <!-- 2. Governance Structure Layer -->
+  <g transform="translate(50, 220)">
+    <rect width="700" height="100" rx="8" ry="8" fill="url(#governanceGradient)" filter="url(#dropShadow)" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#FFFFFF">Governance Structure</text>
+    <text x="350" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Roles, Committees, Responsibilities, and Decision Rights</text>
+    
+    <!-- Governance Structure Components -->
+    <g transform="translate(30, 0)">
+      <rect x="0" y="60" width="130" height="30" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+      <text x="65" y="79" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Steering Committee</text>
+    </g>
+    
+    <g transform="translate(180, 0)">
+      <rect x="0" y="60" width="130" height="30" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+      <text x="65" y="79" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Architecture Board</text>
+    </g>
+    
+    <g transform="translate(330, 0)">
+      <rect x="0" y="60" width="150" height="30" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+      <text x="75" y="79" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Integration Custodians</text>
+    </g>
+    
+    <g transform="translate(500, 0)">
+      <rect x="0" y="60" width="150" height="30" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+      <text x="75" y="79" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Security Champions</text>
+    </g>
+  </g>
+  
+  <!-- 3. Controls Layer -->
+  <g transform="translate(50, 340)">
+    <rect width="700" height="80" rx="8" ry="8" fill="url(#controlsGradient)" filter="url(#dropShadow)" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#FFFFFF">Governance Controls</text>
+    <text x="350" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Standards, Policies, and Guidelines</text>
+    
+    <!-- Controls Components -->
+    <rect x="40" y="30" width="120" height="35" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+    <text x="100" y="52" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Access Controls</text>
+    
+    <rect x="180" y="30" width="120" height="35" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+    <text x="240" y="52" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Code Standards</text>
+    
+    <rect x="320" y="30" width="120" height="35" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+    <text x="380" y="52" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Security Policies</text>
+    
+    <rect x="460" y="30" width="140" height="35" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+    <text x="530" y="52" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Change Management</text>
+  </g>
+  
+  <!-- 4. Process Layer -->
+  <g transform="translate(50, 440)">
+    <rect width="700" height="80" rx="8" ry="8" fill="url(#processGradient)" filter="url(#dropShadow)" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#FFFFFF">Governance Processes</text>
+    <text x="350" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Procedures, Workflows, and Approvals</text>
+    
+    <!-- Process Components -->
+    <rect x="30" y="30" width="110" height="35" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+    <text x="85" y="52" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Code Review</text>
+    
+    <rect x="150" y="30" width="110" height="35" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+    <text x="205" y="52" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Release Process</text>
+    
+    <rect x="270" y="30" width="150" height="35" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+    <text x="345" y="52" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Transport Management</text>
+    
+    <rect x="430" y="30" width="120" height="35" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+    <text x="490" y="52" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Issue Handling</text>
+    
+    <rect x="560" y="30" width="110" height="35" rx="5" ry="5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+    <text x="615" y="52" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFFFFF">Audit Process</text>
+  </g>
+  
+  <!-- 5. Operations Layer -->
+  <g transform="translate(50, 540)">
+    <rect width="700" height="40" rx="8" ry="8" fill="url(#operationsGradient)" filter="url(#dropShadow)" />
+    <text x="350" y="25" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#FFFFFF">Operational Governance - Monitoring, Reporting, and Continuous Improvement</text>
+  </g>
+  
+  <!-- Vertical Connection Lines -->
+  <line x1="400" y1="200" x2="400" y2="220" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="400" y1="320" x2="400" y2="340" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="400" y1="420" x2="400" y2="440" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="400" y1="520" x2="400" y2="540" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Legend -->
+  <g transform="translate(40, 90)">
+    <rect x="0" y="0" width="15" height="15" fill="url(#strategyGradient)" />
+    <text x="20" y="12" font-family="Arial, sans-serif" font-size="10" fill="#212121">Strategy</text>
+    
+    <rect x="100" y="0" width="15" height="15" fill="url(#governanceGradient)" />
+    <text x="120" y="12" font-family="Arial, sans-serif" font-size="10" fill="#212121">Structure</text>
+    
+    <rect x="200" y="0" width="15" height="15" fill="url(#controlsGradient)" />
+    <text x="220" y="12" font-family="Arial, sans-serif" font-size="10" fill="#212121">Controls</text>
+    
+    <rect x="300" y="0" width="15" height="15" fill="url(#processGradient)" />
+    <text x="320" y="12" font-family="Arial, sans-serif" font-size="10" fill="#212121">Processes</text>
+    
+    <rect x="400" y="0" width="15" height="15" fill="url(#operationsGradient)" />
+    <text x="420" y="12" font-family="Arial, sans-serif" font-size="10" fill="#212121">Operations</text>
+  </g>
+</svg>

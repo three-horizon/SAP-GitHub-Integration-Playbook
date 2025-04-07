@@ -30,6 +30,13 @@ This document provides comprehensive guidance on configuring continuous integrat
 
 ### CI/CD Pipeline Architecture
 
+<div align="center">
+
+<img src="../../../../assets/images/flows/cicd-pipeline.svg" alt="CI/CD Pipeline Architecture" width="800">
+
+*SAP-GitHub Integration CI/CD Pipeline Architecture*
+</div>
+
 The SAP-GitHub integration CI/CD pipeline consists of these key components:
 
 1. **Pipeline Components**:

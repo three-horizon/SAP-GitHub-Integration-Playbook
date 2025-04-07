@@ -283,10 +283,12 @@ With benefits and costs calculated over a 3-5 year period for accuracy.
 
 For implementation assistance, refer to the [Implementation Guide](../implementation/index.md) section of this playbook.
 
----
+# 📊 Integration Metrics and Benefits
 
-*Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Enterprise X.Y.Z, SAP S/4 HANA X.Y.Z, etc.]*
-
----
+<div align="center">
+  <img src="../../../../assets/images/architecture/high-level-architecture.svg" width="700" alt="Integration Metrics">
+  
+  *Measuring the business value and technical benefits of SAP-GitHub Integration*
+</div>
 
 

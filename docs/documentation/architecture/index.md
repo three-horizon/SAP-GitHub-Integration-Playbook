@@ -5,21 +5,21 @@ title: SAP-GitHub Architecture
 ## 📋 Table of Contents
 
 - [📋 Overview](#overview)
-- [Architecture Components](#architecture-components)
-- [Key Architecture Documentation](#key-architecture-documentation)
-- [Integration Patterns](#integration-patterns)
+- [🧩 Architecture Components](#architecture-components)
+- [📚 Key Architecture Documentation](#key-architecture-documentation)
+- [🔄 Integration Patterns](#integration-patterns)
 - [🛡️ Security Architecture](#security-architecture)
-- [Reference Architecture Diagram](#reference-architecture-diagram)
+- [🏛️ Reference Architecture Diagram](#reference-architecture-diagram)
 - [➡️ Next Steps](#next-steps)
 
 
-# SAP-GitHub Integration Architecture
+# 🔗 SAP-GitHub Integration Architecture
 
 ## 📋 Overview
 
 This section provides a comprehensive overview of the architecture for integrating SAP systems with GitHub Enterprise, focusing on secure, reliable, and efficient connectivity patterns.
 
-## Architecture Components
+## 🧩 Architecture Components
 
 The SAP-GitHub integration architecture consists of the following key components:
 
@@ -29,7 +29,7 @@ The SAP-GitHub integration architecture consists of the following key components
 4. **Security Components** - Authentication and authorization mechanisms
 5. **Monitoring Systems** - Tools to track integration health and performance
 
-## Key Architecture Documentation
+## 📚 Key Architecture Documentation
 
 ### Overview and Reference Architecture
 - [System Architecture](./system-architecture.md) - Comprehensive system architecture details
@@ -54,13 +54,13 @@ The SAP-GitHub integration architecture consists of the following key components
 - [Disaster Recovery Architecture](./disaster-recovery-architecture.md) - DR and business continuity
 - [Standards](./standards/) - Architecture and implementation standards
 
-## Integration Patterns
+## 🔄 Integration Patterns
 
 ### Pattern 1: Direct Integration via abapGit
 
 This pattern uses abapGit to directly connect SAP ABAP systems to GitHub repositories.
 
-![Direct Integration Architecture](https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/direct-integration-pattern.png)
+![Direct Integration Architecture](../../../assets/images/architecture/abapgit-workflow.svg)
 
 *Figure 1: Direct Integration via abapGit*
 
@@ -82,11 +82,11 @@ The security architecture for SAP-GitHub integration includes:
 - Audit logging
 - Transport layer security
 
-## Reference Architecture Diagram
+## 🏛️ Reference Architecture Diagram
 
 The complete reference architecture is shown below:
 
-![Complete Reference Architecture](https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/sap-github-reference-architecture.png)
+![Complete Reference Architecture](../../../assets/images/architecture/high-level-architecture.svg)
 
 *Figure 2: Complete SAP-GitHub Reference Architecture*
 

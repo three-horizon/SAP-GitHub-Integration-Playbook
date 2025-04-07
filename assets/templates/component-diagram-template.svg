@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Component Diagram Template</title>
+  <desc id="desc">Template for creating component diagrams in the SAP-GitHub Integration Playbook</desc>
+  
+  <!-- Styles -->
+  <defs>
+    <!-- Arrow Markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#757575" />
+    </marker>
+    
+    <!-- Component Styles -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Gradient Backgrounds -->
+    <linearGradient id="sapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1565C0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D47A1;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="githubGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8E24AA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6F42C1;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="msAzureGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#039BE5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0078D4;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="securityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E53935;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C62828;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="integrationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#388E3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Component Templates -->
+    <g id="componentTemplate">
+      <rect width="160" height="80" rx="5" ry="5" filter="url(#dropShadow)" />
+      <rect x="140" y="15" width="30" height="20" rx="2" ry="2" fill="#FFFFFF" stroke="#212121" stroke-width="1" />
+      <rect x="140" y="45" width="30" height="20" rx="2" ry="2" fill="#FFFFFF" stroke="#212121" stroke-width="1" />
+    </g>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Diagram Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#212121">Component Diagram Title</text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#757575">Brief description of the system components</text>
+  
+  <!-- System Boundary -->
+  <rect x="50" y="100" width="700" height="400" rx="10" ry="10" fill="none" stroke="#B0BEC5" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="75" y="130" font-family="Arial, sans-serif" font-size="18" fill="#757575">System Boundary</text>
+  
+  <!-- Components - Example Layout -->
+  
+  <!-- SAP Component -->
+  <g transform="translate(100, 180)">
+    <use xlink:href="#componentTemplate" fill="url(#sapGradient)" />
+    <text x="80" y="45" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">SAP Component</text>
+  </g>
+  
+  <!-- GitHub Component -->
+  <g transform="translate(400, 180)">
+    <use xlink:href="#componentTemplate" fill="url(#githubGradient)" />
+    <text x="80" y="45" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">GitHub Component</text>
+  </g>
+  
+  <!-- Integration Component -->
+  <g transform="translate(250, 320)">
+    <use xlink:href="#componentTemplate" fill="url(#integrationGradient)" />
+    <text x="80" y="45" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Integration Layer</text>
+  </g>
+  
+  <!-- Microsoft/Azure Component -->
+  <g transform="translate(550, 320)">
+    <use xlink:href="#componentTemplate" fill="url(#msAzureGradient)" />
+    <text x="80" y="45" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Azure Component</text>
+  </g>
+  
+  <!-- Security Component -->
+  <g transform="translate(400, 430)">
+    <use xlink:href="#componentTemplate" fill="url(#securityGradient)" />
+    <text x="80" y="45" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Security Layer</text>
+  </g>
+  
+  <!-- Connection Lines -->
+  <line x1="260" y1="220" x2="400" y2="220" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="180" y1="260" x2="250" y2="320" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="480" y1="260" x2="410" y2="320" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="410" y1="400" x2="410" y2="430" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="560" y1="400" x2="490" y2="430" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="410" y1="320" x2="550" y2="320" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Interface Points -->
+  <circle cx="260" cy="220" r="5" fill="#FFFFFF" stroke="#212121" stroke-width="1" />
+  <circle cx="400" cy="220" r="5" fill="#FFFFFF" stroke="#212121" stroke-width="1" />
+  <circle cx="410" cy="320" r="5" fill="#FFFFFF" stroke="#212121" stroke-width="1" />
+  <circle cx="550" cy="320" r="5" fill="#FFFFFF" stroke="#212121" stroke-width="1" />
+  
+  <!-- Legend -->
+  <g transform="translate(50, 520)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#212121">Component Legend:</text>
+    
+    <rect x="0" y="10" width="20" height="20" fill="url(#sapGradient)" />
+    <text x="30" y="25" font-family="Arial, sans-serif" font-size="14" fill="#212121">SAP Component</text>
+    
+    <rect x="200" y="10" width="20" height="20" fill="url(#githubGradient)" />
+    <text x="230" y="25" font-family="Arial, sans-serif" font-size="14" fill="#212121">GitHub Component</text>
+    
+    <rect x="400" y="10" width="20" height="20" fill="url(#msAzureGradient)" />
+    <text x="430" y="25" font-family="Arial, sans-serif" font-size="14" fill="#212121">Microsoft/Azure Component</text>
+    
+    <rect x="0" y="40" width="20" height="20" fill="url(#integrationGradient)" />
+    <text x="30" y="55" font-family="Arial, sans-serif" font-size="14" fill="#212121">Integration Component</text>
+    
+    <rect x="200" y="40" width="20" height="20" fill="url(#securityGradient)" />
+    <text x="230" y="55" font-family="Arial, sans-serif" font-size="14" fill="#212121">Security Component</text>
+  </g>
+  
+  <!-- Template Notes -->
+  <g transform="translate(600, 520)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#757575">Template Notes:</text>
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="12" fill="#757575">1. Replace title and components</text>
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="12" fill="#757575">2. Maintain consistent styling</text>
+  </g>
+</svg> 

@@ -45,40 +45,6 @@ When adding or updating assets:
 3. Include a short README.md in each subdirectory explaining its contents
 4. Update any documentation that references modified assets
 
-## 🔗 Referencing Images in Documentation
-
-To reference images in markdown files, use the following syntax:
-
-```markdown
-<div align="center" class="svg-container">
-  <!-- Using both object and img as fallback for maximum compatibility -->
-  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
-    <img src="\1" alt="\1" width="700" />
-  </object>
-  
-  *\1*
-</div>
-```
-
-For centered images with captions, use:
-
-```markdown
-<div align="center" class="svg-container">
-  <!-- Using both object and img as fallback for maximum compatibility -->
-  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
-    <img src="\1" alt="\1" width="700" />
-  </object>
-  
-  *\1*
-</div>
-```
-
-For Jekyll-specific image inclusion with more options, use:
-
-```markdown
-{% include image.html url="/assets/images/category/image-name.svg" alt="Description" caption="Optional caption" %}
-```
-
 ## 🔗 Related Documentation
 
 - [Image Design Guidelines](../docs/1-architecture/standards/image-design-guidelines.md)
@@ -86,11 +52,12 @@ For Jekyll-specific image inclusion with more options, use:
 
 ---
 
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
+## ⚡ Contributing
 
-- **Last Updated:** 2025-04-07
-- **Author:** Documentation Team
-- **Version:** 1.0.0
-- **Status:** Published
-</details>
+We welcome contributions to this project! Please see our [Contributing Guide](../CONTRIBUTING.md) for more information.
+
+## ⚡ License
+
+This project is licensed under the [MIT License](../LICENSE) - see the LICENSE file for details.
+
+🔄 Last updated: April 2025 | Contribute to this document through [Pull Requests](Pull Requests)

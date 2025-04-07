@@ -197,10 +197,12 @@ Use this checklist to verify all prerequisites are met before beginning implemen
 - [ ] SAP BASIS team is informed and onboard with the implementation
 - [ ] Security team has reviewed and approved the architecture
 
----
+# 📋 Prerequisites
 
-**Last Updated:** 2023-09-01
-
----
+<div align="center">
+  <img src="../../assets/images/architecture/high-level-architecture.svg" width="700" alt="Prerequisites">
+  
+  *Required components and configurations for SAP-GitHub Integration*
+</div>
 
 

@@ -3,6 +3,14 @@ layout: default
 title: UI5/Fiori Build Pipeline
 ---
 
+# 🔄 UI5/Fiori Build Pipeline
+
+<div align="center">
+  <img src="../../assets/images/architecture/sap-fiori-github-integration.svg" width="700" alt="UI5/Fiori Build Pipeline">
+  
+  *CI/CD pipeline for SAP UI5/Fiori development*
+</div>
+
 # UI5/Fiori Build Pipeline with GitHub Actions
 
 This example provides a complete GitHub Actions workflow for building, testing, and deploying SAP UI5/Fiori applications to different environments.
@@ -572,10 +580,3 @@ deploy-tenant:
 - Integrate with [API Management](../api-management/sap-to-github.md) for backend API connectivity
 - Implement [Security Configurations](../security-config/oauth-configuration.md) for authentication
 - Set up [XML Configurations](../xml-config/system-connectivity.md) for system connectivity
-
----
-
-**Document Metadata:**
-- Last Updated: 2023-11-15
-- Version: 1.0.0
-- Status: Published 

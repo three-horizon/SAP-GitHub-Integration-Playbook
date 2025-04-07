@@ -42,10 +42,10 @@ Organizations using SAP Solution Manager with Change Request Management (CHARM) 
 ### Integration Architecture with API Management
 
 <div align="center">
-  
-![CHARM Integration Architecture](/assets/images/architecture/charm-integration-architecture.png)
-  
-  *\1*
+
+<img src="/assets/images/architecture/charm-integration-architecture.svg" alt="CHARM Integration Architecture" width="800">
+
+*CHARM Integration Architecture with API Management Layer*
 </div>
 
 The CHARM integration architecture consists of the following components:
@@ -217,10 +217,10 @@ Specialized security monitoring for SAP transports includes:
 Security monitoring dashboard integrates with GitHub security features:
 
 <div align="center">
-  
-![Transport Security Dashboard](/assets/images/architecture/transport-security-dashboard.png)
-  
-  *\1*
+
+<img src="/assets/images/architecture/transport-security-dashboard.svg" alt="Transport Security Dashboard" width="800">
+
+*Transport Security Monitoring Dashboard for SAP-GitHub Integration*
 </div>
 
 ### End-to-End Implementation Steps

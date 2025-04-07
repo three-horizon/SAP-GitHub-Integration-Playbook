@@ -26,6 +26,13 @@ This document outlines the enterprise governance model for SAP-GitHub integratio
 
 An effective governance model is essential for successful SAP-GitHub integration, ensuring proper controls while enabling developer productivity. This model spans organizational, process, and technical domains to create a balanced approach that works across different SAP technologies.
 
+<div align="center">
+  
+![Governance Model Architecture](../../../assets/images/architecture/governance-model.svg)
+  
+  *Enterprise Governance Model for SAP-GitHub Integration*
+</div>
+
 ## Governance Components
 
 The governance model consists of the following key components:

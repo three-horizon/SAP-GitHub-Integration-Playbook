@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Process Flow Template</title>
+  <desc id="desc">Template for creating process flow diagrams in the SAP-GitHub Integration Playbook</desc>
+  
+  <!-- Styles -->
+  <defs>
+    <!-- Arrow Markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#757575" />
+    </marker>
+    
+    <!-- Gradient Backgrounds -->
+    <linearGradient id="sapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1565C0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D47A1;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="githubGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8E24AA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6F42C1;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="integrationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#388E3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="decisionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F57F17;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E65100;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" />
+  
+  <!-- Process Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#212121">Process Flow Title</text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#757575">Brief description of the process</text>
+  
+  <!-- Process Steps - Example Layout -->
+  
+  <!-- Step 1: Start -->
+  <circle cx="150" cy="150" r="50" fill="#ECEFF1" stroke="#B0BEC5" stroke-width="2" />
+  <text x="150" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#212121">Start</text>
+  
+  <!-- Step 2: SAP Process -->
+  <rect x="250" y="120" width="120" height="60" rx="5" ry="5" fill="url(#sapGradient)" />
+  <text x="310" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">SAP Process</text>
+  
+  <!-- Step 3: Decision Point -->
+  <polygon points="450,150 490,120 530,150 490,180" fill="url(#decisionGradient)" />
+  <text x="490" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Decision</text>
+  
+  <!-- Step 4a: GitHub Action -->
+  <rect x="580" y="120" width="120" height="60" rx="5" ry="5" fill="url(#githubGradient)" />
+  <text x="640" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">GitHub Action</text>
+  
+  <!-- Step 4b: Alternative Path -->
+  <rect x="420" y="240" width="120" height="60" rx="5" ry="5" fill="url(#integrationGradient)" />
+  <text x="480" y="275" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">Alternative</text>
+  
+  <!-- Step 5: End State -->
+  <circle cx="640" cy="300" r="50" fill="#ECEFF1" stroke="#B0BEC5" stroke-width="2" />
+  <text x="640" y="305" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#212121">End</text>
+  
+  <!-- Connection Lines -->
+  <line x1="200" y1="150" x2="250" y2="150" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="370" y1="150" x2="450" y2="150" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="530" y1="150" x2="580" y2="150" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="490" y1="180" x2="490" y2="240" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="540" y1="270" x2="590" y2="300" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="640" y1="180" x2="640" y2="250" stroke="#757575" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Guidelines/Notes -->
+  <g transform="translate(50, 380)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#212121">Process Flow Template Notes:</text>
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="14" fill="#757575">1. Replace title and description with actual process name</text>
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="14" fill="#757575">2. Modify steps and connections to represent your specific process</text>
+    <text x="0" y="75" font-family="Arial, sans-serif" font-size="14" fill="#757575">3. Maintain consistent color coding for component types</text>
+  </g>
+</svg> 

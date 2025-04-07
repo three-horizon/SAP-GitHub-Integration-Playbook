@@ -92,10 +92,10 @@ This style guide establishes standards for creating consistent, high-quality doc
 
 ```markdown
 <div align="center">
-  
-![SAP to GitHub integration architecture diagram](../assets/images/architecture/integration-diagram.png)
-  
-  *\1*
+
+<img src="../assets/images/architecture/integration-diagram.svg" alt="SAP to GitHub integration architecture diagram" width="800">
+
+*SAP to GitHub Integration Architecture Diagram*
 </div>
 ```
 

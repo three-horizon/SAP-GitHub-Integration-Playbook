@@ -1,196 +1,180 @@
-# SVG Implementation Guide
+# 🎨 SVG Implementation Guide
 
 <div align="center">
-<img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/playbook-overview.svg?sanitize=true" width="700" alt="SAP-GitHub Integration Playbook Overview">
+  <img src="../../assets/images/architecture/high-level-architecture.svg" width="700" alt="SVG Implementation Example">
+  
+  *Using SVG for consistent and scalable documentation visuals*
 </div>
 
-## Overview
+## 📋 Table of Contents
 
-This guide explains how to create, implement, and maintain SVG (Scalable Vector Graphics) assets throughout the SAP-GitHub Integration Playbook documentation. SVG is the preferred format for all diagrams, flowcharts, architecture illustrations, and other visual assets in this documentation.
+- [Introduction](#introduction)
+- [SVG Benefits](#svg-benefits)
+- [SVG Implementation Workflow](#svg-implementation-workflow)
+- [SVG Creation Guidelines](#svg-creation-guidelines)
+- [SVG Templates](#svg-templates)
+- [Best Practices](#best-practices)
+- [SVG Accessibility](#svg-accessibility)
+- [Testing and Validation](#testing-and-validation)
+- [SVG Examples](#svg-examples)
 
-## Why SVG?
+## Introduction
 
-- **Scalable**: SVGs maintain quality at any size
-- **Accessible**: Text elements can be read by screen readers
-- **Interactive**: Can be animated and made interactive
-- **Searchable**: Text within SVGs is searchable
-- **Lightweight**: Often smaller file size than raster images
-- **Editable**: Easy to update and maintain
+This guide provides comprehensive instructions for implementing SVG (Scalable Vector Graphics) in all documentation for the SAP-GitHub Integration Playbook. SVG is the preferred format for diagrams, architecture illustrations, and other visual elements in our documentation due to its scalability, accessibility, and integration capabilities.
 
-## Creating SVG Diagrams
+## SVG Benefits
+
+Using SVG in documentation provides several advantages:
+
+- **Scalability**: SVGs maintain quality at any zoom level without pixelation
+- **Responsive**: Automatically adjust to different screen sizes and devices
+- **Accessibility**: Provide better screen reader support through proper markup
+- **Smaller File Size**: Generally smaller than equivalent raster images
+- **Searchability**: Text within SVGs is searchable
+- **Styling**: Can be styled with CSS
+- **Animation**: Support for animation and interactivity
+- **Version Control**: Text-based format works well with Git version control
+
+## SVG Implementation Workflow
+
+1. **Identify Diagram Needs**: Determine visual elements needed in documentation
+2. **Use Templates**: Start with appropriate SVG template from `assets/templates`
+3. **Create SVG**: Develop SVG using recommended tools
+4. **Validate**: Check SVG for quality, accessibility, and adherence to standards
+5. **Add to Repository**: Place in appropriate location under `assets/images`
+6. **Reference in Documentation**: Use proper Markdown syntax for referencing SVGs
+
+## SVG Creation Guidelines
 
 ### Recommended Tools
 
-- **[draw.io](https://draw.io)** (free, web-based and desktop versions)
-- **[Lucidchart](https://lucidchart.com)** (subscription-based)
-- **[Inkscape](https://inkscape.org)** (free, open-source)
-- **[Figma](https://figma.com)** (design tool with SVG export)
+- **[Inkscape](https://inkscape.org/)**: Free, open-source vector graphics editor
+- **[Draw.io](https://app.diagrams.net/)**: Online diagramming tool with SVG export
+- **[Figma](https://www.figma.com/)**: Design tool with excellent SVG export capabilities
+- **Code Editors**: Direct SVG editing in VS Code or similar editors
 
-### Design Standards
+### SVG Structure Requirements
 
-Follow the design standards specified in [VISUAL_ASSETS.md](../../assets/images/VISUAL_ASSETS.md), which include:
+- Use meaningful element IDs
+- Include title and description elements for accessibility
+- Group related elements logically
+- Use consistent styling based on our style guide
+- Include appropriate metadata
 
-- **Color Palette**:
-  - SAP Components: SAP Green (#0BAF51)
-  - GitHub Components: GitHub Purple (#6E5494)
-  - Microsoft/Azure Components: Microsoft Blue (#0078D4)
-  - Security Elements: Security Red (#D13438)
-  - Integration Components: Neutral Gray (#6B6B6B)
-  - Developer/User Components: Orange (#FF8C00)
+### Style Conventions
 
-- **Typography**:
-  - Primary Font: Segoe UI or Arial (sans-serif)
-  - Clear hierarchy of text sizes
+- **SAP Components**: Blue (#0D47A1)
+- **GitHub Components**: Purple (#6F42C1)
+- **Microsoft/Azure Components**: Light Blue (#0078D4)
+- **Integration Components**: Green (#2E7D32)
+- **Security Elements**: Red (#C62828)
+- **Developer/User Components**: Orange (#E65100)
+- **Connection Lines**: Gray (#757575)
+- **Text**: Black (#212121) or White (#FFFFFF) depending on background
 
-- **Layouts**:
-  - Clear directional flow
-  - Consistent spacing
-  - Properly aligned connections
+## SVG Templates
 
-### SVG Export Best Practices
+Our repository includes standard SVG templates for common diagram types:
 
-1. **Include a viewBox attribute**: Essential for proper scaling
-2. **Set width and height**: Provides proper dimensions
-3. **Define proper aspect ratio**: Prevents distortion
-4. **Use descriptive IDs and classes**: Improves accessibility and CSS styling
-5. **Minimize file size**: Remove unnecessary elements and metadata
-6. **Use proper namespaces**: Include the SVG namespace
+- **System Architecture**: `/assets/templates/svg-template.svg`
+- **Process Flow**: `/assets/templates/process-flow-template.svg`
+- **Component Diagram**: `/assets/templates/component-diagram-template.svg`
+- **Sequence Diagram**: `/assets/templates/sequence-diagram-template.svg`
 
-## File Organization
+### Using Templates
 
-SVGs should be organized in the repository following this structure:
+1. Copy the appropriate template to your working directory
+2. Rename according to the naming convention
+3. Modify to represent your specific diagram needs
+4. Validate against our SVG guidelines
+5. Place in the appropriate directory in the repository
 
-```
-assets/
-  images/
-    architecture/       # High-level architecture diagrams
-    components/         # Component-level diagrams
-    flows/              # Workflow and data flow diagrams
-    deployment/         # Deployment diagrams
-    devsecops/          # DevSecOps and security diagrams
-    resources/          # Resources and templates
-    icons/              # Reusable icons and symbols
-```
+## Best Practices
 
-## File Naming Conventions
+### File Naming Convention
 
-Use kebab-case (lowercase with hyphens) for all SVG filenames, following this pattern:
+- Use lowercase letters, numbers, and hyphens
+- Be descriptive but concise
+- Follow pattern: `[context]-[diagram-type].svg`
+- Examples: `sap-github-integration-architecture.svg`, `transport-workflow.svg`
 
-1. **Domain-specific prefix** (optional)
-2. **Descriptive name** (required)
-3. **Version or variant** (optional)
+### Size Optimization
 
-Examples:
-- `sap-abap-github-integration.svg`
-- `development-workflow.svg`
-- `security-monitoring-flow.svg`
+- Remove unnecessary metadata and comments
+- Use simplified paths where possible
+- Avoid embedded raster images
+- Consider using SVGO for optimization
 
-## Adding SVGs to Documentation
+### Version Control Considerations
 
-### Method 1: Direct Image Link (Preferred for Simple Usage)
+- Keep SVG files in text format (not compressed)
+- Use meaningful commit messages when updating SVGs
+- Review SVG changes in pull requests
+- Consider using Git LFS for very large SVG files
 
-```markdown
-<img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/playbook-overview.svg?sanitize=true" width="700" alt="SAP-GitHub Integration Playbook Overview">
-```
+## SVG Accessibility
 
-The `?sanitize=true` parameter is crucial for SVGs as it ensures GitHub renders the SVG safely.
+Ensure all SVGs are accessible by:
 
-### Method 2: Object/Image Fallback (Better for Complex SVGs)
+- Including title and description elements
+- Using aria-labelledby to reference the title
+- Adding role="img" to the SVG element
+- Providing appropriate text alternatives
+- Using sufficient color contrast
+- Ensuring interactive elements are keyboard accessible
 
-```markdown
-<div align="center" class="svg-container">
-<object type="image/svg+xml" data="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/playbook-overview.svg" style="width: 700px; max-width: 100%;" aria-label="Playbook Overview">
-<img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/playbook-overview.svg?sanitize=true" width="700" alt="Playbook Overview">
-</object>
-</div>
-```
-
-This method provides a fallback for browsers that don't support SVG rendering via the object tag.
-
-### Method 3: SVG with Caption
-
-```markdown
-<div align="center" class="svg-container">
-<object type="image/svg+xml" data="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/playbook-overview.svg" style="width: 700px; max-width: 100%;" aria-label="Playbook Overview">
-<img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/playbook-overview.svg?sanitize=true" width="700" alt="Playbook Overview">
-</object>
-<p><em>Figure 1: SAP-GitHub Integration Architecture Overview</em></p>
-</div>
+Example of accessible SVG header:
+```xml
+<svg role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="title">Architecture Diagram</title>
+  <desc id="desc">System architecture showing integration between SAP and GitHub</desc>
+  <!-- SVG content -->
+</svg>
 ```
 
-## SVG Validation
+## Testing and Validation
 
-This repository includes SVG validation tools to ensure all SVGs meet our standards:
+Before adding SVGs to the documentation:
 
-```bash
-# Install dependencies
-npm install
+1. **Visual Validation**: Check appearance across browsers and devices
+2. **Accessibility Testing**: Verify screen reader compatibility
+3. **File Size Optimization**: Ensure efficient file size
+4. **Standards Compliance**: Validate against W3C SVG standards
+5. **Integration Testing**: Test in documentation context
 
-# Validate SVGs
-npm run validate-svg
+## SVG Examples
+
+### Example 1: High-Level Architecture
+
+```
+/assets/images/architecture/high-level-architecture.svg
 ```
 
-The validator checks for:
-- Proper viewBox attributes
-- Width and height attributes
-- Correct SVG namespace
-- Other quality checks
+A comprehensive system architecture diagram showing main components of SAP-GitHub integration.
 
-## Converting SVG to PNG (for Compatibility)
+### Example 2: Process Flow
 
-While SVG is preferred, sometimes PNG versions are needed for compatibility or presentations:
-
-```bash
-# Convert SVGs to PNGs
-npm run convert-svg
+```
+/assets/images/workflows/transport-workflow.svg
 ```
 
-This creates PNG versions in the `assets/images/png/` directory.
+Illustrates the flow of code from development through testing to production deployment.
 
-## Accessibility Considerations
+### Example 3: Component Diagram
 
-1. **Always include alt text**: Descriptive alternative text for screen readers
-2. **Use ARIA labels**: For more complex SVGs, use aria-label attributes
-3. **Maintain contrast**: Ensure sufficient contrast between elements
-4. **Avoid relying on color alone**: Use patterns or shapes in addition to colors
-5. **Test with screen readers**: Verify accessibility with assistive technologies
+```
+/assets/images/architecture/api-implementation.svg
+```
 
-## Recommended SVG Diagram Types
+Detailed view of API implementation between SAP and GitHub systems.
 
-| Type | Best For | Example File |
-|------|----------|--------------|
-| Architecture | System relationships | `high-level-architecture.svg` |
-| Workflow | Process steps | `development-workflow.svg` |
-| Sequence | Time-based interactions | `authentication-sequence.svg` |
-| Component | System components | `integration-components.svg` |
-| Decision Tree | Decision processes | `transport-decision-tree.svg` |
-| Data Flow | Information movement | `sap-to-github-flow.svg` |
+## Migration Plan for Existing Content
 
-## Example SVGs in Documentation
+For documentation containing non-SVG images:
 
-### Architecture Diagram Example
-
-<div align="center">
-<img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/high-level-architecture.svg?sanitize=true" width="700" alt="SAP-GitHub Integration Architecture">
-<p><em>High-level Integration Architecture</em></p>
-</div>
-
-### Workflow Diagram Example
-
-<div align="center">
-<img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/flows/development-workflow.svg?sanitize=true" width="700" alt="Development Workflow">
-<p><em>Development Workflow Process</em></p>
-</div>
-
-## Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| SVG not rendering | Add `?sanitize=true` to the URL |
-| SVG too large | Set width attribute and use responsive styling |
-| Text misaligned | Convert text to paths in the SVG |
-| Accessibility issues | Add ARIA labels and ensure alt text |
-
----
-
-For questions or assistance with SVG implementation, contact the documentation team. 
+1. Identify all PNG/JPG images in documentation
+2. Prioritize conversion based on importance and visibility
+3. Create SVG replacements using templates and guidelines
+4. Update documentation to reference new SVG files
+5. Validate updated documentation
+6. Remove obsolete raster image files 

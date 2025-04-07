@@ -3,6 +3,14 @@ layout: default
 title: System Connectivity Configuration
 ---
 
+# 🔄 System Connectivity XML Configuration
+
+<div align="center">
+  <img src="../../assets/images/architecture/api-implementation.svg" width="700" alt="System Connectivity Architecture">
+  
+  *XML configuration for system connectivity between SAP and GitHub*
+</div>
+
 # System Connectivity Configuration
 
 This document provides XML configuration templates for establishing connectivity between SAP systems and GitHub.
@@ -341,10 +349,3 @@ sap.url=https://your-sap-system.example.com/odata/api
 - Implement [OAuth Configuration](../security-config/oauth-configuration.md) for authentication
 - Set up [API Management Policies](../api-management/sap-to-github.md) for API governance
 - Configure [GitHub Actions](../github-actions/ui5-build-pipeline.md) for automated workflows
-
----
-
-**Document Metadata:**
-- Last Updated: 2023-11-15
-- Version: 1.0.0
-- Status: Published 

@@ -1,78 +1,62 @@
-# Architecture Diagram Placeholders
+# Architecture Diagram Status
 
-This file lists all diagram placeholders that need to be created to complete the architecture documentation. These diagrams should be created using a consistent visual style following the guidelines in the [README.md](./README.md) file.
+This file lists the status of all architecture diagrams. The goal is to convert all diagrams to SVG format following the guidelines in the [README.md](./README.md) file.
 
-## High-Level Integration Diagrams
+## Completed SVG Diagrams
 
-1. `sap-github-reference-architecture.png` - Complete reference architecture overview
-2. `high-level-architecture.png` - Simplified high-level architecture view
-3. `component-interaction-diagram.png` - Component interaction diagram
+1. `high-level-architecture.svg` - Simplified high-level architecture view
+2. `sap-abap-github-integration.svg` - SAP ABAP integration architecture
+3. `sap-fiori-github-integration.svg` - SAP Fiori/UI5 integration architecture
+4. `sap-hana-github-integration.svg` - SAP HANA integration architecture
+5. `metrics-framework.svg` - Metrics framework architecture
+6. `playbook-overview.svg` - Playbook overview diagram
+7. `api-interaction-patterns.svg` - API interaction patterns
+8. `api-extension-framework.svg` - Extension framework architecture
+9. `abapgit-workflow.svg` - abapGit workflow diagram
+10. `github-to-sap-flow.svg` - GitHub to SAP flow diagram
+11. `sap-to-github-flow.svg` - SAP to GitHub flow diagram
+12. `sap-github-workflow.svg` - SAP-GitHub workflow diagram
+13. `workflow-fundamentals.svg` - Workflow fundamentals diagram
+14. `cicd-pipeline.svg` - CI/CD pipeline architecture
+15. `development-workflow.svg` - Development workflow diagram
+16. `transport-decision-tree.svg` - Transport decision tree
+17. `integration-decision-tree.svg` - Integration decision tree
+18. `security-workflow.svg` - Security workflow diagram
+19. `security-monitoring-flow.svg` - Security monitoring flow diagram
+20. `monitoring-dashboard-template.svg` - Monitoring dashboard template
+21. `charm-integration-architecture.svg` - CHARM integration architecture
+22. `transport-security-dashboard.svg` - Transport security dashboard
+23. `context-store.svg` - Context store architecture
+24. `governance-model.svg` - Governance model architecture
+25. `disaster-recovery-architecture.svg` - Disaster recovery architecture
+26. `btp-architecture.svg` - SAP BTP integration architecture
 
-## SAP Technology-Specific Diagrams
+## SVG Diagram Usage
 
-1. `crm-integration-architecture.png` - SAP CRM integration architecture
-2. `btp-integration-architecture.png` - SAP BTP integration architecture
-3. `fiori-ui5-architecture.png` - SAP Fiori/UI5 integration architecture
-4. `hana-architecture.png` - SAP HANA integration architecture (XS Classic/Advanced)
+All SVG diagrams should follow these standards:
+- Use consistent color scheme as defined in the style guide
+- Include proper accessibility attributes (title, description, etc.)
+- Use semantic grouping of elements
+- Follow the component styling guidelines
+- Include proper text labels and captions
+- Reference SVGs in markdown using the standard format:
 
-## Integration Pattern Diagrams
+```markdown
+<div align="center">
 
-1. `direct-integration-pattern.png` - Direct integration via abapGit
-2. `api-mediated-integration-pattern.png` - API-mediated integration
-3. `event-driven-integration-pattern.png` - Event-driven integration
-4. `charm-integration.png` - Integration pattern with ChaRM
-5. `non-charm-integration.png` - Integration pattern without ChaRM
+<img src="/assets/images/architecture/diagram-name.svg" alt="Descriptive Alt Text" width="800">
 
-## Security Architecture Diagrams
+*Descriptive Caption for the Diagram*
+</div>
+```
 
-1. `security-architecture.png` - Security architecture overview
-2. `security-integration-diagram.png` - Security integration across components
-3. `authentication-flow.png` - Authentication flow diagram
-4. `authorization-model.png` - Authorization model
+## Benefits of SVG Format
 
-## Environment-Specific Diagrams
+- Scalable without loss of quality
+- Accessible with proper attributes
+- Smaller file size for complex diagrams
+- Text remains selectable and searchable
+- Can be styled with CSS when needed
+- Better version control with text-based format
 
-1. `development-environment.png` - Development environment configuration
-2. `test-environment.png` - Test environment configuration
-3. `production-environment.png` - Production environment configuration
-4. `hybrid-environment.png` - Hybrid cloud/on-premises environment
-
-## Disaster Recovery Diagrams
-
-1. `github-dr-architecture.png` - GitHub disaster recovery architecture
-2. `github-server-dr.png` - GitHub Enterprise Server DR configuration
-3. `sap-dr-architecture.png` - SAP system recovery architecture
-4. `api-dr-architecture.png` - API Management DR architecture
-5. `integration-dr-architecture.png` - Integration service DR architecture
-6. `cicd-dr-architecture.png` - CI/CD DR architecture
-7. `complete-dr-architecture.png` - Complete DR architecture
-8. `local-dev-continuity.png` - Local development continuity workflow
-9. `direct-sap-continuity.png` - Direct SAP development workflow
-10. `manual-deployment-flow.png` - Manual deployment workflow
-11. `alt-deployment-arch.png` - Alternative deployment architecture
-12. `multi-cloud-dr.png` - Multi-cloud DR strategy
-13. `hybrid-recovery.png` - Hybrid recovery options
-14. `btp-dr-architecture.png` - BTP DR architecture
-15. `btp-service-recovery.png` - BTP service recovery flow
-16. `security-incident-recovery.png` - Security incident recovery
-
-## API and Extension Framework Diagrams
-
-1. `api-interaction-patterns.png` - API interaction patterns
-2. `extension-framework-components.png` - Extension framework components
-3. `api-gateway-architecture.png` - API gateway architecture
-4. `extension-framework-architecture.png` - Extension framework architecture
-
-## Process Flow Diagrams
-
-1. `code-synchronization-flow.png` - Code synchronization process flow
-2. `transport-integration-flow.png` - Transport management integration flow
-3. `workflow-comparison.png` - Traditional vs. GitHub-enhanced workflow comparison
-
-## Next Steps
-
-1. Create each diagram using a consistent visual style
-2. Use the recommended color scheme from the README.md
-3. Save diagrams in the `assets/images/architecture` directory
-4. Save source files in the `assets/images/architecture/source` directory
-5. Update this file with links to completed diagrams 
+All architecture documentation should now use SVG format for diagrams instead of PNG or other raster formats.

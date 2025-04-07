@@ -49,22 +49,12 @@ The Context Store is a central component of the Model Context Protocol (MCP) int
 
 ## Architecture
 
-```
-┌─────────────────────┐     ┌──────────────────┐     ┌─────────────────────┐
-│                     │     │                  │     │                     │
-│  SAP Development    │     │  Context Store   │     │  GitHub Development │
-│  Environment        │◄────┤  (Persistence    │────►│  Environment        │
-│                     │     │   Layer)         │     │                     │
-└─────────────────────┘     └──────────┬───────┘     └─────────────────────┘
-                                       │
-                                       │
-                            ┌──────────▼───────┐
-                            │                  │
-                            │  Context APIs    │
-                            │  and Services    │
-                            │                  │
-                            └──────────────────┘
-```
+<div align="center">
+  
+![Context Store Architecture](../../../assets/images/architecture/context-store.svg)
+  
+  *Context Store Architecture for SAP-GitHub Integration*
+</div>
 
 ### Components
 

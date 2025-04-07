@@ -5,13 +5,10 @@ title: ABAP Integration with abapGit
 
 # 🔄 ABAP Integration with abapGit
 
-<div align="center" class="svg-container">
-  <!-- Using both object and img as fallback for maximum compatibility -->
-  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
-    <img src="\1" alt="\1" width="700" />
-  </object>
+<div align="center">
+  <img src="../../assets/images/architecture/abapgit-workflow.svg" width="700" alt="ABAPGit Integration Workflow">
   
-  *\1*
+  *Bidirectional code synchronization between SAP ABAP and GitHub*
 </div>
 
 This example provides a complete implementation guide for integrating SAP ABAP development with GitHub using abapGit.
@@ -475,12 +472,7 @@ jobs:
 - Configure [Code Quality Checks](code-quality-checks.md) to ensure high code standards
 - Implement [Unit Testing Integration](unit-testing.md) for automated testing
 
----
-
-<details>
-<summary><strong>📊 Document Metadata</strong></summary>
-
-- **Last Updated:** 2025-04-07
-- **Version:** 1.1.0
-- **Status:** Published
-</details>
+2. Transfer between systems:
+   - Use offline zip repositories
+   - Export/import via file system
+   - Configure proper transport handling

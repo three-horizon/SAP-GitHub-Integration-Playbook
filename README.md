@@ -49,10 +49,6 @@ For those new to SAP-GitHub integration:
 - [Implementation Quickstart](./docs/2-implementation-guide/getting-started/quick-start.md)
 - [Prerequisites](./docs/2-implementation-guide/getting-started/prerequisites.md)
 
-## Web Version
-
-For a better reading experience, you can view the [web version](https://three-horizon.github.io/SAP-GitHub-Integration-Playbook/) of this documentation.
-
 ## Contributing
 
 Please read our [Contributing Guidelines](./.github/CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
@@ -63,23 +59,9 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ## How to Reference Images
 
-This repository is configured to ensure images work correctly both on GitHub and GitHub Pages. Use the following formats:
-
 ### For direct GitHub viewing:
 ```
 ![Image Name](https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/your-image-name.svg)
-```
-
-### For GitHub Pages (with Jekyll):
-When creating content for the GitHub Pages site, use this format in your Markdown files:
-```
-![Image Name]({% raw %}{{ site.baseurl }}{% endraw %}/assets/images/your-image-name.svg)
-```
-
-### Using the include helper (recommended for Jekyll):
-When creating content for the GitHub Pages site, use this helper:
-```
-{% raw %}{% include image.html url="/assets/images/your-image-name.svg" alt="Image Description" caption="Optional Caption" %}{% endraw %}
 ```
 
 ### SVG images are preferred for better quality and scalability.

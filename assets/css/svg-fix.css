@@ -14,6 +14,24 @@ div[align="center"] img[src$=".svg"] {
   max-width: 100%;
 }
 
+/* Estilo para img tags com class="diagram" */
+img.diagram {
+  max-width: 90%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adicionar estilo para legendas sob as imagens */
+div[align="center"] em {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
+}
+
 /* Corrigir problemas de IE/Edge/Safari com SVGs */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   img[src$=".svg"] {
@@ -32,4 +50,11 @@ div[align="center"] img[src$=".svg"] {
   img[src$=".svg"] {
     height: auto;
   }
-} 
+}
+
+/* Para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  div[align="center"] img[src$=".svg"] {
+    width: 100% !important;
+  }
+}

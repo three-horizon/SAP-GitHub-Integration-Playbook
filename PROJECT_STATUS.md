@@ -5,18 +5,24 @@ description: Current status, accomplishments, and future plans for the SAP-GitHu
 permalink: /project-status/
 ---
 
+# 📊 SAP-GitHub Integration Playbook - Project Status
+
 ## 📋 Table of Contents
 
-- [📋 Overview](#-overview)
-- [Content Section](#content-section)
-- [Additional Section](#additional-section)
-- [🔗 Related Documents](#-related-documents)
+- [📋 Overview](#overview)
+- [Accomplished Tasks](#accomplished-tasks)
+- [In Progress](#in-progress)
+- [Planned Enhancements](#planned-enhancements)
+- [Technical Debt & Improvements](#technical-debt--improvements)
+- [How to Contribute](#how-to-contribute)
+- [Changelog](#changelog)
+
 <div align="center">
   
-  <img src="../../assets/images/path/to/overview.svg" alt="Section Overview" width="700">
+  <img src="./assets/images/flows/development-workflow.svg" alt="SVG Diagram" width="700">
   
-  *Replace with a relevant diagram for this section*
-</div># SAP-GitHub Integration Playbook - Project Status
+  *SAP-GitHub Integration Project Status and Roadmap*
+</div>
 
 This document outlines the current status of the SAP-GitHub Integration Playbook, highlighting what has been accomplished, what is in progress, and planned future enhancements.
 

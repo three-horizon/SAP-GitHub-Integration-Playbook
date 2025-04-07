@@ -1,17 +1,23 @@
-# 📄 📄 📄 📄 Contributor Covenant Code of Conduct
+# 📄 Contributor Covenant Code of Conduct
 
 ## 📋 Table of Contents
 
-- [📋 Overview](#-overview)
-- [Content Section](#content-section)
-- [Additional Section](#additional-section)
-- [🔗 Related Documents](#-related-documents)
+- [Our Pledge](#our-pledge) 
+- [Our Standards](#our-standards)
+- [Enforcement Responsibilities](#enforcement-responsibilities)
+- [Scope](#scope)
+- [Enforcement](#enforcement)
+- [Enforcement Guidelines](#enforcement-guidelines)
+- [Attribution](#attribution)
+
 <div align="center">
   
-  <img src="../../assets/images/path/to/overview.svg" alt="Section Overview" width="700">
+  <img src="./assets/images/devsecops/devsecops-cycle.svg" alt="DevSecOps Cycle" width="700">
   
-  *Replace with a relevant diagram for this section*
-</div>## Our Pledge
+  *Collaborative development requires a strong code of conduct*
+</div>
+
+## Our Pledge
 
 We as members, contributors, and leaders pledge to make participation in our
 community a harassment-free experience for everyone, regardless of age, body

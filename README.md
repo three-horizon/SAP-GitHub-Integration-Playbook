@@ -45,13 +45,17 @@ This playbook emphasizes security at every step:
 ## Getting Started
 
 For those new to SAP-GitHub integration:
-- [Executive Overview](./EXECUTIVE-OVERVIEW.md)
+- [Executive Overview](./docs/EXECUTIVE-OVERVIEW.md)
 - [Implementation Quickstart](./docs/2-implementation-guide/getting-started/quick-start.md)
 - [Prerequisites](./docs/2-implementation-guide/getting-started/prerequisites.md)
 
 ## Web Version
 
 For a better reading experience, you can view the [web version](https://three-horizon.github.io/SAP-GitHub-Integration-Playbook/) of this documentation.
+
+## Contributing
+
+Please read our [Contributing Guidelines](./.github/CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
 ## License
 

@@ -462,224 +462,48 @@ fs.writeFileSync(outputFile, JSON.stringify(sarif, null, 2));
 console.log(`Converted ${findings.length} findings to SARIF format in ${outputFile}`);
 ```
 
-### 8. Configure Security Reporting Dashboard
+### 8. Set Up a Security Dashboard
 
-Set up a custom reporting dashboard for ABAP security findings:
-
-1. Create a GitHub Pages workflow to publish security reports:
-
+1. Create a report generation workflow to create security reports:
 ```yaml
-# .github/workflows/security-dashboard.yml
-name: Security Dashboard
+name: Generate Security Reports
 
 on:
-  workflow_run:
-    workflows: ["ABAP Security Scan", "CodeQL Analysis", "ABAP Deep Security Scan"]
-    types:
-      - completed
   workflow_dispatch:
+  schedule:
+    - cron: "0 4 * * *"  # Daily at 4 AM
 
 jobs:
-  build-dashboard:
+  generate-reports:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-          
-      - name: Download CodeQL SARIF
-        uses: dawidd6/action-download-artifact@v2
-        with:
-          workflow: codeql-analysis.yml
-          workflow_conclusion: success
-          name: codeql-results
-          path: reports/codeql
-          
-      - name: Download ABAP SARIF
-        uses: dawidd6/action-download-artifact@v2
-        with:
-          workflow: abap-security-scan.yml
-          workflow_conclusion: success
-          name: abap-results
-          path: reports/abap
-          
-      - name: Generate Dashboard
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup SAP Scanning Environment
         run: |
-          pip install sarif-tools jinja2
-          python .github/scripts/generate-dashboard.py
+          echo "Setting up SAP scanning environment"
+          # Setup steps here
           
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Run Security Scans
+        run: |
+          echo "Running comprehensive security scans"
+          # Scanning steps here
+          
+      - name: Generate HTML Reports
+        run: |
+          echo "Generating security reports"
+          mkdir -p security-reports
+          # Generate report files
+          
+      - name: Upload Reports as Artifacts
+        uses: actions/upload-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dashboard
-          publish_branch: gh-pages
+          name: security-reports
+          path: security-reports/
 ```
 
-2. Create a Python script to generate the dashboard:
-
-```python
-# .github/scripts/generate-dashboard.py
-import json
-import os
-import glob
-from datetime import datetime
-from jinja2 import Template
-
-# Configuration
-reports_dir = "reports"
-dashboard_dir = "dashboard"
-os.makedirs(dashboard_dir, exist_ok=True)
-
-# Find SARIF files
-sarif_files = []
-for ext in ["json", "sarif"]:
-    sarif_files.extend(glob.glob(f"{reports_dir}/**/*.{ext}", recursive=True))
-
-# Process findings
-findings = []
-for file_path in sarif_files:
-    with open(file_path, 'r') as f:
-        try:
-            sarif = json.load(f)
-            for run in sarif.get('runs', []):
-                tool_name = run.get('tool', {}).get('driver', {}).get('name', 'Unknown')
-                
-                for result in run.get('results', []):
-                    rule_id = result.get('ruleId', 'unknown')
-                    severity = 'unknown'
-                    
-                    # Try to determine severity from different SARIF formats
-                    if 'level' in result:
-                        severity = result['level']
-                    elif 'properties' in result and 'security-severity' in result['properties']:
-                        severity_value = float(result['properties']['security-severity'])
-                        if severity_value >= 8.0:
-                            severity = 'critical'
-                        elif severity_value >= 6.0:
-                            severity = 'high'
-                        elif severity_value >= 4.0:
-                            severity = 'medium'
-                        else:
-                            severity = 'low'
-                    
-                    # Extract location
-                    location = 'Unknown'
-                    line = 0
-                    if 'locations' in result and result['locations']:
-                        loc = result['locations'][0]
-                        if 'physicalLocation' in loc:
-                            phys_loc = loc['physicalLocation']
-                            if 'artifactLocation' in phys_loc and 'uri' in phys_loc['artifactLocation']:
-                                location = phys_loc['artifactLocation']['uri']
-                            if 'region' in phys_loc and 'startLine' in phys_loc['region']:
-                                line = phys_loc['region']['startLine']
-                    
-                    findings.append({
-                        'tool': tool_name,
-                        'rule_id': rule_id,
-                        'message': result.get('message', {}).get('text', 'No message'),
-                        'severity': severity,
-                        'location': location,
-                        'line': line
-                    })
-        except json.JSONDecodeError:
-            print(f"Error parsing {file_path}")
-
-# Sort findings by severity
-severity_order = {'critical': 0, 'high': 1, 'medium': 2, 'low': 3, 'note': 4, 'unknown': 5}
-findings.sort(key=lambda x: (severity_order.get(x['severity'], 999), x['location'], x['line']))
-
-# Create dashboard HTML
-html_template = """
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABAP Security Dashboard</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
-        h1 { color: #333; }
-        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
-        th { background-color: #f2f2f2; }
-        tr:hover { background-color: #f5f5f5; }
-        .critical { background-color: #ffdddd; }
-        .high { background-color: #ffffcc; }
-        .medium { background-color: #e6f3ff; }
-        .summary { margin-bottom: 20px; padding: 15px; background-color: #f8f9fa; border-radius: 5px; }
-    </style>
-</head>
-<body>
-    <h1>ABAP Security Dashboard</h1>
-    
-    <div class="summary">
-        <h2>Summary</h2>
-        <p>Generated: {{ generation_time }}</p>
-        <p>Total findings: {{ findings|length }}</p>
-        <p>Findings by severity:</p>
-        <ul>
-            <li>Critical: {{ findings|selectattr('severity', 'equalto', 'critical')|list|length }}</li>
-            <li>High: {{ findings|selectattr('severity', 'equalto', 'high')|list|length }}</li>
-            <li>Medium: {{ findings|selectattr('severity', 'equalto', 'medium')|list|length }}</li>
-            <li>Low: {{ findings|selectattr('severity', 'equalto', 'low')|list|length }}</li>
-        </ul>
-    </div>
-    
-    <h2>Findings</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Severity</th>
-                <th>Tool</th>
-                <th>Rule</th>
-                <th>Location</th>
-                <th>Line</th>
-                <th>Message</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for finding in findings %}
-            <tr class="{{ finding.severity }}">
-                <td>{{ finding.severity }}</td>
-                <td>{{ finding.tool }}</td>
-                <td>{{ finding.rule_id }}</td>
-                <td>{{ finding.location }}</td>
-                <td>{{ finding.line }}</td>
-                <td>{{ finding.message }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</body>
-</html>
-"""
-
-template = Template(html_template)
-dashboard_html = template.render(
-    findings=findings,
-    generation_time=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-)
-
-# Write dashboard
-with open(os.path.join(dashboard_dir, "index.html"), "w") as f:
-    f.write(dashboard_html)
-
-print(f"Dashboard generated with {len(findings)} findings")
-```
-
-### 9. Test and Validate
-
-Test your custom scanning implementation:
-
-1. Commit and push your changes to trigger the security scanning workflows
-2. Monitor the workflow execution in the GitHub Actions tab
-3. Review the security findings in the Security tab
-4. Check the generated dashboard on GitHub Pages
+4. Access the generated reports through GitHub Actions artifacts
 
 ## Best Practices for ABAP Security Scanning
 

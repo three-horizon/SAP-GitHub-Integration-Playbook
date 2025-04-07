@@ -1,5 +1,4 @@
 ---
-layout: default
 title: SAP-GitHub Implementation Checklist
 ---
 
@@ -12,8 +11,7 @@ title: SAP-GitHub Implementation Checklist
 - [Phase 4: Testing and Validation](#phase-4-testing-and-validation)
 - [Phase 5: Deployment and Operations](#phase-5-deployment-and-operations)
 - [Phase 6: Training and Adoption](#phase-6-training-and-adoption)
-- [➡
-️ ️ Next Steps](#next-steps)
+- [➡️ Next Steps](#next-steps)
 
 
 # SAP-GitHub Implementation Checklist
@@ -140,10 +138,10 @@ Before beginning the implementation, ensure you have:
 
 Once you have completed this checklist, refer to the following resources:
 
-- [SAP System Setup Guide]({{ site.baseurl }}/docs/2-implementation-guide/sap-setup/)
-- [GitHub Enterprise Configuration Guide]({{ site.baseurl }}/docs/2-implementation-guide/github-setup/)
-- [Security Configuration Guide]({{ site.baseurl }}/docs/2-implementation-guide/security-setup/)
-- [Developer Onboarding Guide]({{ site.baseurl }}/docs/3-developer-guide/) 
+- [SAP System Setup Guide](../../2-implementation-guide/sap-setup/)
+- [GitHub Enterprise Configuration Guide](../../2-implementation-guide/github-setup/)
+- [Security Configuration Guide](../../2-implementation-guide/security-setup/)
+- [Developer Onboarding Guide](../../3-developer-guide/) 
 ---
 
 <details>

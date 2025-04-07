@@ -11,7 +11,6 @@ This directory contains all SVG images and diagrams used throughout the SAP-GitH
 - `deployment/`: Deployment scenarios and implementations
 - `icons/`: Standard icon set used across diagrams
 - `resources/`: Visual resources like color palettes and legends
-- `github-pages/`: Images specific to GitHub Pages rendering
 
 ## Design Standards
 
@@ -24,3 +23,17 @@ All diagrams in this repository follow these standards:
 5. **Components**: Consistent visual representation of components
 
 Please refer to the style guide in `/docs/1-architecture/standards/` for detailed guidance on creating and updating diagrams.
+
+## Image References
+
+When referencing images in markdown files, use the following format for maximum compatibility:
+
+```markdown
+![Image Alt Text](https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/path/to/image.svg)
+```
+
+Adding `?sanitize=true` to SVG URLs can help with rendering:
+
+```markdown
+![Image Alt Text](https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/path/to/image.svg?sanitize=true)
+```

@@ -14,12 +14,6 @@ desktop.ini
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
 
-# Jekyll build files
-_site/
-.jekyll-cache/
-.jekyll-metadata
-.sass-cache/
-
 # Temporary files
 *.tmp
 *.temp

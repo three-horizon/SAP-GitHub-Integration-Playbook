@@ -589,7 +589,7 @@ For better visibility into transport status:
              git push
    ```
 
-2. Create a simple dashboard page using GitHub Pages to display transport status
+2. Create a simple dashboard using GitHub Actions to display transport status
 
 ## Validation
 

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Getting Started with SAP-GitHub Integration
 ---
 
@@ -10,8 +9,7 @@ title: Getting Started with SAP-GitHub Integration
 - [Available Documents](#available-documents)
 - [Quick Start](#quick-start)
 - [Common Questions](#common-questions)
-- [➡
-️ ️ Next Steps](#next-steps)
+- [➡️ Next Steps](#next-steps)
 
 
 # Getting Started with SAP-GitHub Integration
@@ -41,22 +39,22 @@ We recommend a phased approach to SAP-GitHub integration:
 
 The following documents will help you get started:
 
-- [Implementation Checklist]({{ site.baseurl }}/docs/2-implementation-guide/getting-started/implementation-checklist.html) - A comprehensive checklist of implementation tasks
-- [Prerequisites Guide]({{ site.baseurl }}/docs/2-implementation-guide/getting-started/prerequisites.html) - Systems, permissions, and resources needed
-- [Business Case Template]({{ site.baseurl }}/docs/2-implementation-guide/getting-started/business-case.html) - Template for building your business case
-- [Pilot Project Selection]({{ site.baseurl }}/docs/2-implementation-guide/getting-started/pilot-selection.html) - Criteria for selecting your first integration project
+- [Implementation Checklist](./implementation-checklist.md) - A comprehensive checklist of implementation tasks
+- [Prerequisites Guide](./prerequisites.md) - Systems, permissions, and resources needed
+- [Business Case Template](./business-case.md) - Template for building your business case
+- [Pilot Project Selection](./pilot-selection.md) - Criteria for selecting your first integration project
 
 ## Quick Start
 
 For organizations looking to quickly test the integration:
 
-1. Review the [Implementation Checklist]({{ site.baseurl }}/docs/2-implementation-guide/getting-started/implementation-checklist.html)
+1. Review the [Implementation Checklist](./implementation-checklist.md)
 2. Set up a GitHub repository for your SAP code
 3. Install abapGit on your SAP development system
 4. Configure basic connectivity between systems
 5. Test basic version control operations
 
-For a full implementation, follow the complete [Implementation Guide]({{ site.baseurl }}/docs/2-implementation-guide/).
+For a full implementation, follow the complete [Implementation Guide](../).
 
 ## Common Questions
 
@@ -88,9 +86,9 @@ A successful implementation team typically includes:
 
 Once you've reviewed the getting started materials, proceed to:
 
-1. [SAP System Setup]({{ site.baseurl }}/docs/2-implementation-guide/sap-setup/)
-2. [GitHub Enterprise Setup]({{ site.baseurl }}/docs/2-implementation-guide/github-setup/)
-3. [Integration Configuration]({{ site.baseurl }}/docs/2-implementation-guide/workflows/)
+1. [SAP System Setup](../sap-setup/)
+2. [GitHub Enterprise Setup](../github-setup/)
+3. [Integration Configuration](../workflows/)
 ---
 
 <details>

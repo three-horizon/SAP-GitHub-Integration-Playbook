@@ -1,5 +1,4 @@
 ---
-layout: default
 title: SAP-GitHub Architecture
 ---
 
@@ -9,11 +8,9 @@ title: SAP-GitHub Architecture
 - [Architecture Components](#architecture-components)
 - [Key Architecture Documentation](#key-architecture-documentation)
 - [Integration Patterns](#integration-patterns)
-- [🛡
-️ ️ Security Architecture](#security-architecture)
+- [🛡️ Security Architecture](#security-architecture)
 - [Reference Architecture Diagram](#reference-architecture-diagram)
-- [➡
-️ ️ Next Steps](#next-steps)
+- [➡️ Next Steps](#next-steps)
 
 
 # SAP-GitHub Integration Architecture
@@ -63,7 +60,9 @@ The SAP-GitHub integration architecture consists of the following key components
 
 This pattern uses abapGit to directly connect SAP ABAP systems to GitHub repositories.
 
-{% include image.html url="/assets/images/architecture/direct-integration-pattern.png" alt="Direct Integration Architecture" caption="Figure 1: Direct Integration via abapGit" %}
+![Direct Integration Architecture](https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/direct-integration-pattern.png)
+
+*Figure 1: Direct Integration via abapGit*
 
 ### Pattern 2: API-Mediated Integration
 
@@ -87,13 +86,15 @@ The security architecture for SAP-GitHub integration includes:
 
 The complete reference architecture is shown below:
 
-{% include image.html url="/assets/images/architecture/sap-github-reference-architecture.png" alt="Complete Reference Architecture" caption="Figure 2: Complete SAP-GitHub Reference Architecture" %}
+![Complete Reference Architecture](https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/sap-github-reference-architecture.png)
+
+*Figure 2: Complete SAP-GitHub Reference Architecture*
 
 ## ➡️ Next Steps
 
-- Review the [Implementation Guide]({{ site.baseurl }}/docs/2-implementation-guide/) for step-by-step instructions
-- See the [Security Setup Guide]({{ site.baseurl }}/docs/2-implementation-guide/security-setup/) for security configuration
-- Explore [Developer Workflows]({{ site.baseurl }}/docs/3-developer-guide/) for day-to-day usage patterns 
+- Review the [Implementation Guide](../2-implementation-guide/) for step-by-step instructions
+- See the [Security Setup Guide](../2-implementation-guide/security-setup/) for security configuration
+- Explore [Developer Workflows](../3-developer-guide/) for day-to-day usage patterns 
 ---
 
 <details>

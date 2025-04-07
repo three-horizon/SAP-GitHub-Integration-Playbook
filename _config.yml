@@ -16,6 +16,7 @@ include:
   - LICENSE
   - assets/images/**/*
   - _includes/**/*
+  - assets/css/**/*
 
 # Liquid configuration to prevent parsing errors with GitHub Actions syntax
 liquid:
@@ -37,6 +38,8 @@ defaults:
     values:
       layout: "default"
       search_exclude: false
+      extra_css:
+        - /assets/css/svg-fix.css
 
 titles_from_headings:
   enabled: true

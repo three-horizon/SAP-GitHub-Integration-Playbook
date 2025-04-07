@@ -48,7 +48,7 @@ When adding or updating assets:
 To reference images in markdown files, use the following syntax:
 
 ```markdown
-![Alt text description](/assets/images/category/image-name.svg)
+<img src="/assets/images/category/image-name.svg" alt="Alt text description" width="700">
 ```
 
 For centered images with captions, use:

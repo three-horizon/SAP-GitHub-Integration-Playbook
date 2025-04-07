@@ -1,0 +1,35 @@
+/* CSS para corrigir a exibição de imagens SVG */
+
+/* Garantir que as imagens SVG sejam exibidas com tamanho correto */
+img[src$=".svg"] {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Melhorar a exibição em divs centralizadas */
+div[align="center"] img[src$=".svg"] {
+  width: 700px !important;
+  max-width: 100%;
+}
+
+/* Corrigir problemas de IE/Edge/Safari com SVGs */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src$=".svg"] {
+    width: 100%;
+  }
+}
+
+@supports (-ms-ime-align:auto) {
+  img[src$=".svg"] {
+    width: 100%;
+  }
+}
+
+/* Regra para Safari */
+@media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0) { 
+  img[src$=".svg"] {
+    height: auto;
+  }
+} 

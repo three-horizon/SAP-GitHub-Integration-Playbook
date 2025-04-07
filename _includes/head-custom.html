@@ -1,1 +1,34 @@
-<!-- Custom head content --> 
+<!-- Custom head content for SVG fixes and other customizations -->
+
+<!-- SVG Fix CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/svg-fix.css' | relative_url }}">
+
+<!-- Script to fix SVG rendering issues -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Função para corrigir SVGs que não carregam corretamente
+    function fixSvgImages() {
+      var svgImages = document.querySelectorAll('img[src$=".svg"]');
+      svgImages.forEach(function(img) {
+        // Forçar recarregamento da imagem se necessário
+        var currentSrc = img.src;
+        img.src = '';
+        setTimeout(function() {
+          img.src = currentSrc;
+        }, 10);
+        
+        // Garantir largura adequada
+        if (img.parentNode.getAttribute('align') === 'center') {
+          img.style.width = '700px';
+          img.style.maxWidth = '100%';
+        }
+      });
+    }
+    
+    // Executar ao carregar
+    fixSvgImages();
+    
+    // Executar novamente após um segundo para garantir que todas as imagens foram processadas
+    setTimeout(fixSvgImages, 1000);
+  });
+</script> 

@@ -3,6 +3,7 @@ title: SAP-GitHub Integration Playbook
 description: Comprehensive guide for integrating SAP systems with GitHub Enterprise
 show_downloads: true
 baseurl: /SAP-GitHub-Integration-Playbook
+url: "https://three-horizon.github.io"
 plugins:
   - jekyll-relative-links
   - jekyll-seo-tag
@@ -15,6 +16,7 @@ include:
   - README.md
   - LICENSE
   - assets/images/**/*
+  - "**/*.svg"
   - _includes/**/*
   - assets/css/**/*
   - index.html

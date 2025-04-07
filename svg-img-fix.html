@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SVG Image Viewer</title>
+    <title>SAP-GitHub Integration - SVG Viewer</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -82,24 +82,37 @@
         a:hover {
             text-decoration: underline;
         }
+        
+        select {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #e1e4e8;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        
+        label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>SVG Image Viewer</h1>
-        <p>This page displays SVG images using various techniques to ensure compatibility.</p>
+        <h1>Diagrama SVG Viewer</h1>
+        <p>Visualize os diagramas do SAP-GitHub Integration Playbook utilizando diferentes métodos de renderização.</p>
         
         <div class="svg-options">
-            <button onclick="loadImage('github-raw')">View using GitHub Raw</button>
-            <button onclick="loadImage('base64')">View using Base64 Encoding</button>
-            <button onclick="loadImage('img-tag')">View using IMG Tag</button>
-            <button onclick="loadImage('object-tag')">View using Object Tag</button>
-            <button onclick="loadImage('embed-tag')">View using Embed Tag</button>
+            <button onclick="loadImage('github-raw')">GitHub Raw com Sanitize</button>
+            <button onclick="loadImage('base64')">Codificação Base64</button>
+            <button onclick="loadImage('img-tag')">Tag IMG Padrão</button>
+            <button onclick="loadImage('object-tag')">Tag Object</button>
+            <button onclick="loadImage('embed-tag')">Tag Embed</button>
         </div>
         
         <div>
-            <label for="svgSelector">Select SVG Image:</label>
-            <select id="svgSelector" onchange="switchSvg()" aria-label="Select SVG image to display">
+            <label for="svgSelector">Selecione o diagrama:</label>
+            <select id="svgSelector" onchange="switchSvg()" aria-label="Selecione o diagrama SVG para visualizar">
                 <option value="playbook-overview">Playbook Overview</option>
                 <option value="security-components">Security Components</option>
                 <option value="sap-github-icon">SAP GitHub Icon</option>
@@ -110,11 +123,11 @@
             <img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/playbook-overview.svg?sanitize=true" alt="SVG Image" id="svgImage">
         </div>
         
-        <p id="methodInfo">Currently showing: GitHub Raw with sanitize=true parameter</p>
+        <p id="methodInfo">Visualizando via: GitHub Raw com parâmetro sanitize=true</p>
         
         <div class="links">
-            <a href="index.html">Return to Main Page</a> |
-            <a href="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook">View on GitHub</a>
+            <a href="index.html">← Voltar para a página principal</a> |
+            <a href="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook">Ver no GitHub</a>
         </div>
     </div>
     
@@ -153,7 +166,7 @@
             switch (method) {
                 case 'github-raw':
                     container.innerHTML = `<img src="${githubRawUrl}" alt="SVG Image" id="svgImage">`;
-                    infoText.textContent = 'Currently showing: GitHub Raw with sanitize=true parameter';
+                    infoText.textContent = 'Visualizando via: GitHub Raw com parâmetro sanitize=true';
                     break;
                     
                 case 'base64':
@@ -163,26 +176,26 @@
                         .then(svgText => {
                             const base64 = btoa(svgText);
                             container.innerHTML = `<img src="data:image/svg+xml;base64,${base64}" alt="SVG Image">`;
-                            infoText.textContent = 'Currently showing: Base64 encoded SVG';
+                            infoText.textContent = 'Visualizando via: Codificação Base64';
                         })
                         .catch(error => {
-                            container.innerHTML = `<p style="color: red;">Error loading SVG: ${error.message}</p>`;
+                            container.innerHTML = `<p style="color: red;">Erro ao carregar SVG: ${error.message}</p>`;
                         });
                     break;
                     
                 case 'img-tag':
                     container.innerHTML = `<img src="${rawUrl}" alt="SVG Image">`;
-                    infoText.textContent = 'Currently showing: Standard IMG tag with raw URL';
+                    infoText.textContent = 'Visualizando via: Tag IMG com URL raw';
                     break;
                     
                 case 'object-tag':
-                    container.innerHTML = `<object type="image/svg+xml" data="${rawUrl}" width="700">SVG not supported</object>`;
-                    infoText.textContent = 'Currently showing: Object tag with SVG data';
+                    container.innerHTML = `<object type="image/svg+xml" data="${rawUrl}" width="700">SVG não suportado</object>`;
+                    infoText.textContent = 'Visualizando via: Tag Object com data SVG';
                     break;
                     
                 case 'embed-tag':
                     container.innerHTML = `<embed src="${rawUrl}" type="image/svg+xml" width="700">`;
-                    infoText.textContent = 'Currently showing: Embed tag with SVG source';
+                    infoText.textContent = 'Visualizando via: Tag Embed com source SVG';
                     break;
             }
         }

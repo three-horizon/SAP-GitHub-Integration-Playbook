@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Direct SVG Test</title>
+    <title>Teste de Compatibilidade SVG</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -19,6 +19,9 @@
         .image-container {
             margin: 30px 0;
             text-align: center;
+            border: 1px solid #e1e4e8;
+            padding: 15px;
+            border-radius: 5px;
         }
         h1, h2 {
             text-align: center;
@@ -38,46 +41,61 @@
         .navigation a:hover {
             text-decoration: underline;
         }
+        .success, .failure {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .success {
+            color: #22863a;
+        }
+        .failure {
+            color: #cb2431;
+        }
     </style>
 </head>
 <body>
-    <h1>Direct SVG Testing Page</h1>
-    <p>This page tests direct SVG rendering without Jekyll processing.</p>
+    <h1>Teste de Compatibilidade SVG</h1>
+    <p>Esta página testa diferentes métodos de exibição de imagens SVG para identificar a melhor compatibilidade com seu navegador.</p>
     
     <div class="navigation">
-        <a href="index.html">Home</a> | 
-        <a href="svg-diagnostic.html">SVG Diagnostic Tool</a> | 
-        <a href="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook">GitHub Repository</a>
+        <a href="index.html">← Página Principal</a> | 
+        <a href="svg-img-fix.html">Visualizador SVG Interativo</a> | 
+        <a href="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook">Repositório GitHub</a>
     </div>
     
-    <h2>Method 1: Direct GitHub Raw URL with Sanitize</h2>
+    <h2>Método 1: GitHub Raw com Sanitize</h2>
     <div class="image-container">
-        <img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/playbook-overview.svg?sanitize=true" alt="Playbook Overview" width="700">
+        <img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/playbook-overview.svg?sanitize=true" alt="Playbook Overview" width="700" 
+             onerror="this.nextElementSibling.className='failure'; this.nextElementSibling.textContent='❌ Falha ao carregar';"
+             onload="this.nextElementSibling.className='success'; this.nextElementSibling.textContent='✓ Carregado com sucesso';">
+        <div class="loading">Carregando...</div>
     </div>
     
-    <h2>Method 2: GitHub Raw URL</h2>
+    <h2>Método 2: URL Raw Direta</h2>
     <div class="image-container">
-        <img src="https://raw.githubusercontent.com/three-horizon/SAP-GitHub-Integration-Playbook/main/assets/images/architecture/playbook-overview.svg" alt="Playbook Overview" width="700">
+        <img src="https://raw.githubusercontent.com/three-horizon/SAP-GitHub-Integration-Playbook/main/assets/images/architecture/playbook-overview.svg" alt="Playbook Overview" width="700"
+             onerror="this.nextElementSibling.className='failure'; this.nextElementSibling.textContent='❌ Falha ao carregar';"
+             onload="this.nextElementSibling.className='success'; this.nextElementSibling.textContent='✓ Carregado com sucesso';">
+        <div class="loading">Carregando...</div>
     </div>
     
-    <h2>Method 3: Object Tag with Sanitize</h2>
+    <h2>Método 3: Tag Object</h2>
     <div class="image-container">
         <object type="image/svg+xml" data="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/playbook-overview.svg?sanitize=true" width="700">
-            Your browser does not support SVG
+            Seu navegador não suporta SVG
         </object>
     </div>
     
-    <h2>Method 4: SVG Inline</h2>
+    <h2>Método 4: SVG Inline Estático</h2>
     <div class="image-container">
-        <svg width="700" height="350" viewBox="0 0 1200 600">
-            <rect width="1200" height="600" fill="#f5f5f5"></rect>
-            <text x="600" y="300" font-family="Arial" font-size="48" text-anchor="middle" fill="#333">SVG Test Content</text>
+        <svg width="700" height="200" viewBox="0 0 700 200">
+            <rect width="700" height="200" fill="#f5f5f5"></rect>
+            <text x="350" y="100" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Exemplo de SVG Inline</text>
+            <text x="350" y="140" font-family="Arial" font-size="16" text-anchor="middle" fill="#666">Este é um SVG embutido diretamente no HTML</text>
         </svg>
+        <div class="success">✓ Sempre disponível (independente de conectividade)</div>
     </div>
     
-    <h2>Method 5: Security Components SVG with Sanitize</h2>
-    <div class="image-container">
-        <img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/devsecops/security-components.svg?sanitize=true" alt="Security Components" width="700">
-    </div>
+    <p style="text-align: center; margin-top: 30px; font-style: italic;">Observe quais métodos funcionam melhor no seu navegador. Use o <a href="svg-img-fix.html">Visualizador SVG Interativo</a> para testar outros diagramas.</p>
 </body>
 </html> 

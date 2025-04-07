@@ -1,8 +1,0 @@
-- Documentation Guidelines:
-  - Primary language: All documentation, code comments, commit messages, PRs, and issues must be in English
-  - Link Management: Ensure all links are valid, use relative paths for internal links, include full HTTPS URLs for external links, and use descriptive link text
-  - File Organization: Use clear folder hierarchy with README.md files, use lowercase filenames with hyphens
-  - Document Format: Use Markdown with proper heading hierarchy and include table of contents for long documents
-  - Content Standards: Documentation must be comprehensive with no placeholders, include proper references, and provide complete code examples with syntax highlighting
-  - Maintenance: All documentation changes require review by technical and documentation reviewers, maintain changelog
-  - Accessibility: Use alt text for images, provide transcripts for videos, ensure screen reader compatibility

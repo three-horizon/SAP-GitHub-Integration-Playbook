@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="700px" viewBox="0 0 1200 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SAP-GitHub Integration - Transport Decision Tree</title>
+    <desc>Decision tree for SAP transport management integration with GitHub</desc>
+    <defs>
+        <rect id="decision-box" width="180" height="80" rx="6"></rect>
+        <rect id="outcome-box" width="160" height="60" rx="6"></rect>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2" />
+            </feComponentTransfer>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#333333"/>
+        </marker>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&amp;display=swap');
+            text {
+                font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                fill: #333333;
+            }
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .subtitle {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .decision {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .outcome {
+                font-size: 14px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .path-label {
+                font-size: 12px;
+                font-weight: normal;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+    
+    <!-- Background -->
+    <g id="background" fill="#f5f5f5">
+        <rect width="1200" height="700" rx="0"></rect>
+    </g>
+    
+    <!-- Title -->
+    <text x="600" y="50" class="title" text-anchor="middle">SAP-GitHub Integration - Transport Decision Tree</text>
+    <text x="600" y="80" class="subtitle" text-anchor="middle">Decision Flow for Transport Management</text>
+    
+    <!-- Start Node -->
+    <g id="start-node" transform="translate(510, 120)">
+        <use href="#decision-box" fill="#0070f2" filter="url(#shadow)"></use>
+        <text x="90" y="35" class="decision" fill="white">Code Change</text>
+        <text x="90" y="55" class="decision" fill="white">Required?</text>
+    </g>
+    
+    <!-- Level 1 Decision: Repository Exists -->
+    <g id="repo-exists" transform="translate(510, 240)">
+        <use href="#decision-box" fill="#6e5494" filter="url(#shadow)"></use>
+        <text x="90" y="35" class="decision" fill="white">GitHub Repository</text>
+        <text x="90" y="55" class="decision" fill="white">Exists?</text>
+    </g>
+    
+    <!-- Level 2 Left: Repository Type Decision -->
+    <g id="repo-type" transform="translate(270, 340)">
+        <use href="#decision-box" fill="#6e5494" filter="url(#shadow)"></use>
+        <text x="90" y="35" class="decision" fill="white">Repository Type</text>
+        <text x="90" y="55" class="decision" fill="white">Decision</text>
+    </g>
+    
+    <!-- Level 2 Right: Branch Strategy Decision -->
+    <g id="branch-strategy" transform="translate(750, 340)">
+        <use href="#decision-box" fill="#6e5494" filter="url(#shadow)"></use>
+        <text x="90" y="35" class="decision" fill="white">Branch Strategy</text>
+        <text x="90" y="55" class="decision" fill="white">Decision</text>
+    </g>
+    
+    <!-- Level 3 Left: Package Type -->
+    <g id="package-type" transform="translate(90, 460)">
+        <use href="#decision-box" fill="#0070f2" filter="url(#shadow)"></use>
+        <text x="90" y="35" class="decision" fill="white">SAP Package</text>
+        <text x="90" y="55" class="decision" fill="white">Type?</text>
+    </g>
+    
+    <!-- Level 3 Center-Left: Repository Structure -->
+    <g id="repo-structure" transform="translate(330, 460)">
+        <use href="#decision-box" fill="#6e5494" filter="url(#shadow)"></use>
+        <text x="90" y="35" class="decision" fill="white">Repository</text>
+        <text x="90" y="55" class="decision" fill="white">Structure</text>
+    </g>
+    
+    <!-- Level 3 Center-Right: Transport Automation -->
+    <g id="transport-automation" transform="translate(570, 460)">
+        <use href="#decision-box" fill="#107c10" filter="url(#shadow)"></use>
+        <text x="90" y="35" class="decision" fill="white">Transport</text>
+        <text x="90" y="55" class="decision" fill="white">Automation</text>
+    </g>
+    
+    <!-- Level 3 Right: Transport Strategy -->
+    <g id="transport-strategy" transform="translate(810, 460)">
+        <use href="#decision-box" fill="#107c10" filter="url(#shadow)"></use>
+        <text x="90" y="35" class="decision" fill="white">Transport</text>
+        <text x="90" y="55" class="decision" fill="white">Strategy</text>
+    </g>
+    
+    <!-- Level 3 Far-Right: Release Strategy -->
+    <g id="release-strategy" transform="translate(1050, 460)">
+        <use href="#decision-box" fill="#107c10" filter="url(#shadow)"></use>
+        <text x="90" y="35" class="decision" fill="white">Release</text>
+        <text x="90" y="55" class="decision" fill="white">Strategy</text>
+    </g>
+    
+    <!-- Outcomes Level 4 -->
+    <!-- Local Package Outcome -->
+    <g id="local-package" transform="translate(10, 580)">
+        <use href="#outcome-box" fill="#e6f0ff" stroke="#0070f2" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="80" y="35" class="outcome">Local Package</text>
+    </g>
+    
+    <!-- Transported Package Outcome -->
+    <g id="transported-package" transform="translate(170, 580)">
+        <use href="#outcome-box" fill="#e6f0ff" stroke="#0070f2" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="80" y="35" class="outcome">$TMP Package</text>
+    </g>
+    
+    <!-- Single Repository Outcome -->
+    <g id="single-repo" transform="translate(250, 580)">
+        <use href="#outcome-box" fill="#f0e8f5" stroke="#6e5494" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="80" y="35" class="outcome">Single Repository</text>
+    </g>
+    
+    <!-- Multi Repository Outcome -->
+    <g id="multi-repo" transform="translate(410, 580)">
+        <use href="#outcome-box" fill="#f0e8f5" stroke="#6e5494" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="80" y="35" class="outcome">Multi Repository</text>
+    </g>
+    
+    <!-- Manual Transport Outcome -->
+    <g id="manual-transport" transform="translate(490, 580)">
+        <use href="#outcome-box" fill="#e0ffe0" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="80" y="35" class="outcome">Manual Transport</text>
+    </g>
+    
+    <!-- Automated Transport Outcome -->
+    <g id="automated-transport" transform="translate(650, 580)">
+        <use href="#outcome-box" fill="#e0ffe0" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="80" y="35" class="outcome">Automated Transport</text>
+    </g>
+    
+    <!-- Feature Branch Outcome -->
+    <g id="feature-branch" transform="translate(730, 580)">
+        <use href="#outcome-box" fill="#f0e8f5" stroke="#6e5494" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="80" y="35" class="outcome">Feature Branch</text>
+    </g>
+    
+    <!-- Release Branch Outcome -->
+    <g id="release-branch" transform="translate(890, 580)">
+        <use href="#outcome-box" fill="#f0e8f5" stroke="#6e5494" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="80" y="35" class="outcome">Release Branch</text>
+    </g>
+    
+    <!-- Continuous Delivery Outcome -->
+    <g id="continuous-delivery" transform="translate(970, 580)">
+        <use href="#outcome-box" fill="#e0ffe0" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="80" y="35" class="outcome">Continuous Delivery</text>
+    </g>
+    
+    <!-- Scheduled Release Outcome -->
+    <g id="scheduled-release" transform="translate(1130, 580)">
+        <use href="#outcome-box" fill="#e0ffe0" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="80" y="35" class="outcome">Scheduled Release</text>
+    </g>
+    
+    <!-- Connection Lines -->
+    <!-- Start to Level 1 -->
+    <path d="M600,200 L600,240" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    
+    <!-- Level 1 to Level 2 Left -->
+    <path d="M510,280 L360,340" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="400" y="300" class="path-label">No</text>
+    
+    <!-- Level 1 to Level 2 Right -->
+    <path d="M690,280 L840,340" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="800" y="300" class="path-label">Yes</text>
+    
+    <!-- Level 2 Left to Level 3 Far Left -->
+    <path d="M270,380 L180,460" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="200" y="410" class="path-label">SAP First</text>
+    
+    <!-- Level 2 Left to Level 3 Center Left -->
+    <path d="M360,380 L420,460" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="410" y="410" class="path-label">GitHub First</text>
+    
+    <!-- Level 2 Right to Level 3 Center Right -->
+    <path d="M750,380 L660,460" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="680" y="410" class="path-label">Feature Branches</text>
+    
+    <!-- Level 2 Right to Level 3 Right -->
+    <path d="M840,380 L900,460" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="890" y="410" class="path-label">Trunk Based</text>
+    
+    <!-- Level 2 Right to Level 3 Far Right -->
+    <path d="M930,380 L1050,460" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="980" y="410" class="path-label">Release Pipeline</text>
+    
+    <!-- Level 3 Far Left to Outcomes -->
+    <path d="M90,500 L90,580" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="70" y="540" class="path-label">Local</text>
+    
+    <path d="M180,500 L180,580" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="200" y="540" class="path-label">Transportable</text>
+    
+    <!-- Level 3 Center Left to Outcomes -->
+    <path d="M330,500 L330,580" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="310" y="540" class="path-label">Monorepo</text>
+    
+    <path d="M420,500 L490,580" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="470" y="540" class="path-label">Polyrepo</text>
+    
+    <!-- Level 3 Center Right to Outcomes -->
+    <path d="M570,500 L570,580" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="550" y="540" class="path-label">Manual</text>
+    
+    <path d="M650,500 L730,580" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="700" y="540" class="path-label">Automated</text>
+    
+    <!-- Level 3 Right to Outcomes -->
+    <path d="M810,500 L810,580" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="790" y="540" class="path-label">Feature</text>
+    
+    <path d="M900,500 L970,580" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="950" y="540" class="path-label">Release</text>
+    
+    <!-- Level 3 Far Right to Outcomes -->
+    <path d="M1050,500 L1050,580" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="1030" y="540" class="path-label">Continuous</text>
+    
+    <path d="M1140,500 L1140,580" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="1160" y="540" class="path-label">Scheduled</text>
+    
+    <!-- Legend -->
+    <g id="legend" transform="translate(130, 640)">
+        <rect width="940" height="40" rx="4" fill="white" stroke="#666666"></rect>
+        
+        <!-- SAP Color -->
+        <rect x="30" y="13" width="14" height="14" rx="2" fill="#0070f2"></rect>
+        <text x="54" y="25">SAP Decision</text>
+        
+        <!-- GitHub Color -->
+        <rect x="180" y="13" width="14" height="14" rx="2" fill="#6e5494"></rect>
+        <text x="204" y="25">GitHub Decision</text>
+        
+        <!-- DevOps Color -->
+        <rect x="330" y="13" width="14" height="14" rx="2" fill="#107c10"></rect>
+        <text x="354" y="25">DevOps Decision</text>
+        
+        <!-- SAP Outcome -->
+        <rect x="480" y="13" width="14" height="14" rx="2" fill="#e6f0ff" stroke="#0070f2" stroke-width="2"></rect>
+        <text x="504" y="25">SAP Outcome</text>
+        
+        <!-- GitHub Outcome -->
+        <rect x="630" y="13" width="14" height="14" rx="2" fill="#f0e8f5" stroke="#6e5494" stroke-width="2"></rect>
+        <text x="654" y="25">GitHub Outcome</text>
+        
+        <!-- DevOps Outcome -->
+        <rect x="780" y="13" width="14" height="14" rx="2" fill="#e0ffe0" stroke="#107c10" stroke-width="2"></rect>
+        <text x="804" y="25">DevOps Outcome</text>
+    </g>
+</svg>

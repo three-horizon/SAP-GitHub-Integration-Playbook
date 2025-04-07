@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="700px" viewBox="0 0 1200 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SAP-GitHub Integration - Security Components</title>
+    <desc>Security components for the SAP-GitHub integration</desc>
+    <defs>
+        <rect id="component-container" width="200" height="80" rx="4"></rect>
+        <rect id="system-container" width="350" height="280" rx="8"></rect>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2" />
+            </feComponentTransfer>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0078d7"/>
+        </marker>
+        <marker id="security-arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#d13438"/>
+        </marker>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&amp;display=swap');
+            text {
+                font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                fill: #333333;
+            }
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .subtitle {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .system-title {
+                font-size: 18px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .component-title {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .component-subtitle {
+                font-size: 12px;
+                text-anchor: middle;
+                fill: #666666;
+            }
+            .security-label {
+                font-size: 12px;
+                font-weight: 600;
+                text-anchor: middle;
+                fill: #d13438;
+            }
+            .connector-label {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+    
+    <!-- Background -->
+    <g id="background" fill="#f5f5f5">
+        <rect width="1200" height="700" rx="0"></rect>
+    </g>
+    
+    <!-- Title -->
+    <text x="600" y="50" class="title" text-anchor="middle">SAP-GitHub Integration - Security Components</text>
+    <text x="600" y="80" class="subtitle" text-anchor="middle">Comprehensive Security Architecture</text>
+    
+    <!-- SAP Security -->
+    <g id="sap-security" transform="translate(100, 150)">
+        <use href="#system-container" fill="#f0f9ff" stroke="#0070f2" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="175" y="40" class="system-title">SAP Security</text>
+        
+        <!-- Auth & Roles -->
+        <g transform="translate(75, 70)">
+            <use href="#component-container" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="component-title" fill="white">Authorization Roles</text>
+            <text x="100" y="55" class="component-subtitle" fill="#e6f0ff">PFCG Roles</text>
+        </g>
+        
+        <!-- Transport Security -->
+        <g transform="translate(75, 160)">
+            <use href="#component-container" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="component-title" fill="white">Transport Security</text>
+            <text x="100" y="55" class="component-subtitle" fill="#e6f0ff">TMS Security</text>
+        </g>
+        
+        <!-- Audit Logs -->
+        <g transform="translate(75, 250)">
+            <use href="#component-container" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="component-title" fill="white">Security Audit Log</text>
+            <text x="100" y="55" class="component-subtitle" fill="#e6f0ff">SAL Configuration</text>
+        </g>
+    </g>
+    
+    <!-- GitHub Security -->
+    <g id="github-security" transform="translate(750, 150)">
+        <use href="#system-container" fill="#f7f2fa" stroke="#6e5494" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="175" y="40" class="system-title">GitHub Security</text>
+        
+        <!-- Branch Protection -->
+        <g transform="translate(75, 70)">
+            <use href="#component-container" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="component-title" fill="white">Branch Protection</text>
+            <text x="100" y="55" class="component-subtitle" fill="#f0e8f5">PR Reviews & Checks</text>
+        </g>
+        
+        <!-- Advanced Security -->
+        <g transform="translate(75, 160)">
+            <use href="#component-container" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="component-title" fill="white">Advanced Security</text>
+            <text x="100" y="55" class="component-subtitle" fill="#f0e8f5">Code Scanning</text>
+        </g>
+        
+        <!-- Secret Management -->
+        <g transform="translate(75, 250)">
+            <use href="#component-container" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="component-title" fill="white">Secret Management</text>
+            <text x="100" y="55" class="component-subtitle" fill="#f0e8f5">Actions Secrets</text>
+        </g>
+    </g>
+    
+    <!-- Azure Security Services -->
+    <g id="azure-security" transform="translate(320, 450)">
+        <use href="#system-container" width="560" height="220" fill="#fff0f0" stroke="#d13438" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="280" y="40" class="system-title" fill="#d13438">Security Services</text>
+        
+        <!-- Sentinel -->
+        <g transform="translate(30, 70)">
+            <use href="#component-container" width="160" fill="#004e8c" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="component-title" fill="white">Microsoft Sentinel</text>
+            <text x="80" y="55" class="component-subtitle" fill="#e0e8f0">SIEM Solution</text>
+        </g>
+        
+        <!-- Key Vault -->
+        <g transform="translate(200, 70)">
+            <use href="#component-container" width="160" fill="#ffb900" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="component-title" fill="#333333">Key Vault</text>
+            <text x="80" y="55" class="component-subtitle" fill="#333333">Secret Storage</text>
+        </g>
+        
+        <!-- API Security -->
+        <g transform="translate(370, 70)">
+            <use href="#component-container" width="160" fill="#68217a" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="component-title" fill="white">API Security</text>
+            <text x="80" y="55" class="component-subtitle" fill="#f2e5f5">APIM Policies</text>
+        </g>
+        
+        <!-- Defender -->
+        <g transform="translate(115, 150)">
+            <use href="#component-container" width="160" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="component-title" fill="white">Defender for Cloud</text>
+            <text x="80" y="55" class="component-subtitle" fill="#ffe0e0">Threat Protection</text>
+        </g>
+        
+        <!-- Authentication -->
+        <g transform="translate(285, 150)">
+            <use href="#component-container" width="160" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="component-title" fill="white">Authentication</text>
+            <text x="80" y="55" class="component-subtitle" fill="#ffe0e0">OAuth, SSO, SAML</text>
+        </g>
+    </g>
+    
+    <!-- Connection Lines -->
+    <!-- SAP to Security Services -->
+    <path d="M275,300 L500,450" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#security-arrow)"></path>
+    <text x="350" y="380" class="security-label">Security Controls</text>
+    
+    <!-- GitHub to Security Services -->
+    <path d="M925,300 L700,450" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#security-arrow)"></path>
+    <text x="850" y="380" class="security-label">Security Controls</text>
+    
+    <!-- SAP to GitHub -->
+    <path d="M450,225 L750,225" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="600" y="205" class="connector-label">Secure Communication</text>
+    
+    <!-- Security Services Internal Connections -->
+    <path d="M190,520 L200,520" stroke="#d13438" stroke-width="2" fill="none" marker-end="url(#security-arrow)"></path>
+    <path d="M360,520 L370,520" stroke="#d13438" stroke-width="2" fill="none" marker-end="url(#security-arrow)"></path>
+    
+    <!-- Security Monitoring Lines -->
+    <path d="M400,450 L400,290 C400,290 400,100 275,100" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#security-arrow)"></path>
+    <text x="300" y="120" class="security-label">Monitoring</text>
+    
+    <path d="M800,450 L800,290 C800,290 800,100 925,100" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#security-arrow)"></path>
+    <text x="900" y="120" class="security-label">Monitoring</text>
+    
+    <!-- Legend -->
+    <g id="legend" transform="translate(150, 80)">
+        <rect width="900" height="30" rx="4" fill="white" stroke="#666666"></rect>
+        
+        <!-- SAP Security -->
+        <rect x="30" y="8" width="15" height="15" rx="2" fill="#0070f2"></rect>
+        <text x="55" y="20">SAP Security</text>
+        
+        <!-- GitHub Security -->
+        <rect x="180" y="8" width="15" height="15" rx="2" fill="#6e5494"></rect>
+        <text x="205" y="20">GitHub Security</text>
+        
+        <!-- Azure Security -->
+        <rect x="330" y="8" width="15" height="15" rx="2" fill="#d13438"></rect>
+        <text x="355" y="20">Security Services</text>
+        
+        <!-- Security Components -->
+        <rect x="480" y="8" width="15" height="15" rx="2" fill="#004e8c"></rect>
+        <text x="505" y="20">SIEM & Monitoring</text>
+        
+        <!-- Key Management -->
+        <rect x="650" y="8" width="15" height="15" rx="2" fill="#ffb900"></rect>
+        <text x="675" y="20">Key Management</text>
+        
+        <!-- API Security -->
+        <rect x="800" y="8" width="15" height="15" rx="2" fill="#68217a"></rect>
+        <text x="825" y="20">API Security</text>
+    </g>
+</svg>

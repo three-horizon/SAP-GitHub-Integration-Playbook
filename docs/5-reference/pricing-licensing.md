@@ -3,11 +3,26 @@ layout: default
 title: Pricing and Licensing Information
 ---
 
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [SAP Licensing Components](#sap-licensing-components)
+- [GitHub Licensing Components](#github-licensing-components)
+- [Integration Middleware Costs](#integration-middleware-costs)
+- [Infrastructure Costs](#infrastructure-costs)
+- [Total Cost of Ownership Analysis](#total-cost-of-ownership-analysis)
+- [Licensing Compliance Considerations](#licensing-compliance-considerations)
+- [Vendor Discount Programs and Special Offers](#vendor-discount-programs-and-special-offers)
+- [How to Request Detailed Pricing](#how-to-request-detailed-pricing)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
 # Pricing and Licensing Information
 
 This document provides official pricing and licensing information for implementing SAP-GitHub integration solutions, with authoritative citations from vendors.
 
-## Overview
+## 📋 Overview
 
 Understanding the cost structure and licensing requirements is essential for planning and budgeting your SAP-GitHub integration project. This guide provides reference information from official sources to help you estimate costs and ensure proper licensing compliance.
 
@@ -354,7 +369,7 @@ Understanding the cost structure and licensing requirements is essential for pla
    - Source: [GitHub Enterprise](https://github.com/enterprise)
    - *Last checked: 2023-12-10*
 
-## Next Steps
+## ➡️ Next Steps
 
 1. **Cost Assessment**
    - Use the [ROI Templates](../6-appendices/roi-templates.md) for cost analysis
@@ -380,3 +395,12 @@ Understanding the cost structure and licensing requirements is essential for pla
 - Version: 1.1.0
 - Status: Published
 - Disclaimer: Pricing information is subject to change. Always contact vendors for current, official pricing. 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

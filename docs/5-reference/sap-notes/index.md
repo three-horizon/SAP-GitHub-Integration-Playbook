@@ -1,4 +1,17 @@
-# SAP Notes Reference Guide
+# 📄 SAP Notes Reference Guide
+
+## 📋 Table of Contents
+
+- [Introduction to SAP Notes](#introduction-to-sap-notes)
+- [How to Access SAP Notes](#how-to-access-sap-notes)
+- [Critical SAP Notes for GitHub Integration](#critical-sap-notes-for-github-integration)
+- [SAP Notes by Functional Area](#sap-notes-by-functional-area)
+- [Version-Specific SAP Notes](#version-specific-sap-notes)
+- [SAP Note Implementation Matrix](#sap-note-implementation-matrix)
+- [Troubleshooting with SAP Notes](#troubleshooting-with-sap-notes)
+- [SAP Note Search Tips](#sap-note-search-tips)
+- [Keeping Up-to-Date](#keeping-up-to-date)
+
 
 This document provides a comprehensive overview of SAP Notes relevant to the GitHub-SAP integration. Each SAP Note is cataloged with detailed information on its purpose, implementation requirements, and specific relevance to this integration scenario.
 
@@ -193,3 +206,13 @@ SAP regularly publishes new and updated Notes. We recommend:
 ---
 
 *Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Enterprise X.Y.Z, SAP S/4 HANA X.Y.Z, etc.]*
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

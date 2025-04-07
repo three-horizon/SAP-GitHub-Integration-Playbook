@@ -1,6 +1,20 @@
-# Context-Aware Security
+# 📄 Context-Aware Security
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Principles of Context-Aware Security](#principles-of-context-aware-security)
+- [Context Types for Security](#context-types-for-security)
+- [Architecture Components](#architecture-components)
+- [🔧 Implementation Guide](#implementation-guide)
+- [🛡
+️ ️ Security Use Cases](#security-use-cases)
+- [Best Practices](#best-practices)
+- [Related Documentation](#related-documentation)
+- [External References](#external-references)
+
+
+## 📋 Overview
 
 Context-aware security represents a significant advancement in protecting SAP-GitHub integrated environments. By leveraging the rich contextual information available through the Model Context Protocol (MCP), organizations can implement more intelligent, adaptive, and effective security controls. This document outlines the principles, implementation approaches, and best practices for context-aware security in the SAP-GitHub integration.
 
@@ -119,7 +133,7 @@ The Security Engines use context information to perform risk assessment and appl
 
 Integrates with Microsoft security services to provide enterprise-wide security visibility and automated response capabilities.
 
-## Implementation Guide
+## 🔧 Implementation Guide
 
 ### 1. Security Context Collection
 
@@ -392,7 +406,7 @@ Configure Azure API Management policies using context for adaptive security:
 </policies>
 ```
 
-## Security Use Cases
+## 🛡️ Security Use Cases
 
 ### 1. Cross-System Transport/PR Correlation
 
@@ -612,3 +626,12 @@ Protect the context information itself:
 2. [Microsoft Defender for Cloud Documentation](https://learn.microsoft.com/en-us/azure/defender-for-cloud/)
 3. [SAP Security Guidelines](https://support.sap.com/en/security.html)
 4. [GitHub Security Best Practices](https://docs.github.com/en/code-security) 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

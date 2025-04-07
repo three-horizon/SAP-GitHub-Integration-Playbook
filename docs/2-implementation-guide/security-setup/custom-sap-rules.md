@@ -1,9 +1,21 @@
-# Custom SAP Rules for Microsoft Sentinel
+# 📄 Custom SAP Rules for Microsoft Sentinel
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for developing and implementing custom analytics rules in Microsoft Sentinel to detect SAP-specific security threats in your environment. These specialized rules complement standard detection capabilities and address unique security requirements for SAP systems integrated with GitHub.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - SAP connector deployed and configured (refer to [SAP Connector Setup](./sap-connector.md))
 - Standard rules deployed (refer to [Standard Rules Deployment](./standard-rules.md))
@@ -395,7 +407,7 @@ To improve the efficiency and effectiveness of your custom rules:
   - Add context-specific exclusions
   - Configure incident suppression rules
 
-## Next Steps
+## ➡️ Next Steps
 
 After implementing custom SAP rules, proceed to:
 
@@ -418,3 +430,12 @@ After implementing custom SAP rules, proceed to:
 - Last Updated: 2023-08-15
 - Contributors: SAP Security Team, Sentinel Detection Engineering
 - Version: 1.1.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

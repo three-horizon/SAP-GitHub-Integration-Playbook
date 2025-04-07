@@ -1,9 +1,21 @@
-# Notification Configuration for Microsoft Sentinel
+# 📄 Notification Configuration for Microsoft Sentinel
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for configuring security notifications and alerts from Microsoft Sentinel for your SAP-GitHub integration. A well-designed notification system ensures timely awareness of security events, enables rapid response to potential threats, and maintains appropriate communication with stakeholders across the organization.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - Security rules deployed (refer to [Standard Rules Deployment](./standard-rules.md))
 - Incident response process defined (refer to [Incident Response](./incident-response.md))
@@ -450,7 +462,7 @@ Configure these scheduled notification reports:
   - Implement correlation rules
   - Configure circuit breakers
 
-## Next Steps
+## ➡️ Next Steps
 
 After configuring notification framework, proceed to:
 
@@ -473,3 +485,12 @@ After configuring notification framework, proceed to:
 - Last Updated: 2023-09-15
 - Contributors: Security Operations Team, Notification Team, Integration Team
 - Version: 1.1.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

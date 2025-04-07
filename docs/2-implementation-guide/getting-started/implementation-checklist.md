@@ -3,11 +3,24 @@ layout: default
 title: SAP-GitHub Implementation Checklist
 ---
 
+## 📋 Table of Contents
+
+- [✅ Prerequisites](#prerequisites)
+- [Phase 1: Planning and Preparation](#phase-1-planning-and-preparation)
+- [Phase 2: Infrastructure Setup](#phase-2-infrastructure-setup)
+- [Phase 3: Integration Development](#phase-3-integration-development)
+- [Phase 4: Testing and Validation](#phase-4-testing-and-validation)
+- [Phase 5: Deployment and Operations](#phase-5-deployment-and-operations)
+- [Phase 6: Training and Adoption](#phase-6-training-and-adoption)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
 # SAP-GitHub Implementation Checklist
 
 This checklist provides a comprehensive overview of tasks required to implement SAP-GitHub integration in your organization.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before beginning the implementation, ensure you have:
 
@@ -123,7 +136,7 @@ Before beginning the implementation, ensure you have:
 - [ ] Schedule regular check-in meetings
 - [ ] Report adoption progress to stakeholders
 
-## Next Steps
+## ➡️ Next Steps
 
 Once you have completed this checklist, refer to the following resources:
 
@@ -131,3 +144,12 @@ Once you have completed this checklist, refer to the following resources:
 - [GitHub Enterprise Configuration Guide]({{ site.baseurl }}/docs/2-implementation-guide/github-setup/)
 - [Security Configuration Guide]({{ site.baseurl }}/docs/2-implementation-guide/security-setup/)
 - [Developer Onboarding Guide]({{ site.baseurl }}/docs/3-developer-guide/) 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

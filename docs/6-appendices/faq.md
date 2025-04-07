@@ -1,4 +1,17 @@
-# Frequently Asked Questions (FAQ)
+# 📄 Frequently Asked Questions (FAQ)
+
+## 📋 Table of Contents
+
+- [General Questions](#general-questions)
+- [Technical Questions](#technical-questions)
+- [🔧 Implementation Questions](#implementation-questions)
+- [🛡
+️ ️ Security Questions](#security-questions)
+- [Operational Questions](#operational-questions)
+- [Adoption and Best Practices](#adoption-and-best-practices)
+- [Advanced Topics](#advanced-topics)
+- [Commercial and Support](#commercial-and-support)
+
 
 This document provides answers to common questions about the SAP-GitHub integration. The FAQ is organized by topic to help you quickly find information relevant to your situation.
 
@@ -86,7 +99,7 @@ Basic Git and GitHub knowledge is beneficial but not required for all team membe
 2. Documentation and training materials for developers
 3. Gradual adoption path for teams new to Git
 
-## Implementation Questions
+## 🔧 Implementation Questions
 
 ### What are the prerequisites for implementing this integration?
 
@@ -146,7 +159,7 @@ The integration includes fallback mechanisms:
 4. Once GitHub is available, synchronization can resume
 5. Offline mode in abapGit can be used if needed
 
-## Security Questions
+## 🛡️ Security Questions
 
 ### How is authentication handled between systems?
 
@@ -360,3 +373,13 @@ Additional resources include:
 ---
 
 *Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Enterprise X.Y.Z, SAP S/4 HANA X.Y.Z, etc.]*
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

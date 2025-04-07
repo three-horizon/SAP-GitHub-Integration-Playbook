@@ -1,8 +1,25 @@
-# SAP Transport Automation with GitHub Integration
+# 📄 SAP Transport Automation with GitHub Integration
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Basic Transport Automation](#basic-transport-automation)
+- [Advanced Transport Automation](#advanced-transport-automation)
+- [Integration with SAP Solution Manager](#integration-with-sap-solution-manager)
+- [Transport Status Dashboard](#transport-status-dashboard)
+- [SAP Code Deployment Best Practices](#sap-code-deployment-best-practices)
+- [Troubleshooting Transport Automation](#troubleshooting-transport-automation)
+- [Automating Transport Documentation](#automating-transport-documentation)
+- [Best Practices](#best-practices)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [Additional Resources](#additional-resources)
+
 
 This guide provides detailed instructions for setting up automated transport management that integrates SAP's transport system with GitHub workflows, creating a seamless CI/CD pipeline.
 
-## Overview
+## 📋 Overview
 
 Transport automation is a crucial component of the SAP-GitHub integration, enabling:
 
@@ -12,7 +29,7 @@ Transport automation is a crucial component of the SAP-GitHub integration, enabl
 - Auditable deployment processes with approval gates
 - Reduced manual effort and human error in transport management
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before implementing transport automation:
 
@@ -562,7 +579,7 @@ jobs:
    - Enforce approval workflows for regulated systems
    - Generate compliance reports for audits
 
-## Next Steps
+## ➡️ Next Steps
 
 Once your transport automation is configured, proceed to:
 
@@ -579,3 +596,12 @@ Once your transport automation is configured, proceed to:
 ---
 
 *Last Updated: [YYYY-MM-DD] for [GitHub Enterprise X.Y.Z, SAP NetWeaver X.Y.Z]* 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

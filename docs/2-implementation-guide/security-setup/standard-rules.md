@@ -1,9 +1,22 @@
-# Standard Rules Deployment for Microsoft Sentinel
+# 📄 Standard Rules Deployment for Microsoft Sentinel
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [🔧 Implementation Plan](#implementation-plan)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for deploying and configuring standard analytics rules in Microsoft Sentinel to detect security threats in your SAP-GitHub integration environment. These rules form the foundation of your security monitoring strategy and enable detection of common attack patterns, suspicious behaviors, and security violations.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - Data connectors configured and collecting data:
   - Azure Activity
@@ -661,7 +674,7 @@ Implement these procedures for rule optimization:
      - Update detection logic
      - Document rule changes
 
-## Implementation Plan
+## 🔧 Implementation Plan
 
 Follow this phased approach to rule deployment:
 
@@ -759,7 +772,7 @@ Follow this phased approach to rule deployment:
   - Adjust rule frequency
   - Monitor resource utilization
 
-## Next Steps
+## ➡️ Next Steps
 
 After deploying standard rules, proceed to:
 
@@ -782,3 +795,12 @@ After deploying standard rules, proceed to:
 - Last Updated: 2023-09-10
 - Contributors: Security Operations Team, Cloud Security Analysts, SAP Security Team
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

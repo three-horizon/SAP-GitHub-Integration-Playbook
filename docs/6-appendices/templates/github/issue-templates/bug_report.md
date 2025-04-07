@@ -6,6 +6,20 @@ labels: bug
 assignees: ''
 ---
 
+## 📋 Table of Contents
+
+- [Bug Description](#bug-description)
+- [Environment Information](#environment-information)
+- [Steps to Reproduce](#steps-to-reproduce)
+- [Expected Behavior](#expected-behavior)
+- [Actual Behavior](#actual-behavior)
+- [Screenshots/Logs](#screenshots-logs)
+- [Transport Request](#transport-request)
+- [Additional Context](#additional-context)
+- [Possible Solution](#possible-solution)
+- [Workaround](#workaround)
+
+
 ## Bug Description
 
 <!-- A clear and concise description of what the bug is -->

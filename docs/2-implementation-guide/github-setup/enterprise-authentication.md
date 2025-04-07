@@ -1,10 +1,23 @@
-# GitHub Enterprise Authentication Configuration
+# 📄 GitHub Enterprise Authentication Configuration
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [🔧 Implementation Plan](#implementation-plan)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 
 This document provides detailed instructions for configuring secure authentication methods for GitHub Enterprise in the context of SAP-GitHub integration. Proper authentication configuration is critical for maintaining security across your development pipeline while ensuring frictionless developer experience.
 
-## Prerequisites
+## ✅ Prerequisites
 
 - GitHub Enterprise Cloud or Server license
 - Administrative access to GitHub Enterprise
@@ -397,7 +410,7 @@ Choose the appropriate authentication strategy based on your organization's secu
    - Track remediation status
    - Verify remediation effectiveness
 
-## Implementation Plan
+## 🔧 Implementation Plan
 
 Follow this phased approach to implement GitHub Enterprise authentication:
 
@@ -473,7 +486,7 @@ Follow this phased approach to implement GitHub Enterprise authentication:
   - Ensure backup device is configured
   - Contact GitHub support for account recovery
 
-## Next Steps
+## ➡️ Next Steps
 
 After configuring GitHub Enterprise authentication, proceed to:
 
@@ -494,3 +507,12 @@ After configuring GitHub Enterprise authentication, proceed to:
 - Last Updated: 2023-08-10
 - Contributors: Security Team, GitHub Administration Team
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

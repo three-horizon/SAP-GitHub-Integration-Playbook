@@ -1,9 +1,22 @@
-# SAP Connector Setup for Microsoft Sentinel
+# 📄 SAP Connector Setup for Microsoft Sentinel
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [🔧 Implementation Plan](#implementation-plan)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for configuring the SAP connector in Microsoft Sentinel to monitor security events from your SAP systems. This integration enables security teams to detect threats, investigate suspicious activities, and respond to security incidents within your SAP landscape, especially those involved in the SAP-GitHub integration.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - SAP NetWeaver ABAP systems (7.4 or higher recommended)
 - SAP Security Audit Log (SAL) enabled
@@ -454,7 +467,7 @@ Configure correlation between SAP and GitHub security events:
 
 For detailed information on GitHub integration, refer to [GitHub Connector Setup](./github-connector.md).
 
-## Implementation Plan
+## 🔧 Implementation Plan
 
 Follow this phased approach to implement the SAP connector:
 
@@ -556,7 +569,7 @@ Follow this phased approach to implement the SAP connector:
   - Balance detail with volume
   - Monitor Azure resource usage
 
-## Next Steps
+## ➡️ Next Steps
 
 After configuring the SAP connector, proceed to:
 
@@ -579,3 +592,12 @@ After configuring the SAP connector, proceed to:
 - Last Updated: 2023-09-20
 - Contributors: SAP Security Team, Cloud Security Team, SIEM Engineers
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

@@ -1,8 +1,22 @@
-# API and Extension Framework
+# 📄 API and Extension Framework
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [API Architecture](#api-architecture)
+- [Extension Points](#extension-points)
+- [API Management](#api-management)
+- [Extension Development](#extension-development)
+- [Reference Architecture](#reference-architecture)
+- [🔧 Implementation Strategy](#implementation-strategy)
+- [Use Cases](#use-cases)
+- [Best Practices](#best-practices)
+- [Related Documentation](#related-documentation)
+
 
 This document outlines the API and extension framework for SAP-GitHub integration, providing a comprehensive approach for extending and customizing the integration capabilities while maintaining a stable and supportable architecture.
 
-## Overview
+## 📋 Overview
 
 The API and Extension Framework provides:
 
@@ -45,7 +59,12 @@ The API architecture consists of the following layers:
 
 ### API Interaction Patterns
 
+<div align="center">
+  
 ![API Interaction Patterns](../assets/images/architecture/api-interaction-patterns.png)
+  
+  *\1*
+</div>
 
 The following interaction patterns are supported:
 
@@ -103,7 +122,12 @@ The following interaction patterns are supported:
 
 ### Extension Framework Components
 
+<div align="center">
+  
 ![Extension Framework Components](../assets/images/architecture/extension-framework-components.png)
+  
+  *\1*
+</div>
 
 #### 1. Extension Registry
 
@@ -263,7 +287,12 @@ Security controls that:
 
 ### API Gateway Architecture
 
+<div align="center">
+  
 ![API Gateway Architecture](../assets/images/architecture/api-gateway-architecture.png)
+  
+  *\1*
+</div>
 
 The API Gateway serves as the central point for:
 - API traffic management
@@ -279,7 +308,12 @@ Key components include:
 
 ### Extension Framework Architecture
 
+<div align="center">
+  
 ![Extension Framework Architecture](../assets/images/architecture/extension-framework-architecture.png)
+  
+  *\1*
+</div>
 
 The Extension Framework provides:
 - Extension registry
@@ -287,7 +321,7 @@ The Extension Framework provides:
 - Security controls
 - Lifecycle management
 
-## Implementation Strategy
+## 🔧 Implementation Strategy
 
 ### API Implementation Approach
 
@@ -438,3 +472,13 @@ The Extension Framework provides:
 - Last Updated: 2023-11-15
 - Version: 1.0.0
 - Status: Published
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

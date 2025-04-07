@@ -2,13 +2,26 @@
 render_with_liquid: false
 ---
 
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [🔧 Implementation Plan](#implementation-plan)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
 # GitHub Advanced Security Configuration
 
-## Overview
+## 📋 Overview
 
 This document provides detailed guidance on implementing GitHub Advanced Security (GHAS) for your SAP-GitHub integration. GitHub Advanced Security offers a suite of security tools that help identify and remediate potential security vulnerabilities in your code, dependencies, and workflows, ensuring a secure development lifecycle.
 
-## Prerequisites
+## ✅ Prerequisites
 
 - GitHub Enterprise Cloud or Server with Advanced Security license
 - Admin access to GitHub organization settings
@@ -677,7 +690,7 @@ GitHub Advanced Security includes several key components:
      - Compliance status by standard
      ```
 
-## Implementation Plan
+## 🔧 Implementation Plan
 
 Follow this phased approach to implement GitHub Advanced Security:
 
@@ -757,7 +770,7 @@ Follow this phased approach to implement GitHub Advanced Security:
   - Adjust scanning scope
   - Increase runner resources
 
-## Next Steps
+## ➡️ Next Steps
 
 After implementing GitHub Advanced Security, proceed to:
 
@@ -778,3 +791,12 @@ After implementing GitHub Advanced Security, proceed to:
 - Last Updated: 2023-08-12
 - Contributors: Security Team, GitHub Administrators
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

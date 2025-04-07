@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="700px" viewBox="0 0 1200 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SAP-GitHub Integration - SAP Components</title>
+    <desc>SAP components for GitHub integration</desc>
+    <defs>
+        <rect id="component-box" width="180" height="80" rx="4"></rect>
+        <rect id="system-container" width="350" height="280" rx="8"></rect>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2" />
+            </feComponentTransfer>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0078d7"/>
+        </marker>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&amp;display=swap');
+            text {
+                font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                fill: #333333;
+            }
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .subtitle {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .system-title {
+                font-size: 18px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .component-title {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .component-subtitle {
+                font-size: 12px;
+                text-anchor: middle;
+                fill: #666666;
+            }
+            .connector-label {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+    
+    <!-- Background -->
+    <g id="background" fill="#f5f5f5">
+        <rect width="1200" height="700" rx="0"></rect>
+    </g>
+    
+    <!-- Title -->
+    <text x="600" y="50" class="title" text-anchor="middle">SAP-GitHub Integration - SAP Components</text>
+    <text x="600" y="80" class="subtitle" text-anchor="middle">Key SAP Components for GitHub Integration</text>
+    
+    <!-- ABAP Stack -->
+    <g id="abap-stack" transform="translate(100, 130)">
+        <use href="#system-container" fill="#f0f9ff" stroke="#0070f2" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="175" y="40" class="system-title">ABAP Development Stack</text>
+        
+        <!-- ABAP Core -->
+        <g transform="translate(85, 70)">
+            <use href="#component-box" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="component-title" fill="white">ABAP Core</text>
+            <text x="90" y="55" class="component-subtitle" fill="#e6f0ff">ABAP Dictionary</text>
+        </g>
+        
+        <!-- abapGit -->
+        <g transform="translate(85, 160)">
+            <use href="#component-box" fill="#5d1038" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="component-title" fill="white">abapGit</text>
+            <text x="90" y="55" class="component-subtitle" fill="#f5e0e8">Git client for ABAP</text>
+        </g>
+        
+        <!-- Transport Management -->
+        <g transform="translate(85, 250)">
+            <use href="#component-box" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="component-title" fill="white">Transport System</text>
+            <text x="90" y="55" class="component-subtitle" fill="#e6f0ff">TMS</text>
+        </g>
+    </g>
+    
+    <!-- SAP Gateway -->
+    <g id="sap-gateway" transform="translate(500, 130)">
+        <use href="#system-container" fill="#f0f9ff" stroke="#0070f2" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="175" y="40" class="system-title">SAP Gateway</text>
+        
+        <!-- OData Services -->
+        <g transform="translate(85, 70)">
+            <use href="#component-box" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="component-title" fill="white">OData Services</text>
+            <text x="90" y="55" class="component-subtitle" fill="#e6f0ff">REST/OData APIs</text>
+        </g>
+        
+        <!-- RFC Functions -->
+        <g transform="translate(85, 160)">
+            <use href="#component-box" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="component-title" fill="white">RFC Functions</text>
+            <text x="90" y="55" class="component-subtitle" fill="#e6f0ff">Remote Function Calls</text>
+        </g>
+        
+        <!-- ICF Services -->
+        <g transform="translate(85, 250)">
+            <use href="#component-box" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="component-title" fill="white">ICF Services</text>
+            <text x="90" y="55" class="component-subtitle" fill="#e6f0ff">HTTP Services</text>
+        </g>
+    </g>
+    
+    <!-- Security & Auth -->
+    <g id="security-auth" transform="translate(900, 130)">
+        <use href="#system-container" fill="#fff0f0" stroke="#d13438" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="175" y="40" class="system-title" fill="#d13438">Security & Authorization</text>
+        
+        <!-- Auth Objects -->
+        <g transform="translate(85, 70)">
+            <use href="#component-box" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="component-title" fill="white">Authorization Objects</text>
+            <text x="90" y="55" class="component-subtitle" fill="#ffe0e0">S_* Objects</text>
+        </g>
+        
+        <!-- PFCG Roles -->
+        <g transform="translate(85, 160)">
+            <use href="#component-box" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="component-title" fill="white">PFCG Roles</text>
+            <text x="90" y="55" class="component-subtitle" fill="#ffe0e0">Role Management</text>
+        </g>
+        
+        <!-- Audit Log -->
+        <g transform="translate(85, 250)">
+            <use href="#component-box" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="component-title" fill="white">Security Audit Log</text>
+            <text x="90" y="55" class="component-subtitle" fill="#ffe0e0">SAL</text>
+        </g>
+    </g>
+    
+    <!-- Technical Components -->
+    <g id="technical-components" transform="translate(150, 450)">
+        <rect width="900" height="220" rx="8" fill="#e5f4e5" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></rect>
+        <text x="450" y="40" class="system-title" fill="#107c10">Technical Integration Components</text>
+        
+        <!-- Development Objects -->
+        <g transform="translate(50, 70)">
+            <use href="#component-box" width="160" height="130" fill="white" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="component-title">Development Objects</text>
+            <text x="80" y="60" class="component-subtitle">- Programs/Reports</text>
+            <text x="80" y="85" class="component-subtitle">- Classes/Interfaces</text>
+            <text x="80" y="110" class="component-subtitle">- Function Modules</text>
+        </g>
+        
+        <!-- Transport Objects -->
+        <g transform="translate(250, 70)">
+            <use href="#component-box" width="160" height="130" fill="white" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="component-title">Transport Objects</text>
+            <text x="80" y="60" class="component-subtitle">- Transport Requests</text>
+            <text x="80" y="85" class="component-subtitle">- Task Management</text>
+            <text x="80" y="110" class="component-subtitle">- Release Management</text>
+        </g>
+        
+        <!-- Interface Objects -->
+        <g transform="translate(450, 70)">
+            <use href="#component-box" width="160" height="130" fill="white" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="component-title">Interface Objects</text>
+            <text x="80" y="60" class="component-subtitle">- API Definitions</text>
+            <text x="80" y="85" class="component-subtitle">- Service Endpoints</text>
+            <text x="80" y="110" class="component-subtitle">- Data Mappings</text>
+        </g>
+        
+        <!-- Test Objects -->
+        <g transform="translate(650, 70)">
+            <use href="#component-box" width="160" height="130" fill="white" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="component-title">Test Objects</text>
+            <text x="80" y="60" class="component-subtitle">- ABAP Unit Tests</text>
+            <text x="80" y="85" class="component-subtitle">- Integration Tests</text>
+            <text x="80" y="110" class="component-subtitle">- Quality Checks</text>
+        </g>
+    </g>
+    
+    <!-- Connection Lines -->
+    <g id="connection-lines">
+        <!-- ABAP to Gateway -->
+        <path d="M370,270 L500,270" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        <text x="435" y="250" class="connector-label">API Calls</text>
+        
+        <!-- Gateway to Security -->
+        <path d="M680,270 L900,270" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        <text x="790" y="250" class="connector-label">Authorization Check</text>
+        
+        <!-- ABAP to Technical -->
+        <path d="M275,410 L275,450" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        <text x="330" y="430" class="connector-label">Development Components</text>
+        
+        <!-- Gateway to Technical -->
+        <path d="M675,410 L675,450" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        <text x="730" y="430" class="connector-label">Interface Components</text>
+    </g>
+    
+    <!-- Legend -->
+    <g id="legend" transform="translate(150, 80)">
+        <rect width="900" height="30" rx="4" fill="white" stroke="#666666"></rect>
+        
+        <!-- ABAP Core -->
+        <rect x="30" y="8" width="15" height="15" rx="2" fill="#0070f2"></rect>
+        <text x="55" y="20">ABAP Components</text>
+        
+        <!-- abapGit -->
+        <rect x="180" y="8" width="15" height="15" rx="2" fill="#5d1038"></rect>
+        <text x="205" y="20">abapGit Components</text>
+        
+        <!-- Security -->
+        <rect x="330" y="8" width="15" height="15" rx="2" fill="#d13438"></rect>
+        <text x="355" y="20">Security Components</text>
+        
+        <!-- Tech Components -->
+        <rect x="480" y="8" width="15" height="15" rx="2" fill="white" stroke="#107c10" stroke-width="2"></rect>
+        <text x="505" y="20">Technical Components</text>
+        
+        <!-- API -->
+        <rect x="630" y="8" width="15" height="15" rx="2" fill="#68217a"></rect>
+        <text x="655" y="20">API Components</text>
+        
+        <!-- Connection -->
+        <path d="M735,15 L765,15" stroke="#0078d7" stroke-width="2"></path>
+        <text x="800" y="20">Component Relationships</text>
+    </g>
+</svg>

@@ -1,8 +1,17 @@
-# Setting Up GitHub Pages for SAP-GitHub Integration Playbook
+# 📄 Setting Up GitHub Pages for SAP-GitHub Integration Playbook
+
+## 📋 Table of Contents
+
+- [✅ Prerequisites](#prerequisites)
+- [Steps to Enable GitHub Pages](#steps-to-enable-github-pages)
+- [Troubleshooting](#troubleshooting)
+- [Maintenance](#maintenance)
+- [Customization](#customization)
+
 
 This document provides instructions for setting up GitHub Pages to publish the SAP-GitHub Integration Playbook as a website.
 
-## Prerequisites
+## ✅ Prerequisites
 
 - Admin access to the GitHub repository
 - The repository should already have the GitHub Pages workflow file (`.github/workflows/github-pages.yml`)
@@ -18,7 +27,12 @@ This document provides instructions for setting up GitHub Pages to publish the S
    - In the left sidebar, click on "Pages"
    - Under "Source", select "GitHub Actions" as the build and deployment source
    
+<div align="center">
+  
    ![GitHub Pages Source Settings](../assets/images/github-pages-source.png)
+  
+  *\1*
+</div>
 
 3. **Configure Custom Domain (Optional)**
    - If you want to use a custom domain, enter it in the "Custom domain" field
@@ -81,3 +95,13 @@ To customize the appearance of the GitHub Pages site:
 - Last Updated: 2023-09-01
 - Version: 1.0.0
 - Status: Published 
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

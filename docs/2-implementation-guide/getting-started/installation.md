@@ -1,8 +1,21 @@
-# Installation Guide
+# 📄 Installation Guide
+
+## 📋 Table of Contents
+
+- [🔧 Implementation Timeline](#implementation-timeline)
+- [1. Azure Environment Setup](#1-azure-environment-setup)
+- [2. GitHub Enterprise Configuration](#2-github-enterprise-configuration)
+- [3. SAP System Configuration](#3-sap-system-configuration)
+- [4. Integration Configuration](#4-integration-configuration)
+- [5. Validation and Testing](#5-validation-and-testing)
+- [6. Cutover and Go-Live](#6-cutover-and-go-live)
+- [➡
+️ ️ Next Steps](#next-steps)
+
 
 This guide provides detailed steps to implement the SAP-GitHub integration with Microsoft security solutions. Before starting, ensure all [prerequisites](./prerequisites.md) are met.
 
-## Implementation Timeline
+## 🔧 Implementation Timeline
 
 | Phase | Estimated Duration | Description |
 |-------|-------------------|-------------|
@@ -235,7 +248,7 @@ Test each component of the integration:
 2. Identify optimization opportunities.
 3. Plan for ongoing improvements.
 
-## Next Steps
+## ➡️ Next Steps
 
 After completing the installation, proceed to the [Quick Start Guide](./quick-start.md) for initial usage instructions.
 
@@ -246,3 +259,13 @@ After completing the installation, proceed to the [Quick Start Guide](./quick-st
 - Contributors: Installation Team
 - Version: 1.0.0
 - Status: Published
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

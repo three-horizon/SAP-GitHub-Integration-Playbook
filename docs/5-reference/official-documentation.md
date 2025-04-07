@@ -3,11 +3,25 @@ layout: default
 title: Official Documentation Resources
 ---
 
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [SAP Documentation Resources](#sap-documentation-resources)
+- [GitHub Documentation Resources](#github-documentation-resources)
+- [Integration Resources](#integration-resources)
+- [Cloud Platform Resources](#cloud-platform-resources)
+- [Standards and Frameworks](#standards-and-frameworks)
+- [Vendor Release Notes and Updates](#vendor-release-notes-and-updates)
+- [How to Use This Resource](#how-to-use-this-resource)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
 # Official Documentation Resources
 
 This page provides a comprehensive collection of links to official vendor documentation for SAP-GitHub integration and related technologies.
 
-## Overview
+## 📋 Overview
 
 Having access to authoritative documentation is crucial for successful implementation and operations. This curated list of resources will help you locate official documentation from SAP, GitHub, and related technology providers.
 
@@ -224,7 +238,7 @@ Having access to authoritative documentation is crucial for successful implement
    - Follow the [contribution guidelines](../../../CONTRIBUTING.md) for this repository
    - Submit pull requests with additions or corrections
 
-## Next Steps
+## ➡️ Next Steps
 
 - Review the [Security Best Practices](security-best-practices.md) documentation
 - Explore the [API Reference](api-reference/index.md) for integration details
@@ -236,3 +250,12 @@ Having access to authoritative documentation is crucial for successful implement
 - Last Updated: 2023-11-15
 - Version: 1.0.0
 - Status: Published 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

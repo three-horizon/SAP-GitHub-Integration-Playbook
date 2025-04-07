@@ -1,9 +1,21 @@
-# Incident Response Automation for Microsoft Sentinel
+# 📄 Incident Response Automation for Microsoft Sentinel
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for configuring automated incident response in Microsoft Sentinel for your SAP-GitHub integration. This implementation enables security teams to respond quickly and consistently to security incidents, reducing mean time to remediate (MTTR) and improving overall security posture.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - Data connectors configured for SAP and GitHub (refer to [SAP Connector Setup](./sap-connector.md) and [GitHub Connector Setup](./github-connector.md))
 - Analytics rules deployed (refer to [Standard Rules Deployment](./standard-rules.md))
@@ -294,7 +306,7 @@ Create a specialized dashboard for tracking incidents:
   - Test connections independently
   - Check network restrictions
 
-## Next Steps
+## ➡️ Next Steps
 
 After configuring incident response automation, proceed to:
 
@@ -317,3 +329,12 @@ After configuring incident response automation, proceed to:
 - Last Updated: 2023-08-10
 - Contributors: Security Operations Team, Automation Team
 - Version: 1.1.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

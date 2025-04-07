@@ -1,8 +1,30 @@
-# Environment-Specific Configurations
+# 📄 Environment-Specific Configurations
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Environment Configuration Scenarios](#environment-configuration-scenarios)
+- [On-Premises GitHub Enterprise with On-Premises SAP](#on-premises-github-enterprise-with-on-premises-sap)
+- [Hardware Requirements](#hardware-requirements)
+- [High Availability Configuration](#high-availability-configuration)
+- [Backup Configuration](#backup-configuration)
+- [Cloud-Hosted GitHub with On-Premises SAP](#cloud-hosted-github-with-on-premises-sap)
+- [On-Premises GitHub Enterprise with SAP BTP](#on-premises-github-enterprise-with-sap-btp)
+- [Cloud-Hosted GitHub with SAP BTP](#cloud-hosted-github-with-sap-btp)
+- [Hybrid Scenarios with Connectivity Options](#hybrid-scenarios-with-connectivity-options)
+- [VPN and Secure Connectivity Patterns](#vpn-and-secure-connectivity-patterns)
+- [Phase 1 (IKE) Configuration](#phase-1-ike-configuration)
+- [Phase 2 (ESP) Configuration](#phase-2-esp-configuration)
+- [Tunnel Configuration](#tunnel-configuration)
+- [Dead Peer Detection](#dead-peer-detection)
+- [🔧 Implementation Recommendations](#implementation-recommendations)
+- [Related Documentation](#related-documentation)
+- [References](#references)
+
 
 This document outlines the specialized configurations required for different deployment scenarios of SAP-GitHub integration, addressing on-premises, cloud-hosted, and hybrid environments along with secure connectivity options.
 
-## Overview
+## 📋 Overview
 
 SAP-GitHub integration can be deployed in various environment configurations, each with unique requirements for connectivity, security, and operational considerations. This document provides architectural guidance for implementing integration across these different deployment scenarios.
 
@@ -1214,7 +1236,7 @@ hanaCloudConnections:
       period: "hour"
 ```
 
-## Implementation Recommendations
+## 🔧 Implementation Recommendations
 
 Based on real-world implementations, the following recommendations apply to environment-specific configurations for SAP-GitHub integration:
 
@@ -1256,3 +1278,12 @@ Based on real-world implementations, the following recommendations apply to envi
 3. AWS. (2025). "AWS to SAP Connectivity Best Practices."
 4. Microsoft. (2025). "Azure Private Link for SAP Services."
 5. NIST. (2025). "Security Guidelines for Enterprise Software Configuration."
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

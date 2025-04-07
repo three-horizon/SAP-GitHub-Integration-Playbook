@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="700px" viewBox="0 0 1200 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SAP-GitHub Integration - API Implementation Architecture</title>
+    <desc>API implementation architecture for SAP-GitHub integration</desc>
+    <defs>
+        <rect id="component-container" width="200" height="80" rx="4"></rect>
+        <rect id="system-container" width="350" height="300" rx="8"></rect>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2" />
+            </feComponentTransfer>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0078d7"/>
+        </marker>
+        <marker id="security-arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#d13438"/>
+        </marker>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&amp;display=swap');
+            text {
+                font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                fill: #333333;
+            }
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .subtitle {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .system-title {
+                font-size: 18px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .component-title {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .component-subtitle {
+                font-size: 12px;
+                text-anchor: middle;
+                fill: #666666;
+            }
+            .connector-label {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+    
+    <!-- Background -->
+    <g id="background" fill="#f5f5f5">
+        <rect width="1200" height="700" rx="0"></rect>
+    </g>
+    
+    <!-- Title -->
+    <text x="600" y="50" class="title" text-anchor="middle">SAP-GitHub Integration - API Implementation Architecture</text>
+    
+    <!-- SAP Environment -->
+    <g id="sap-environment" transform="translate(100, 130)">
+        <use href="#system-container" fill="#f0f9ff" stroke="#0070f2" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="175" y="40" class="system-title">SAP Environment</text>
+        
+        <!-- SAP Gateway -->
+        <g transform="translate(75, 60)">
+            <use href="#component-container" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="component-title" fill="white">SAP Gateway</text>
+            <text x="100" y="55" class="component-subtitle" fill="#e6f0ff">OData Services</text>
+        </g>
+        
+        <!-- RFC Module -->
+        <g transform="translate(75, 150)">
+            <use href="#component-container" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="component-title" fill="white">RFC Module</text>
+            <text x="100" y="55" class="component-subtitle" fill="#e6f0ff">Function Modules</text>
+        </g>
+        
+        <!-- ICF Service -->
+        <g transform="translate(75, 240)">
+            <use href="#component-container" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="component-title" fill="white">ICF Service</text>
+            <text x="100" y="55" class="component-subtitle" fill="#e6f0ff">HTTP Endpoints</text>
+        </g>
+    </g>
+    
+    <!-- GitHub Environment -->
+    <g id="github-environment" transform="translate(750, 130)">
+        <use href="#system-container" fill="#f7f2fa" stroke="#6e5494" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="175" y="40" class="system-title">GitHub Environment</text>
+        
+        <!-- GitHub REST API -->
+        <g transform="translate(75, 60)">
+            <use href="#component-container" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="component-title" fill="white">REST API</text>
+            <text x="100" y="55" class="component-subtitle" fill="#f0e8f5">v3 Endpoints</text>
+        </g>
+        
+        <!-- GitHub GraphQL API -->
+        <g transform="translate(75, 150)">
+            <use href="#component-container" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="component-title" fill="white">GraphQL API</text>
+            <text x="100" y="55" class="component-subtitle" fill="#f0e8f5">v4 Endpoints</text>
+        </g>
+        
+        <!-- GitHub Webhooks -->
+        <g transform="translate(75, 240)">
+            <use href="#component-container" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="component-title" fill="white">Webhooks</text>
+            <text x="100" y="55" class="component-subtitle" fill="#f0e8f5">Event Triggers</text>
+        </g>
+    </g>
+    
+    <!-- Azure API Management -->
+    <g id="azure-apim" transform="translate(350, 500)">
+        <use href="#system-container" width="500" height="170" fill="#f0f5fa" stroke="#0078d4" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="250" y="40" class="system-title">Azure API Management</text>
+        
+        <!-- SAP Policies -->
+        <g transform="translate(50, 70)">
+            <use href="#component-container" width="180" fill="#68217a" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="component-title" fill="white">SAP API Policies</text>
+            <text x="90" y="55" class="component-subtitle" fill="#f2e5f5">Transformation Logic</text>
+        </g>
+        
+        <!-- GitHub Policies -->
+        <g transform="translate(270, 70)">
+            <use href="#component-container" width="180" fill="#68217a" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="component-title" fill="white">GitHub API Policies</text>
+            <text x="90" y="55" class="component-subtitle" fill="#f2e5f5">Authentication/Mapping</text>
+        </g>
+    </g>
+    
+    <!-- Security Components -->
+    <g id="security-components" transform="translate(425, 280)">
+        <rect width="350" height="170" rx="8" fill="#fff0f0" stroke="#d13438" stroke-width="2" filter="url(#shadow)"></rect>
+        <text x="175" y="40" class="system-title" fill="#d13438">Security Services</text>
+        
+        <!-- Key Vault -->
+        <g transform="translate(25, 70)">
+            <use href="#component-container" width="140" fill="#ffb900" filter="url(#shadow)"></use>
+            <text x="70" y="35" class="component-title" fill="#333">Key Vault</text>
+            <text x="70" y="55" class="component-subtitle" fill="#333">Secret Storage</text>
+        </g>
+        
+        <!-- OAuth Service -->
+        <g transform="translate(185, 70)">
+            <use href="#component-container" width="140" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="70" y="35" class="component-title" fill="white">OAuth Service</text>
+            <text x="70" y="55" class="component-subtitle" fill="#ffe0e0">Authentication</text>
+        </g>
+    </g>
+    
+    <!-- Monitoring Components -->
+    <g id="monitoring-components" transform="translate(425, 130)">
+        <rect width="350" height="120" rx="8" fill="#e5f4e5" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></rect>
+        <text x="175" y="40" class="system-title" fill="#107c10">Monitoring & Logging</text>
+        
+        <!-- API Monitoring -->
+        <g transform="translate(100, 60)">
+            <use href="#component-container" width="150" fill="#107c10" filter="url(#shadow)"></use>
+            <text x="75" y="35" class="component-title" fill="white">API Monitoring</text>
+            <text x="75" y="55" class="component-subtitle" fill="#e0ffe0">Metrics & Alerts</text>
+        </g>
+    </g>
+    
+    <!-- Connection Lines -->
+    <!-- SAP to API Management -->
+    <path d="M275,430 L450,500" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="350" y="470" class="connector-label">OData/REST</text>
+    
+    <!-- GitHub to API Management -->
+    <path d="M925,430 L750,500" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    <text x="850" y="470" class="connector-label">REST/GraphQL</text>
+    
+    <!-- Security to SAP -->
+    <path d="M425,360 L275,280" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#security-arrow)"></path>
+    <text x="320" y="320" class="connector-label" fill="#d13438">SAP Auth</text>
+    
+    <!-- Security to GitHub -->
+    <path d="M775,360 L925,280" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#security-arrow)"></path>
+    <text x="880" y="320" class="connector-label" fill="#d13438">OAuth/PAT</text>
+    
+    <!-- Monitoring to SAP -->
+    <path d="M425,190 L350,190" stroke="#107c10" stroke-width="2" stroke-dasharray="5,5" fill="none"></path>
+    
+    <!-- Monitoring to GitHub -->
+    <path d="M775,190 L850,190" stroke="#107c10" stroke-width="2" stroke-dasharray="5,5" fill="none"></path>
+    
+    <!-- Monitoring to API Management -->
+    <path d="M600,250 L600,500" stroke="#107c10" stroke-width="2" stroke-dasharray="5,5" fill="none"></path>
+    
+    <!-- API Management Internal -->
+    <path d="M230,570 L270,570" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    
+    <!-- Security to API Management -->
+    <path d="M600,450 L600,500" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#security-arrow)"></path>
+    <text x="620" y="475" class="connector-label" fill="#d13438">Secure API Keys</text>
+    
+    <!-- Legend -->
+    <g id="legend" transform="translate(150, 80)">
+        <rect width="900" height="30" rx="4" fill="white" stroke="#666666"></rect>
+        
+        <!-- SAP Color -->
+        <rect x="20" y="8" width="15" height="15" rx="2" fill="#0070f2"></rect>
+        <text x="45" y="20">SAP Components</text>
+        
+        <!-- GitHub Color -->
+        <rect x="180" y="8" width="15" height="15" rx="2" fill="#6e5494"></rect>
+        <text x="205" y="20">GitHub Components</text>
+        
+        <!-- Azure Color -->
+        <rect x="340" y="8" width="15" height="15" rx="2" fill="#0078d4"></rect>
+        <text x="365" y="20">Azure Components</text>
+        
+        <!-- API Management Color -->
+        <rect x="500" y="8" width="15" height="15" rx="2" fill="#68217a"></rect>
+        <text x="525" y="20">API Management</text>
+        
+        <!-- Security Color -->
+        <rect x="660" y="8" width="15" height="15" rx="2" fill="#d13438"></rect>
+        <text x="685" y="20">Security Components</text>
+        
+        <!-- Monitoring Color -->
+        <rect x="820" y="8" width="15" height="15" rx="2" fill="#107c10"></rect>
+        <text x="845" y="20">Monitoring Components</text>
+    </g>
+</svg>

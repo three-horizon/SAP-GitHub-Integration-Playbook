@@ -1,8 +1,22 @@
-# SAP-GitHub Integration Examples
+# 💻 SAP-GitHub Integration Examples
+
+<div align="center">
+  
+  ![Example Implementations](../assets/images/flows/integration-decision-tree.svg)
+  
+  *Example implementations and templates for SAP-GitHub integration*
+</div>
 
 This directory contains a comprehensive collection of example implementations, configuration templates, and code samples to help you implement SAP-GitHub integration in your organization.
 
-## Directory Structure
+## 📋 Table of Contents
+
+- [📋 Directory Structure](#directory-structure)
+- [🚀 How to Use These Examples](#how-to-use-these-examples)
+- [🤝 Contributing](#contributing)
+- [🔗 Related Documentation](#related-documentation)
+
+## 📋 Directory Structure
 
 The examples are organized into the following categories:
 

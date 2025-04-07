@@ -1,9 +1,22 @@
-# Executive Dashboard for SAP-GitHub Integration
+# 📄 Executive Dashboard for SAP-GitHub Integration
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Dashboard Distribution and Operations](#dashboard-distribution-and-operations)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for creating and configuring an executive-level security and compliance dashboard for the SAP-GitHub integration environment. This dashboard presents high-level metrics, trends, and key insights tailored for executive leadership to understand the security posture, compliance status, and operational health of the integrated environment.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - Integration dashboard implemented (refer to [Integration Dashboard](./integration-dashboard.md))
 - Security rules deployed (refer to [Standard Rules Deployment](./standard-rules.md))
@@ -672,7 +685,7 @@ Implement these operational procedures:
   - Document calculation methods
   - Include data definitions
 
-## Next Steps
+## ➡️ Next Steps
 
 After implementing the executive dashboard, proceed to:
 
@@ -695,3 +708,12 @@ After implementing the executive dashboard, proceed to:
 - Last Updated: 2023-09-25
 - Contributors: Executive Reporting Team, Security Team, Dashboard Design Team
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

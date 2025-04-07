@@ -1,8 +1,19 @@
-# Quick Start Guide
+# 📄 Quick Start Guide
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [For ABAP Developers](#for-abap-developers)
+- [For System Administrators](#for-system-administrators)
+- [💻 Example: End-to-End Development Scenario](#example-end-to-end-development-scenario)
+- [Common Issues and Quick Fixes](#common-issues-and-quick-fixes)
+- [➡
+️ ️ Next Steps](#next-steps)
+
 
 This quick start guide helps you begin using the SAP-GitHub integration immediately after installation. It covers the core workflows for both ABAP developers and system administrators.
 
-## Overview
+## 📋 Overview
 
 The SAP-GitHub integration enables a modern development workflow for SAP ABAP systems:
 
@@ -97,7 +108,7 @@ This creates:
 4. Click **Refresh Token**
 5. Follow authentication prompts
 
-## Example: End-to-End Development Scenario
+## 💻 Example: End-to-End Development Scenario
 
 ### Creating a New Report
 
@@ -143,7 +154,7 @@ This creates:
 | Authorization issues | Verify SAP technical user has required permissions |
 | Missing objects in GitHub | Check package assignment and abapGit configuration |
 
-## Next Steps
+## ➡️ Next Steps
 
 After becoming familiar with the basic workflows, explore:
 
@@ -161,3 +172,13 @@ For more detailed guides, see the [Documentation Home](../index.md).
 - Contributors: Documentation Team
 - Version: 1.0.0
 - Status: Published
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

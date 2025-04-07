@@ -1,6 +1,6 @@
-# API Management Setup for SAP-GitHub Integration
+# 📄 API Management Setup for SAP-GitHub Integration
 
-## Table of Contents
+## 📋 Table of Contents
 
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
@@ -19,13 +19,13 @@
 - [Troubleshooting](#troubleshooting)
 - [Next Steps](#next-steps)
 
-## Overview
+## 📋 Overview
 
 Microsoft API Management serves as the crucial middleware layer in the SAP-GitHub integration architecture. It provides secure, managed API endpoints that facilitate communication between SAP systems and GitHub, handling authentication, request transformation, and security policies.
 
 This guide walks through the setup and configuration of API Management for the SAP-GitHub integration.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before setting up API Management, ensure you have:
 
@@ -41,7 +41,7 @@ Before setting up API Management, ensure you have:
 
 For complete environment requirements, see the [Prerequisites](../getting-started/prerequisites.md) document.
 
-## Implementation Checklist
+## 🔧 Implementation Checklist
 
 - [ ] Provision API Management service in Azure
 - [ ] Configure network settings and connectivity
@@ -357,7 +357,7 @@ Common issues and solutions:
    - Check for syntax errors
    - Use trace functionality to diagnose issues
 
-## Next Steps
+## ➡️ Next Steps
 
 After successful API Management configuration:
 
@@ -368,3 +368,12 @@ After successful API Management configuration:
 ---
 
 **Last Updated:** 2023-09-01 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

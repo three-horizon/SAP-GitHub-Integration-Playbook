@@ -1,8 +1,26 @@
-# GitHub Enterprise Authentication Setup
+# 📄 GitHub Enterprise Authentication Setup
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Authentication Methods](#authentication-methods)
+- [Method 1: Personal Access Token (PAT) Authentication](#method-1-personal-access-token-pat-authentication)
+- [Method 2: OAuth App Authentication](#method-2-oauth-app-authentication)
+- [Method 3: GitHub App Authentication](#method-3-github-app-authentication)
+- [User Mapping](#user-mapping)
+- [Service User Configuration](#service-user-configuration)
+- [Securing Authentication Information](#securing-authentication-information)
+- [Multi-System Authentication](#multi-system-authentication)
+- [Testing Authentication](#testing-authentication)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [Additional Resources](#additional-resources)
+
 
 This guide explains how to configure authentication between SAP systems and GitHub Enterprise, which is a critical component of the SAP-GitHub integration.
 
-## Overview
+## 📋 Overview
 
 Proper authentication between SAP and GitHub Enterprise is essential for:
 - Secure code exchange between systems
@@ -209,7 +227,7 @@ For authentication issues:
 3. Review authentication-related log entries
 4. For additional debugging, enable verbose logging in admin configuration
 
-## Next Steps
+## ➡️ Next Steps
 
 Once authentication is configured, proceed to:
 
@@ -226,3 +244,12 @@ Once authentication is configured, proceed to:
 ---
 
 *Last Updated: [YYYY-MM-DD] for [GitHub Enterprise X.Y.Z]* 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

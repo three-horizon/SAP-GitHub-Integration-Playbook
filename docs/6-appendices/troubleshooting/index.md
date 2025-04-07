@@ -1,8 +1,8 @@
-# Troubleshooting Guide
+# 📄 Troubleshooting Guide
 
 This guide provides solutions for common issues encountered in the SAP-GitHub integration. Each section addresses specific problem areas with diagnostic steps, resolutions, and prevention strategies.
 
-## Table of Contents
+## 📋 Table of Contents
 
 - [Integration Connectivity Issues](#integration-connectivity-issues)
 - [GitHub Actions Workflow Failures](#github-actions-workflow-failures)
@@ -288,7 +288,7 @@ This guide provides solutions for common issues encountered in the SAP-GitHub in
 3. Store and retrieve secrets securely
 4. Validate authentication flow end-to-end
 
-## Security and Authorization Problems
+## 🛡️ Security and Authorization Problems
 
 ### GitHub Security Scan Failures
 
@@ -463,3 +463,13 @@ If you're unable to resolve an issue using this guide:
 ---
 
 *Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Enterprise X.Y.Z, SAP S/4 HANA X.Y.Z, etc.]*
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

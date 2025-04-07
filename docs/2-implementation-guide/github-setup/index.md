@@ -1,8 +1,17 @@
-# GitHub Enterprise Setup Guide
+# 📄 GitHub Enterprise Setup Guide
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Setup Guides](#setup-guides)
+- [🔧 Implementation Checklist](#implementation-checklist)
+- [➡
+️ ️ Next Steps](#next-steps)
+
 
 This section provides detailed instructions for setting up GitHub Enterprise as part of the SAP-GitHub integration. The setup process includes organization configuration, repository structure, security settings, and integration with Microsoft security solutions.
 
-## Overview
+## 📋 Overview
 
 Proper GitHub Enterprise configuration is essential for successful SAP integration. This guide covers all aspects of GitHub setup, from basic organization structure to advanced security settings.
 
@@ -39,7 +48,7 @@ Proper GitHub Enterprise configuration is essential for successful SAP integrati
 * [ABAP Configuration](./copilot-abap.md) - Configure Copilot for ABAP development
 * [Best Practices](./copilot-best-practices.md) - Guidelines for effective Copilot usage
 
-## Implementation Checklist
+## 🔧 Implementation Checklist
 
 Use this checklist to ensure complete GitHub setup:
 
@@ -53,10 +62,20 @@ Use this checklist to ensure complete GitHub setup:
 - [ ] Copilot configured for development teams
 - [ ] Audit and compliance settings configured
 
-## Next Steps
+## ➡️ Next Steps
 
 After completing GitHub setup, proceed to [SAP System Setup](../sap-setup/index.md) to prepare your SAP environment.
 
 ---
 
 *Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Enterprise X.Y.Z, etc.]*
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

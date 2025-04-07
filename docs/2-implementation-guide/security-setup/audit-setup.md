@@ -1,9 +1,21 @@
-# Audit Configuration for SAP-GitHub Integration
+# 📄 Audit Configuration for SAP-GitHub Integration
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for configuring comprehensive audit logging and monitoring across the SAP-GitHub integration environment. A robust audit framework enables security visibility, compliance demonstration, and forensic capabilities, while providing evidence for regulatory requirements and internal governance processes.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - SAP systems with Security Audit Log configured
 - GitHub Enterprise with audit logging enabled
@@ -400,7 +412,7 @@ Implement these controls to protect audit data:
   - Create entity mapping
   - Use consistent terminology
 
-## Next Steps
+## ➡️ Next Steps
 
 After configuring the audit framework, proceed to:
 
@@ -423,3 +435,12 @@ After configuring the audit framework, proceed to:
 - Last Updated: 2023-09-10
 - Contributors: Security Audit Team, Compliance Team, SAP Security Team
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

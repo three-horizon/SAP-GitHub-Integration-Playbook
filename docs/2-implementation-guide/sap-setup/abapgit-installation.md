@@ -1,12 +1,29 @@
-# abapGit Installation Guide
+# 📄 abapGit Installation Guide
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Installation Methods](#installation-methods)
+- [Method 1: Online Installation](#method-1-online-installation)
+- [Method 2: Offline Installation](#method-2-offline-installation)
+- [Post-Installation Steps](#post-installation-steps)
+- [Troubleshooting](#troubleshooting)
+- [Creating a Transaction Code (Optional)](#creating-a-transaction-code-optional)
+- [Setting up a Development Package for abapGit (Recommended)](#setting-up-a-development-package-for-abapgit-recommended)
+- [Updating abapGit](#updating-abapgit)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [Additional Resources](#additional-resources)
+
 
 This guide provides detailed instructions for installing abapGit in your SAP system, which is a prerequisite for the SAP-GitHub integration.
 
-## Overview
+## 📋 Overview
 
 abapGit is an open-source git client for ABAP, allowing you to version-control your ABAP objects using git repositories. It serves as the foundation for our SAP-GitHub integration approach.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before installing abapGit, ensure you have:
 
@@ -138,7 +155,7 @@ To update your abapGit installation:
 
 If using offline installation, repeat the installation steps with the newer version of the code.
 
-## Next Steps
+## ➡️ Next Steps
 
 Once abapGit is installed, proceed to:
 
@@ -155,3 +172,12 @@ Once abapGit is installed, proceed to:
 ---
 
 *Last Updated: [YYYY-MM-DD] for [abapGit version X.Y.Z]* 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

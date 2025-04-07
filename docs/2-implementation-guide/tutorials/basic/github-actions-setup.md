@@ -1,8 +1,29 @@
-# Setting Up GitHub Actions Workflows for SAP Development
+# 📄 Setting Up GitHub Actions Workflows for SAP Development
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Step 1: Create the Workflows Directory](#step-1-create-the-workflows-directory)
+- [Step 2: Set Up ABAP Syntax Checking Workflow](#step-2-set-up-abap-syntax-checking-workflow)
+- [Step 3: Create abaplint Configuration File](#step-3-create-abaplint-configuration-file)
+- [Step 4: Set Up SAP Transport Validation Workflow](#step-4-set-up-sap-transport-validation-workflow)
+- [Step 5: Configure GitHub Repository Secrets](#step-5-configure-github-repository-secrets)
+- [Step 6: Set Up Automated Transport Release Workflow](#step-6-set-up-automated-transport-release-workflow)
+- [Step 7: Create a Quality Gate Workflow](#step-7-create-a-quality-gate-workflow)
+- [Step 8: Create GitHub Environments for Approvals](#step-8-create-github-environments-for-approvals)
+- [Step 9: Set Up Pull Request Template](#step-9-set-up-pull-request-template)
+- [Step 10: Test the Complete Workflow](#step-10-test-the-complete-workflow)
+- [Validation](#validation)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [Additional Resources](#additional-resources)
+
 
 This tutorial provides step-by-step instructions for implementing Continuous Integration/Continuous Deployment (CI/CD) workflows using GitHub Actions specifically tailored for SAP development.
 
-## Overview
+## 📋 Overview
 
 GitHub Actions workflows enable automated testing, validation, and deployment of your SAP code, bringing modern DevOps practices to ABAP development. With proper GitHub Actions setup, you can:
 
@@ -14,7 +35,7 @@ GitHub Actions workflows enable automated testing, validation, and deployment of
 
 This tutorial guides you through setting up essential GitHub Actions workflows for SAP development.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before you begin, ensure you have:
 
@@ -381,7 +402,7 @@ If you encounter persistent issues:
 3. Verify network connectivity between GitHub Actions and SAP systems
 4. Test SAP connections separately to isolate authentication issues
 
-## Next Steps
+## ➡️ Next Steps
 
 Now that you've set up basic GitHub Actions workflows, consider:
 
@@ -400,3 +421,12 @@ Now that you've set up basic GitHub Actions workflows, consider:
 ---
 
 *Last Updated: [YYYY-MM-DD] for [GitHub Enterprise X.Y.Z, SAP NetWeaver X.Y.Z]* 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

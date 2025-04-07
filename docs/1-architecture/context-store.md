@@ -1,6 +1,21 @@
-# Context Store Design and Implementation
+# 📄 Context Store Design and Implementation
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Design Principles](#design-principles)
+- [Architecture](#architecture)
+- [🔧 Implementation Options](#implementation-options)
+- [Schema Design](#schema-design)
+- [Lifecycle Management](#lifecycle-management)
+- [Performance Considerations](#performance-considerations)
+- [🛡
+️ ️ Security Considerations](#security-considerations)
+- [Related Documentation](#related-documentation)
+- [External References](#external-references)
+
+
+## 📋 Overview
 
 The Context Store is a central component of the Model Context Protocol (MCP) integration, providing persistent storage for development context across SAP and GitHub environments. This document details the design principles, implementation options, and best practices for the Context Store.
 
@@ -68,7 +83,7 @@ The Context Store is a central component of the Model Context Protocol (MCP) int
    - Context visibility rules
    - Policy enforcement
 
-## Implementation Options
+## 🔧 Implementation Options
 
 ### Azure-Based Implementation
 
@@ -178,7 +193,7 @@ The Context Store is a central component of the Model Context Protocol (MCP) int
 - **Partitioning**: Partition data by logical boundaries (teams, projects)
 - **Query Optimization**: Design efficient query patterns
 
-## Security Considerations
+## 🛡️ Security Considerations
 
 - **Data Classification**: Classify context data for appropriate protection
 - **Encryption**: Encrypt sensitive context information
@@ -196,3 +211,12 @@ The Context Store is a central component of the Model Context Protocol (MCP) int
 1. [Microsoft Azure Cosmos DB Documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/)
 2. [MongoDB Schema Design Best Practices](https://www.mongodb.com/developer/products/mongodb/schema-design-anti-patterns/)
 3. [Azure Storage Security Best Practices](https://learn.microsoft.com/en-us/azure/storage/blobs/security-recommendations) 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

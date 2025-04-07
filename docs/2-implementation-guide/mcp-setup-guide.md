@@ -1,10 +1,22 @@
-# MCP Implementation Guide
+# 📄 MCP Implementation Guide
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Architecture Overview](#architecture-overview)
+- [🔧 Implementation Steps](#implementation-steps)
+- [Testing the Integration](#testing-the-integration)
+- [Troubleshooting](#troubleshooting)
+- [Related Documentation](#related-documentation)
+- [External References](#external-references)
+
+
+## 📋 Overview
 
 This guide provides step-by-step instructions for implementing the Model Context Protocol (MCP) integration layer and Context Store for your SAP-GitHub integration environment. Follow these steps to enhance your development workflow with persistent context.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before beginning the MCP implementation, ensure you have:
 
@@ -34,7 +46,7 @@ The implementation will follow this architectural pattern:
                     └───────────────────┘
 ```
 
-## Implementation Steps
+## 🔧 Implementation Steps
 
 ### Phase 1: Azure Infrastructure Setup
 
@@ -447,3 +459,12 @@ The implementation will follow this architectural pattern:
 2. [Azure Cosmos DB Documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/)
 3. [GitHub Actions Documentation](https://docs.github.com/en/actions)
 4. [SAP RFC SDK Documentation](https://support.sap.com/en/product/connectors/msnet.html) 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

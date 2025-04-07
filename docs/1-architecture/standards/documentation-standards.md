@@ -1,6 +1,19 @@
-# Documentation Style Guide
+# 📄 Documentation Style Guide
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Language and Tone](#language-and-tone)
+- [Document Structure](#document-structure)
+- [Formatting Conventions](#formatting-conventions)
+- [Images and Diagrams](#images-and-diagrams)
+- [Technical Content](#technical-content)
+- [Reference Documentation](#reference-documentation)
+- [Content Maintenance](#content-maintenance)
+- [Accessibility Considerations](#accessibility-considerations)
+
+
+## 📋 Overview
 
 This style guide establishes standards for creating consistent, high-quality documentation throughout the SAP-GitHub Integration Playbook. By following these guidelines, you'll help ensure that our documentation is clear, accessible, and valuable to our users.
 
@@ -78,7 +91,12 @@ This style guide establishes standards for creating consistent, high-quality doc
 ### Example
 
 ```markdown
+<div align="center">
+  
 ![SAP to GitHub integration architecture diagram](../assets/images/architecture/integration-diagram.png)
+  
+  *\1*
+</div>
 ```
 
 ## Technical Content
@@ -148,3 +166,13 @@ All documents should include standardized metadata:
 - Last Updated: 2023-09-01
 - Contributors: Documentation Team
 - Version: 1.0.0
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

@@ -3,11 +3,23 @@ layout: default
 title: Interactive Learning Resources
 ---
 
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Getting Started](#getting-started)
+- [Tutorial Library](#tutorial-library)
+- [Hands-On Exercises](#hands-on-exercises)
+- [Sample Projects](#sample-projects)
+- [Virtual Workshops](#virtual-workshops)
+- [🤝 Contributing](#contributing)
+- [Support](#support)
+
+
 # Interactive Learning Resources
 
 This section provides tutorials, interactive guides, and learning resources for SAP-GitHub integration development.
 
-## Overview
+## 📋 Overview
 
 Interactive learning resources allow developers to gain hands-on experience with SAP-GitHub integration concepts through guided exercises, tutorials, and sample projects. This directory contains a collection of educational materials targeted at different skill levels and technology areas.
 
@@ -127,7 +139,7 @@ Periodically scheduled virtual workshops cover specialized topics:
 - Security considerations
 - Enterprise-scale implementations
 
-## Contributing
+## 🤝 Contributing
 
 These learning resources are collaboratively maintained. To contribute:
 
@@ -150,3 +162,12 @@ For questions or issues with the tutorials:
 - Last Updated: 2023-11-15
 - Version: 1.0.0
 - Status: Published 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

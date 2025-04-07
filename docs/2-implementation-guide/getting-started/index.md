@@ -3,6 +3,17 @@ layout: default
 title: Getting Started with SAP-GitHub Integration
 ---
 
+## 📋 Table of Contents
+
+- [Introduction](#introduction)
+- [🔧 Implementation Approach](#implementation-approach)
+- [Available Documents](#available-documents)
+- [Quick Start](#quick-start)
+- [Common Questions](#common-questions)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
 # Getting Started with SAP-GitHub Integration
 
 This section provides the essential information needed to begin your SAP-GitHub integration journey.
@@ -17,7 +28,7 @@ SAP-GitHub integration brings modern DevOps practices to SAP development, enabli
 - Streamlined deployments and release management
 - Enhanced code quality and governance
 
-## Implementation Approach
+## 🔧 Implementation Approach
 
 We recommend a phased approach to SAP-GitHub integration:
 
@@ -73,10 +84,19 @@ A successful implementation team typically includes:
 - Security specialist
 - Project manager
 
-## Next Steps
+## ➡️ Next Steps
 
 Once you've reviewed the getting started materials, proceed to:
 
 1. [SAP System Setup]({{ site.baseurl }}/docs/2-implementation-guide/sap-setup/)
 2. [GitHub Enterprise Setup]({{ site.baseurl }}/docs/2-implementation-guide/github-setup/)
 3. [Integration Configuration]({{ site.baseurl }}/docs/2-implementation-guide/workflows/)
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

@@ -1,8 +1,28 @@
-# Configuring Branch Protection Rules for SAP Development
+# 📄 Configuring Branch Protection Rules for SAP Development
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Step 1: Analyze Your SAP Development Workflow](#step-1-analyze-your-sap-development-workflow)
+- [Step 2: Access Branch Protection Settings](#step-2-access-branch-protection-settings)
+- [Step 3: Configure Protection for Main Branch](#step-3-configure-protection-for-main-branch)
+- [Step 4: Configure Protection for Development Branch](#step-4-configure-protection-for-development-branch)
+- [Step 5: Configure Pattern-Based Rules for Feature Branches](#step-5-configure-pattern-based-rules-for-feature-branches)
+- [Step 6: Configure SAP Transport-Aligned Branch Protection](#step-6-configure-sap-transport-aligned-branch-protection)
+- [Step 7: Create a CODEOWNERS File](#step-7-create-a-codeowners-file)
+- [Step 8: Test Your Branch Protection Rules](#step-8-test-your-branch-protection-rules)
+- [Step 9: Document Your Branch Protection Strategy](#step-9-document-your-branch-protection-strategy)
+- [Validation](#validation)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [Additional Resources](#additional-resources)
+
 
 This tutorial provides a step-by-step guide for implementing effective branch protection rules for SAP development in GitHub, ensuring code quality and governance in your development workflows.
 
-## Overview
+## 📋 Overview
 
 Branch protection rules are critical safeguards that help maintain code quality and governance in SAP development projects. When properly configured, they:
 
@@ -14,7 +34,7 @@ Branch protection rules are critical safeguards that help maintain code quality 
 
 This tutorial walks you through setting up effective branch protection rules specifically tailored for SAP development.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before you begin, ensure you have:
 
@@ -196,7 +216,7 @@ If you encounter persistent issues:
 3. Ensure all GitHub Actions workflows are correctly configured
 4. Verify that service users have appropriate permissions
 
-## Next Steps
+## ➡️ Next Steps
 
 Now that you've configured branch protection rules, consider:
 
@@ -214,3 +234,12 @@ Now that you've configured branch protection rules, consider:
 ---
 
 *Last Updated: [YYYY-MM-DD] for [GitHub Enterprise X.Y.Z]* 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

@@ -1,6 +1,17 @@
-# SAP-GitHub Integration Troubleshooting Guide
+# 📄 SAP-GitHub Integration Troubleshooting Guide
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Common Issues and Solutions](#common-issues-and-solutions)
+- [Diagnostic Procedures](#diagnostic-procedures)
+- [Common Error Codes and Resolutions](#common-error-codes-and-resolutions)
+- [Escalation Procedures](#escalation-procedures)
+- [Preventive Measures](#preventive-measures)
+- [Additional Resources](#additional-resources)
+
+
+## 📋 Overview
 
 This document provides comprehensive troubleshooting guidance for the SAP-GitHub integration environment. It covers common issues, diagnostic procedures, resolution steps, and escalation paths to help efficiently resolve problems that may arise in the integrated development workflow.
 
@@ -860,3 +871,12 @@ This document provides comprehensive troubleshooting guidance for the SAP-GitHub
 - Last Updated: 2023-08-28
 - Contributors: Support Team, DevOps Team, Security Team
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

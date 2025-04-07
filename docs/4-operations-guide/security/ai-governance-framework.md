@@ -1,6 +1,22 @@
-# AI Governance Framework
+# 📄 AI Governance Framework
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Purpose and Scope](#purpose-and-scope)
+- [Governance Structure](#governance-structure)
+- [Risk Management Framework](#risk-management-framework)
+- [GitHub Copilot Governance](#github-copilot-governance)
+- [Model Context Protocol Governance](#model-context-protocol-governance)
+- [Compliance and Monitoring](#compliance-and-monitoring)
+- [Training and Awareness](#training-and-awareness)
+- [Incident Management](#incident-management)
+- [Continuous Improvement](#continuous-improvement)
+- [Related Documentation](#related-documentation)
+- [External References](#external-references)
+
+
+## 📋 Overview
 
 This AI Governance Framework provides guidelines and policies for the responsible and effective use of AI technologies, specifically GitHub Copilot and Model Context Protocol (MCP), within SAP-GitHub integrated environments. The framework ensures AI technologies are leveraged safely, effectively, and in compliance with organizational standards and regulatory requirements.
 
@@ -390,3 +406,12 @@ All Copilot-assisted implementations must document:
 2. [Microsoft Responsible AI Principles](https://www.microsoft.com/en-us/ai/responsible-ai)
 3. [GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/)
 4. [SAP Trust Center](https://www.sap.com/about/trust-center.html) 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

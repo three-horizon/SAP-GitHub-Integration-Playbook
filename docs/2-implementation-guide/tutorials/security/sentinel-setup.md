@@ -1,10 +1,21 @@
-# Setting Up Microsoft Sentinel for SAP Monitoring
+# 📄 Setting Up Microsoft Sentinel for SAP Monitoring
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Step-by-Step Implementation](#step-by-step-implementation)
+- [Recommended Security Monitoring Scenarios](#recommended-security-monitoring-scenarios)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
+## 📋 Overview
 
 This tutorial guides you through the process of configuring Microsoft Sentinel to monitor your SAP systems and GitHub repositories. By implementing Sentinel monitoring, you'll gain comprehensive security insights across your entire SAP-GitHub integration, enabling early detection of security threats and compliance violations.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before starting this tutorial, ensure you have:
 
@@ -366,7 +377,7 @@ union
 | Workbook doesn't show data | Verify that the time range selected contains data and that all data connectors are properly configured |
 | False positive alerts | Tune the detection rules by adjusting thresholds or adding exclusions |
 
-## Next Steps
+## ➡️ Next Steps
 
 After completing this tutorial, consider these advanced configurations:
 
@@ -382,3 +393,12 @@ After completing this tutorial, consider these advanced configurations:
 - Contributors: Security Team
 - Version: 1.0.0
 - Status: Published
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

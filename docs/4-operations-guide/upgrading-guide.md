@@ -1,6 +1,18 @@
-# SAP-GitHub Integration Upgrading Guide
+# 📄 SAP-GitHub Integration Upgrading Guide
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Upgrade Planning](#upgrade-planning)
+- [Component Upgrade Procedures](#component-upgrade-procedures)
+- [Testing Procedures](#testing-procedures)
+- [Rollback Procedures](#rollback-procedures)
+- [Communication Plan](#communication-plan)
+- [Post-Upgrade Activities](#post-upgrade-activities)
+- [Additional Resources](#additional-resources)
+
+
+## 📋 Overview
 
 This document provides guidance for upgrading the components of the SAP-GitHub integration environment. It covers upgrade planning, procedures, testing strategies, and rollback procedures to ensure smooth version transitions with minimal disruption to development activities.
 
@@ -323,3 +335,12 @@ This document provides guidance for upgrading the components of the SAP-GitHub i
 - Last Updated: 2023-09-04
 - Contributors: Operations Team, Development Team, System Administrators
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

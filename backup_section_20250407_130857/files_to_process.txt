@@ -1,0 +1,9 @@
+./docs/3-developer-guide/dev-environment-setup.md
+./docs/3-developer-guide/context-aware-development.md
+./docs/3-developer-guide/interactive-learning/index.md
+./docs/3-developer-guide/copilot-for-abap.md
+./docs/3-developer-guide/api-management/configuration.md
+./docs/3-developer-guide/README.md
+./docs/3-developer-guide/github/actions-workflow-setup.md
+./docs/3-developer-guide/github-copilot-integration.md
+./docs/3-developer-guide/advanced-github-features.md

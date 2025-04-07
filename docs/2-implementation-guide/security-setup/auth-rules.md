@@ -1,9 +1,21 @@
-# Authentication Rules for Microsoft Sentinel
+# 📄 Authentication Rules for Microsoft Sentinel
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for implementing authentication monitoring rules in Microsoft Sentinel for your SAP-GitHub integration. These rules detect suspicious authentication activities, potential credential compromises, and improper access across your integrated environment.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - Data connectors configured (refer to [Data Collection](./data-collection.md))
 - SAP connector deployed (refer to [SAP Connector Setup](./sap-connector.md))
@@ -426,7 +438,7 @@ Enhance authentication alerts with context:
   - Check time synchronization
   - Improve entity mapping
 
-## Next Steps
+## ➡️ Next Steps
 
 After configuring authentication rules, proceed to:
 
@@ -449,3 +461,12 @@ After configuring authentication rules, proceed to:
 - Last Updated: 2023-08-18
 - Contributors: Security Operations Team, IAM Team
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

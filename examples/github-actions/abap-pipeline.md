@@ -3,15 +3,35 @@ layout: default
 title: GitHub Actions Workflow for ABAP
 ---
 
-# GitHub Actions Workflow for ABAP Development
+# 🔄 GitHub Actions Workflow for ABAP Development
+
+<div align="center">
+  
+  ![ABAP Pipeline](../../assets/images/flows/sap-github-workflow.svg)
+  
+  *Complete CI/CD workflow for SAP ABAP development with GitHub Actions*
+</div>
 
 This example provides a complete GitHub Actions workflow for automating CI/CD processes with ABAP development, including code quality checks, testing, and transport management.
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [🔄 Workflow File](#workflow-file)
+- [⚙️ Configuration Files](#configuration-files)
+- [🔐 Required GitHub Secrets](#required-github-secrets)
+- [📊 Workflow Explanation](#workflow-explanation)
+- [✨ Best Practices](#best-practices)
+- [🔍 Troubleshooting](#troubleshooting)
+- [🔌 Extensions and Customizations](#extensions-and-customizations)
+- [➡️ Next Steps](#next-steps)
+
+## 📋 Overview
 
 This GitHub Actions workflow helps automate the ABAP development lifecycle by connecting GitHub repositories with SAP ABAP systems. It includes steps for code quality analysis, testing, and integration with SAP transport management.
 
-## Prerequisites
+## ✅ Prerequisites
 
 - GitHub repository with ABAP code (using abapGit or gCTS)
 - SAP NetWeaver 7.50 or higher (or SAP BTP, ABAP Environment)
@@ -19,7 +39,7 @@ This GitHub Actions workflow helps automate the ABAP development lifecycle by co
 - SAP system with appropriate authorizations
 - Network connectivity between GitHub and SAP systems
 
-## Workflow File
+## 🔄 Workflow File
 
 Below is a complete GitHub Actions workflow file for ABAP development. Save this as `.github/workflows/abap-ci.yml` in your repository:
 
@@ -448,7 +468,7 @@ jobs:
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
 ```
 
-## Configuration Files
+## ⚙️ Configuration Files
 
 ### abaplint.json
 
@@ -578,7 +598,7 @@ jobs:
 }
 ```
 
-## Required GitHub Secrets
+## 🔐 Required GitHub Secrets
 
 Configure the following secrets in your GitHub repository settings:
 
@@ -592,7 +612,7 @@ Configure the following secrets in your GitHub repository settings:
 | `SAP_CLIENT` | SAP client number |
 | `SLACK_WEBHOOK_URL` | Slack webhook URL for notifications (optional) |
 
-## Workflow Explanation
+## 📊 Workflow Explanation
 
 ### 1. ABAP Linting
 
@@ -635,7 +655,7 @@ The workflow includes deployment to QA and production environments with appropri
 - **Verification**: Confirms successful deployment
 - **Notifications**: Sends notifications upon successful production deployment
 
-## Best Practices
+## ✨ Best Practices
 
 ### Security
 
@@ -673,7 +693,7 @@ The workflow includes deployment to QA and production environments with appropri
    - Document transport numbers in releases
    - Maintain change history across systems
 
-## Troubleshooting
+## 🔍 Troubleshooting
 
 ### Common Issues and Solutions
 
@@ -693,7 +713,7 @@ The workflow includes deployment to QA and production environments with appropri
    - **Problem**: Transport import fails in target system
    - **Solution**: Check for prerequisite transports, verify system availability
 
-## Extensions and Customizations
+## 🔌 Extensions and Customizations
 
 ### Adding Custom Code Metrics
 
@@ -747,7 +767,7 @@ metrics:
       "${SOLMAN_URL}/api/v1/changes/update-transport"
 ```
 
-## Next Steps
+## ➡️ Next Steps
 
 - Integrate with [SAP Solution Manager](../xml-config/system-connectivity.md) for comprehensive change management
 - Implement [API Management](../api-management/sap-to-github.md) for secure system connectivity
@@ -755,7 +775,10 @@ metrics:
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-11-15
-- Version: 1.0.0
-- Status: Published 
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.1.0
+- **Status:** Published
+</details>

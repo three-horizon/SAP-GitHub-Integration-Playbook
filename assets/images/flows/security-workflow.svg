@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="700px" viewBox="0 0 1200 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SAP-GitHub Integration - Security Workflow</title>
+    <desc>Security workflow for SAP-GitHub integration</desc>
+    <defs>
+        <rect id="step-box" width="180" height="80" rx="6"></rect>
+        <rect id="phase-box" width="900" height="120" rx="8"></rect>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2" />
+            </feComponentTransfer>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0078d7"/>
+        </marker>
+        <marker id="security-arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#d13438"/>
+        </marker>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&amp;display=swap');
+            text {
+                font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                fill: #333333;
+            }
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .subtitle {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .phase-title {
+                font-size: 18px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .step-title {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .step-desc {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+            .flow-label {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+    
+    <!-- Background -->
+    <g id="background" fill="#f5f5f5">
+        <rect width="1200" height="700" rx="0"></rect>
+    </g>
+    
+    <!-- Title -->
+    <text x="600" y="50" class="title" text-anchor="middle">SAP-GitHub Integration - Security Workflow</text>
+    <text x="600" y="80" class="subtitle" text-anchor="middle">Comprehensive Security Measures Throughout the Integration Lifecycle</text>
+    
+    <!-- Planning Phase -->
+    <g id="planning-phase" transform="translate(150, 120)">
+        <use href="#phase-box" fill="#fff5f5" stroke="#d13438" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="450" y="30" class="phase-title" fill="#d13438">Planning &amp; Architecture</text>
+        
+        <!-- Security Requirements -->
+        <g transform="translate(80, 50)">
+            <use href="#step-box" width="160" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">Security Requirements</text>
+            <text x="80" y="55" class="step-desc" fill="#ffe0e0">Define security needs</text>
+        </g>
+        
+        <!-- Threat Modeling -->
+        <g transform="translate(280, 50)">
+            <use href="#step-box" width="160" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">Threat Modeling</text>
+            <text x="80" y="55" class="step-desc" fill="#ffe0e0">Identify threats</text>
+        </g>
+        
+        <!-- Auth Design -->
+        <g transform="translate(480, 50)">
+            <use href="#step-box" width="160" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">Auth Design</text>
+            <text x="80" y="55" class="step-desc" fill="#ffe0e0">Authentication approach</text>
+        </g>
+        
+        <!-- Network Design -->
+        <g transform="translate(680, 50)">
+            <use href="#step-box" width="160" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">Network Security</text>
+            <text x="80" y="55" class="step-desc" fill="#ffe0e0">Communication security</text>
+        </g>
+    </g>
+    
+    <!-- Implementation Phase -->
+    <g id="implementation-phase" transform="translate(150, 260)">
+        <use href="#phase-box" fill="#fff5f5" stroke="#d13438" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="450" y="30" class="phase-title" fill="#d13438">Implementation &amp; Configuration</text>
+        
+        <!-- SAP Security Config -->
+        <g transform="translate(80, 50)">
+            <use href="#step-box" width="160" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">SAP Security</text>
+            <text x="80" y="55" class="step-desc" fill="#e6f0ff">Role configuration</text>
+        </g>
+        
+        <!-- GitHub Security -->
+        <g transform="translate(280, 50)">
+            <use href="#step-box" width="160" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">GitHub Security</text>
+            <text x="80" y="55" class="step-desc" fill="#f0e8f5">Branch protection</text>
+        </g>
+        
+        <!-- API Security -->
+        <g transform="translate(480, 50)">
+            <use href="#step-box" width="160" fill="#68217a" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">API Security</text>
+            <text x="80" y="55" class="step-desc" fill="#f2e5f5">Policy enforcement</text>
+        </g>
+        
+        <!-- Secret Management -->
+        <g transform="translate(680, 50)">
+            <use href="#step-box" width="160" fill="#ffb900" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="#333333">Secret Management</text>
+            <text x="80" y="55" class="step-desc" fill="#333333">Key Vault integration</text>
+        </g>
+    </g>
+    
+    <!-- Testing Phase -->
+    <g id="testing-phase" transform="translate(150, 400)">
+        <use href="#phase-box" fill="#fff5f5" stroke="#d13438" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="450" y="30" class="phase-title" fill="#d13438">Testing &amp; Validation</text>
+        
+        <!-- Security Scanning -->
+        <g transform="translate(80, 50)">
+            <use href="#step-box" width="160" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">Security Scanning</text>
+            <text x="80" y="55" class="step-desc" fill="#ffe0e0">SAST/DAST testing</text>
+        </g>
+        
+        <!-- Penetration Testing -->
+        <g transform="translate(280, 50)">
+            <use href="#step-box" width="160" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">Penetration Testing</text>
+            <text x="80" y="55" class="step-desc" fill="#ffe0e0">Security assessment</text>
+        </g>
+        
+        <!-- Compliance Checks -->
+        <g transform="translate(480, 50)">
+            <use href="#step-box" width="160" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">Compliance Checks</text>
+            <text x="80" y="55" class="step-desc" fill="#ffe0e0">Regulatory compliance</text>
+        </g>
+        
+        <!-- Auth Validation -->
+        <g transform="translate(680, 50)">
+            <use href="#step-box" width="160" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">Auth Validation</text>
+            <text x="80" y="55" class="step-desc" fill="#ffe0e0">Authentication testing</text>
+        </g>
+    </g>
+    
+    <!-- Operations Phase -->
+    <g id="operations-phase" transform="translate(150, 540)">
+        <use href="#phase-box" fill="#fff5f5" stroke="#d13438" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="450" y="30" class="phase-title" fill="#d13438">Operations &amp; Monitoring</text>
+        
+        <!-- Security Monitoring -->
+        <g transform="translate(80, 50)">
+            <use href="#step-box" width="160" fill="#004e8c" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">Sentinel Monitoring</text>
+            <text x="80" y="55" class="step-desc" fill="#e0e8f0">SIEM solution</text>
+        </g>
+        
+        <!-- Incident Response -->
+        <g transform="translate(280, 50)">
+            <use href="#step-box" width="160" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">Incident Response</text>
+            <text x="80" y="55" class="step-desc" fill="#ffe0e0">Security incidents</text>
+        </g>
+        
+        <!-- Security Patching -->
+        <g transform="translate(480, 50)">
+            <use href="#step-box" width="160" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">Security Patching</text>
+            <text x="80" y="55" class="step-desc" fill="#ffe0e0">Vulnerability updates</text>
+        </g>
+        
+        <!-- Security Audit -->
+        <g transform="translate(680, 50)">
+            <use href="#step-box" width="160" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">Security Audit</text>
+            <text x="80" y="55" class="step-desc" fill="#ffe0e0">Regular auditing</text>
+        </g>
+    </g>
+    
+    <!-- Workflow Connections -->
+    <g id="workflow-connections">
+        <!-- Planning to Implementation -->
+        <path d="M600,240 L600,260" stroke="#d13438" stroke-width="2" fill="none" marker-end="url(#security-arrow)"></path>
+        
+        <!-- Implementation to Testing -->
+        <path d="M600,380 L600,400" stroke="#d13438" stroke-width="2" fill="none" marker-end="url(#security-arrow)"></path>
+        
+        <!-- Testing to Operations -->
+        <path d="M600,520 L600,540" stroke="#d13438" stroke-width="2" fill="none" marker-end="url(#security-arrow)"></path>
+    </g>
+    
+    <!-- Operation to Planning (Continuous Improvement) -->
+    <g id="continuous-improvement">
+        <path d="M150,600 L100,600 L100,180 L150,180" stroke="#d13438" stroke-width="2" stroke-dasharray="10,5" fill="none" marker-end="url(#security-arrow)"></path>
+        <text x="80" y="390" class="flow-label" fill="#d13438" transform="rotate(270 80,390)">Continuous Security Improvement</text>
+    </g>
+    
+    <!-- Legend -->
+    <g id="legend" transform="translate(150, 80)">
+        <rect width="900" height="20" rx="4" fill="white" stroke="#666666"></rect>
+        
+        <!-- Security -->
+        <rect x="30" y="3" width="14" height="14" rx="2" fill="#d13438"></rect>
+        <text x="54" y="15">Security Controls</text>
+        
+        <!-- SAP -->
+        <rect x="180" y="3" width="14" height="14" rx="2" fill="#0070f2"></rect>
+        <text x="204" y="15">SAP Security</text>
+        
+        <!-- GitHub -->
+        <rect x="305" y="3" width="14" height="14" rx="2" fill="#6e5494"></rect>
+        <text x="329" y="15">GitHub Security</text>
+        
+        <!-- API -->
+        <rect x="435" y="3" width="14" height="14" rx="2" fill="#68217a"></rect>
+        <text x="459" y="15">API Security</text>
+        
+        <!-- Key Vault -->
+        <rect x="560" y="3" width="14" height="14" rx="2" fill="#ffb900"></rect>
+        <text x="584" y="15">Secret Management</text>
+        
+        <!-- SIEM -->
+        <rect x="705" y="3" width="14" height="14" rx="2" fill="#004e8c"></rect>
+        <text x="729" y="15">Monitoring</text>
+        
+        <!-- Workflow -->
+        <path d="M835,10 L865,10" stroke="#d13438" stroke-width="2"></path>
+        <text x="885" y="15">Security Workflow</text>
+    </g>
+</svg>

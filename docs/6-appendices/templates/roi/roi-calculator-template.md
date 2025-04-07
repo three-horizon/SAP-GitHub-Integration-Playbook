@@ -1,4 +1,17 @@
-# SAP-GitHub Integration ROI Calculator Template
+# 📄 SAP-GitHub Integration ROI Calculator Template
+
+## 📋 Table of Contents
+
+- [Instructions](#instructions)
+- [Organization Profile](#organization-profile)
+- [Cost Analysis](#cost-analysis)
+- [Benefit Analysis](#benefit-analysis)
+- [ROI Calculation](#roi-calculation)
+- [Risk Assessment](#risk-assessment)
+- [🔧 Implementation Timeline](#implementation-timeline)
+- [Executive Summary](#executive-summary)
+- [Notes for Completing This Template](#notes-for-completing-this-template)
+
 
 This document serves as a template for calculating the Return on Investment (ROI) for implementing SAP-GitHub integration with Microsoft security solutions. Use this template to create a comprehensive ROI analysis for your organization.
 
@@ -141,7 +154,7 @@ Calculate ROI impact by varying key assumptions:
 | **SAP System Complexity** | [Low/Med/High] | [Low/Med/High] | [Strategy description] |
 | **Other Risks** | [Low/Med/High] | [Low/Med/High] | [Strategy description] |
 
-## Implementation Timeline
+## 🔧 Implementation Timeline
 
 | Phase | Duration | Key Activities | Costs | Benefits | Dependencies |
 |-------|----------|---------------|-------|----------|--------------|
@@ -187,3 +200,12 @@ Calculate ROI impact by varying key assumptions:
 6. Compare projected vs. actual ROI over time
 
 For implementation assistance, refer to the [Implementation Guide](../../docs/implementation/index.md) section of this playbook.
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

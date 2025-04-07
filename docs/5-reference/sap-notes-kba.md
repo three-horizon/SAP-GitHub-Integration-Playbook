@@ -3,11 +3,30 @@ layout: default
 title: Relevant SAP Notes and KBAs
 ---
 
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Access Requirements](#access-requirements)
+- [Integration Setup and Configuration](#integration-setup-and-configuration)
+- [🛡
+️ ️ Security and Authentication](#security-and-authentication)
+- [ABAP Development with GitHub](#abap-development-with-github)
+- [SAP BTP Integration](#sap-btp-integration)
+- [UI5/Fiori Development](#ui5-fiori-development)
+- [Troubleshooting and Problem Resolution](#troubleshooting-and-problem-resolution)
+- [SAP Solution Manager Integration](#sap-solution-manager-integration)
+- [SAP Cloud ALM Integration](#sap-cloud-alm-integration)
+- [How to Use SAP Notes](#how-to-use-sap-notes)
+- [Additional Resources](#additional-resources)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
 # Relevant SAP Notes and KBAs
 
 This document provides a curated collection of SAP Notes and Knowledge Base Articles (KBAs) relevant to SAP-GitHub integration implementation and operations.
 
-## Overview
+## 📋 Overview
 
 SAP Notes and Knowledge Base Articles (KBAs) provide official guidance, corrections, and recommendations from SAP. This reference document collects the most relevant notes and articles for implementing and operating SAP-GitHub integrations.
 
@@ -87,7 +106,7 @@ Most SAP Notes and KBAs require valid S-user credentials to access. Ensure you h
    - [Access in SAP ONE Support Launchpad](https://launchpad.support.sap.com/#/notes/2850301)
    - Last updated: 2023-05-18
 
-## Security and Authentication
+## 🛡️ Security and Authentication
 
 ### OAuth and Authentication
 
@@ -403,7 +422,7 @@ Most SAP Notes and KBAs require valid S-user credentials to access. Ensure you h
    - [SAP Support Portal Services](https://support.sap.com/en/my-support/incidents.html)
    - Last checked: 2023-12-10
 
-## Next Steps
+## ➡️ Next Steps
 
 - Review the [Security Best Practices](security-best-practices.md) documentation
 - Explore the [API Reference](api-reference/index.md) for integration details
@@ -416,3 +435,12 @@ Most SAP Notes and KBAs require valid S-user credentials to access. Ensure you h
 - Version: 1.1.0
 - Status: Published
 - Note: SAP Note numbers and KBAs used in this document are for illustration purposes. Always verify the latest notes from SAP Support Portal. 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

@@ -1,8 +1,25 @@
-# Branch Protection Rules for SAP-GitHub Integration
+# 📄 Branch Protection Rules for SAP-GitHub Integration
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Basic Branch Protection Configuration](#basic-branch-protection-configuration)
+- [Advanced Configuration](#advanced-configuration)
+- [Status Checks Configuration](#status-checks-configuration)
+- [Protecting Source Files Integrity](#protecting-source-files-integrity)
+- [Temporary Branch Exceptions](#temporary-branch-exceptions)
+- [Best Practices](#best-practices)
+- [Testing Your Branch Protection](#testing-your-branch-protection)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [Additional Resources](#additional-resources)
+
 
 This guide provides detailed instructions for configuring branch protection rules in GitHub Enterprise for SAP code repositories, ensuring code quality and governance in your development workflows.
 
-## Overview
+## 📋 Overview
 
 Branch protection rules are critical for enforcing quality standards, security practices, and governance in SAP development. When properly configured, they help:
 
@@ -12,7 +29,7 @@ Branch protection rules are critical for enforcing quality standards, security p
 - Ensure compliance with organizational policies
 - Prevent accidental deletion of important branches
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before configuring branch protection:
 
@@ -181,7 +198,7 @@ For SAP-specific edge cases:
 2. **System Migration**: Create temporary branches with reduced protection during migrations
 3. **External Consultants**: Configure team-based push restrictions rather than blanket rules
 
-## Next Steps
+## ➡️ Next Steps
 
 Once branch protection is configured, proceed to:
 
@@ -198,3 +215,12 @@ Once branch protection is configured, proceed to:
 ---
 
 *Last Updated: [YYYY-MM-DD] for [GitHub Enterprise X.Y.Z]* 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

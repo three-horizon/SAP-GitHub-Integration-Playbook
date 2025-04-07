@@ -1,4 +1,16 @@
-# Sample ROI Calculation for SAP-GitHub Integration
+# 📄 Sample ROI Calculation for SAP-GitHub Integration
+
+## 📋 Table of Contents
+
+- [Organization Profile](#organization-profile)
+- [Cost Analysis](#cost-analysis)
+- [Benefit Analysis](#benefit-analysis)
+- [ROI Calculation](#roi-calculation)
+- [Risk Assessment](#risk-assessment)
+- [🔧 Implementation Timeline](#implementation-timeline)
+- [Executive Summary](#executive-summary)
+- [Notes](#notes)
+
 
 This document provides a detailed sample ROI calculation for a mid-sized organization implementing SAP-GitHub integration with Microsoft security solutions. This example can be used as a reference when completing your own ROI analysis.
 
@@ -127,7 +139,7 @@ This document provides a detailed sample ROI calculation for a mid-sized organiz
 | **Security Compliance Issues** | Low | High | Early security team involvement, compliance-first design |
 | **SAP System Complexity** | Medium | Medium | Detailed system assessment, incremental implementation |
 
-## Implementation Timeline
+## 🔧 Implementation Timeline
 
 | Phase | Duration | Key Activities | Costs | Benefits | Dependencies |
 |-------|----------|---------------|-------|----------|--------------|
@@ -168,3 +180,12 @@ Based on the strong financial metrics and strategic alignment, we recommend proc
 This sample calculation represents a typical manufacturing organization with moderate customization needs. Your actual results will vary based on your specific environment, adoption rate, and implementation approach. Use this sample as a starting point and adjust all values to match your organization's characteristics.
 
 For implementation assistance, refer to the [Implementation Guide](../../docs/implementation/index.md) section of this playbook.
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

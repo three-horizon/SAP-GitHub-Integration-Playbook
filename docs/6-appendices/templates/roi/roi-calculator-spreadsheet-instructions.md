@@ -1,8 +1,20 @@
-# ROI Calculator Spreadsheet Instructions
+# 📄 ROI Calculator Spreadsheet Instructions
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Getting Started](#getting-started)
+- [Spreadsheet Structure](#spreadsheet-structure)
+- [Using the Calculator](#using-the-calculator)
+- [Tips for Accurate ROI Analysis](#tips-for-accurate-roi-analysis)
+- [Customizing the Spreadsheet](#customizing-the-spreadsheet)
+- [Support and Feedback](#support-and-feedback)
+- [Comparing Results with Case Studies](#comparing-results-with-case-studies)
+
 
 This document provides instructions for using the SAP-GitHub Integration ROI Calculator spreadsheet. The spreadsheet allows you to create a comprehensive ROI analysis customized for your organization.
 
-## Overview
+## 📋 Overview
 
 The ROI Calculator spreadsheet is a Microsoft Excel file designed to help you:
 
@@ -163,3 +175,12 @@ After completing your analysis, compare your projected results with the case stu
 ---
 
 *Last Updated: [YYYY-MM-DD]*
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

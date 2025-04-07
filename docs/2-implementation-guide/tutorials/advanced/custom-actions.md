@@ -1,8 +1,30 @@
-# Creating Custom GitHub Actions for SAP-Specific Needs
+# 📄 Creating Custom GitHub Actions for SAP-Specific Needs
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Step 1: Understanding GitHub Actions Architecture](#step-1-understanding-github-actions-architecture)
+- [Step 2: Setting Up Your Development Environment](#step-2-setting-up-your-development-environment)
+- [Step 3: Creating a Basic SAP-Integrated Action](#step-3-creating-a-basic-sap-integrated-action)
+- [Step 4: Building and Testing the Action Locally](#step-4-building-and-testing-the-action-locally)
+- [Step 5: Packaging Your Action for Distribution](#step-5-packaging-your-action-for-distribution)
+- [Step 6: Publishing Your Action to GitHub](#step-6-publishing-your-action-to-github)
+- [Step 7: Creating Advanced SAP Actions with RFC](#step-7-creating-advanced-sap-actions-with-rfc)
+- [Step 8: Creating Composite Actions for Common SAP Workflows](#step-8-creating-composite-actions-for-common-sap-workflows)
+- [Step 9: Implementing Advanced Security Features](#step-9-implementing-advanced-security-features)
+- [Step 10: Implementing Telemetry and Logging](#step-10-implementing-telemetry-and-logging)
+- [Best Practices for SAP-Specific Actions](#best-practices-for-sap-specific-actions)
+- [Validation](#validation)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [Additional Resources](#additional-resources)
+
 
 This tutorial guides you through the process of developing custom GitHub Actions specifically tailored for SAP development workflows, enabling you to automate SAP-specific tasks in your CI/CD pipeline.
 
-## Overview
+## 📋 Overview
 
 Custom GitHub Actions allow you to extend GitHub's workflow capabilities with specialized functionality. For SAP development, custom actions can:
 
@@ -14,7 +36,7 @@ Custom GitHub Actions allow you to extend GitHub's workflow capabilities with sp
 
 By creating custom actions tailored to your SAP environment, you can significantly improve developer productivity and ensure consistent processes.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before developing custom GitHub Actions for SAP, ensure you have:
 
@@ -758,7 +780,7 @@ Your custom action is ready for production when:
 | Node-RFC compatibility issues | Build with the correct node-rfc version matching your SAP NW RFC SDK |
 | Workflow timeouts | Implement proper timeout handling and consider breaking large operations into smaller steps |
 
-## Next Steps
+## ➡️ Next Steps
 
 After creating basic SAP custom actions, consider:
 
@@ -777,3 +799,12 @@ After creating basic SAP custom actions, consider:
 ---
 
 *Last Updated: [YYYY-MM-DD] for [GitHub Enterprise X.Y.Z, SAP NetWeaver X.Y.Z]* 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

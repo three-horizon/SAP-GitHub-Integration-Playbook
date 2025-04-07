@@ -1,10 +1,22 @@
-# Securing API Management for SAP-GitHub Integration
+# 📄 Securing API Management for SAP-GitHub Integration
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Understanding the Security Challenges](#understanding-the-security-challenges)
+- [Step-by-Step Implementation](#step-by-step-implementation)
+- [End-to-End Security Testing Scenarios](#end-to-end-security-testing-scenarios)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
+## 📋 Overview
 
 This tutorial guides you through securing the Microsoft API Management (APIM) layer that facilitates communication between SAP systems and GitHub. You'll learn how to implement robust security controls, configure proper authentication and authorization, and establish comprehensive monitoring to protect this critical integration point.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before starting this tutorial, ensure you have:
 
@@ -583,7 +595,7 @@ Test authorization boundaries:
 | Mutual TLS failures | Verify certificate validity, trust chain, and client configuration |
 | WAF blocking legitimate traffic | Review WAF logs, adjust rule sensitivity, or create exception rules |
 
-## Next Steps
+## ➡️ Next Steps
 
 After securing your API Management layer, consider these advanced configurations:
 
@@ -599,3 +611,12 @@ After securing your API Management layer, consider these advanced configurations
 - Contributors: Security Team
 - Version: 1.0.0
 - Status: Published
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

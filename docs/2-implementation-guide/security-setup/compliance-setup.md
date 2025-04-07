@@ -1,9 +1,21 @@
-# Compliance Setup for SAP-GitHub Integration
+# 📄 Compliance Setup for SAP-GitHub Integration
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for configuring compliance monitoring and reporting for your SAP-GitHub integration environment. A robust compliance framework enables you to demonstrate adherence to regulatory requirements, internal policies, and security standards while facilitating efficient audits and assessments.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - Security monitoring implemented (refer to [Standard Rules Deployment](./standard-rules.md))
 - Integration dashboard configured (refer to [Integration Dashboard](./integration-dashboard.md))
@@ -509,7 +521,7 @@ Implement these documentation management capabilities:
   - Create drift detection alerts
   - Document root cause analysis
 
-## Next Steps
+## ➡️ Next Steps
 
 After implementing the compliance framework, proceed to:
 
@@ -532,3 +544,12 @@ After implementing the compliance framework, proceed to:
 - Last Updated: 2023-09-20
 - Contributors: Compliance Team, Security Team, Audit Team
 - Version: 1.1.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

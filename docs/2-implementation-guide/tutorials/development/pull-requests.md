@@ -1,8 +1,30 @@
-# Managing Pull Requests for SAP Development
+# 📄 Managing Pull Requests for SAP Development
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Step 1: Understanding the Pull Request Workflow for SAP](#step-1-understanding-the-pull-request-workflow-for-sap)
+- [Step 2: Preparing to Create a Pull Request](#step-2-preparing-to-create-a-pull-request)
+- [Step 3: Creating a Pull Request](#step-3-creating-a-pull-request)
+- [Step 4: Understanding Automated Checks](#step-4-understanding-automated-checks)
+- [Step 5: Reviewing and Responding to Feedback](#step-5-reviewing-and-responding-to-feedback)
+- [Step 6: Handling PR Approvals](#step-6-handling-pr-approvals)
+- [Step 7: Merging the Pull Request](#step-7-merging-the-pull-request)
+- [Step 8: Post-Merge Transport Management](#step-8-post-merge-transport-management)
+- [Step 9: Documentation and Cleanup](#step-9-documentation-and-cleanup)
+- [Special Pull Request Scenarios](#special-pull-request-scenarios)
+- [Best Practices for SAP Pull Requests](#best-practices-for-sap-pull-requests)
+- [Validation](#validation)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [Additional Resources](#additional-resources)
+
 
 This tutorial provides comprehensive guidance on how to effectively manage pull requests in the SAP-GitHub integration workflow, ensuring quality code and smooth transport management.
 
-## Overview
+## 📋 Overview
 
 Pull requests (PRs) are a critical component of the GitHub workflow, enabling code review, automated validation, and collaborative development. When applied to SAP development, pull requests:
 
@@ -15,7 +37,7 @@ Pull requests (PRs) are a critical component of the GitHub workflow, enabling co
 
 This tutorial guides you through the complete PR lifecycle for SAP development, from creation to merge and beyond.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before you begin, ensure you have:
 
@@ -309,7 +331,7 @@ Your PR management process is successful when:
    - Reference the original PR
    - Create a new transport for these changes
 
-## Next Steps
+## ➡️ Next Steps
 
 After mastering pull request management, explore:
 
@@ -328,3 +350,12 @@ After mastering pull request management, explore:
 ---
 
 *Last Updated: [YYYY-MM-DD] for [GitHub Enterprise X.Y.Z, SAP NetWeaver X.Y.Z]* 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

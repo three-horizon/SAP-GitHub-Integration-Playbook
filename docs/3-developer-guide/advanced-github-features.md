@@ -3,11 +3,28 @@ layout: default
 title: Advanced GitHub Features
 ---
 
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [GitHub Projects](#github-projects)
+- [GitHub Discussions](#github-discussions)
+- [GitHub Actions for SAP](#github-actions-for-sap)
+- [Advanced Code Review Features](#advanced-code-review-features)
+- [GitHub Issues Advanced Features](#github-issues-advanced-features)
+- [GitHub Pages for Documentation](#github-pages-for-documentation)
+- [GitHub Packages](#github-packages)
+- [🛡
+️ ️ Security Features](#security-features)
+- [Conclusion](#conclusion)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
 # Advanced GitHub Features
 
 This guide explores advanced GitHub features that enhance SAP development workflows, including Projects, Discussions, GitHub Actions, and other collaborative tools.
 
-## Overview
+## 📋 Overview
 
 GitHub offers numerous advanced features beyond basic version control that can significantly improve SAP development processes. This guide covers how to leverage these features effectively in an SAP context.
 
@@ -249,7 +266,7 @@ GitHub Packages provides package management integrated with GitHub.
    - Authenticate package access
    - Track usage across projects
 
-## Security Features
+## 🛡️ Security Features
 
 GitHub offers advanced security features crucial for SAP development.
 
@@ -284,7 +301,7 @@ GitHub offers advanced security features crucial for SAP development.
 
 Advanced GitHub features provide powerful capabilities for enhancing SAP development workflows. By implementing these features with SAP-specific adaptations, teams can achieve significant improvements in collaboration, quality, and efficiency.
 
-## Next Steps
+## ➡️ Next Steps
 
 After mastering advanced GitHub features:
 
@@ -298,3 +315,12 @@ After mastering advanced GitHub features:
 - Last Updated: 2023-11-15
 - Version: 1.0.0
 - Status: Published 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

@@ -1,8 +1,23 @@
-# SAP Transport Layer Configuration
+# 📄 SAP Transport Layer Configuration
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [⚙
+️ ️ Configuration Steps](#configuration-steps)
+- [Integration with GitHub Workflow](#integration-with-github-workflow)
+- [Handling Transport Collisions](#handling-transport-collisions)
+- [Troubleshooting](#troubleshooting)
+- [Best Practices](#best-practices)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [Additional Resources](#additional-resources)
+
 
 This guide explains how to configure the SAP transport layer to work effectively with GitHub integration, ensuring smooth deployment across your SAP landscape.
 
-## Overview
+## 📋 Overview
 
 The transport layer in SAP is a critical component that manages the movement of development objects across your system landscape (DEV → QAS → PRD). When integrating with GitHub, proper transport layer configuration ensures that:
 
@@ -10,7 +25,7 @@ The transport layer in SAP is a critical component that manages the movement of 
 2. The promotion path remains intact despite the addition of GitHub in the workflow
 3. Governance and compliance requirements continue to be met
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before configuring the transport layer:
 
@@ -19,7 +34,7 @@ Before configuring the transport layer:
 - Completed [abapGit installation](abapgit-installation.md)
 - Administrator privileges in SAP
 
-## Configuration Steps
+## ⚙️ Configuration Steps
 
 ### 1. Create a Dedicated Transport Layer
 
@@ -153,7 +168,7 @@ For diagnosing integration issues:
    - Document transport-to-commit relationships
    - Include transport numbers in PR descriptions
 
-## Next Steps
+## ➡️ Next Steps
 
 Once your transport layer is configured, proceed to:
 
@@ -170,3 +185,12 @@ Once your transport layer is configured, proceed to:
 ---
 
 *Last Updated: [YYYY-MM-DD] for [SAP NetWeaver X.Y.Z]* 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

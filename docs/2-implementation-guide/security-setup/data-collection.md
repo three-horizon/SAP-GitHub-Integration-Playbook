@@ -1,9 +1,21 @@
-# Data Collection for Microsoft Sentinel
+# 📄 Data Collection for Microsoft Sentinel
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides comprehensive instructions for configuring data collection in Microsoft Sentinel for your SAP-GitHub integration. Proper data collection is the foundation of effective security monitoring, enabling threat detection, incident response, and security analytics across your environment.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - Appropriate permissions in Azure and source systems
 - Network connectivity between source systems and Azure
@@ -190,7 +202,7 @@ After setting up data connectors:
   - Optimize batch sizes
   - Increase resources for collection components
 
-## Next Steps
+## ➡️ Next Steps
 
 After configuring data collection, proceed to:
 
@@ -212,3 +224,12 @@ After configuring data collection, proceed to:
 - Last Updated: 2023-07-18
 - Contributors: Security Engineering Team
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

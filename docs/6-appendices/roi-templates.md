@@ -3,11 +3,29 @@ layout: default
 title: ROI Calculation Frameworks
 ---
 
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Core ROI Components](#core-roi-components)
+- [ROI Calculation Methods](#roi-calculation-methods)
+- [Benefit Quantification Models](#benefit-quantification-models)
+- [Comprehensive ROI Framework](#comprehensive-roi-framework)
+- [Industry Benchmarks](#industry-benchmarks)
+- [🔧 Implementation Scale Considerations](#implementation-scale-considerations)
+- [Industry-Specific Considerations](#industry-specific-considerations)
+- [Case-Study Based ROI Examples](#case-study-based-roi-examples)
+- [Downloadable ROI Templates](#downloadable-roi-templates)
+- [ROI Measurement Program](#roi-measurement-program)
+- [Analyst Research and Citations](#analyst-research-and-citations)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
 # ROI Calculation Frameworks
 
 This document provides comprehensive frameworks and templates for calculating Return on Investment (ROI) for SAP-GitHub integration initiatives.
 
-## Overview
+## 📋 Overview
 
 Implementing SAP-GitHub integration requires significant investment in technology, processes, and organizational change. These ROI frameworks help quantify the business value, justify investment decisions, and track realized benefits over time.
 
@@ -356,7 +374,7 @@ Based on industry studies and research by DevOps Research and Assessment (DORA):
    - High performers: 40-70% reduction
    - Elite performers: >70% reduction
 
-## Implementation Scale Considerations
+## 🔧 Implementation Scale Considerations
 
 ### Small Implementation
 
@@ -558,7 +576,7 @@ For convenient use in your organization, the following ROI calculation templates
    - "Organizations combining SAP with modern DevOps tools reduced their IT operational costs by 22% while increasing feature delivery by 38%."
    - Source: SAP Insights Customer Innovation Study, 2022
 
-## Next Steps
+## ➡️ Next Steps
 
 1. **Customize the ROI Framework**
    - Select relevant metrics for your organization
@@ -583,3 +601,12 @@ For convenient use in your organization, the following ROI calculation templates
 - Last Updated: 2023-11-15
 - Version: 1.0.0
 - Status: Published 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

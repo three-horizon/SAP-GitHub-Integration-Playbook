@@ -1,4 +1,18 @@
-# Security Reference Documentation
+# 📄 Security Reference Documentation
+
+## 📋 Table of Contents
+
+- [Authentication and Authorization](#authentication-and-authorization)
+- [Authorization Models](#authorization-models)
+- [Data Protection](#data-protection)
+- [Compliance and Governance](#compliance-and-governance)
+- [Secure Development](#secure-development)
+- [Threat Protection](#threat-protection)
+- [🛡
+️ ️ Security Testing](#security-testing)
+- [Architecture and Infrastructure](#architecture-and-infrastructure)
+- [Related Resources](#related-resources)
+
 
 This section provides comprehensive security reference documentation for the SAP-GitHub integration, covering authentication, authorization, data protection, compliance, and security best practices.
 
@@ -84,7 +98,7 @@ This section provides comprehensive security reference documentation for the SAP
 - [Vulnerability Management](/reference/security-reference/vulnerability-management.md) - Managing vulnerabilities
 - [Security Patching](/reference/security-reference/security-patching.md) - Patching processes
 
-## Security Testing
+## 🛡️ Security Testing
 
 ### Testing Methodologies
 - [Security Testing Approach](/reference/security-reference/security-testing.md) - Test methodologies
@@ -110,3 +124,13 @@ This section provides comprehensive security reference documentation for the SAP
 - [API Security](/reference/api-reference/api-security.md) - API-specific security considerations
 
 *Note: This security reference documentation should be reviewed and updated regularly as security practices evolve.*
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

@@ -1,8 +1,8 @@
-# DevSecOps and CI/CD Lifecycle for SAP-GitHub Integration
+# 📄 DevSecOps and CI/CD Lifecycle for SAP-GitHub Integration
 
 **Section:** [Implementation Guide](../README.md) | **Previous:** [Setup Guide](../getting-started/index.md) | **Next:** [Workflows](../workflows/index.md)
 
-## Table of Contents
+## 📋 Table of Contents
 
 - [Overview](#overview)
 - [DevSecOps Cycle](#devsecops-cycle)
@@ -13,7 +13,7 @@
 - [Best Practices](#best-practices)
 - [Next Steps](#next-steps)
 
-## Overview
+## 📋 Overview
 
 This document describes the Continuous Integration, Continuous Delivery, and Continuous Security (DevSecOps) lifecycle for the SAP-GitHub integration. It provides a comprehensive view of how development, operations, and security practices are integrated into a unified workflow.
 
@@ -21,7 +21,12 @@ This document describes the Continuous Integration, Continuous Delivery, and Con
 
 The SAP-GitHub integration follows a comprehensive DevSecOps approach that embeds security at every stage of the software development lifecycle.
 
+<div align="center">
+  
 ![DevSecOps Cycle](../../../assets/images/devsecops/devsecops-cycle.svg)
+  
+  *\1*
+</div>
 
 The diagram above illustrates the continuous cycle of our DevSecOps approach with the following key phases:
 
@@ -119,7 +124,7 @@ The following integration points are critical for the DevSecOps lifecycle:
    - Security alerts generated and routed
    - Remediation workflows triggered
 
-## Security Integration
+## 🛡️ Security Integration
 
 Security is integrated throughout the DevSecOps lifecycle:
 
@@ -165,7 +170,7 @@ Security is integrated throughout the DevSecOps lifecycle:
 - Emerging threat monitoring
 - Proactive security measures
 
-## Implementation Steps
+## 🔧 Implementation Steps
 
 Follow these steps to implement the DevSecOps lifecycle:
 
@@ -213,7 +218,7 @@ Follow these steps to implement the DevSecOps lifecycle:
 - **Collaboration**: Break down silos between development, operations, and security
 - **Continuous Improvement**: Regularly review and refine processes
 
-## Next Steps
+## ➡️ Next Steps
 
 After understanding the DevSecOps lifecycle:
 
@@ -228,3 +233,13 @@ After understanding the DevSecOps lifecycle:
 - Contributors: DevSecOps Team
 - Version: 1.0.0
 - Status: Published
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

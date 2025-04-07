@@ -1,4 +1,12 @@
-# Workflows Reference Documentation
+# 📄 Workflows Reference Documentation
+
+## 📋 Table of Contents
+
+- [Available Documentation](#available-documentation)
+- [Upcoming Workflow Reference Guides](#upcoming-workflow-reference-guides)
+- [🔧 Implementation References](#implementation-references)
+- [External Resources](#external-resources)
+
 
 This section provides comprehensive reference documentation for GitHub Actions workflows used in the SAP-GitHub integration, including CI/CD pipelines, automation patterns, and custom workflow examples.
 
@@ -64,7 +72,7 @@ The following workflow reference guides are planned for future releases. In the 
 - Reusable Workflow Components - Creating reusable workflow components
 - Workflow Matrix Strategies - Using matrix strategies for parallel execution
 
-## Implementation References
+## 🔧 Implementation References
 
 For detailed implementation instructions, refer to:
 
@@ -86,3 +94,13 @@ For detailed implementation instructions, refer to:
 - Contributors: Documentation Team
 - Version: 1.0.0
 - Status: Published
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

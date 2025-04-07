@@ -1,8 +1,8 @@
-# SAP System Setup Checklist
+# 📄 SAP System Setup Checklist
 
 **Section:** [Implementation Guide](./README.md) | **Previous:** [Prerequisites](./prerequisites.md) | **Next:** [abapGit Setup](./abapgit-setup.md)
 
-## Table of Contents
+## 📋 Table of Contents
 
 - [Overview](#overview)
 - [How to Use This Checklist](#how-to-use-this-checklist)
@@ -16,7 +16,7 @@
 - [Next Steps](#next-steps)
 - [Related Documents](#related-documents)
 
-## Overview
+## 📋 Overview
 
 This checklist guides you through the setup of your SAP system for integration with GitHub. It covers all the necessary steps to prepare your SAP environment, including system verification, technical user setup, SAP Notes installation, and gateway configuration.
 
@@ -100,7 +100,7 @@ Use this table to track your overall progress:
 | Phase 5: Network Configuration | 8 | 0 | 0% |
 | **TOTAL** | **43** | **0** | **0%** |
 
-## Implementation Decision Tree
+## 🔧 Implementation Decision Tree
 
 - If using SAP S/4HANA:
   - Ensure Gateway is activated as part of your S/4HANA installation
@@ -115,7 +115,7 @@ Use this table to track your overall progress:
   - Configure outbound rules for SAP to GitHub (if direct connection needed)
   - Work with network team to allow required ports and protocols
 
-## Next Steps
+## ➡️ Next Steps
 
 After completing all checklist items:
 
@@ -123,7 +123,7 @@ After completing all checklist items:
 2. Configure GitHub repository structure
 3. Set up API Management for secure integration
 
-## Related Documents
+## 🔗 Related Documents
 
 - [Prerequisites](./prerequisites.md)
 - [abapGit Setup Guide](./abapgit-setup.md)
@@ -137,3 +137,12 @@ After completing all checklist items:
 - Author: SAP Integration Team
 - Version: 1.0.0
 - Status: Published 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

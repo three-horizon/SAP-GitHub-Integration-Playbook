@@ -1,9 +1,21 @@
-# Azure Connector Setup for Microsoft Sentinel
+# 📄 Azure Connector Setup for Microsoft Sentinel
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for configuring Azure service connectors in Microsoft Sentinel to monitor your Azure resources that support the SAP-GitHub integration. This setup enables comprehensive security monitoring, threat detection, and incident response across your Azure infrastructure.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - Azure subscription with appropriate permissions
 - Basic understanding of Azure services and Microsoft Sentinel
@@ -328,7 +340,7 @@ For specialized monitoring needs:
   - Adjust collection frequency if needed
   - Monitor latency metrics
 
-## Next Steps
+## ➡️ Next Steps
 
 After configuring Azure connectors, proceed to:
 
@@ -350,3 +362,12 @@ After configuring Azure connectors, proceed to:
 - Last Updated: 2023-07-22
 - Contributors: Cloud Security Team, Integration Team
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

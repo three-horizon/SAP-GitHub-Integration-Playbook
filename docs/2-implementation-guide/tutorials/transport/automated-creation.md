@@ -1,8 +1,28 @@
-# Automating Transport Creation with GitHub Actions
+# 📄 Automating Transport Creation with GitHub Actions
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Step 1: Understanding the Automated Transport Workflow](#step-1-understanding-the-automated-transport-workflow)
+- [Step 2: Creating Required SAP Components](#step-2-creating-required-sap-components)
+- [Step 3: Setting Up Microsoft API Management (APIM)](#step-3-setting-up-microsoft-api-management-apim)
+- [Step 4: Creating Custom GitHub Actions](#step-4-creating-custom-github-actions)
+- [Step 5: Setting Up Transport Creation Workflow](#step-5-setting-up-transport-creation-workflow)
+- [Step 6: Setting Up Transport Management Workflows](#step-6-setting-up-transport-management-workflows)
+- [Step 7: Implementing the Developer Workflow](#step-7-implementing-the-developer-workflow)
+- [Step 8: Creating a Transport Dashboard](#step-8-creating-a-transport-dashboard)
+- [Validation](#validation)
+- [Troubleshooting](#troubleshooting)
+- [Best Practices](#best-practices)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [Additional Resources](#additional-resources)
+
 
 This tutorial provides detailed guidance on how to automate SAP transport creation and management using GitHub Actions, making your development process more efficient and reliable.
 
-## Overview
+## 📋 Overview
 
 SAP transport requests are a critical component of SAP development, managing the movement of changes through your system landscape. Automating transport creation and management provides several benefits:
 
@@ -14,7 +34,7 @@ SAP transport requests are a critical component of SAP development, managing the
 
 This tutorial walks you through implementing transport automation using GitHub Actions and custom integration components.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before implementing transport automation, ensure you have:
 
@@ -633,7 +653,7 @@ Your transport automation setup is working correctly when:
    - Consider implementing change management integration
    - Regularly clean up old/obsolete transports
 
-## Next Steps
+## ➡️ Next Steps
 
 After implementing transport automation, consider:
 
@@ -652,3 +672,12 @@ After implementing transport automation, consider:
 ---
 
 *Last Updated: [YYYY-MM-DD] for [GitHub Enterprise X.Y.Z, SAP NetWeaver X.Y.Z]* 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

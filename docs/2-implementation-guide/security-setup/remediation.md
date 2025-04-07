@@ -1,9 +1,21 @@
-# Remediation Actions for Microsoft Sentinel
+# 📄 Remediation Actions for Microsoft Sentinel
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for configuring and implementing automated remediation actions in Microsoft Sentinel for security incidents in your SAP-GitHub integration environment. These remediation capabilities enable rapid response to security threats, reducing exposure time and potential impact.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - Data connectors configured for all components (refer to [Data Collection](./data-collection.md))
 - SAP connector deployed (refer to [SAP Connector Setup](./sap-connector.md))
@@ -439,7 +451,7 @@ Implement these critical follow-up activities:
   - Validate API rate limits and quotas
   - Test sequence-dependent actions
 
-## Next Steps
+## ➡️ Next Steps
 
 After configuring remediation actions, proceed to:
 
@@ -463,3 +475,12 @@ After configuring remediation actions, proceed to:
 - Last Updated: 2023-09-05
 - Contributors: Security Operations Team, Automation Team, Integration Team
 - Version: 1.1.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

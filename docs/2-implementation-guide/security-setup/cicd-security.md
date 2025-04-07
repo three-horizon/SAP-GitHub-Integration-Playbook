@@ -2,12 +2,25 @@
 render_with_liquid: false
 ---
 
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [🔧 Implementation Plan](#implementation-plan)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
 # CI/CD Security for SAP-GitHub Integration
 
-## Overview
+## 📋 Overview
 This document provides comprehensive guidelines for implementing security controls within the continuous integration and continuous deployment (CI/CD) pipeline for the SAP-GitHub integration. Securing the CI/CD pipeline is critical as it represents the bridge between development in GitHub and deployment to SAP systems, making it a high-value target for attackers.
 
-## Prerequisites
+## ✅ Prerequisites
 - GitHub repository with CI/CD workflows configured
 - GitHub Actions or other CI/CD tools set up
 - SAP transport management system access
@@ -1136,7 +1149,7 @@ Configure these monitoring controls for the CI/CD pipeline:
                path: compliance-report.md
      ```
 
-## Implementation Plan
+## 🔧 Implementation Plan
 
 Follow this phased approach to implement CI/CD security:
 
@@ -1230,7 +1243,7 @@ Follow this phased approach to implement CI/CD security:
   - Review error logs
   - Ensure proper error handling
 
-## Next Steps
+## ➡️ Next Steps
 
 After implementing CI/CD security, proceed to:
 
@@ -1253,3 +1266,12 @@ After implementing CI/CD security, proceed to:
 - Last Updated: 2023-08-28
 - Contributors: DevOps Team, Security Team, SAP Integration Team
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

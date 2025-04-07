@@ -1,10 +1,23 @@
-# Transport Sequencing and Dependencies
+# 📄 Transport Sequencing and Dependencies
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Transport Dependency Challenges](#transport-dependency-challenges)
+- [Step-by-Step Implementation](#step-by-step-implementation)
+- [Handling Common Scenarios](#handling-common-scenarios)
+- [Validation](#validation)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
+## 📋 Overview
 
 This tutorial guides you through managing complex transport dependencies in the SAP-GitHub integration. You'll learn how to properly sequence transports, handle dependencies between different development objects, and ensure smooth promotion across your SAP landscape.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before starting this tutorial, ensure you have:
 
@@ -331,7 +344,7 @@ To validate your transport sequencing implementation:
 | Workflow doesn't detect all dependencies | Ensure all dependencies are properly documented in the transport-dependencies.yml file. |
 | Import sequence is incorrect | Verify the topological sorting logic in the generate_transport_sequence.py script. |
 
-## Next Steps
+## ➡️ Next Steps
 
 After implementing transport sequencing, consider these advanced topics:
 
@@ -347,3 +360,12 @@ After implementing transport sequencing, consider these advanced topics:
 - Contributors: Transport Management Team
 - Version: 1.0.0
 - Status: Published
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

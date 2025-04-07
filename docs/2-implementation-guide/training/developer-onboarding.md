@@ -1,10 +1,19 @@
-# Developer Onboarding Guide for SAP-GitHub Integration
+# 📄 Developer Onboarding Guide for SAP-GitHub Integration
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [🔧 Implementation Plan](#implementation-plan)
+- [Additional Resources](#additional-resources)
+
+
+## 📋 Overview
 
 This document provides a comprehensive onboarding guide for developers who will be working with the integrated SAP-GitHub development environment. It covers essential setup steps, workflow processes, best practices, and troubleshooting guidance to help developers become productive quickly.
 
-## Prerequisites
+## ✅ Prerequisites
 
 - ABAP development experience
 - GitHub basic knowledge
@@ -673,7 +682,7 @@ This document provides a comprehensive onboarding guide for developers who will 
      - Process data in chunks for large volumes
      ```
 
-## Implementation Plan
+## 🔧 Implementation Plan
 
 As a new developer, follow this onboarding timeline:
 
@@ -730,3 +739,12 @@ As a new developer, follow this onboarding timeline:
 - Last Updated: 2023-08-25
 - Contributors: Development Team, DevOps Team
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

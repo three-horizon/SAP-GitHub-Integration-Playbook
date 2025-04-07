@@ -1,4 +1,14 @@
-# Tutorials
+# 📄 Tutorials
+
+## 📋 Table of Contents
+
+- [Available Tutorials](#available-tutorials)
+- [Tutorial Structure](#tutorial-structure)
+- [Featured Tutorial: First Repository Setup](#featured-tutorial-first-repository-setup)
+- [Tutorial Roadmap](#tutorial-roadmap)
+- [Request a Tutorial](#request-a-tutorial)
+- [🤝 Contributing to Tutorials](#contributing-to-tutorials)
+
 
 This section provides step-by-step tutorials for common scenarios in the SAP-GitHub integration. Each tutorial is designed to walk you through practical implementation tasks with detailed instructions and examples.
 
@@ -94,7 +104,7 @@ Advanced Topics
 
 Don't see a tutorial for your specific scenario? [Open an issue](https://github.com/issues/new?template=tutorial_request.md) with your tutorial request, and we'll consider adding it to our documentation.
 
-## Contributing to Tutorials
+## 🤝 Contributing to Tutorials
 
 We welcome contributions to our tutorials! Please see our [contribution guidelines](../../CONTRIBUTING.md) for information on how to submit new tutorials or improvements to existing ones.
 
@@ -105,3 +115,13 @@ We welcome contributions to our tutorials! Please see our [contribution guidelin
 - Contributors: Training Team
 - Version: 1.0.0
 - Status: Published
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

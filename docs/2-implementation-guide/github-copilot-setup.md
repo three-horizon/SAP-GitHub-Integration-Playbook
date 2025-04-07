@@ -1,6 +1,17 @@
-# GitHub Copilot for SAP Development
+# 📄 GitHub Copilot for SAP Development
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Enterprise Setup](#enterprise-setup)
+- [SAP-Specific Configuration](#sap-specific-configuration)
+- [Developer Training](#developer-training)
+- [Benefits](#benefits)
+- [Related Documentation](#related-documentation)
+- [External References](#external-references)
+
+
+## 📋 Overview
 
 GitHub Copilot provides AI-assisted development for SAP, dramatically improving developer productivity through intelligent code suggestions, documentation assistance, and problem-solving.
 
@@ -73,3 +84,12 @@ GitHub Copilot provides AI-assisted development for SAP, dramatically improving 
 1. [GitHub Copilot for Business documentation](https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-for-business)
 2. [AI-Assisted ABAP Development Best Practices](https://developers.sap.com/tutorials/abap-environment-a4c-inbound-communication.html)
 3. [Eclipse ABAP Development Tools](https://tools.hana.ondemand.com/#abap) 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

@@ -1,8 +1,19 @@
-# SAP ABAP Architecture Integration
+# 📄 SAP ABAP Architecture Integration
+
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Architecture Components](#architecture-components)
+- [🔧 Implementation Scenarios](#implementation-scenarios)
+- [CHARM-based Implementation](#charm-based-implementation)
+- [Non-CHARM Implementation](#non-charm-implementation)
+- [Related Documentation](#related-documentation)
+- [References](#references)
+
 
 This document outlines the detailed architecture for integrating SAP ABAP development systems with GitHub Enterprise, covering both CHARM (Change Request Management) and non-CHARM implementation scenarios.
 
-## Overview
+## 📋 Overview
 
 SAP ABAP systems present unique integration challenges due to their proprietary development environment, transport-based deployment model, and system landscape architecture. This document provides comprehensive guidance for establishing a bidirectional development workflow between SAP ABAP systems and GitHub.
 
@@ -17,7 +28,7 @@ The integration architecture consists of the following key components:
 5. **Transport Management** - SAP transport request management integration
 6. **Security Services** - Security monitoring and enforcement
 
-## Implementation Scenarios
+## 🔧 Implementation Scenarios
 
 Two primary implementation scenarios are supported, depending on whether the SAP landscape utilizes the Change Request Management (CHARM) component:
 
@@ -30,7 +41,12 @@ Organizations using SAP Solution Manager with Change Request Management (CHARM) 
 
 ### Integration Architecture with API Management
 
+<div align="center">
+  
 ![CHARM Integration Architecture](/assets/images/architecture/charm-integration-architecture.png)
+  
+  *\1*
+</div>
 
 The CHARM integration architecture consists of the following components:
 
@@ -200,7 +216,12 @@ Specialized security monitoring for SAP transports includes:
 
 Security monitoring dashboard integrates with GitHub security features:
 
+<div align="center">
+  
 ![Transport Security Dashboard](/assets/images/architecture/transport-security-dashboard.png)
+  
+  *\1*
+</div>
 
 ### End-to-End Implementation Steps
 
@@ -546,3 +567,13 @@ Source: "SAP DevOps Modernization Survey," Forrester Research, March 2025
 3. IDC. (2025). "SAP DevOps Transformation Case Studies."
 4. SAP TechEd. (2025). "Case Study Collection."
 5. Gartner. (2025). "Magic Quadrant for DevOps Tools in SAP Environments."
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

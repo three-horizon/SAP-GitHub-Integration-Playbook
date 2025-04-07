@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="700px" viewBox="0 0 1200 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SAP-GitHub Integration - abapGit Workflow</title>
+    <desc>abapGit workflow for SAP-GitHub integration</desc>
+    <defs>
+        <rect id="step-box" width="180" height="80" rx="6"></rect>
+        <rect id="system-container" width="450" height="220" rx="8"></rect>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2" />
+            </feComponentTransfer>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0078d7"/>
+        </marker>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&amp;display=swap');
+            text {
+                font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                fill: #333333;
+            }
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .subtitle {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .system-title {
+                font-size: 18px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .step-title {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .step-desc {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+            .flow-label {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+            .number-circle {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+                fill: white;
+            }
+        </style>
+    </defs>
+    
+    <!-- Background -->
+    <g id="background" fill="#f5f5f5">
+        <rect width="1200" height="700" rx="0"></rect>
+    </g>
+    
+    <!-- Title -->
+    <text x="600" y="50" class="title" text-anchor="middle">SAP-GitHub Integration - abapGit Workflow</text>
+    <text x="600" y="80" class="subtitle" text-anchor="middle">Code Exchange Between SAP and GitHub</text>
+    
+    <!-- SAP Environment -->
+    <g id="sap-environment" transform="translate(150, 150)">
+        <use href="#system-container" fill="#f0f9ff" stroke="#0070f2" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="225" y="40" class="system-title">SAP Development Environment</text>
+        
+        <!-- ABAP Development -->
+        <g transform="translate(40, 70)">
+            <use href="#step-box" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="step-title" fill="white">1. ABAP Development</text>
+            <text x="90" y="55" class="step-desc" fill="#e6f0ff">Create/modify ABAP objects</text>
+        </g>
+        
+        <!-- abapGit Install -->
+        <g transform="translate(240, 70)">
+            <use href="#step-box" fill="#5d1038" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="step-title" fill="white">2. abapGit</text>
+            <text x="90" y="55" class="step-desc" fill="#f5e0e8">Installed as report</text>
+        </g>
+        
+        <!-- Export Package -->
+        <g transform="translate(140, 170)">
+            <use href="#step-box" fill="#5d1038" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="step-title" fill="white">3. Export Package</text>
+            <text x="90" y="55" class="step-desc" fill="#f5e0e8">Serialize to ZIP file</text>
+        </g>
+    </g>
+    
+    <!-- GitHub Environment -->
+    <g id="github-environment" transform="translate(600, 150)">
+        <use href="#system-container" fill="#f7f2fa" stroke="#6e5494" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="225" y="40" class="system-title">GitHub Environment</text>
+        
+        <!-- Create Repository -->
+        <g transform="translate(40, 70)">
+            <use href="#step-box" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="step-title" fill="white">4. Create Repository</text>
+            <text x="90" y="55" class="step-desc" fill="#f0e8f5">Initialize repository</text>
+        </g>
+        
+        <!-- Content Upload -->
+        <g transform="translate(240, 70)">
+            <use href="#step-box" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="step-title" fill="white">5. Upload Content</text>
+            <text x="90" y="55" class="step-desc" fill="#f0e8f5">Push serialized objects</text>
+        </g>
+        
+        <!-- Pull Request -->
+        <g transform="translate(140, 170)">
+            <use href="#step-box" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="90" y="35" class="step-title" fill="white">6. Pull Requests</text>
+            <text x="90" y="55" class="step-desc" fill="#f0e8f5">Code reviews</text>
+        </g>
+    </g>
+    
+    <!-- Middle Flow Arrows -->
+    <g id="middle-flow">
+        <!-- Export to Repository -->
+        <path d="M420,235 L600,235" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        <text x="510" y="215" class="flow-label">ZIP Export</text>
+        
+        <!-- Repository to Import -->
+        <path d="M600,325 L420,325" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        <text x="510" y="345" class="flow-label">Repository Pull</text>
+    </g>
+    
+    <!-- Sync Process -->
+    <g id="sync-process" transform="translate(150, 430)">
+        <rect width="900" height="220" rx="8" fill="#e5f4e5" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></rect>
+        <text x="450" y="40" class="system-title" fill="#107c10">Synchronization Process</text>
+        
+        <!-- Offline Export -->
+        <g transform="translate(80, 80)">
+            <use href="#step-box" width="160" fill="#ffffff" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title">7. Offline Mode</text>
+            <text x="80" y="55" class="step-desc">Limited connectivity</text>
+        </g>
+        
+        <!-- Online Repository -->
+        <g transform="translate(260, 80)">
+            <use href="#step-box" width="160" fill="#ffffff" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title">8. Online Mode</text>
+            <text x="80" y="55" class="step-desc">Direct repository link</text>
+        </g>
+        
+        <!-- Private Repository -->
+        <g transform="translate(440, 80)">
+            <use href="#step-box" width="160" fill="#ffffff" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title">9. Private Repo</text>
+            <text x="80" y="55" class="step-desc">Auth required</text>
+        </g>
+        
+        <!-- Public Repository -->
+        <g transform="translate(620, 80)">
+            <use href="#step-box" width="160" fill="#ffffff" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title">10. Public Repo</text>
+            <text x="80" y="55" class="step-desc">Anonymous access</text>
+        </g>
+        
+        <!-- Workflow Connection Lines -->
+        <path d="M160,80 L160,50 L520,50" stroke="#0078d7" stroke-width="1.5" fill="none"></path>
+        <path d="M340,80 L340,50" stroke="#0078d7" stroke-width="1.5" fill="none"></path>
+        <path d="M520,80 L520,50 L700,50 L700,80" stroke="#0078d7" stroke-width="1.5" fill="none"></path>
+    </g>
+    
+    <!-- Connection Lines -->
+    <g id="internal-connections">
+        <!-- SAP Environment -->
+        <path d="M190,295 L190,220" stroke="#0078d7" stroke-width="1.5" fill="none" marker-end="url(#arrow)"></path>
+        <path d="M380,295 L380,220" stroke="#0078d7" stroke-width="1.5" fill="none" marker-end="url(#arrow)"></path>
+        
+        <!-- GitHub Environment -->
+        <path d="M640,295 L640,220" stroke="#0078d7" stroke-width="1.5" fill="none" marker-end="url(#arrow)"></path>
+        <path d="M840,295 L840,220" stroke="#0078d7" stroke-width="1.5" fill="none" marker-end="url(#arrow)"></path>
+    </g>
+    
+    <!-- External Connections -->
+    <g id="external-connections">
+        <!-- SAP to Sync -->
+        <path d="M375,370 L375,430" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        
+        <!-- GitHub to Sync -->
+        <path d="M740,370 L740,430" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    </g>
+    
+    <!-- Legend -->
+    <g id="legend" transform="translate(150, 80)">
+        <rect width="900" height="30" rx="4" fill="white" stroke="#666666"></rect>
+        
+        <!-- ABAP -->
+        <rect x="30" y="8" width="15" height="15" rx="2" fill="#0070f2"></rect>
+        <text x="55" y="20">ABAP Development</text>
+        
+        <!-- abapGit -->
+        <rect x="180" y="8" width="15" height="15" rx="2" fill="#5d1038"></rect>
+        <text x="205" y="20">abapGit Components</text>
+        
+        <!-- GitHub -->
+        <rect x="330" y="8" width="15" height="15" rx="2" fill="#6e5494"></rect>
+        <text x="355" y="20">GitHub Components</text>
+        
+        <!-- Integration -->
+        <rect x="480" y="8" width="15" height="15" rx="2" fill="#107c10"></rect>
+        <text x="505" y="20">Integration Components</text>
+        
+        <!-- Online Mode -->
+        <rect x="630" y="8" width="15" height="15" rx="2" stroke="#107c10" stroke-width="2" fill="white"></rect>
+        <text x="655" y="20">Direct Connection</text>
+        
+        <!-- Offline Mode -->
+        <path d="M785,15 L815,15" stroke="#0078d7" stroke-width="2" stroke-dasharray="4,2"></path>
+        <text x="835" y="20">Offline Sync</text>
+    </g>
+</svg>

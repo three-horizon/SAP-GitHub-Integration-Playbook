@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="700px" viewBox="0 0 1200 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SAP-GitHub Integration - DevSecOps Cycle</title>
+    <desc>Detailed DevSecOps cycle for SAP-GitHub integration</desc>
+    <defs>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2" />
+            </feComponentTransfer>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0078d7"/>
+        </marker>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&amp;display=swap');
+            text {
+                font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                fill: #333333;
+            }
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .subtitle {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .category-title {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .item-title {
+                font-size: 12px;
+                font-weight: 600;
+                text-anchor: middle;
+                fill: #333333;
+            }
+            .item-subtitle {
+                font-size: 10px;
+                text-anchor: middle;
+                fill: #666666;
+            }
+            .phase-title {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+                fill: white;
+            }
+        </style>
+    </defs>
+    
+    <!-- Background -->
+    <g id="background" fill="#f5f5f5">
+        <rect width="1200" height="700" rx="0"></rect>
+    </g>
+    
+    <!-- Title -->
+    <text x="600" y="50" class="title" text-anchor="middle">SAP-GitHub Integration - DevSecOps Cycle</text>
+    <text x="600" y="80" class="subtitle" text-anchor="middle">Security Throughout the Software Development Lifecycle</text>
+    
+    <!-- Center circle -->
+    <g id="center-circle" transform="translate(600, 375)">
+        <circle cx="0" cy="0" r="80" fill="#f0f0f0" stroke="#333333" stroke-width="2" filter="url(#shadow)"></circle>
+        <text x="0" y="-15" class="category-title" text-anchor="middle">SAP-GitHub</text>
+        <text x="0" y="15" class="category-title" text-anchor="middle">DevSecOps</text>
+        <text x="0" y="45" class="item-subtitle" text-anchor="middle">Security at every stage</text>
+    </g>
+    
+    <!-- Plan Phase -->
+    <g id="plan-phase">
+        <path d="M600,375 L600,170 A205,205 0 0,1 773,280" stroke="#0070f2" stroke-width="30" fill="none"></path>
+        <text x="650" y="200" class="phase-title" fill="white">PLAN</text>
+        
+        <!-- Plan Items -->
+        <g transform="translate(530, 150)" filter="url(#shadow)">
+            <rect width="140" height="60" rx="8" fill="white" stroke="#0070f2" stroke-width="2"></rect>
+            <text x="70" y="25" class="item-title">Requirements</text>
+            <text x="70" y="45" class="item-subtitle">Security Requirements</text>
+        </g>
+        
+        <g transform="translate(680, 200)" filter="url(#shadow)">
+            <rect width="140" height="60" rx="8" fill="white" stroke="#0070f2" stroke-width="2"></rect>
+            <text x="70" y="25" class="item-title">Architecture</text>
+            <text x="70" y="45" class="item-subtitle">Secure Design</text>
+        </g>
+    </g>
+    
+    <!-- Code Phase -->
+    <g id="code-phase">
+        <path d="M773,280 A205,205 0 0,1 773,470" stroke="#6e5494" stroke-width="30" fill="none"></path>
+        <text x="820" y="375" class="phase-title" fill="white">CODE</text>
+        
+        <!-- Code Items -->
+        <g transform="translate(780, 280)" filter="url(#shadow)">
+            <rect width="140" height="60" rx="8" fill="white" stroke="#6e5494" stroke-width="2"></rect>
+            <text x="70" y="25" class="item-title">Development</text>
+            <text x="70" y="45" class="item-subtitle">ABAP/UI5 Coding</text>
+        </g>
+        
+        <g transform="translate(830, 375)" filter="url(#shadow)">
+            <rect width="140" height="60" rx="8" fill="white" stroke="#6e5494" stroke-width="2"></rect>
+            <text x="70" y="25" class="item-title">Code Reviews</text>
+            <text x="70" y="45" class="item-subtitle">Security Patterns</text>
+        </g>
+        
+        <g transform="translate(780, 470)" filter="url(#shadow)">
+            <rect width="140" height="60" rx="8" fill="white" stroke="#6e5494" stroke-width="2"></rect>
+            <text x="70" y="25" class="item-title">Static Analysis</text>
+            <text x="70" y="45" class="item-subtitle">Code Scanning</text>
+        </g>
+    </g>
+    
+    <!-- Build Phase -->
+    <g id="build-phase">
+        <path d="M773,470 A205,205 0 0,1 600,580" stroke="#107c10" stroke-width="30" fill="none"></path>
+        <text x="680" y="550" class="phase-title" fill="white">BUILD</text>
+        
+        <!-- Build Items -->
+        <g transform="translate(700, 520)" filter="url(#shadow)">
+            <rect width="140" height="60" rx="8" fill="white" stroke="#107c10" stroke-width="2"></rect>
+            <text x="70" y="25" class="item-title">Build Automation</text>
+            <text x="70" y="45" class="item-subtitle">GitHub Actions</text>
+        </g>
+        
+        <g transform="translate(600, 580)" filter="url(#shadow)">
+            <rect width="140" height="60" rx="8" fill="white" stroke="#107c10" stroke-width="2"></rect>
+            <text x="70" y="25" class="item-title">Dependency Check</text>
+            <text x="70" y="45" class="item-subtitle">Secure Dependencies</text>
+        </g>
+    </g>
+    
+    <!-- Test Phase -->
+    <g id="test-phase">
+        <path d="M600,580 A205,205 0 0,1 427,470" stroke="#ffb900" stroke-width="30" fill="none"></path>
+        <text x="480" y="550" class="phase-title" fill="white">TEST</text>
+        
+        <!-- Test Items -->
+        <g transform="translate(460, 520)" filter="url(#shadow)">
+            <rect width="140" height="60" rx="8" fill="white" stroke="#ffb900" stroke-width="2"></rect>
+            <text x="70" y="25" class="item-title">Unit Testing</text>
+            <text x="70" y="45" class="item-subtitle">ABAP Unit Tests</text>
+        </g>
+        
+        <g transform="translate(360, 580)" filter="url(#shadow)">
+            <rect width="140" height="60" rx="8" fill="white" stroke="#ffb900" stroke-width="2"></rect>
+            <text x="70" y="25" class="item-title">Security Testing</text>
+            <text x="70" y="45" class="item-subtitle">Vulnerability Scanning</text>
+        </g>
+    </g>
+    
+    <!-- Deploy Phase -->
+    <g id="deploy-phase">
+        <path d="M427,470 A205,205 0 0,1 427,280" stroke="#0078d4" stroke-width="30" fill="none"></path>
+        <text x="380" y="375" class="phase-title" fill="white">DEPLOY</text>
+        
+        <!-- Deploy Items -->
+        <g transform="translate(280, 470)" filter="url(#shadow)">
+            <rect width="140" height="60" rx="8" fill="white" stroke="#0078d4" stroke-width="2"></rect>
+            <text x="70" y="25" class="item-title">Transport Management</text>
+            <text x="70" y="45" class="item-subtitle">SAP Change Control</text>
+        </g>
+        
+        <g transform="translate(230, 375)" filter="url(#shadow)">
+            <rect width="140" height="60" rx="8" fill="white" stroke="#0078d4" stroke-width="2"></rect>
+            <text x="70" y="25" class="item-title">Environment Config</text>
+            <text x="70" y="45" class="item-subtitle">Secure Configuration</text>
+        </g>
+        
+        <g transform="translate(280, 280)" filter="url(#shadow)">
+            <rect width="140" height="60" rx="8" fill="white" stroke="#0078d4" stroke-width="2"></rect>
+            <text x="70" y="25" class="item-title">Deployment Validation</text>
+            <text x="70" y="45" class="item-subtitle">Pre/Post Deployment Checks</text>
+        </g>
+    </g>
+    
+    <!-- Operate Phase -->
+    <g id="operate-phase">
+        <path d="M427,280 A205,205 0 0,1 600,170" stroke="#d13438" stroke-width="30" fill="none"></path>
+        <text x="500" y="200" class="phase-title" fill="white">OPERATE</text>
+        
+        <!-- Operate Items -->
+        <g transform="translate(500, 230)" filter="url(#shadow)">
+            <rect width="140" height="60" rx="8" fill="white" stroke="#d13438" stroke-width="2"></rect>
+            <text x="70" y="25" class="item-title">Monitoring</text>
+            <text x="70" y="45" class="item-subtitle">Security Monitoring</text>
+        </g>
+        
+        <g transform="translate(380, 180)" filter="url(#shadow)">
+            <rect width="140" height="60" rx="8" fill="white" stroke="#d13438" stroke-width="2"></rect>
+            <text x="70" y="25" class="item-title">Incident Response</text>
+            <text x="70" y="45" class="item-subtitle">Security Incidents</text>
+        </g>
+    </g>
+    
+    <!-- Legend -->
+    <g id="legend" transform="translate(100, 80)">
+        <rect width="1000" height="30" rx="4" fill="white" stroke="#666666"></rect>
+        
+        <!-- Plan Color -->
+        <rect x="30" y="8" width="15" height="15" rx="2" fill="#0070f2"></rect>
+        <text x="55" y="20">Plan</text>
+        
+        <!-- Code Color -->
+        <rect x="130" y="8" width="15" height="15" rx="2" fill="#6e5494"></rect>
+        <text x="155" y="20">Code</text>
+        
+        <!-- Build Color -->
+        <rect x="230" y="8" width="15" height="15" rx="2" fill="#107c10"></rect>
+        <text x="255" y="20">Build</text>
+        
+        <!-- Test Color -->
+        <rect x="330" y="8" width="15" height="15" rx="2" fill="#ffb900"></rect>
+        <text x="355" y="20">Test</text>
+        
+        <!-- Deploy Color -->
+        <rect x="430" y="8" width="15" height="15" rx="2" fill="#0078d4"></rect>
+        <text x="455" y="20">Deploy</text>
+        
+        <!-- Operate Color -->
+        <rect x="530" y="8" width="15" height="15" rx="2" fill="#d13438"></rect>
+        <text x="555" y="20">Operate</text>
+        
+        <!-- Security -->
+        <rect x="630" y="8" width="15" height="15" rx="2" fill="#000000"></rect>
+        <text x="655" y="20">Security (throughout)</text>
+        
+        <!-- SAP -->
+        <rect x="830" y="8" width="15" height="15" rx="2" stroke="#0070f2" stroke-width="2" fill="white"></rect>
+        <text x="855" y="20">SAP Components</text>
+        
+        <!-- GitHub -->
+        <rect x="980" y="8" width="15" height="15" rx="2" stroke="#6e5494" stroke-width="2" fill="white"></rect>
+        <text x="1005" y="20">GitHub Components</text>
+    </g>
+</svg>

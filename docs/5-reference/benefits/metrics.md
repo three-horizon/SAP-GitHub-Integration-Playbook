@@ -1,4 +1,21 @@
-# Metrics and Measurement Guidelines
+# 📄 Metrics and Measurement Guidelines
+
+## 📋 Table of Contents
+
+- [Measurement Framework Overview](#measurement-framework-overview)
+- [Development Efficiency Metrics](#development-efficiency-metrics)
+- [Code Quality Metrics](#code-quality-metrics)
+- [🛡
+️ ️ Security Posture Metrics](#security-posture-metrics)
+- [Business Impact Metrics](#business-impact-metrics)
+- [Team Effectiveness Metrics](#team-effectiveness-metrics)
+- [Data Collection Methods](#data-collection-methods)
+- [Establishing Effective Measurement](#establishing-effective-measurement)
+- [Metrics Dashboard Example](#metrics-dashboard-example)
+- [Measurement for Continuous Improvement](#measurement-for-continuous-improvement)
+- [ROI Calculation Framework](#roi-calculation-framework)
+- [Getting Started with Measurement](#getting-started-with-measurement)
+
 
 This document provides a comprehensive framework for measuring the benefits and impact of the SAP-GitHub integration. It includes specific metrics, measurement methodologies, and guidance for establishing baselines and targets.
 
@@ -6,7 +23,12 @@ This document provides a comprehensive framework for measuring the benefits and 
 
 Effective measurement of the SAP-GitHub integration benefits requires a structured approach that captures both quantitative and qualitative improvements across multiple dimensions:
 
+<div align="center">
+  
 ![Metrics Framework](../assets/images/metrics-framework.png)
+  
+  *\1*
+</div>
 
 ### Metrics Categories
 
@@ -68,7 +90,7 @@ Effective measurement of the SAP-GitHub integration benefits requires a structur
 | **Technical Debt** | Estimate of effort to address quality issues | Effort estimate to fix quality issues (days) | 15-35% reduction |
 | **Documentation Coverage** | Percentage of code with appropriate documentation | Documented components / Total components × 100% | 40-80% increase |
 
-## Security Posture Metrics
+## 🛡️ Security Posture Metrics
 
 ### Vulnerability Metrics
 
@@ -264,3 +286,13 @@ For implementation assistance, refer to the [Implementation Guide](../implementa
 ---
 
 *Last Updated: [YYYY-MM-DD] for [Component Versions: GitHub Enterprise X.Y.Z, SAP S/4 HANA X.Y.Z, etc.]*
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

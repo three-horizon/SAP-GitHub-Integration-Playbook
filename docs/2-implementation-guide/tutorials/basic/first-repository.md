@@ -1,8 +1,27 @@
-# Setting Up Your First SAP-GitHub Repository
+# 📄 Setting Up Your First SAP-GitHub Repository
+
+## 📋 Table of Contents
+
+- [✅ Prerequisites](#prerequisites)
+- [Step 1: Create a New ABAP Package](#step-1-create-a-new-abap-package)
+- [Step 2: Create a GitHub Repository](#step-2-create-a-github-repository)
+- [Step 3: Connect the SAP Package to GitHub](#step-3-connect-the-sap-package-to-github)
+- [Step 4: Initial Repository Structure](#step-4-initial-repository-structure)
+- [Step 5: Create Sample ABAP Objects](#step-5-create-sample-abap-objects)
+- [Step 6: Push to GitHub](#step-6-push-to-github)
+- [Step 7: Verify the Repository](#step-7-verify-the-repository)
+- [Step 8: Configure GitHub Actions](#step-8-configure-github-actions)
+- [Step 9: Configure Branch Protection](#step-9-configure-branch-protection)
+- [Step 10: Development Workflow Test](#step-10-development-workflow-test)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [Related Resources](#related-resources)
+
 
 This tutorial walks you through the complete process of setting up your first SAP package with GitHub integration. By following these steps, you'll establish the foundation for modern SAP development with version control, collaboration, and automated workflows.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before you begin, ensure you have:
 
@@ -198,7 +217,7 @@ If you encounter issues during setup:
 
 Refer to the [Troubleshooting Guide](../../troubleshooting/index.md) for detailed solutions.
 
-## Next Steps
+## ➡️ Next Steps
 
 Now that you have your first repository set up, consider these next steps:
 
@@ -220,3 +239,12 @@ Now that you have your first repository set up, consider these next steps:
 - Contributors: Implementation Team
 - Version: 1.0.0
 - Status: Published 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

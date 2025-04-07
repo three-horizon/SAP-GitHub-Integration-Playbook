@@ -1,9 +1,21 @@
-# Transport Anomaly Rules for Microsoft Sentinel
+# 📄 Transport Anomaly Rules for Microsoft Sentinel
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for configuring analytics rules in Microsoft Sentinel to detect anomalies and security issues in SAP transport processes. These rules are especially important for the SAP-GitHub integration, where transports are triggered by or correlated with GitHub activities.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - SAP connector deployed and configured (refer to [SAP Connector Setup](./sap-connector.md))
 - GitHub connector deployed (refer to [GitHub Connector Setup](./github-connector.md))
@@ -320,7 +332,7 @@ Follow these steps to implement the rules:
   - Ensure transport IDs are properly referenced
   - Validate user mapping data
 
-## Next Steps
+## ➡️ Next Steps
 
 After configuring transport anomaly rules, proceed to:
 
@@ -341,3 +353,12 @@ After configuring transport anomaly rules, proceed to:
 - Last Updated: 2023-08-05
 - Contributors: SAP Security Team, GitHub Integration Team, Microsoft Sentinel Team
 - Version: 1.2.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

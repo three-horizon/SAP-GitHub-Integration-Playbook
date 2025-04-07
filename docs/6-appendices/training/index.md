@@ -3,11 +3,26 @@ layout: default
 title: Training Materials
 ---
 
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Training Paths](#training-paths)
+- [Training Formats](#training-formats)
+- [Role-Based Training Materials](#role-based-training-materials)
+- [Technology-Specific Training](#technology-specific-training)
+- [🔧 Implementation Training Materials](#implementation-training-materials)
+- [Continuous Learning Resources](#continuous-learning-resources)
+- [Training Resource Downloads](#training-resource-downloads)
+- [Training Program Implementation](#training-program-implementation)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
 # SAP-GitHub Integration Training Materials
 
 This section provides comprehensive training materials for developers, administrators, and business users involved in SAP-GitHub integration.
 
-## Overview
+## 📋 Overview
 
 Successful SAP-GitHub integration requires proper education and enablement across various roles and skill levels. These training materials cover technical implementation, daily workflows, and best practices to ensure organization-wide adoption and effectiveness.
 
@@ -219,7 +234,7 @@ Successful SAP-GitHub integration requires proper education and enablement acros
    - [BTP Deployment Workflows](github-actions/btp-deployment.md)
    - [Transport Management Integration](github-actions/transport-integration.md)
 
-## Implementation Training Materials
+## 🔧 Implementation Training Materials
 
 ### Planning and Design
 
@@ -345,7 +360,7 @@ All training materials are available in multiple formats for flexible learning:
    - [Productivity Measurement](program/productivity-measurement.md)
    - [ROI Calculation](program/roi-calculation.md)
 
-## Next Steps
+## ➡️ Next Steps
 
 - Explore the [Implementation Checklist](../implementation-checklist.md) for practical guidance
 - Review [Case Studies](../case-studies/index.md) to see real-world applications
@@ -358,3 +373,12 @@ All training materials are available in multiple formats for flexible learning:
 - Last Updated: 2023-11-15
 - Version: 1.0.0
 - Status: Published 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

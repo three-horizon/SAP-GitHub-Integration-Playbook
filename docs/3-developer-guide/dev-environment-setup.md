@@ -3,15 +3,30 @@ layout: default
 title: Developer Environment Setup
 ---
 
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Workstation Requirements](#workstation-requirements)
+- [Required Software](#required-software)
+- [Installation Instructions](#installation-instructions)
+- [Environment Configuration](#environment-configuration)
+- [Development Workflow Setup](#development-workflow-setup)
+- [Troubleshooting](#troubleshooting)
+- [Best Practices](#best-practices)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
 # Developer Environment Setup
 
 This guide provides detailed instructions for setting up a developer workstation for SAP-GitHub integration development.
 
-## Overview
+## 📋 Overview
 
 A properly configured development environment is essential for efficient SAP and GitHub integration. This guide covers workstation setup, required tools, configuration, and best practices for a productive development experience.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before setting up your development environment, ensure you have:
 
@@ -289,7 +304,7 @@ Configure Git hooks for SAP development:
    - Push to remote repositories regularly
    - Maintain local backups of configuration
 
-## Next Steps
+## ➡️ Next Steps
 
 After setting up your development environment:
 
@@ -303,3 +318,12 @@ After setting up your development environment:
 - Last Updated: 2023-11-15
 - Version: 1.0.0
 - Status: Published 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

@@ -1,6 +1,18 @@
-# SAP-GitHub Integration Maintenance and Update Guide
+# 📄 SAP-GitHub Integration Maintenance and Update Guide
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Scheduled Maintenance](#scheduled-maintenance)
+- [Update Procedures](#update-procedures)
+- [Health Monitoring](#health-monitoring)
+- [Operational Best Practices](#operational-best-practices)
+- [Documentation Maintenance](#documentation-maintenance)
+- [Support and Communication](#support-and-communication)
+- [Additional Resources](#additional-resources)
+
+
+## 📋 Overview
 
 This document provides comprehensive guidance for maintaining and updating the SAP-GitHub integration environment. It covers routine maintenance tasks, update procedures, health monitoring, and operational best practices to ensure the integrated development platform remains secure, efficient, and available.
 
@@ -714,3 +726,12 @@ This document provides comprehensive guidance for maintaining and updating the S
 - Last Updated: 2023-08-30
 - Contributors: Operations Team, DevOps Team, Support Team
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

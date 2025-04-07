@@ -1,3 +1,13 @@
-# testing guidelines
+# 📄 testing guidelines
 
 [Placeholder content for testing guidelines]
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

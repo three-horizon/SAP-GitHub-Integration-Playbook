@@ -1,9 +1,22 @@
-# GitHub Connector Setup for Microsoft Sentinel
+# 📄 GitHub Connector Setup for Microsoft Sentinel
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [🔧 Implementation Plan](#implementation-plan)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for configuring the GitHub connector in Microsoft Sentinel to monitor security events from your GitHub Enterprise environment. This integration enables security teams to detect threats, investigate suspicious activities, and respond to security incidents within your GitHub repositories, especially those involved in the SAP-GitHub integration.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - GitHub Enterprise Cloud or GitHub Enterprise Server instance
 - Organization owner or security manager permissions in GitHub
@@ -480,7 +493,7 @@ Configure correlation between GitHub and SAP security events:
 
 For detailed information on SAP integration, refer to [SAP Connector Setup](./sap-connector.md).
 
-## Implementation Plan
+## 🔧 Implementation Plan
 
 Follow this phased approach to implement the GitHub connector:
 
@@ -574,7 +587,7 @@ Follow this phased approach to implement the GitHub connector:
   - Implement efficient data handling
   - Schedule resource-intensive queries
 
-## Next Steps
+## ➡️ Next Steps
 
 After configuring the GitHub connector, proceed to:
 
@@ -597,3 +610,12 @@ After configuring the GitHub connector, proceed to:
 - Last Updated: 2023-09-15
 - Contributors: GitHub Security Team, Cloud Security Team, SIEM Engineers
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

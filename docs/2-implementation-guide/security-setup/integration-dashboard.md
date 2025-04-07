@@ -1,9 +1,21 @@
-# Integration Dashboard for Microsoft Sentinel
+# 📄 Integration Dashboard for Microsoft Sentinel
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for creating and configuring a comprehensive integration dashboard in Microsoft Sentinel to monitor the security posture of your SAP-GitHub integration. This unified dashboard combines data from SAP systems, GitHub repositories, and Azure resources to provide a holistic view of your integration's health and security status.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - Data connectors configured for all components:
   - SAP connector (refer to [SAP Connector Setup](./sap-connector.md))
@@ -545,7 +557,7 @@ Configure workbook distribution:
   - Ensure consistent field mapping
   - Verify synchronization between systems
 
-## Next Steps
+## ➡️ Next Steps
 
 After creating the integration dashboard, proceed to:
 
@@ -568,3 +580,12 @@ After creating the integration dashboard, proceed to:
 - Last Updated: 2023-08-25
 - Contributors: Integration Team, Monitoring Team
 - Version: 1.2.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

@@ -1,4 +1,14 @@
-# Component Descriptions
+# 📄 Component Descriptions
+
+## 📋 Table of Contents
+
+- [SAP Components](#sap-components)
+- [GitHub Enterprise Components](#github-enterprise-components)
+- [Microsoft Azure Components](#microsoft-azure-components)
+- [Integration Components](#integration-components)
+- [Integration Touchpoints](#integration-touchpoints)
+- [Component Versioning and Compatibility](#component-versioning-and-compatibility)
+
 
 This document provides detailed descriptions of each major component in the SAP-GitHub integration architecture, including specific versions, roles, responsibilities, and integration touchpoints.
 
@@ -222,3 +232,13 @@ For a detailed visual representation of integration touchpoints, please refer to
 - Contributors: Architecture Team
 - Version: 1.0.0
 - Status: Published
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

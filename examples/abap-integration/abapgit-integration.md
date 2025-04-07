@@ -3,15 +3,32 @@ layout: default
 title: ABAP Integration with abapGit
 ---
 
-# ABAP Integration with abapGit
+# 🔄 ABAP Integration with abapGit
+
+<div align="center">
+  
+  ![abapGit Integration](../../assets/images/architecture/abapgit-workflow.svg)
+  
+  *Complete implementation guide for SAP ABAP integration with GitHub*
+</div>
 
 This example provides a complete implementation guide for integrating SAP ABAP development with GitHub using abapGit.
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [🔧 Implementation Steps](#implementation-steps)
+- [✨ Best Practices](#best-practices)
+- [⚙️ Configuration Files](#configuration-files)
+- [🔍 Troubleshooting](#troubleshooting)
+- [➡️ Next Steps](#next-steps)
+
+## 📋 Overview
 
 abapGit is an open-source Git client for ABAP that allows you to version control your ABAP objects in a Git repository. This example demonstrates how to implement abapGit in your SAP system and integrate it with GitHub for efficient ABAP development workflows.
 
-## Prerequisites
+## ✅ Prerequisites
 
 - SAP NetWeaver 7.02 or higher (7.50+ recommended)
 - Developer authorization in the SAP system
@@ -19,7 +36,7 @@ abapGit is an open-source Git client for ABAP that allows you to version control
 - SSL/HTTPS configured in your SAP system
 - Developer workstation with SAP GUI installed
 
-## Implementation Steps
+## 🔧 Implementation Steps
 
 ### 1. Install abapGit in Your SAP System
 
@@ -345,7 +362,7 @@ ENDIF.
 WRITE: / 'Job scheduled successfully:', lv_jobname, lv_jobcount.
 ```
 
-## Best Practices
+## ✨ Best Practices
 
 ### Code Organization
 
@@ -373,7 +390,7 @@ Implement the following workflow for SAP-GitHub integration:
 3. **Sensitive Data**: Never commit sensitive configuration data or credentials
 4. **Access Controls**: Implement proper access controls in both SAP and GitHub
 
-## Configuration Files
+## ⚙️ Configuration Files
 
 ### abapGit Project Configuration (.abapgit.xml)
 
@@ -427,7 +444,7 @@ jobs:
         abaplint
 ```
 
-## Troubleshooting
+## 🔍 Troubleshooting
 
 ### Common Issues and Solutions
 
@@ -447,7 +464,9 @@ jobs:
    - **Problem**: Conflicts during pull operations
    - **Solution**: Resolve conflicts manually by choosing which changes to keep
 
-## Next Steps
+> **💡 Tip:** Always run a test pull in a development system before implementing in production to identify potential issues.
+
+## ➡️ Next Steps
 
 - Integrate with [GitHub Actions for ABAP](../github-actions/abap-pipeline.md) for continuous integration
 - Set up [Transport Integration](transport-management.md) for coordinated deployments
@@ -456,7 +475,10 @@ jobs:
 
 ---
 
-**Document Metadata:**
-- Last Updated: 2023-11-15
-- Version: 1.0.0
-- Status: Published 
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.1.0
+- **Status:** Published
+</details>

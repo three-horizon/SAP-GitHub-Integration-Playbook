@@ -1,9 +1,21 @@
-# Microsoft Sentinel Workspace Setup for SAP-GitHub Integration
+# 📄 Microsoft Sentinel Workspace Setup for SAP-GitHub Integration
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for setting up and configuring a Microsoft Sentinel workspace to monitor security across the SAP-GitHub integration environment. Microsoft Sentinel provides security information and event management (SIEM) capabilities combined with security orchestration, automation, and response (SOAR) functionality to enable comprehensive security monitoring and incident response.
 
-## Prerequisites
+## ✅ Prerequisites
 - Azure subscription with appropriate permissions
 - Microsoft Sentinel licensing
 - Resource provider registration for Microsoft.OperationalInsights and Microsoft.SecurityInsights
@@ -532,7 +544,7 @@ Configure these cost optimization components:
   - Test alert triggering
   - Review alert suppression rules
 
-## Next Steps
+## ➡️ Next Steps
 
 After configuring the Sentinel workspace, proceed to:
 
@@ -555,3 +567,12 @@ After configuring the Sentinel workspace, proceed to:
 - Last Updated: 2023-08-30
 - Contributors: Cloud Security Team, SIEM Engineers, Azure Architects
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

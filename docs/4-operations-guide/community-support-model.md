@@ -3,11 +3,28 @@ layout: default
 title: Community Support Model
 ---
 
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Support Model Structure](#support-model-structure)
+- [Establishing the Support Model](#establishing-the-support-model)
+- [Core CoE Responsibilities](#core-coe-responsibilities)
+- [Community Engagement Model](#community-engagement-model)
+- [Support Tools and Platforms](#support-tools-and-platforms)
+- [Metrics and Success Measurement](#metrics-and-success-measurement)
+- [Integration with Enterprise Support](#integration-with-enterprise-support)
+- [Case Study: Successful CoE Implementation](#case-study-successful-coe-implementation)
+- [🔧 Implementation Roadmap](#implementation-roadmap)
+- [Additional Considerations](#additional-considerations)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
 # Community Support Model
 
 This guide outlines how to establish and maintain a Community of Excellence (CoE) structure for supporting SAP-GitHub integration across the enterprise.
 
-## Overview
+## 📋 Overview
 
 A Community Support Model combines centralized expertise with distributed knowledge sharing to provide sustainable, scalable support for SAP-GitHub integration. This approach balances formal support structures with community-led assistance to maximize knowledge sharing and adoption.
 
@@ -389,7 +406,7 @@ A global financial services company established a SAP-GitHub CoE with the follow
 - Regular community events and knowledge sharing
 - Clear metrics and continuous improvement focus
 
-## Implementation Roadmap
+## 🔧 Implementation Roadmap
 
 ### First 30 Days
 
@@ -463,7 +480,7 @@ A global financial services company established a SAP-GitHub CoE with the follow
    - Confidentiality practices
    - Sensitive data handling
 
-## Next Steps
+## ➡️ Next Steps
 
 After establishing your Community Support Model:
 
@@ -479,3 +496,12 @@ After establishing your Community Support Model:
 - Last Updated: 2023-11-15
 - Version: 1.0.0
 - Status: Published 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

@@ -1,9 +1,21 @@
-# GitHub Activity Workbook for Microsoft Sentinel
+# 📄 GitHub Activity Workbook for Microsoft Sentinel
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for implementing and customizing the GitHub Activity Workbook in Microsoft Sentinel. This interactive dashboard enables security teams to visualize, analyze, and investigate GitHub activities related to your SAP development and deployment processes, helping identify security issues and suspicious behaviors.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - GitHub data collection configured (refer to [GitHub Connector Setup](./github-connector.md))
 - Data flowing successfully from GitHub to Sentinel
@@ -269,7 +281,7 @@ Configure workbook distribution:
   - Verify column names in queries
   - Use render operators explicitly
 
-## Next Steps
+## ➡️ Next Steps
 
 After configuring the GitHub Activity workbook, proceed to:
 
@@ -290,3 +302,12 @@ After configuring the GitHub Activity workbook, proceed to:
 - Last Updated: 2023-07-28
 - Contributors: Security Engineering Team, GitHub Integration Team
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

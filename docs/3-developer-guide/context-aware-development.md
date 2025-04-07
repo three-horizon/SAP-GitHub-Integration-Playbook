@@ -1,6 +1,21 @@
-# Context-Aware Development Guide
+# 📄 Context-Aware Development Guide
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [What is Context-Aware Development?](#what-is-context-aware-development)
+- [Benefits of Context-Aware Development](#benefits-of-context-aware-development)
+- [Context Types in SAP-GitHub Integration](#context-types-in-sap-github-integration)
+- [Context-Aware Development Workflow](#context-aware-development-workflow)
+- [IDE Integration for Context-Aware Development](#ide-integration-for-context-aware-development)
+- [Best Practices](#best-practices)
+- [Common Patterns](#common-patterns)
+- [Challenges and Solutions](#challenges-and-solutions)
+- [Related Documentation](#related-documentation)
+- [External References](#external-references)
+
+
+## 📋 Overview
 
 Context-aware development is a paradigm that leverages contextual information across the development lifecycle to improve productivity, code quality, and collaboration. This guide provides best practices for SAP developers to adopt context-aware development using the Model Context Protocol (MCP) integration with GitHub.
 
@@ -292,3 +307,12 @@ async function linkContexts(sapContextId, githubContextId) {
 1. [Microsoft's Context Principles for AI Systems](https://learn.microsoft.com/en-us/azure/architecture/guide/ai/context-awareness-ai-systems)
 2. [SAP ABAP Development Guidelines](https://developers.sap.com/tutorials/abap-dev-learn.html)
 3. [GitHub Flow Development Model](https://docs.github.com/en/get-started/quickstart/github-flow) 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

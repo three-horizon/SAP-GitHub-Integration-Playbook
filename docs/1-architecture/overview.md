@@ -1,10 +1,27 @@
-# Architecture Overview
+# 📄 Architecture Overview
+
+## 📋 Table of Contents
+
+- [High-Level Architecture](#high-level-architecture)
+- [Data Flow](#data-flow)
+- [Key Architecture Principles](#key-architecture-principles)
+- [Deployment Scenarios](#deployment-scenarios)
+- [🛡
+️ ️ Security Architecture](#security-architecture)
+- [➡
+️ ️ Next Steps](#next-steps)
+
 
 This document provides a comprehensive overview of the SAP-GitHub integration architecture, explaining how the components interact to create a fully automated development pipeline.
 
 ## High-Level Architecture
 
+<div align="center">
+  
 ![SAP-GitHub Integration Architecture](../../assets/images/architecture/high-level-architecture.svg)
+  
+  *\1*
+</div>
 
 The architecture above illustrates the end-to-end integration between SAP systems and GitHub Enterprise, with Microsoft services providing secure middleware and comprehensive security monitoring.
 
@@ -33,7 +50,12 @@ The architecture above illustrates the end-to-end integration between SAP system
 
 ### 1. SAP to GitHub Flow (Code Synchronization)
 
+<div align="center">
+  
 ![SAP to GitHub Code Synchronization Flow](../../assets/images/flows/sap-to-github-flow.svg)
+  
+  *\1*
+</div>
 
 1. Developer creates or modifies ABAP objects in SAP
 2. abapGit serializes ABAP objects to XML format
@@ -44,7 +66,12 @@ The architecture above illustrates the end-to-end integration between SAP system
 
 ### 2. GitHub to SAP Flow (Deployment)
 
+<div align="center">
+  
 ![GitHub to SAP Deployment Flow](../../assets/images/flows/github-to-sap-flow.svg)
+  
+  *\1*
+</div>
 
 1. Developer creates a pull request in GitHub
 2. GitHub Actions workflow is triggered
@@ -56,7 +83,12 @@ The architecture above illustrates the end-to-end integration between SAP system
 
 ### 3. Security Monitoring Flow
 
+<div align="center">
+  
 ![Security Monitoring Flow](../../assets/images/flows/security-monitoring-flow.svg)
+  
+  *\1*
+</div>
 
 1. Activities occur in SAP systems and GitHub
 2. API Management logs all traffic and integration activities
@@ -153,7 +185,7 @@ Most common scenario with:
 - Secure connectivity between environments
 - Consistent security monitoring across boundaries
 
-## Security Architecture
+## 🛡️ Security Architecture
 
 ### Defense-in-Depth Strategy
 
@@ -184,7 +216,7 @@ The architecture implements multiple security layers:
    - Anomaly detection
    - Threat intelligence
 
-## Next Steps
+## ➡️ Next Steps
 
 For more detailed information on the integration architecture, please refer to:
 
@@ -199,3 +231,13 @@ For more detailed information on the integration architecture, please refer to:
 - Contributors: Architecture Team
 - Version: 1.2.0
 - Status: Published
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

@@ -3,9 +3,22 @@ layout: default
 title: SAP-GitHub Architecture
 ---
 
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [Architecture Components](#architecture-components)
+- [Key Architecture Documentation](#key-architecture-documentation)
+- [Integration Patterns](#integration-patterns)
+- [🛡
+️ ️ Security Architecture](#security-architecture)
+- [Reference Architecture Diagram](#reference-architecture-diagram)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
 # SAP-GitHub Integration Architecture
 
-## Overview
+## 📋 Overview
 
 This section provides a comprehensive overview of the architecture for integrating SAP systems with GitHub Enterprise, focusing on secure, reliable, and efficient connectivity patterns.
 
@@ -60,7 +73,7 @@ This pattern uses API Management to broker communications between SAP systems an
 
 This pattern uses event hooks and messaging to create loosely coupled integrations.
 
-## Security Architecture
+## 🛡️ Security Architecture
 
 The security architecture for SAP-GitHub integration includes:
 
@@ -76,8 +89,17 @@ The complete reference architecture is shown below:
 
 {% include image.html url="/assets/images/architecture/sap-github-reference-architecture.png" alt="Complete Reference Architecture" caption="Figure 2: Complete SAP-GitHub Reference Architecture" %}
 
-## Next Steps
+## ➡️ Next Steps
 
 - Review the [Implementation Guide]({{ site.baseurl }}/docs/2-implementation-guide/) for step-by-step instructions
 - See the [Security Setup Guide]({{ site.baseurl }}/docs/2-implementation-guide/security-setup/) for security configuration
 - Explore [Developer Workflows]({{ site.baseurl }}/docs/3-developer-guide/) for day-to-day usage patterns 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

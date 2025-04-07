@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="700px" viewBox="0 0 1200 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SAP-GitHub Integration - Development Workflow</title>
+    <desc>Development workflow diagram showing the integration between SAP and GitHub</desc>
+    <defs>
+        <rect id="step-box" width="200" height="80" rx="6"></rect>
+        <rect id="system-container" width="500" height="220" rx="8"></rect>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2" />
+            </feComponentTransfer>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0078d7"/>
+        </marker>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&amp;display=swap');
+            text {
+                font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                fill: #333333;
+            }
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .subtitle {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .system-title {
+                font-size: 18px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .step-title {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .step-desc {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+            .flow-label {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+            .number-circle {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+                fill: white;
+            }
+        </style>
+    </defs>
+    
+    <!-- Background -->
+    <g id="background" fill="#f5f5f5">
+        <rect width="1200" height="700" rx="0"></rect>
+    </g>
+    
+    <!-- Title -->
+    <text x="600" y="50" class="title" text-anchor="middle">SAP-GitHub Integration - Development Workflow</text>
+    <text x="600" y="80" class="subtitle" text-anchor="middle">End-to-End Development Process</text>
+    
+    <!-- SAP Environment -->
+    <g id="sap-environment" transform="translate(100, 130)">
+        <use href="#system-container" fill="#f0f9ff" stroke="#0070f2" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="250" y="40" class="system-title">SAP Development Environment</text>
+        
+        <!-- ABAP Development -->
+        <g transform="translate(50, 80)">
+            <use href="#step-box" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="step-title" fill="white">1. ABAP Development</text>
+            <text x="100" y="55" class="step-desc" fill="#e6f0ff">Create/modify ABAP objects</text>
+        </g>
+        
+        <!-- abapGit Export -->
+        <g transform="translate(280, 80)">
+            <use href="#step-box" fill="#5d1038" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="step-title" fill="white">2. abapGit Export</text>
+            <text x="100" y="55" class="step-desc" fill="#f5e0e8">Export to local repository</text>
+        </g>
+        
+        <!-- Artifact Storage -->
+        <g transform="translate(150, 170)">
+            <use href="#step-box" fill="#0078d4" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="step-title" fill="white">7. Transport Import</text>
+            <text x="100" y="55" class="step-desc" fill="#e0f0ff">Import to target systems</text>
+        </g>
+    </g>
+    
+    <!-- GitHub Environment -->
+    <g id="github-environment" transform="translate(600, 130)">
+        <use href="#system-container" fill="#f7f2fa" stroke="#6e5494" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="250" y="40" class="system-title">GitHub Development Environment</text>
+        
+        <!-- Repository Push -->
+        <g transform="translate(50, 80)">
+            <use href="#step-box" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="step-title" fill="white">3. Repository Push</text>
+            <text x="100" y="55" class="step-desc" fill="#f0e8f5">Push code to GitHub</text>
+        </g>
+        
+        <!-- Create PR -->
+        <g transform="translate(280, 80)">
+            <use href="#step-box" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="step-title" fill="white">4. Pull Request</text>
+            <text x="100" y="55" class="step-desc" fill="#f0e8f5">Create and review PR</text>
+        </g>
+        
+        <!-- CI/CD Execution -->
+        <g transform="translate(150, 170)">
+            <use href="#step-box" fill="#2088ff" filter="url(#shadow)"></use>
+            <text x="100" y="35" class="step-title" fill="white">5. CI/CD Pipeline</text>
+            <text x="100" y="55" class="step-desc" fill="#e0f0ff">Run tests and validations</text>
+        </g>
+    </g>
+    
+    <!-- Integration Flow -->
+    <g id="integration-flow">
+        <!-- Connection Lines -->
+        <!-- ABAP Development to abapGit Export -->
+        <path d="M250,210 L280,210" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        
+        <!-- abapGit Export to Repository Push -->
+        <path d="M480,210 L650,210" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        
+        <!-- Repository Push to Create PR -->
+        <path d="M850,210 L880,210" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        
+        <!-- Create PR to CI/CD Execution -->
+        <path d="M880,250 L850,300 L750,300" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        
+        <!-- CI/CD Execution to Transport Request -->
+        <path d="M650,300 L550,300 L450,300" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        
+        <!-- Flow Annotations -->
+        <text x="550" y="190" class="flow-label" fill="#0078d7">Git Push</text>
+        <text x="750" y="190" class="flow-label" fill="#0078d7">Feature Branch</text>
+        <text x="850" y="280" class="flow-label" fill="#0078d7">PR Approval</text>
+        <text x="550" y="280" class="flow-label" fill="#0078d7">Transport Creation</text>
+    </g>
+    
+    <!-- Deployment Pipeline -->
+    <g id="deployment-pipeline" transform="translate(100, 400)">
+        <rect width="1000" height="180" rx="8" fill="#f0f5fa" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></rect>
+        <text x="500" y="40" class="system-title">Deployment Pipeline</text>
+        
+        <!-- Merge to Main -->
+        <g transform="translate(80, 80)">
+            <use href="#step-box" width="160" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">6. Merge to Main</text>
+            <text x="80" y="55" class="step-desc" fill="#f0e8f5">Integrate code</text>
+        </g>
+        
+        <!-- DEV Deployment -->
+        <g transform="translate(300, 80)">
+            <use href="#step-box" width="160" fill="#107c10" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">8. DEV Deploy</text>
+            <text x="80" y="55" class="step-desc" fill="#e0ffe0">Development system</text>
+        </g>
+        
+        <!-- QAS Deployment -->
+        <g transform="translate(520, 80)">
+            <use href="#step-box" width="160" fill="#107c10" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">9. QAS Deploy</text>
+            <text x="80" y="55" class="step-desc" fill="#e0ffe0">Quality assurance</text>
+        </g>
+        
+        <!-- PRD Deployment -->
+        <g transform="translate(740, 80)">
+            <use href="#step-box" width="160" fill="#107c10" filter="url(#shadow)"></use>
+            <text x="80" y="35" class="step-title" fill="white">10. PRD Deploy</text>
+            <text x="80" y="55" class="step-desc" fill="#e0ffe0">Production system</text>
+        </g>
+        
+        <!-- Connection Lines -->
+        <path d="M240,120 L300,120" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        <path d="M460,120 L520,120" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        <path d="M680,120 L740,120" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+        
+        <!-- Transport Management -->
+        <path d="M380,80 L350,0 L250,0 L250,-150" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow)"></path>
+        
+        <!-- GitHub to Deployment Connection -->
+        <path d="M750,300 L180,480" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+    </g>
+    
+    <!-- Security Monitoring -->
+    <g id="security-monitoring" transform="translate(100, 630)">
+        <rect width="1000" height="50" rx="8" fill="#ffe6e6" stroke="#d13438" stroke-width="2" filter="url(#shadow)"></rect>
+        <text x="500" y="30" class="system-title" fill="#d13438">Security Monitoring & Compliance</text>
+    </g>
+    
+    <!-- Legend -->
+    <g id="legend" transform="translate(100, 80)">
+        <rect x="0" y="0" width="20" height="20" rx="2" fill="#0070f2"></rect>
+        <text x="30" y="16">SAP Development</text>
+        
+        <rect x="200" y="0" width="20" height="20" rx="2" fill="#6e5494"></rect>
+        <text x="230" y="16">GitHub Operations</text>
+        
+        <rect x="400" y="0" width="20" height="20" rx="2" fill="#107c10"></rect>
+        <text x="430" y="16">Deployment</text>
+        
+        <rect x="600" y="0" width="20" height="20" rx="2" fill="#d13438"></rect>
+        <text x="630" y="16">Security</text>
+    </g>
+</svg>

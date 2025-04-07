@@ -3,11 +3,24 @@ layout: default
 title: API Reference Documentation
 ---
 
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [SAP APIs](#sap-apis)
+- [GitHub APIs](#github-apis)
+- [Integration API Patterns](#integration-api-patterns)
+- [API Implementation Examples](#api-implementation-examples)
+- [API Security Guidelines](#api-security-guidelines)
+- [Additional Resources](#additional-resources)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
 # API Reference Documentation
 
 This section provides comprehensive documentation for the APIs used in SAP-GitHub integration scenarios.
 
-## Overview
+## 📋 Overview
 
 The SAP-GitHub integration relies on multiple APIs from both platforms and potentially middleware solutions. This reference documentation provides detailed specifications, examples, and best practices for using these APIs in your integration scenarios.
 
@@ -432,7 +445,7 @@ jobs:
    - Error rate monitoring
    - [GitHub API Best Practices](https://docs.github.com/en/rest/guides/best-practices-for-integrators)
 
-## Next Steps
+## ➡️ Next Steps
 
 - Explore the [API directory](./directory.md) for a complete listing of available APIs
 - Review [Security Best Practices](../security-best-practices.md) for secure API implementation
@@ -444,3 +457,13 @@ jobs:
 - Last Updated: 2023-11-15
 - Version: 1.0.0
 - Status: Published
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

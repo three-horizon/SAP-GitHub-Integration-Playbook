@@ -1,9 +1,22 @@
-# Regulatory Compliance for SAP-GitHub Integration
+# 📄 Regulatory Compliance for SAP-GitHub Integration
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Regulatory Requirement Implementation Guides](#regulatory-requirement-implementation-guides)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides detailed instructions for implementing regulatory compliance controls within the SAP-GitHub integration environment. A comprehensive regulatory compliance framework ensures that the integrated environment meets all applicable legal, regulatory, and industry-specific requirements while supporting business objectives.
 
-## Prerequisites
+## ✅ Prerequisites
 - Security governance framework established (refer to [Security Governance](./security-governance.md))
 - Risk assessment conducted (refer to [Risk Assessment](./risk-assessment.md))
 - Compliance framework established (refer to [Compliance Setup](./compliance-setup.md))
@@ -608,7 +621,7 @@ Implement these controls for HIPAA compliance:
   - Document evidence limitations
   - Consider control redesign
 
-## Next Steps
+## ➡️ Next Steps
 
 After implementing regulatory compliance controls, proceed to:
 
@@ -631,3 +644,12 @@ After implementing regulatory compliance controls, proceed to:
 - Last Updated: 2023-10-05
 - Contributors: Compliance Team, Legal Team, IT Security Team
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

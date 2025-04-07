@@ -1,10 +1,22 @@
-# Implementing Custom Security Scanning for ABAP
+# 📄 Implementing Custom Security Scanning for ABAP
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Understanding CodeQL for ABAP](#understanding-codeql-for-abap)
+- [Step-by-Step Implementation](#step-by-step-implementation)
+- [Best Practices for ABAP Security Scanning](#best-practices-for-abap-security-scanning)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
+## 📋 Overview
 
 This tutorial guides you through implementing custom security scanning for ABAP code in your GitHub repositories. You'll learn how to create custom CodeQL queries specific to ABAP security vulnerabilities, integrate them into your CI/CD pipeline, and establish automated security analysis for your SAP development.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before starting this tutorial, ensure you have:
 
@@ -704,7 +716,7 @@ Configure your custom scanning to detect these common ABAP security issues:
 | Security dashboard shows no data | Check if SARIF files are being properly generated and if the dashboard workflow can access them |
 | Custom queries aren't running | Verify the CodeQL configuration file path and that it correctly references your custom queries |
 
-## Next Steps
+## ➡️ Next Steps
 
 After implementing custom security scanning for ABAP, consider these advanced configurations:
 
@@ -720,3 +732,12 @@ After implementing custom security scanning for ABAP, consider these advanced co
 - Contributors: Security Team
 - Version: 1.0.0
 - Status: Published
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

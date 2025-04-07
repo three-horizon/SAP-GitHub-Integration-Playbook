@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="600px" viewBox="0 0 1200 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SAP-GitHub Integration Playbook - Overview</title>
+    <desc>Overview diagram showing the main components and structure of the SAP-GitHub Integration Playbook</desc>
+    <defs>
+        <rect id="document-container" width="200" height="120" rx="8"></rect>
+        <rect id="section-container" width="180" height="80" rx="4"></rect>
+        <rect id="subsection-container" width="150" height="50" rx="4"></rect>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2" />
+            </feComponentTransfer>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0078d7"/>
+        </marker>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&amp;display=swap');
+            text {
+                font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                fill: #333333;
+            }
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .subtitle {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .section-title {
+                font-size: 16px;
+                font-weight: 600;
+                text-anchor: middle;
+            }
+            .section-subtitle {
+                font-size: 12px;
+                text-anchor: middle;
+                fill: #666666;
+            }
+            .description {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+            .flow-label {
+                font-size: 12px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+    
+    <!-- Background -->
+    <g id="background" fill="#f5f5f5">
+        <rect width="1200" height="600" rx="0"></rect>
+    </g>
+    
+    <!-- Title -->
+    <text x="600" y="50" class="title" text-anchor="middle">SAP-GitHub Integration Playbook</text>
+    <text x="600" y="80" class="subtitle" text-anchor="middle">Comprehensive Guide for Enterprise Integration</text>
+    
+    <!-- Playbook Base -->
+    <g id="playbook-base" transform="translate(500, 120)">
+        <rect width="200" height="80" rx="40" fill="#107c10" filter="url(#shadow)"></rect>
+        <text x="100" y="45" class="section-title" fill="white">Integration Playbook</text>
+        <text x="100" y="65" class="section-subtitle" fill="#e0ffe0">Comprehensive Guide</text>
+    </g>
+    
+    <!-- Architecture -->
+    <g id="architecture" transform="translate(150, 250)">
+        <use href="#document-container" fill="#f0f9ff" stroke="#0070f2" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="100" y="40" class="section-title">1. Architecture</text>
+        <text x="100" y="60" class="section-subtitle">System Design</text>
+        <g transform="translate(25, 80)">
+            <use href="#subsection-container" fill="#0070f2" filter="url(#shadow)"></use>
+            <text x="75" y="30" class="description" fill="white">SAP-GitHub Components</text>
+        </g>
+    </g>
+    
+    <!-- Implementation -->
+    <g id="implementation" transform="translate(400, 250)">
+        <use href="#document-container" fill="#e5f4e5" stroke="#107c10" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="100" y="40" class="section-title">2. Implementation</text>
+        <text x="100" y="60" class="section-subtitle">Setup Guide</text>
+        <g transform="translate(25, 80)">
+            <use href="#subsection-container" fill="#107c10" filter="url(#shadow)"></use>
+            <text x="75" y="30" class="description" fill="white">Step-by-Step Setup</text>
+        </g>
+    </g>
+    
+    <!-- Developer Guide -->
+    <g id="developer" transform="translate(650, 250)">
+        <use href="#document-container" fill="#f5f0ff" stroke="#6e5494" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="100" y="40" class="section-title">3. Developer Guide</text>
+        <text x="100" y="60" class="section-subtitle">For Developers</text>
+        <g transform="translate(25, 80)">
+            <use href="#subsection-container" fill="#6e5494" filter="url(#shadow)"></use>
+            <text x="75" y="30" class="description" fill="white">GitHub Workflows</text>
+        </g>
+    </g>
+    
+    <!-- Operations -->
+    <g id="operations" transform="translate(900, 250)">
+        <use href="#document-container" fill="#fff8e6" stroke="#ffb900" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="100" y="40" class="section-title">4. Operations</text>
+        <text x="100" y="60" class="section-subtitle">Maintenance</text>
+        <g transform="translate(25, 80)">
+            <use href="#subsection-container" fill="#ffb900" filter="url(#shadow)"></use>
+            <text x="75" y="30" class="description" fill="#333333">Monitoring & Support</text>
+        </g>
+    </g>
+    
+    <!-- Reference -->
+    <g id="reference" transform="translate(275, 420)">
+        <use href="#document-container" fill="#e8f1f8" stroke="#0078d4" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="100" y="40" class="section-title">5. Reference</text>
+        <text x="100" y="60" class="section-subtitle">Technical References</text>
+        <g transform="translate(25, 80)">
+            <use href="#subsection-container" fill="#0078d4" filter="url(#shadow)"></use>
+            <text x="75" y="30" class="description" fill="white">APIs & Security</text>
+        </g>
+    </g>
+    
+    <!-- Appendices -->
+    <g id="appendices" transform="translate(775, 420)">
+        <use href="#document-container" fill="#fff0f3" stroke="#d13438" stroke-width="2" filter="url(#shadow)"></use>
+        <text x="100" y="40" class="section-title">6. Appendices</text>
+        <text x="100" y="60" class="section-subtitle">Supplementary</text>
+        <g transform="translate(25, 80)">
+            <use href="#subsection-container" fill="#d13438" filter="url(#shadow)"></use>
+            <text x="75" y="30" class="description" fill="white">Templates & Guides</text>
+        </g>
+    </g>
+    
+    <!-- Connection Lines -->
+    <!-- Base to Sections -->
+    <g id="base-connections">
+        <line x1="550" y1="200" x2="250" y2="250" stroke="#0078d7" stroke-width="1.5" stroke-dasharray="4,2"></line>
+        <line x1="600" y1="200" x2="500" y2="250" stroke="#0078d7" stroke-width="1.5" stroke-dasharray="4,2"></line>
+        <line x1="650" y1="200" x2="750" y2="250" stroke="#0078d7" stroke-width="1.5" stroke-dasharray="4,2"></line>
+        <line x1="600" y1="200" x2="1000" y2="250" stroke="#0078d7" stroke-width="1.5" stroke-dasharray="4,2"></line>
+    </g>
+    
+    <!-- Horizontal Connections -->
+    <g id="horizontal-connections">
+        <line x1="350" y1="310" x2="400" y2="310" stroke="#0078d7" stroke-width="1.5" marker-end="url(#arrow)"></line>
+        <line x1="600" y1="310" x2="650" y2="310" stroke="#0078d7" stroke-width="1.5" marker-end="url(#arrow)"></line>
+        <line x1="850" y1="310" x2="900" y2="310" stroke="#0078d7" stroke-width="1.5" marker-end="url(#arrow)"></line>
+    </g>
+    
+    <!-- Vertical Connections -->
+    <g id="vertical-connections">
+        <line x1="250" y1="370" x2="275" y2="420" stroke="#0078d7" stroke-width="1.5" marker-end="url(#arrow)"></line>
+        <line x1="500" y1="370" x2="375" y2="420" stroke="#0078d7" stroke-width="1.5" marker-end="url(#arrow)"></line>
+        <line x1="750" y1="370" x2="775" y2="420" stroke="#0078d7" stroke-width="1.5" marker-end="url(#arrow)"></line>
+        <line x1="1000" y1="370" x2="875" y2="420" stroke="#0078d7" stroke-width="1.5" marker-end="url(#arrow)"></line>
+    </g>
+    
+    <!-- GitHub Logos -->
+    <g id="github-logo" transform="translate(60, 60)">
+        <circle cx="30" cy="30" r="28" fill="#6e5494" filter="url(#shadow)"></circle>
+        <path d="M30,9.2C18.5,9.2,9.2,18.5,9.2,30c0,9.2,6,17,14.2,19.8c1,0.2,1.4-0.4,1.4-1c0-0.5,0-1.8,0-3.4c-5.8,1.2-7-2.8-7-2.8 c-0.9-2.4-2.3-3-2.3-3c-1.9-1.3,0.1-1.3,0.1-1.3c2.1,0.1,3.2,2.1,3.2,2.1c1.9,3.2,4.9,2.3,6.1,1.7c0.2-1.4,0.7-2.3,1.3-2.8 c-4.6-0.5-9.4-2.3-9.4-10.2c0-2.3,0.8-4.1,2.1-5.5c-0.2-0.5-0.9-2.6,0.2-5.4c0,0,1.7-0.5,5.6,2.1c1.6-0.5,3.4-0.7,5.1-0.7 c1.7,0,3.5,0.2,5.1,0.7c3.9-2.6,5.6-2.1,5.6-2.1c1.1,2.8,0.4,4.9,0.2,5.4c1.3,1.4,2.1,3.3,2.1,5.5c0,7.9-4.8,9.7-9.4,10.2 c0.7,0.6,1.4,1.8,1.4,3.7c0,2.7,0,4.8,0,5.5c0,0.5,0.4,1.2,1.4,1C44.8,47,50.8,39.2,50.8,30C50.8,18.5,41.5,9.2,30,9.2z" 
+            fill="white"/>
+    </g>
+    
+    <!-- SAP Logo -->
+    <g id="sap-logo" transform="translate(1110, 60)">
+        <circle cx="30" cy="30" r="28" fill="#0070f2" filter="url(#shadow)"></circle>
+        <text x="30" y="37" class="section-title" fill="white" text-anchor="middle">SAP</text>
+    </g>
+    
+    <!-- Legend -->
+    <g id="legend" transform="translate(200, 560)">
+        <rect width="800" height="30" rx="4" fill="white" stroke="#666666"></rect>
+        
+        <!-- Architecture -->
+        <rect x="20" y="8" width="14" height="14" rx="2" fill="#0070f2"></rect>
+        <text x="44" y="20">Architecture</text>
+        
+        <!-- Implementation -->
+        <rect x="140" y="8" width="14" height="14" rx="2" fill="#107c10"></rect>
+        <text x="164" y="20">Implementation</text>
+        
+        <!-- Developer -->
+        <rect x="280" y="8" width="14" height="14" rx="2" fill="#6e5494"></rect>
+        <text x="304" y="20">Development</text>
+        
+        <!-- Operations -->
+        <rect x="420" y="8" width="14" height="14" rx="2" fill="#ffb900"></rect>
+        <text x="444" y="20">Operations</text>
+        
+        <!-- Reference -->
+        <rect x="540" y="8" width="14" height="14" rx="2" fill="#0078d4"></rect>
+        <text x="564" y="20">Reference</text>
+        
+        <!-- Appendices -->
+        <rect x="660" y="8" width="14" height="14" rx="2" fill="#d13438"></rect>
+        <text x="684" y="20">Appendices</text>
+    </g>
+</svg>

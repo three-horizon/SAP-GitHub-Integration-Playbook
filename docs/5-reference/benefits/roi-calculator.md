@@ -1,4 +1,17 @@
-# ROI Calculator for SAP-GitHub Integration
+# 📄 ROI Calculator for SAP-GitHub Integration
+
+## 📋 Table of Contents
+
+- [ROI Calculator Overview](#roi-calculator-overview)
+- [Cost Components](#cost-components)
+- [Benefit Components](#benefit-components)
+- [ROI Calculation Methodology](#roi-calculation-methodology)
+- [Sample ROI Analysis](#sample-roi-analysis)
+- [ROI Calculator Tool](#roi-calculator-tool)
+- [Customizing the ROI Analysis](#customizing-the-roi-analysis)
+- [Presenting ROI to Stakeholders](#presenting-roi-to-stakeholders)
+- [Getting Started with ROI Analysis](#getting-started-with-roi-analysis)
+
 
 This document provides a detailed Return on Investment (ROI) calculator for evaluating the financial benefits of implementing the SAP-GitHub integration with Microsoft security solutions. The calculator includes comprehensive cost and benefit factors, with guidance for customization based on your organization's specific environment.
 
@@ -244,3 +257,13 @@ For implementation assistance, refer to the [Implementation Guide](../implementa
 
 *Last Updated: 2023-12-10*
 *Component Versions: GitHub Enterprise 3.9, SAP S/4 HANA 2022, Microsoft Azure Sentinel 2023-H2*
+
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

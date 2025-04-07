@@ -2,13 +2,25 @@
 render_with_liquid: false
 ---
 
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Multi-System Deployment Challenges](#multi-system-deployment-challenges)
+- [Step-by-Step Implementation](#step-by-step-implementation)
+- [Multi-System Deployment Strategies](#multi-system-deployment-strategies)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+
+
 # Implementing Multi-System Deployments
 
-## Overview
+## 📋 Overview
 
 This tutorial guides you through implementing and managing deployments across multiple SAP systems using the SAP-GitHub integration. You'll learn how to configure, coordinate, and automate the deployment process for complex system landscapes with multiple development, quality assurance, and production environments.
 
-## Prerequisites
+## ✅ Prerequisites
 
 Before starting this tutorial, ensure you have:
 
@@ -1036,7 +1048,7 @@ Implement these quality gates between environments:
 | Failed rollback | Check if the version being rolled back to is compatible with the current system. Try an incremental rollback to a more recent version. |
 | Configuration not being correctly applied | Validate the YAML merge process and check for syntax errors in configuration files. |
 
-## Next Steps
+## ➡️ Next Steps
 
 After implementing multi-system deployment, consider these advanced configurations:
 
@@ -1053,3 +1065,12 @@ After implementing multi-system deployment, consider these advanced configuratio
 - Contributors: DevOps Team
 - Version: 1.0.0
 - Status: Published
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

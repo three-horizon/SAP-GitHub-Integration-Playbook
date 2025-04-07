@@ -1,8 +1,8 @@
-# Image and Diagram Design Guidelines
+# 📄 Image and Diagram Design Guidelines
 
 **Section:** [Architecture Standards](./README.md) | **Previous:** [Documentation Standards](./documentation-standards.md) | **Next:** [Code Standards](./code-standards.md)
 
-## Table of Contents
+## 📋 Table of Contents
 
 - [Overview](#overview)
 - [Design Principles](#design-principles)
@@ -16,7 +16,7 @@
 - [Accessibility](#accessibility)
 - [Review Process](#review-process)
 
-## Overview
+## 📋 Overview
 
 This document establishes the standards for creating and maintaining images, diagrams, and visual elements throughout the SAP-GitHub Integration Playbook. Following these guidelines ensures consistency, clarity, and professionalism across all visual content.
 
@@ -271,3 +271,12 @@ assets/
 - Contributors: Documentation Team
 - Version: 1.0.0
 - Status: Published
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

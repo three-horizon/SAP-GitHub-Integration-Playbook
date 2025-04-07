@@ -1,9 +1,21 @@
-# SAP Security Workbook for Microsoft Sentinel
+# 📄 SAP Security Workbook for Microsoft Sentinel
 
-## Overview
+## 📋 Table of Contents
+
+- [📋 Overview](#overview)
+- [✅ Prerequisites](#prerequisites)
+- [Detailed Content](#detailed-content)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [➡
+️ ️ Next Steps](#next-steps)
+- [References](#references)
+
+
+## 📋 Overview
 This document provides comprehensive instructions for implementing and customizing the SAP Security Workbook in Microsoft Sentinel. This interactive dashboard enables security teams to visualize, analyze, and investigate SAP security events, helping identify threats, compliance issues, and suspicious activities within your SAP landscape that's integrated with GitHub.
 
-## Prerequisites
+## ✅ Prerequisites
 - Microsoft Sentinel workspace configured (refer to [Sentinel Workspace Setup](./sentinel-workspace.md))
 - SAP data collection configured (refer to [SAP Connector Setup](./sap-connector.md))
 - Data flowing successfully from SAP to Sentinel
@@ -307,7 +319,7 @@ Configure workbook distribution:
   - Use parameters to limit data scope
   - Consider splitting into multiple workbooks
 
-## Next Steps
+## ➡️ Next Steps
 
 After configuring the SAP Security workbook, proceed to:
 
@@ -328,3 +340,12 @@ After configuring the SAP Security workbook, proceed to:
 - Last Updated: 2023-08-03
 - Contributors: SAP Security Team, Microsoft Sentinel Team
 - Version: 1.0.0 
+---
+
+<details>
+<summary><strong>📊 Document Metadata</strong></summary>
+
+- **Last Updated:** 2025-04-07
+- **Version:** 1.0.0
+- **Status:** Published
+</details>

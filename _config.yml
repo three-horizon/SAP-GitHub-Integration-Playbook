@@ -17,6 +17,7 @@ include:
   - assets/images/**/*
   - _includes/**/*
   - assets/css/**/*
+  - index.html
 
 # Liquid configuration to prevent parsing errors with GitHub Actions syntax
 liquid:

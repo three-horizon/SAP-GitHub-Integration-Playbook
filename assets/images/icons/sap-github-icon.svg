@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SAP-GitHub Icon</title>
+    <defs>
+        <linearGradient id="sap-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#0070f2;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0057b8;stop-opacity:1" />
+        </linearGradient>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="1" dy="1" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.3" />
+            </feComponentTransfer>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+    </defs>
+    
+    <!-- Background circle -->
+    <circle cx="24" cy="24" r="22" fill="url(#sap-gradient)" filter="url(#shadow)"></circle>
+    
+    <!-- GitHub Logo (simplified) -->
+    <path d="M24,12c-6.63,0-12,5.37-12,12c0,5.3,3.44,9.8,8.2,11.38c0.6,0.11,0.82-0.26,0.82-0.58c0-0.28-0.01-1.04-0.02-2.04c-3.34,0.72-4.04-1.61-4.04-1.61c-0.55-1.39-1.33-1.75-1.33-1.75c-1.09-0.74,0.08-0.73,0.08-0.73c1.2,0.08,1.84,1.23,1.84,1.23c1.07,1.84,2.81,1.31,3.49,1c0.11-0.78,0.42-1.31,0.76-1.61c-2.66-0.3-5.47-1.33-5.47-5.93c0-1.31,0.47-2.38,1.24-3.22c-0.12-0.3-0.54-1.52,0.12-3.18c0,0,1.01-0.32,3.3,1.23c0.96-0.27,1.98-0.4,3-0.4c1.02,0,2.04,0.14,3,0.4c2.29-1.55,3.3-1.23,3.3-1.23c0.65,1.65,0.24,2.87,0.12,3.18c0.77,0.84,1.23,1.91,1.23,3.22c0,4.61-2.8,5.63-5.48,5.92c0.43,0.37,0.82,1.1,0.82,2.22c0,1.61-0.01,2.9-0.01,3.29c0,0.32,0.21,0.69,0.82,0.58C32.56,33.79,36,29.3,36,24C36,17.37,30.63,12,24,12z" 
+          fill="white"></path>
+    
+    <!-- SAP Text -->
+    <text x="24" y="35" font-family="Arial, sans-serif" font-size="4.5" font-weight="bold" text-anchor="middle" fill="white">SAP</text>
+</svg> 

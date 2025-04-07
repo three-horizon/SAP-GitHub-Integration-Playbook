@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 title: SAP-GitHub Integration Playbook
-description: A comprehensive guide for SAP and GitHub Enterprise integration
+description: Comprehensive guide for integrating SAP systems with GitHub Enterprise
 show_downloads: true
 baseurl: /SAP-GitHub-Integration-Playbook
 plugins:
@@ -21,8 +21,8 @@ include:
 
 # Liquid configuration to prevent parsing errors with GitHub Actions syntax
 liquid:
-  error_mode: warn
-  strict_filters: false
+  error_mode: strict
+  strict_filters: true
   strict_variables: false
 
 # GitHub Pages settings
@@ -38,12 +38,39 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-      search_exclude: false
-      extra_css:
-        - /assets/css/svg-fix.css
-        - /assets/css/github-pages-svg.css
+      css: 
+        - /assets/css/style.css
 
 titles_from_headings:
   enabled: true
   strip_title: true
-  collections: true 
+  collections: true
+
+collections:
+  architecture:
+    output: true
+    permalink: /:collection/:name
+  implementation:
+    output: true
+    permalink: /:collection/:name
+  developer:
+    output: true
+    permalink: /:collection/:name
+  operations:
+    output: true
+    permalink: /:collection/:name
+  reference:
+    output: true
+    permalink: /:collection/:name
+
+# Exclude specific files from being processed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE
+  - examples/README.md 

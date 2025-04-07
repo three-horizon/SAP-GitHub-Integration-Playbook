@@ -1,34 +1,21 @@
-<!-- Custom head content for SVG fixes and other customizations -->
+<!-- Custom head content for our pages -->
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-<!-- SVG Fix CSS -->
-<link rel="stylesheet" href="{{ '/assets/css/svg-fix.css' | relative_url }}">
+<!-- Metadata improvements for SEO -->
+<meta name="description" content="A comprehensive guide for integrating SAP systems with GitHub Enterprise, covering architecture, implementation, development practices, and operations.">
+<meta name="keywords" content="SAP, GitHub, Integration, DevOps, CI/CD, Enterprise Development, ABAP, Fiori, HANA">
+<meta name="author" content="Three Horizon">
 
-<!-- Script to fix SVG rendering issues -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Função para corrigir SVGs que não carregam corretamente
-    function fixSvgImages() {
-      var svgImages = document.querySelectorAll('img[src$=".svg"]');
-      svgImages.forEach(function(img) {
-        // Forçar recarregamento da imagem se necessário
-        var currentSrc = img.src;
-        img.src = '';
-        setTimeout(function() {
-          img.src = currentSrc;
-        }, 10);
-        
-        // Garantir largura adequada
-        if (img.parentNode.getAttribute('align') === 'center') {
-          img.style.width = '700px';
-          img.style.maxWidth = '100%';
-        }
-      });
-    }
-    
-    // Executar ao carregar
-    fixSvgImages();
-    
-    // Executar novamente após um segundo para garantir que todas as imagens foram processadas
-    setTimeout(fixSvgImages, 1000);
-  });
-</script> 
+<!-- Open Graph / Social Media -->
+<meta property="og:title" content="SAP-GitHub Integration Playbook">
+<meta property="og:description" content="A comprehensive guide for integrating SAP systems with GitHub Enterprise.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://three-horizon.github.io/SAP-GitHub-Integration-Playbook/">
+<meta property="og:image" content="https://raw.githubusercontent.com/three-horizon/SAP-GitHub-Integration-Playbook/main/assets/images/architecture/Playbook-Architecture-Diagram.png">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/icons/sap-github-icon.svg' | relative_url }}">
+<link rel="icon" type="image/png" href="{{ '/assets/images/icons/sap-github-icon.png' | relative_url }}">
+
+<!-- Canonical URL to avoid duplicate content issues -->
+<link rel="canonical" href="https://three-horizon.github.io/SAP-GitHub-Integration-Playbook{{ page.url }}"> 

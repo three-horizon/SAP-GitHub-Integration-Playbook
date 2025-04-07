@@ -1,0 +1,8 @@
+{% capture svg_path %}{{ include.path }}{% endcapture %}
+{% assign svg_include = svg_path | prepend: './' | append: '' %}
+<div class="svg-container" align="center">
+  {% include {{ svg_include }} %}
+  {% if include.caption %}
+  <p class="svg-caption"><em>{{ include.caption }}</em></p>
+  {% endif %}
+</div>

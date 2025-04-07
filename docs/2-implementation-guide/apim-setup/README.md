@@ -1,10 +1,12 @@
 # 🔌 API Management Setup
 
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="../../../assets/images/architecture/api-implementation.svg" alt="API Management Architecture" width="700">
-  
-  *API Management configuration for SAP-GitHub integration*
+  *\1*
 </div>
 
 ## 📋 Table of Contents

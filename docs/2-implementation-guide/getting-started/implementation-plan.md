@@ -26,9 +26,11 @@ This implementation plan outlines the step-by-step approach for deploying the SA
 
 The implementation is divided into ten key phases, designed to be executed sequentially with some overlap where appropriate:
 
-<div align="center">
-  
-<img src="../../assets/images/implementation/implementation-phases.svg" alt="Implementation Phases" width="700">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
   *\1*
 </div>

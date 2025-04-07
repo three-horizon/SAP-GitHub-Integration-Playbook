@@ -5,11 +5,13 @@ title: GitHub Actions Workflow for ABAP
 
 # 🔄 GitHub Actions Workflow for ABAP Development
 
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="../../assets/images/flows/sap-github-workflow.svg" alt="ABAP Pipeline" width="700">
-  
-  *Complete CI/CD workflow for SAP ABAP development with GitHub Actions*
+  *\1*
 </div>
 
 This example provides a complete GitHub Actions workflow for automating CI/CD processes with ABAP development, including code quality checks, testing, and transport management.

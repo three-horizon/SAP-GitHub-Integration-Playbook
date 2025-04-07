@@ -5,11 +5,13 @@ title: SAP-GitHub Integration Playbook Documentation
 
 # 📚 SAP-GitHub Integration Playbook Documentation
 
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="../assets/images/architecture/playbook-overview.svg" alt="Integration Overview" width="700">
-  
-  *Comprehensive guidance for integrating SAP systems with GitHub*
+  *\1*
 </div>
 
 This playbook provides comprehensive guidance for integrating SAP systems with GitHub Enterprise, enabling modern development practices for SAP teams.

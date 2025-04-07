@@ -1,0 +1,70 @@
+# CLAUDE.md - Instructions for Claude when working in this repository
+
+## Commands
+
+### Testing and Validation
+- Run link checker: `./scripts/check-broken-links.sh`
+- Validate configuration: `python3 scripts/validation/check_config.py [--config path] [--output path] [--verbose]`
+
+## Code Style Guidelines
+
+### General
+- Follow existing code patterns in the repository
+- Use clear, concise documentation in Markdown format
+
+### Git
+- Use clear commit messages: `feat: description`, `fix: description`, `docs: description`
+
+### Python
+- Imports: Standard library first, then third-party, then local
+- Type hints required (typing module)
+- Error handling with try/except blocks with specific exceptions
+- Use logging instead of print statements
+
+### Documentation
+- Use Markdown for all documentation
+- Keep sentences clear and concise
+- Verify links work with link checker
+
+### ABAP and YAML
+- Follow SAP's ABAP coding guidelines
+- Maintain consistent YAML formatting across configuration files
+
+## Documentation Standards
+
+### Language Standards
+- **Primary language**: All documentation must be written in English
+- **Code comments**: All comments within code must be in English
+- **Commit messages**: All commit messages must be in English
+- **Pull request descriptions**: All pull request descriptions must be in English
+- **Issue descriptions**: All issue descriptions must be in English
+
+### Link Management
+- All links must point to valid content
+- Links should be regularly verified and updated if needed
+- Internal links should use relative paths when possible
+- External links should include the full URL with HTTPS protocol
+- All links must have descriptive text or proper context
+- Avoid generic link text like "click here" or "more information"
+
+### Document Structure
+- Each major component should have its own documentation folder
+- Use a clear and consistent folder hierarchy
+- Include a `README.md` file in each folder explaining its contents
+- Documentation filenames should be lowercase, with hyphens instead of spaces
+- Each document should start with a clear title using a single `#` heading
+- Use proper heading hierarchy (# for title, ## for sections, ### for subsections)
+- Include a table of contents for documents longer than 500 lines
+
+### Content Standards
+- Documentation must be comprehensive and cover all necessary aspects
+- No "placeholder" or "to be completed" sections allowed in published documentation
+- Include references to source information whenever possible
+- All code examples must be complete, functional, and tested
+- Use proper syntax highlighting in code blocks
+
+### Accessibility
+- Use alternative text for all images
+- Provide text transcripts for video content
+- Ensure color is not the only way to convey important information
+- Use descriptive headers and consistent structure for screen reader compatibility

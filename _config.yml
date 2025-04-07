@@ -41,6 +41,7 @@ defaults:
       search_exclude: false
       extra_css:
         - /assets/css/svg-fix.css
+        - /assets/css/github-pages-svg.css
 
 titles_from_headings:
   enabled: true

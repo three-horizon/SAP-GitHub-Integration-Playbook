@@ -1,10 +1,12 @@
 # 🏛️ Architecture Documentation
 
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="../../assets/images/architecture/high-level-architecture.svg" alt="Architecture Overview" width="700">
-  
-  *System design and integration patterns for SAP-GitHub integration*
+  *\1*
 </div>
 
 ## 📋 Table of Contents

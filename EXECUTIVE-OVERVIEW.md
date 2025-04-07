@@ -6,12 +6,14 @@
 - [Content Section](#content-section)
 - [Additional Section](#additional-section)
 - [🔗 Related Documents](#-related-documents)
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="../../assets/images/path/to/overview.svg" alt="Section Overview" width="700">
-  
-  *Replace with a relevant diagram for this section*
-</div>## Purpose
+  *\1*
+</div>
 
 This document provides a high-level executive summary of the SAP-GitHub integration solution. It is designed to give business stakeholders and decision-makers an overview of the value proposition, benefits, and strategic importance of implementing a modern DevOps approach for SAP development using GitHub Enterprise.
 

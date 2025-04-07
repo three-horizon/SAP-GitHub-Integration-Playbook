@@ -1,10 +1,12 @@
 # 🖼️ Assets Directory
 
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="./images/resources/color-palette.svg" alt="Asset Management" width="700">
-  
-  *Visual assets for the SAP-GitHub Integration Playbook*
+  *\1*
 </div>
 
 ## 📋 Overview
@@ -48,17 +50,26 @@ When adding or updating assets:
 To reference images in markdown files, use the following syntax:
 
 ```markdown
-<img src="/assets/images/category/image-name.svg" alt="Alt text description" width="700">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
+  
+  *\1*
+</div>
 ```
 
 For centered images with captions, use:
 
 ```markdown
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="/assets/images/category/image-name.svg" alt="Description" width="700">
-  
-  *Caption text here*
+  *\1*
 </div>
 ```
 

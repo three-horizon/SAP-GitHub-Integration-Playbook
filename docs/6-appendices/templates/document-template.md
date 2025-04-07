@@ -2,11 +2,13 @@
 
 **Section:** [[Section Name]](./README.md) | **Previous:** [[Previous Document]](./previous-document.md) | **Next:** [[Next Document]](./next-document.md)
 
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="../../assets/images/path/to/banner-image.svg" alt="Section Banner" width="700">
-  
-  *Modern integration for enterprise workflows*
+  *\1*
 </div>
 
 ## 📋 Table of Contents
@@ -25,11 +27,13 @@
 
 [Provide a brief introduction to the document (1-3 paragraphs). Explain the purpose of the document and what the reader will learn. Highlight any prerequisites or assumptions.]
 
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="../../assets/images/path/to/overview-diagram.svg" alt="Overview Diagram" width="700">
-  
-  *Caption explaining the diagram and its significance*
+  *\1*
 </div>
 
 ## ✅ Prerequisites
@@ -57,11 +61,13 @@ Before proceeding, ensure you have the following:
 
 [Detailed content for subsection 1.2...]
 
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="../../assets/images/flows/process-flow-diagram.svg" alt="Process Flow" width="700">
-  
-  *Detailed workflow visualization*
+  *\1*
 </div>
 
 Steps to complete this task:
@@ -94,11 +100,13 @@ Key considerations:
 
 [Content for Section 3...]
 
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="../../assets/images/path/to/section-diagram.svg" alt="Section Diagram" width="700">
-  
-  *Caption explaining the image and its significance*
+  *\1*
 </div>
 
 Decision flow:

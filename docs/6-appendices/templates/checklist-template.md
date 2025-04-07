@@ -12,11 +12,13 @@
 
 **Section:** [[Section Name]](./README.md) | **Category:** [Implementation/Migration/Security/etc.]
 
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="../../assets/images/path/to/checklist-banner.svg" alt="Checklist Banner" width="700">
-  
-  *Systematic approach to successful implementation*
+  *\1*
 </div>
 
 ## 📋 Overview
@@ -92,11 +94,13 @@ Before beginning this checklist:
   </tr>
 </table>
 
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="../../assets/images/flows/implementation-flow.svg" alt="Implementation Flow" width="700">
-  
-  *Visual representation of the implementation process*
+  *\1*
 </div>
 
 ### 📌 Phase 3: [Validation]
@@ -130,11 +134,13 @@ Before beginning this checklist:
 
 ## 🔄 Decision Points
 
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="../../assets/images/flows/decision-tree.svg" alt="Decision Tree" width="700">
-  
-  *Decision tree for common implementation scenarios*
+  *\1*
 </div>
 
 Use this decision tree to navigate key choices during implementation:

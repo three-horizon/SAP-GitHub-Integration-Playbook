@@ -5,11 +5,13 @@ title: ABAP Integration with abapGit
 
 # 🔄 ABAP Integration with abapGit
 
-<div align="center">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
-  <img src="../../assets/images/architecture/abapgit-workflow.svg" alt="abapGit Integration" width="700">
-  
-  *Complete implementation guide for SAP ABAP integration with GitHub*
+  *\1*
 </div>
 
 This example provides a complete implementation guide for integrating SAP ABAP development with GitHub using abapGit.

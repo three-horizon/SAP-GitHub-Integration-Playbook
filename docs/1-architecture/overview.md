@@ -16,9 +16,11 @@ This document provides a comprehensive overview of the SAP-GitHub integration ar
 
 ## High-Level Architecture
 
-<div align="center">
-  
-<img src="../../assets/images/architecture/high-level-architecture.svg" alt="SAP-GitHub Integration Architecture" width="700">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
   *\1*
 </div>
@@ -50,9 +52,11 @@ The architecture above illustrates the end-to-end integration between SAP system
 
 ### 1. SAP to GitHub Flow (Code Synchronization)
 
-<div align="center">
-  
-<img src="../../assets/images/flows/sap-to-github-flow.svg" alt="SAP to GitHub Code Synchronization Flow" width="700">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
   *\1*
 </div>
@@ -66,9 +70,11 @@ The architecture above illustrates the end-to-end integration between SAP system
 
 ### 2. GitHub to SAP Flow (Deployment)
 
-<div align="center">
-  
-<img src="../../assets/images/flows/github-to-sap-flow.svg" alt="GitHub to SAP Deployment Flow" width="700">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
   *\1*
 </div>
@@ -83,9 +89,11 @@ The architecture above illustrates the end-to-end integration between SAP system
 
 ### 3. Security Monitoring Flow
 
-<div align="center">
-  
-<img src="../../assets/images/flows/security-monitoring-flow.svg" alt="Security Monitoring Flow" width="700">
+<div align="center" class="svg-container">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
+    <img src="\1" alt="\1" width="700" />
+  </object>
   
   *\1*
 </div>

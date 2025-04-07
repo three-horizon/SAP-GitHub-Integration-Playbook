@@ -1,0 +1,11 @@
+<!-- SVG Helper Template -->
+<!-- Usage: {% include svg-helper.html src="path/to/file.svg" alt="Alt text" width="700" %} -->
+
+<div class="svg-container" align="center">
+  <object type="image/svg+xml" data="{{ include.src }}" style="width: {{ include.width | default: '700px' }}; max-width: 100%;" aria-label="{{ include.alt | default: 'SVG Image' }}">
+    <img src="{{ include.src }}" alt="{{ include.alt | default: 'SVG Image' }}" width="{{ include.width | default: '700' }}" />
+  </object>
+  {% if include.caption %}
+  <p class="svg-caption"><em>{{ include.caption }}</em></p>
+  {% endif %}
+</div>

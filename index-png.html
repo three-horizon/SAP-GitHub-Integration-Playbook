@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAP-GitHub Integration Playbook</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css">
-    <link rel="stylesheet" href="assets/css/static-svg-fix.css">
-    <script src="assets/js/svg-fix.js"></script>
+    <title>SAP-GitHub Integration Playbook (PNG Version)</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -40,6 +37,8 @@
             max-width: 100%;
             height: auto;
             width: 700px;
+            border: 1px solid #e1e4e8;
+            border-radius: 5px;
         }
         
         .center-image em {
@@ -87,30 +86,53 @@
             color: #586069;
         }
         
-        details summary {
-            cursor: pointer;
-            font-weight: bold;
+        .note {
+            background-color: #fffbdd;
+            border-left: 4px solid #ffd33d;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .navigation {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f6f8fa;
+            border-radius: 5px;
+        }
+        
+        .navigation a {
+            margin: 0 10px;
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        .navigation a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="navigation">
+            <a href="index.html">SVG Version</a> | 
+            <a href="svg-to-png-converter.html">Convert SVGs to PNGs</a> | 
+            <a href="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook">GitHub Repository</a>
+        </div>
+        
+        <div class="note">
+            <strong>Note:</strong> This is a PNG-based version of the playbook to ensure maximum compatibility with all browsers and environments.
+            For better quality, try the <a href="index.html">SVG version</a> if your browser supports it.
+        </div>
+        
         <div class="header">
-            <img src="https://three-horizon.github.io/SAP-GitHub-Integration-Playbook/assets/images/icons/sap-github-icon.svg" alt="Icon">
+            <img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/png/sap-github-icon.png" alt="Icon">
             <h1>SAP-GitHub Integration Playbook</h1>
         </div>
 
-        <div class="note" style="background-color: #fffbdd; border-left: 4px solid #ffd33d; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
-            <p><strong>Having trouble viewing images?</strong> Try one of these alternatives:</p>
-            <ul>
-                <li><a href="index-png.html">PNG Version</a> - View this documentation with PNG images instead of SVGs</li>
-                <li><a href="svg-to-png-converter.html">SVG to PNG Converter</a> - Convert SVGs to PNGs in your browser</li>
-                <li><a href="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/blob/main/README-PNG.md">PNG README</a> - View README with PNG images</li>
-            </ul>
-        </div>
-
         <div class="center-image">
-            <img src="https://three-horizon.github.io/SAP-GitHub-Integration-Playbook/assets/images/architecture/playbook-overview.svg" alt="SAP-GitHub Integration">
+            <img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/png/playbook-overview.png" alt="SAP-GitHub Integration">
             <em>Comprehensive guide for integrating SAP systems with GitHub</em>
         </div>
 
@@ -180,7 +202,7 @@
         </ul>
 
         <div class="center-image">
-            <img src="https://three-horizon.github.io/SAP-GitHub-Integration-Playbook/assets/images/devsecops/security-components.svg" alt="Security Components">
+            <img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/png/security-components.png" alt="Security Components">
             <em>Comprehensive security architecture for SAP-GitHub integration</em>
         </div>
 
@@ -195,21 +217,9 @@
         <h2 id="license">📄 License</h2>
         <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
 
-        <hr>
-
-        <details>
-            <summary><strong>📊 Document Metadata</strong></summary>
-            <ul>
-                <li><strong>Last Updated:</strong> 2025-04-07</li>
-                <li><strong>Project Status:</strong> <a href="PROJECT_STATUS.md">Current Status</a></li>
-                <li><strong>Version:</strong> 1.0.0</li>
-                <li><strong>Maintained by:</strong> SAP-GitHub Integration Team</li>
-            </ul>
-        </details>
-
         <div class="footer">
             <p>View this project on <a href="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook">GitHub</a> | 
-            <a href="svg-diagnostic.html">SVG Diagnostic Tool</a></p>
+            <a href="svg-to-png-converter.html">SVG to PNG Converter</a></p>
         </div>
     </div>
 </body>

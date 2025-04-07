@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNG Placeholder Generator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        svg {
+            border: 1px solid #ccc;
+        }
+        .download-link {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 15px;
+            background-color: #0366d6;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SAP-GitHub Integration Playbook: PNG Generator</h1>
+    <p>This generates placeholder PNGs for testing when SVGs aren't available</p>
+    
+    <div>
+        <svg id="svgPreview" width="700" height="400">
+            <rect width="100%" height="100%" fill="#f5f5f5"></rect>
+            <text x="50%" y="30%" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">
+                SAP-GitHub Integration Playbook
+            </text>
+            <text id="subtitleText" x="50%" y="40%" font-family="Arial" font-size="20" text-anchor="middle" fill="#555">
+                Architecture Overview
+            </text>
+            <rect x="100" y="180" width="500" height="150" rx="10" fill="#e1e4e8" stroke="#24292e" stroke-width="2"></rect>
+            <text x="350" y="230" font-family="Arial" font-size="18" text-anchor="middle" fill="#24292e">
+                Sample Diagram Content
+            </text>
+            <text x="350" y="260" font-family="Arial" font-size="14" text-anchor="middle" fill="#586069">
+                Placeholder for actual diagram content
+            </text>
+            <text x="350" y="290" font-family="Arial" font-size="14" text-anchor="middle" fill="#0366d6">
+                See actual documentation for details
+            </text>
+        </svg>
+    </div>
+    
+    <div>
+        <label for="titleInput">Change Title:</label>
+        <select id="titleInput" onchange="updateSVG()">
+            <option value="Architecture Overview">Architecture Overview</option>
+            <option value="Security Components">Security Components</option>
+            <option value="DevSecOps Cycle">DevSecOps Cycle</option>
+            <option value="SAP-GitHub Integration">SAP-GitHub Integration</option>
+        </select>
+        <button onclick="generatePNG('playbook-overview')">Generate playbook-overview.png</button>
+        <button onclick="generatePNG('security-components')">Generate security-components.png</button>
+        <button onclick="generatePNG('devsecops-cycle')">Generate devsecops-cycle.png</button>
+    </div>
+    
+    <div>
+        <a id="downloadLink" class="download-link" download="placeholder.png">Download PNG</a>
+    </div>
+
+    <script>
+        function updateSVG() {
+            const title = document.getElementById('titleInput').value;
+            document.getElementById('subtitleText').textContent = title;
+        }
+        
+        function generatePNG(filename) {
+            const svg = document.getElementById('svgPreview');
+            const serializer = new XMLSerializer();
+            const svgStr = serializer.serializeToString(svg);
+            
+            const canvas = document.createElement('canvas');
+            canvas.width = svg.width.baseVal.value;
+            canvas.height = svg.height.baseVal.value;
+            
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'white';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            const img = new Image();
+            img.onload = function() {
+                ctx.drawImage(img, 0, 0);
+                const pngData = canvas.toDataURL('image/png');
+                
+                const downloadLink = document.getElementById('downloadLink');
+                downloadLink.href = pngData;
+                downloadLink.download = filename + '.png';
+                downloadLink.textContent = `Download ${filename}.png`;
+                
+                downloadLink.click(); // Auto-download
+            };
+            
+            img.src = 'data:image/svg+xml;base64,' + btoa(svgStr);
+        }
+    </script>
+</body>
+</html> 

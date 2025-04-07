@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG to PNG Converter</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #24292e;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1, h2, h3 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+        }
+        
+        .panel {
+            background-color: #f6f8fa;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            background-color: #2ea44f;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #2c974b;
+        }
+        
+        .image-container {
+            display: flex;
+            margin: 20px 0;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .image-card {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            width: 45%;
+            background-color: white;
+        }
+        
+        .image-card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .status {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        
+        #dropZone {
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: #fafbfc;
+        }
+        
+        #dropZone.highlight {
+            border-color: #2ea44f;
+            background-color: #f0fff4;
+        }
+        
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 2s linear infinite;
+            margin: 0 auto;
+            display: none;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .download-btn {
+            background-color: #0366d6;
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+        
+        .download-btn:hover {
+            background-color: #0246a2;
+        }
+    </style>
+</head>
+<body>
+    <h1>SVG to PNG Converter</h1>
+    <p>This tool converts SVG images to PNG format directly in your browser. No server uploads required.</p>
+    
+    <div class="panel">
+        <h2>How to Use</h2>
+        <ol>
+            <li>Drag and drop SVG files onto the drop zone below, or click to select files</li>
+            <li>Wait for the conversion to complete</li>
+            <li>Download the generated PNG images</li>
+            <li>Use these PNG images in your GitHub Pages site</li>
+        </ol>
+    </div>
+    
+    <div id="dropZone">
+        <h3>Drop SVG Files Here</h3>
+        <p>or click to select files</p>
+        <input type="file" id="fileInput" accept=".svg" multiple style="display: none;">
+    </div>
+    
+    <div class="panel">
+        <h2>Convert Repository SVGs</h2>
+        <p>Click the buttons below to convert key SVGs from the repository:</p>
+        <button id="convertArchitectureSVGs">Convert Architecture SVGs</button>
+        <button id="convertDevSecOpsSVGs">Convert DevSecOps SVGs</button>
+        <button id="convertAllSVGs">Convert All Important SVGs</button>
+        <div class="loader" id="repoLoader"></div>
+    </div>
+    
+    <div id="outputContainer"></div>
+    
+    <script>
+        // List of key SVG files in the repository
+        const repoSVGs = {
+            architecture: [
+                'playbook-overview.svg',
+                'high-level-architecture.svg',
+                'sap-abap-github-integration.svg',
+                'sap-fiori-github-integration.svg',
+                'sap-hana-github-integration.svg'
+            ],
+            devsecops: [
+                'security-components.svg',
+                'devsecops-cycle.svg',
+                'devsecops-detailed.svg'
+            ],
+            icons: [
+                'sap-github-icon.svg'
+            ]
+        };
+        
+        // Base URLs for retrieving SVGs
+        const baseUrls = [
+            'https://raw.githubusercontent.com/three-horizon/SAP-GitHub-Integration-Playbook/main/assets/images/',
+            'https://three-horizon.github.io/SAP-GitHub-Integration-Playbook/assets/images/'
+        ];
+        
+        // DOM Elements
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const outputContainer = document.getElementById('outputContainer');
+        const repoLoader = document.getElementById('repoLoader');
+        
+        // Set up drop zone event listeners
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('highlight');
+        });
+        
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('highlight');
+        });
+        
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('highlight');
+            
+            if (e.dataTransfer.files.length > 0) {
+                handleFiles(e.dataTransfer.files);
+            }
+        });
+        
+        dropZone.addEventListener('click', () => {
+            fileInput.click();
+        });
+        
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFiles(e.target.files);
+            }
+        });
+        
+        // Repository SVG buttons
+        document.getElementById('convertArchitectureSVGs').addEventListener('click', () => {
+            convertRepoSVGs('architecture');
+        });
+        
+        document.getElementById('convertDevSecOpsSVGs').addEventListener('click', () => {
+            convertRepoSVGs('devsecops');
+        });
+        
+        document.getElementById('convertAllSVGs').addEventListener('click', () => {
+            convertAllRepoSVGs();
+        });
+        
+        // Handle uploaded files
+        function handleFiles(files) {
+            const svgFiles = Array.from(files).filter(file => file.name.endsWith('.svg'));
+            
+            if (svgFiles.length === 0) {
+                alert('Please select SVG files.');
+                return;
+            }
+            
+            const container = document.createElement('div');
+            container.className = 'panel';
+            container.innerHTML = `<h2>Conversion Results</h2>`;
+            
+            const imageContainer = document.createElement('div');
+            imageContainer.className = 'image-container';
+            container.appendChild(imageContainer);
+            
+            outputContainer.prepend(container);
+            
+            svgFiles.forEach(file => {
+                const reader = new FileReader();
+                
+                reader.onload = (e) => {
+                    const svgData = e.target.result;
+                    convertSVGToPNG(svgData, file.name, imageContainer);
+                };
+                
+                reader.readAsDataURL(file);
+            });
+        }
+        
+        // Convert SVG data to PNG
+        function convertSVGToPNG(svgData, filename, container) {
+            const card = document.createElement('div');
+            card.className = 'image-card';
+            card.innerHTML = `
+                <h3>${filename}</h3>
+                <div class="loader" style="display: block;"></div>
+                <div class="status">Converting...</div>
+            `;
+            container.appendChild(card);
+            
+            const img = new Image();
+            
+            img.onload = () => {
+                const canvas = document.createElement('canvas');
+                const scale = 2; // Higher resolution
+                canvas.width = img.width * scale;
+                canvas.height = img.height * scale;
+                
+                const ctx = canvas.getContext('2d');
+                ctx.scale(scale, scale);
+                ctx.drawImage(img, 0, 0);
+                
+                try {
+                    const pngData = canvas.toDataURL('image/png');
+                    
+                    // Update card with result
+                    card.innerHTML = `
+                        <h3>${filename}</h3>
+                        <img src="${pngData}" alt="${filename}">
+                        <div class="status">✅ Conversion successful</div>
+                        <a href="${pngData}" download="${filename.replace('.svg', '.png')}" class="download-btn">Download PNG</a>
+                    `;
+                } catch (error) {
+                    card.innerHTML = `
+                        <h3>${filename}</h3>
+                        <div class="status">❌ Conversion failed: ${error.message}</div>
+                    `;
+                }
+            };
+            
+            img.onerror = () => {
+                card.innerHTML = `
+                    <h3>${filename}</h3>
+                    <div class="status">❌ Failed to load SVG</div>
+                `;
+            };
+            
+            img.src = svgData;
+        }
+        
+        // Fetch SVG from repository
+        async function fetchSVG(category, filename) {
+            for (const baseUrl of baseUrls) {
+                try {
+                    const response = await fetch(`${baseUrl}${category}/${filename}`);
+                    if (response.ok) {
+                        const svgText = await response.text();
+                        return `data:image/svg+xml;base64,${btoa(svgText)}`;
+                    }
+                } catch (error) {
+                    console.error(`Failed to fetch from ${baseUrl}${category}/${filename}:`, error);
+                }
+            }
+            
+            throw new Error(`Failed to fetch ${filename} from all sources`);
+        }
+        
+        // Convert repository SVGs
+        async function convertRepoSVGs(category) {
+            repoLoader.style.display = 'block';
+            
+            const svgs = repoSVGs[category];
+            if (!svgs || svgs.length === 0) {
+                alert(`No SVGs found for category: ${category}`);
+                repoLoader.style.display = 'none';
+                return;
+            }
+            
+            const container = document.createElement('div');
+            container.className = 'panel';
+            container.innerHTML = `<h2>${category.charAt(0).toUpperCase() + category.slice(1)} SVGs</h2>`;
+            
+            const imageContainer = document.createElement('div');
+            imageContainer.className = 'image-container';
+            container.appendChild(imageContainer);
+            
+            outputContainer.prepend(container);
+            
+            for (const svg of svgs) {
+                try {
+                    const svgData = await fetchSVG(category, svg);
+                    convertSVGToPNG(svgData, svg, imageContainer);
+                } catch (error) {
+                    const card = document.createElement('div');
+                    card.className = 'image-card';
+                    card.innerHTML = `
+                        <h3>${svg}</h3>
+                        <div class="status">❌ Failed to fetch: ${error.message}</div>
+                    `;
+                    imageContainer.appendChild(card);
+                }
+            }
+            
+            repoLoader.style.display = 'none';
+        }
+        
+        // Convert all repository SVGs
+        async function convertAllRepoSVGs() {
+            repoLoader.style.display = 'block';
+            
+            for (const category in repoSVGs) {
+                await convertRepoSVGs(category);
+            }
+            
+            repoLoader.style.display = 'none';
+        }
+    </script>
+</body>
+</html> 

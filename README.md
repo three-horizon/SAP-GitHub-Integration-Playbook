@@ -66,18 +66,20 @@ This project is licensed under the [MIT License](./LICENSE).
 This repository is configured to ensure images work correctly both on GitHub and GitHub Pages. Use the following formats:
 
 ### For direct GitHub viewing:
-```markdown
+```
 ![Image Name](https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/your-image-name.svg)
 ```
 
 ### For GitHub Pages (with Jekyll):
-```markdown
-![Image Name]({{ site.baseurl }}/assets/images/your-image-name.svg)
+When creating content for the GitHub Pages site, use this format in your Markdown files:
+```
+![Image Name]({% raw %}{{ site.baseurl }}{% endraw %}/assets/images/your-image-name.svg)
 ```
 
 ### Using the include helper (recommended for Jekyll):
-```markdown
-{% include image.html url="/assets/images/your-image-name.svg" alt="Image Description" caption="Optional Caption" %}
+When creating content for the GitHub Pages site, use this helper:
+```
+{% raw %}{% include image.html url="/assets/images/your-image-name.svg" alt="Image Description" caption="Optional Caption" %}{% endraw %}
 ```
 
 ### SVG images are preferred for better quality and scalability.

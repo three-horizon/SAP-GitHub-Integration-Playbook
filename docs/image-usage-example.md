@@ -17,19 +17,23 @@ This method works in both GitHub and GitHub Pages:
 
 This method works best in GitHub Pages:
 
+{% raw %}
 ![SAP GitHub Integration]({{ site.baseurl }}/assets/images/sap-github-integration.svg)
+{% endraw %}
 
 ## Using the Include Helper
 
 This method provides the most flexibility with caption support:
 
+{% raw %}
 {% include image.html url="/assets/images/sap-github-integration.svg" alt="SAP GitHub Integration" caption="SAP and GitHub Integration Diagram" %}
+{% endraw %}
 
 ## Testing SVG Support
 
 SVGs are properly supported and render correctly:
 
-![SVG Test]({{ site.baseurl }}/assets/images/sap-github-integration.svg)
+![SVG Test](https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/sap-github-integration.svg)
 
 ## Best Practices
 

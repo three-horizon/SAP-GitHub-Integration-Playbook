@@ -14,12 +14,17 @@ This playbook provides a comprehensive guide for organizations looking to integr
 
 This playbook is organized into the following sections:
 
-- **[Architecture](./docs/1-architecture/README.md)** - System design, components, and integration patterns
-- **[Implementation Guide](./docs/2-implementation-guide/README.md)** - Step-by-step setup instructions
-- **[Developer Guide](./docs/3-developer-guide/README.md)** - Guidelines for developers working in the integrated environment
-- **[Operations Guide](./docs/4-operations-guide/README.md)** - Maintaining, monitoring, and troubleshooting the integration
-- **[Reference](./docs/5-reference/README.md)** - API documentation, security guidelines, and technical specifications
-- **[Appendices](./docs/6-appendices/README.md)** - Templates, examples, and additional resources
+- **[Getting Started](./docs/getting-started/)** - Initial planning and preparation
+- **[Documentation](./docs/documentation/)** - Detailed technical documentation
+  - [Architecture](./docs/documentation/architecture/) - System design, components, and integration patterns
+  - [Guides](./docs/documentation/guides/) - Step-by-step implementation instructions
+  - [Developer](./docs/documentation/developer/) - Guidelines for developers working in the integrated environment
+  - [Implementation](./docs/documentation/implementation/) - Implementation-specific guidance
+  - [Operations](./docs/documentation/operations/) - Maintaining, monitoring, and troubleshooting
+  - [Reference](./docs/documentation/reference/) - API documentation, security guidelines, and specifications
+  - [Appendices](./docs/documentation/appendices/) - Templates, examples, and additional resources
+- **[Examples](./docs/examples/)** - Ready-to-use implementations and code samples
+- **[Resources](./docs/resources/)** - Style guides and additional resources
 
 ## Key Features
 
@@ -38,16 +43,16 @@ This playbook is organized into the following sections:
 </div>
 
 This playbook emphasizes security at every step:
-- [Security Best Practices](./docs/5-reference/security-best-practices.md)
-- [Authentication Configuration](./docs/2-implementation-guide/github-setup/authentication.md)
-- [Repository Security](./docs/2-implementation-guide/github-setup/repository-security.md)
+- [Security Best Practices](./docs/documentation/reference/security-best-practices.md)
+- [Authentication Configuration](./docs/documentation/guides/github-setup/authentication.md)
+- [Repository Security](./docs/documentation/guides/github-setup/repository-security.md)
 
 ## Getting Started
 
 For those new to SAP-GitHub integration:
-- [Executive Overview](./docs/executive-overview.md)
-- [Implementation Quickstart](./docs/2-implementation-guide/getting-started/quick-start.md)
-- [Prerequisites](./docs/2-implementation-guide/getting-started/prerequisites.md)
+- [Executive Overview](./docs/resources/executive-overview.md)
+- [Implementation Quickstart](./docs/getting-started/quick-start.md)
+- [Prerequisites](./docs/getting-started/prerequisites.md)
 
 ## Contributing
 
@@ -72,6 +77,6 @@ This project is licensed under the [MIT License](./LICENSE).
 <summary><strong>Document Metadata</strong></summary>
 
 - **Last Updated:** 2023-04-07
-- **Version:** 1.0.0
+- **Version:** 2.0.0
 - **Maintained by:** SAP-GitHub Integration Team
 </details>

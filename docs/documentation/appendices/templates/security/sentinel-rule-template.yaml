@@ -1,0 +1,226 @@
+# SAP-GitHub Integration Security Monitoring Rule Template
+#
+# This template defines security monitoring rules for SAP-GitHub integration
+# to detect potential security issues and unauthorized access attempts.
+# 
+# Usage:
+# 1. Customize the rules based on your specific SAP environment and GitHub setup
+# 2. Integrate with your security monitoring or SIEM solution
+
+metadata:
+  name: "SAP-GitHub Integration Security Rules"
+  description: "Security monitoring rules for SAP-GitHub integration"
+  version: "1.0.0"
+  author: "SAP Security Team"
+  labels:
+    security_domain: "application_integration"
+    criticality: "high"
+
+rules:
+  # Monitors for unauthorized access to SAP systems via integration components
+  - rule_id: "SAP-GH-SEC-001"
+    name: "Unauthorized SAP Access via Integration"
+    description: "Detects unauthorized access attempts to SAP systems through GitHub integration components"
+    severity: "high"
+    enabled: true
+    
+    # Define what to look for in logs
+    detection:
+      # Primary query to detect the pattern
+      primary_query: |
+        SAP_AuthLog
+        | where EventType == "Authentication"
+        | where UserName == "GITHUB_INTEGRATION_USER"
+        | where ResultCode == "FAILURE"
+        | summarize FailedAttempts = count() by SourceIP, UserName, bin(TimeGenerated, 1h)
+        | where FailedAttempts >= 5
+      
+      # Conditions that trigger the alert
+      condition:
+        field: "FailedAttempts"
+        operator: "gte"
+        value: 5
+    
+    # Response actions when rule is triggered
+    response:
+      - action: "email"
+        recipients: ["security@example.com", "sap_admin@example.com"]
+      - action: "block_ip"
+        duration_hours: 24
+    
+    # Additional metadata for this rule
+    metadata:
+      mitre_attack_tactics: ["Initial Access", "Defense Evasion"]
+      mitre_attack_techniques: ["T1078", "T1133"]
+      cis_controls: ["16.13"]
+      compliance: ["SOX", "GDPR"]
+
+  # Monitors for unauthorized transport releases
+  - rule_id: "SAP-GH-SEC-002"
+    name: "Unauthorized Transport Release"
+    description: "Detects unauthorized transport releases triggered via GitHub integration"
+    severity: "critical"
+    enabled: true
+    
+    detection:
+      primary_query: |
+        SAP_TransportLog
+        | where EventType == "TransportRelease"
+        | where UserName !in ("AUTHORIZED_TRANSPORT_USERS")
+        | where SourceSystem == "GitHub"
+        | project TimeGenerated, UserName, TransportID, TargetSystem
+      
+      condition:
+        field: "count"
+        operator: "gt"
+        value: 0
+    
+    response:
+      - action: "email"
+        recipients: ["security@example.com", "sap_admin@example.com", "change_manager@example.com"]
+      - action: "ticket"
+        system: "ServiceNow"
+        category: "Security Incident"
+        priority: "High"
+    
+    metadata:
+      mitre_attack_tactics: ["Persistence", "Privilege Escalation"]
+      mitre_attack_techniques: ["T1098"]
+      cis_controls: ["6.8"]
+      compliance: ["SOX"]
+
+  # Monitors for large-scale code changes
+  - rule_id: "SAP-GH-SEC-003"
+    name: "Large-Scale Code Changes"
+    description: "Detects unusually large code changes pushed from GitHub to SAP systems"
+    severity: "medium"
+    enabled: true
+    
+    detection:
+      primary_query: |
+        SAP_CodeChangeLog
+        | where EventType == "CodeImport"
+        | where SourceSystem == "GitHub"
+        | summarize ObjectsChanged = count(), BytesChanged = sum(ChangeSize) by Repository, Branch, UserName, TransportID
+        | where ObjectsChanged > 100 or BytesChanged > 1000000
+      
+      condition:
+        field: "ObjectsChanged"
+        operator: "gt"
+        value: 100
+    
+    response:
+      - action: "email"
+        recipients: ["development_lead@example.com", "sap_admin@example.com"]
+      - action: "notification"
+        channel: "slack"
+        recipients: ["#sap-security-alerts"]
+    
+    metadata:
+      mitre_attack_tactics: ["Impact"]
+      mitre_attack_techniques: ["T1565"]
+      cis_controls: ["8.5"]
+      compliance: ["SOX"]
+
+  # Monitors for configuration changes to the integration
+  - rule_id: "SAP-GH-SEC-004"
+    name: "Integration Configuration Change"
+    description: "Detects changes to the SAP-GitHub integration configuration"
+    severity: "medium"
+    enabled: true
+    
+    detection:
+      primary_query: |
+        ConfigurationChangeLog
+        | where ComponentName == "SAP-GitHub-Integration"
+        | where EventType == "ConfigChange"
+        | project TimeGenerated, UserName, ChangeType, OldValue, NewValue, ConfigItem
+      
+      condition:
+        field: "count"
+        operator: "gt"
+        value: 0
+    
+    response:
+      - action: "email"
+        recipients: ["integration_admin@example.com", "security@example.com"]
+      - action: "log_entry"
+        system: "ComplianceLog"
+        details: "Configuration change detected"
+    
+    metadata:
+      mitre_attack_tactics: ["Defense Evasion"]
+      mitre_attack_techniques: ["T1562"]
+      cis_controls: ["4.12"]
+      compliance: ["SOX", "GDPR"]
+
+  # Monitors for sensitive data exports
+  - rule_id: "SAP-GH-SEC-005"
+    name: "Sensitive Data Export Detection"
+    description: "Detects potential sensitive data being exported from SAP to GitHub"
+    severity: "high"
+    enabled: true
+    
+    detection:
+      primary_query: |
+        union SAP_DataExportLog, GitHub_CommitLog
+        | where OperationType in ("Export", "Commit", "Push")
+        | where ContentContains("IBAN") or ContentContains("SSN") or ContentContains("PII") or ContentContains("PASSWORD")
+        | project TimeGenerated, UserName, OperationType, ContentSnippet, Repository
+      
+      condition:
+        field: "count"
+        operator: "gt"
+        value: 0
+    
+    response:
+      - action: "email"
+        recipients: ["security@example.com", "data_protection@example.com", "sap_admin@example.com"]
+      - action: "block_operation"
+        duration_hours: 48
+      - action: "notification"
+        channel: "sms"
+        recipients: ["+1234567890", "+0987654321"]
+    
+    metadata:
+      mitre_attack_tactics: ["Exfiltration"]
+      mitre_attack_techniques: ["T1048"]
+      cis_controls: ["13.3"]
+      compliance: ["SOX", "GDPR", "PCI-DSS"]
+
+schedule:
+  # Define how often these rules should run
+  frequency: "5m"      # Run every 5 minutes
+  lookback_period: "1h" # Look at data from the last hour
+
+output:
+  # Define where alerts should be sent by default
+  default_recipients:
+    - email: "security@example.com"
+    - webhook: "https://security.example.com/api/alerts"
+  
+  # Define alert format
+  format:
+    include_context: true
+    include_raw_data: false
+    max_results: 100
+
+# Placeholder for environment-specific configurations
+environments:
+  development:
+    enabled_rules: ["SAP-GH-SEC-001", "SAP-GH-SEC-004"]
+    schedule:
+      frequency: "15m"
+  
+  test:
+    enabled_rules: ["SAP-GH-SEC-001", "SAP-GH-SEC-002", "SAP-GH-SEC-004"]
+    schedule:
+      frequency: "10m"
+  
+  production:
+    enabled_rules: ["SAP-GH-SEC-001", "SAP-GH-SEC-002", "SAP-GH-SEC-003", "SAP-GH-SEC-004", "SAP-GH-SEC-005"]
+    schedule:
+      frequency: "5m"
+    output:
+      additional_recipients:
+        - sms: "+1234567890" # Production emergencies

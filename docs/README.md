@@ -1,99 +1,86 @@
-# 📚 SAP-GitHub Integration Playbook Documentation
+# SAP-GitHub Integration Playbook Documentation
 
-<div align="center" class="svg-container">
-  <!-- Using both object and img as fallback for maximum compatibility -->
-  <object type="image/svg+xml" data="\1" style="width: 700px; max-width: 100%;" aria-label="\1">
-    <img src="\1" alt="\1" width="700" />
-  </object>
+<div align="center">
+  <img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/playbook-overview.svg?sanitize=true" width="700" alt="SAP-GitHub Integration Playbook Overview">
   
-  *\1*
+  *Comprehensive guide for integrating SAP systems with GitHub*
 </div>
 
-## 📋 Table of Contents
+## 📋 Directory Structure
 
-- [📋 Overview](#-overview)
-- [📁 Documentation Structure](#-documentation-structure)
-- [🚀 Getting Started](#-getting-started)
-- [🖼️ Visual Resources](#-visual-resources)
-- [🔄 Keeping Documentation Updated](#-keeping-documentation-updated)
-- [🔗 Related Resources](#-related-resources)
+This repository is organized into the following structure:
 
-## 📋 Overview
+```
+docs/
+├── getting-started/             # Getting started documentation
+├── documentation/               # Documentation files
+│   ├── architecture/            # Architecture documentation
+│   ├── guides/                  # Implementation guides
+│   ├── developer/               # Developer documentation
+│   ├── implementation/          # Implementation guidance
+│   ├── operations/              # Operations documentation
+│   ├── reference/               # Reference materials
+│   └── appendices/              # Additional resources
+├── examples/                    # Example implementations
+│   ├── dashboards/              # Example dashboards
+│   ├── github-actions/          # GitHub Actions workflows
+│   ├── kql-queries/             # KQL queries for Sentinel
+│   └── logic-apps/              # Azure Logic Apps templates
+└── resources/                   # Additional resources
+    ├── markdown-style-guide.md  # Markdown formatting guide
+    ├── multilingual-documentation.md # Guide for translations
+    └── using-this-template.md   # Template usage guide
+```
 
-This directory contains the comprehensive documentation for the SAP-GitHub Integration Playbook. The documentation is organized into a structured hierarchy to help users find the information they need quickly and efficiently.
+## 📋 Documentation Sections
 
-## 📁 Documentation Structure
+### [Getting Started](./getting-started/)
 
-The documentation follows a logical structure based on the different stages of understanding, implementing, and maintaining SAP-GitHub integration:
+The Getting Started section provides everything you need to begin with SAP-GitHub integration:
 
-- **[🏛️ 1-architecture](./1-architecture/)** - System design, components, and integration patterns
-  - Architectural diagrams
-  - Component descriptions
-  - Integration patterns
-  - Design decisions
+- Quick start guides
+- Prerequisites information
+- Initial setup instructions
+- Business case templates
 
-- **[🔧 2-implementation-guide](./2-implementation-guide/)** - Step-by-step setup instructions
-  - Installation procedures
-  - Configuration steps
-  - Migration guides
-  - Environment setup
+### [Documentation](./documentation/)
 
-- **[👨‍💻 3-developer-guide](./3-developer-guide/)** - Guidelines for developers
-  - Development workflows
-  - API references
-  - Code standards
-  - Best practices
+The Documentation section contains detailed technical information:
 
-- **[🛠️ 4-operations-guide](./4-operations-guide/)** - Maintaining and operating the integration
-  - Monitoring procedures
-  - Troubleshooting guides
-  - Backup and recovery
-  - Performance tuning
+- [Architecture](./documentation/architecture/) - System design, components, and integration patterns
+- [Guides](./documentation/guides/) - Step-by-step implementation instructions
+- [Developer](./documentation/developer/) - Guidelines for developers working in the integrated environment
+- [Implementation](./documentation/implementation/) - Implementation-specific guidance
+- [Operations](./documentation/operations/) - Maintaining, monitoring, and troubleshooting
+- [Reference](./documentation/reference/) - API documentation, security guidelines, and specifications
+- [Appendices](./documentation/appendices/) - Templates, examples, and additional resources
 
-- **[📚 5-reference](./5-reference/)** - Technical references and specifications
-  - API documentation
-  - Security guidelines
-  - Standards compliance
-  - External resources
+### [Examples](./examples/)
 
-- **[📑 6-appendices](./6-appendices/)** - Supplementary materials
-  - Templates
-  - Checklists
-  - FAQs
-  - Glossaries
+The Examples section provides ready-to-use implementations:
 
-## 🚀 Getting Started
+- Dashboard configurations
+- GitHub Actions workflows
+- KQL queries for Sentinel
+- Azure Logic Apps templates
+- And more
 
-To get started with the documentation:
+### [Resources](./resources/)
 
-1. [Executive Overview](./executive-overview.md) - High-level introduction
-2. [Architecture Overview](./1-architecture/README.md) - System design
-3. [Implementation Guide](./2-implementation-guide/README.md) - Step-by-step setup
+The Resources section includes:
 
-## 🖼️ Visual Resources
+- Markdown style guide
+- Multilingual documentation guidance
+- Template usage instructions
 
-All diagrams and visual assets are stored in the [assets/images](../assets/images/) directory, organized by type:
+## 🚀 Using This Documentation
 
-- Architecture diagrams: [assets/images/architecture](../assets/images/architecture/)
-- Flow diagrams: [assets/images/flows](../assets/images/flows/)
-- Component diagrams: [assets/images/components](../assets/images/components/)
+This documentation is designed to be navigated based on your role and current implementation phase:
 
-## 🔄 Keeping Documentation Updated
-
-Documentation should be updated whenever:
-
-1. New features are added to the integration
-2. Existing procedures change
-3. Bug fixes affect user workflows
-4. New best practices are identified
-
-When updating documentation, follow our [Documentation Guidelines](../DOCUMENTATION_GUIDELINES.md).
-
-## 🔗 Related Resources
-
-- [Documentation Guidelines](../DOCUMENTATION_GUIDELINES.md)
-- [Contributing Guide](../CONTRIBUTING.md)
-- [Image Design Guidelines](./1-architecture/standards/image-design-guidelines.md)
+1. Start with the [Getting Started](./getting-started/) section for initial setup
+2. Explore detailed information in the [Documentation](./documentation/) section
+3. Find working examples in the [Examples](./examples/) directory
+4. Refer to [Resources](./resources/) for documentation standards
 
 ---
 
@@ -101,7 +88,6 @@ When updating documentation, follow our [Documentation Guidelines](../DOCUMENTAT
 <summary><strong>📊 Document Metadata</strong></summary>
 
 - **Last Updated:** 2025-04-07
-- **Author:** SAP-GitHub Integration Team
-- **Version:** 1.0.0
+- **Version:** 2.0.0
 - **Status:** Published
 </details>

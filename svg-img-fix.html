@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Image Viewer</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f6f8fa;
+        }
+        
+        .container {
+            max-width: 800px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            text-align: center;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #e1e4e8;
+            border-radius: 3px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #24292e;
+        }
+        
+        p {
+            color: #586069;
+            margin-bottom: 20px;
+        }
+        
+        .svg-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            background-color: #0366d6;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        button:hover {
+            background-color: #0256b9;
+        }
+        
+        .links {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SVG Image Viewer</h1>
+        <p>This page displays SVG images using various techniques to ensure compatibility.</p>
+        
+        <div class="svg-options">
+            <button onclick="loadImage('github-raw')">View using GitHub Raw</button>
+            <button onclick="loadImage('base64')">View using Base64 Encoding</button>
+            <button onclick="loadImage('img-tag')">View using IMG Tag</button>
+            <button onclick="loadImage('object-tag')">View using Object Tag</button>
+            <button onclick="loadImage('embed-tag')">View using Embed Tag</button>
+        </div>
+        
+        <div>
+            <label for="svgSelector">Select SVG Image:</label>
+            <select id="svgSelector" onchange="switchSvg()" aria-label="Select SVG image to display">
+                <option value="playbook-overview">Playbook Overview</option>
+                <option value="security-components">Security Components</option>
+                <option value="sap-github-icon">SAP GitHub Icon</option>
+            </select>
+        </div>
+        
+        <div id="svgContainer">
+            <img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/playbook-overview.svg?sanitize=true" alt="SVG Image" id="svgImage">
+        </div>
+        
+        <p id="methodInfo">Currently showing: GitHub Raw with sanitize=true parameter</p>
+        
+        <div class="links">
+            <a href="index.html">Return to Main Page</a> |
+            <a href="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook">View on GitHub</a>
+        </div>
+    </div>
+    
+    <script>
+        // Current SVG settings
+        let currentSvg = 'playbook-overview';
+        let currentMethod = 'github-raw';
+        
+        // SVG paths lookup
+        const svgPaths = {
+            'playbook-overview': 'assets/images/architecture/playbook-overview.svg',
+            'security-components': 'assets/images/devsecops/security-components.svg',
+            'sap-github-icon': 'assets/images/icons/sap-github-icon.svg'
+        };
+        
+        // Function to switch SVG
+        function switchSvg() {
+            currentSvg = document.getElementById('svgSelector').value;
+            loadImage(currentMethod);
+        }
+        
+        // Function to load image using different methods
+        function loadImage(method) {
+            currentMethod = method;
+            const container = document.getElementById('svgContainer');
+            const infoText = document.getElementById('methodInfo');
+            
+            // Get current SVG path
+            const svgFile = svgPaths[currentSvg];
+            const githubRawUrl = `https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/${svgFile}?sanitize=true`;
+            const rawUrl = `https://raw.githubusercontent.com/three-horizon/SAP-GitHub-Integration-Playbook/main/${svgFile}`;
+            
+            // Clear container
+            container.innerHTML = '';
+            
+            switch (method) {
+                case 'github-raw':
+                    container.innerHTML = `<img src="${githubRawUrl}" alt="SVG Image" id="svgImage">`;
+                    infoText.textContent = 'Currently showing: GitHub Raw with sanitize=true parameter';
+                    break;
+                    
+                case 'base64':
+                    // Fetch SVG and convert to base64
+                    fetch(rawUrl)
+                        .then(response => response.text())
+                        .then(svgText => {
+                            const base64 = btoa(svgText);
+                            container.innerHTML = `<img src="data:image/svg+xml;base64,${base64}" alt="SVG Image">`;
+                            infoText.textContent = 'Currently showing: Base64 encoded SVG';
+                        })
+                        .catch(error => {
+                            container.innerHTML = `<p style="color: red;">Error loading SVG: ${error.message}</p>`;
+                        });
+                    break;
+                    
+                case 'img-tag':
+                    container.innerHTML = `<img src="${rawUrl}" alt="SVG Image">`;
+                    infoText.textContent = 'Currently showing: Standard IMG tag with raw URL';
+                    break;
+                    
+                case 'object-tag':
+                    container.innerHTML = `<object type="image/svg+xml" data="${rawUrl}" width="700">SVG not supported</object>`;
+                    infoText.textContent = 'Currently showing: Object tag with SVG data';
+                    break;
+                    
+                case 'embed-tag':
+                    container.innerHTML = `<embed src="${rawUrl}" type="image/svg+xml" width="700">`;
+                    infoText.textContent = 'Currently showing: Embed tag with SVG source';
+                    break;
+            }
+        }
+    </script>
+</body>
+</html> 

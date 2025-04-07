@@ -1,8 +1,7 @@
 # 🔄 SAP-GitHub Integration Playbook
 
 <div align="center">
-  
-  <img src="https://three-horizon.github.io/SAP-GitHub-Integration-Playbook/assets/images/architecture/playbook-overview.svg" width="700" alt="SAP-GitHub Integration Playbook Overview">
+  <img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/architecture/playbook-overview.svg?sanitize=true" width="700" alt="SAP-GitHub Integration Playbook Overview">
   
   *Comprehensive guide for integrating SAP systems with GitHub*
 </div>
@@ -66,7 +65,7 @@ This playbook emphasizes security at every step:
 
 <div align="center">
   
-  <img src="https://three-horizon.github.io/SAP-GitHub-Integration-Playbook/assets/images/devsecops/security-components.svg" width="700" alt="Security Components">
+  <img src="https://github.com/three-horizon/SAP-GitHub-Integration-Playbook/raw/main/assets/images/devsecops/security-components.svg?sanitize=true" width="700" alt="Security Components">
   
   *Comprehensive security architecture for SAP-GitHub integration*
 </div>

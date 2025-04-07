@@ -3,202 +3,227 @@
     <title>SAP-GitHub Integration - High-Level Architecture</title>
     <desc>High-level architecture diagram showing SAP, GitHub and Azure integration components</desc>
     <defs>
-        <rect id="system-container" width="300" height="220" rx="8"></rect>
-        <rect id="component-container" width="260" height="80" rx="4"></rect>
+        <rect id="system-container" width="320" height="240" rx="12"></rect>
+        <rect id="component-container" width="280" height="90" rx="6"></rect>
         <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
-            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+            <feOffset result="offOut" in="SourceAlpha" dx="3" dy="3" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4" />
             <feComponentTransfer>
-                <feFuncA type="linear" slope="0.2" />
+                <feFuncA type="linear" slope="0.3" />
             </feComponentTransfer>
             <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
         </filter>
+        <linearGradient id="sap-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#0070f2;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0063d8;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="github-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#7550a0;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#5d3a83;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="azure-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#008ad4;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0078c0;stop-opacity:1" />
+        </linearGradient>
         <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
             markerWidth="6" markerHeight="6" orient="auto">
             <path d="M 0 0 L 10 5 L 0 10 z" fill="#0078d7"/>
         </marker>
+        <marker id="sec-arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#d13438"/>
+        </marker>
         <style type="text/css">
-            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&amp;display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&amp;display=swap');
             text {
                 font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
                 font-size: 14px;
                 fill: #333333;
             }
             .title {
-                font-size: 24px;
-                font-weight: 600;
+                font-size: 28px;
+                font-weight: 700;
+                letter-spacing: 0.5px;
             }
             .subtitle {
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: 600;
             }
             .system-title {
-                font-size: 18px;
+                font-size: 22px;
                 font-weight: 600;
                 text-anchor: middle;
             }
             .component-title {
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 600;
                 text-anchor: middle;
             }
             .component-subtitle {
-                font-size: 12px;
+                font-size: 13px;
                 text-anchor: middle;
-                fill: #666666;
+                fill: #ffffff;
+                opacity: 0.9;
             }
             .flow-label {
-                font-size: 12px;
+                font-size: 14px;
+                font-weight: 600;
                 text-anchor: middle;
             }
             .number-circle {
-                font-size: 16px;
-                font-weight: 600;
+                font-size: 18px;
+                font-weight: 700;
                 text-anchor: middle;
                 fill: white;
+            }
+            .legend-text {
+                font-size: 15px;
             }
         </style>
     </defs>
     
     <!-- Background -->
-    <g id="background" fill="#f5f5f5">
-        <rect width="1200" height="800" rx="0"></rect>
+    <g id="background">
+        <rect width="1200" height="800" rx="0" fill="#f8f9fa"></rect>
     </g>
     
     <!-- Title -->
-    <text x="600" y="50" class="title" text-anchor="middle">SAP-GitHub Integration - High-Level Architecture</text>
+    <g id="title-section">
+        <rect x="0" y="0" width="1200" height="80" fill="#f0f2f5"></rect>
+        <text x="600" y="50" class="title" text-anchor="middle">SAP-GitHub Integration - High-Level Architecture</text>
+    </g>
     
     <!-- SAP Environment -->
-    <g id="sap-environment" transform="translate(100, 150)">
-        <use href="#system-container" fill="#f0f9ff" stroke="#0070f2" stroke-width="2" filter="url(#shadow)"></use>
-        <text x="150" y="40" class="system-title">SAP Environment</text>
+    <g id="sap-environment" transform="translate(150, 120)">
+        <use href="#system-container" fill="#ebf5ff" stroke="#0070f2" stroke-width="3" filter="url(#shadow)"></use>
+        <text x="160" y="40" class="system-title">SAP Environment</text>
         
         <!-- SAP Systems -->
         <g transform="translate(20, 70)">
-            <use href="#component-container" fill="#0070f2" filter="url(#shadow)"></use>
-            <text x="130" y="35" class="component-title" fill="white">SAP Systems</text>
-            <text x="130" y="55" class="component-subtitle" fill="#e6f0ff">DEV, QAS, PRD</text>
+            <use href="#component-container" fill="url(#sap-gradient)" filter="url(#shadow)"></use>
+            <text x="140" y="40" class="component-title" fill="white">SAP Systems</text>
+            <text x="140" y="65" class="component-subtitle">DEV, QAS, PRD</text>
         </g>
         
         <!-- abapGit -->
-        <g transform="translate(20, 160)">
-            <use href="#component-container" fill="#5d1038" filter="url(#shadow)"></use>
-            <text x="130" y="35" class="component-title" fill="white">abapGit</text>
-            <text x="130" y="55" class="component-subtitle" fill="#f5e0e8">Git Client for ABAP</text>
+        <g transform="translate(20, 170)">
+            <rect width="280" height="90" rx="6" fill="#801651" filter="url(#shadow)"></rect>
+            <text x="140" y="40" class="component-title" fill="white">abapGit</text>
+            <text x="140" y="65" class="component-subtitle">Git Client for ABAP</text>
         </g>
     </g>
     
     <!-- GitHub Environment -->
-    <g id="github-environment" transform="translate(780, 150)">
-        <use href="#system-container" fill="#f7f2fa" stroke="#6e5494" stroke-width="2" filter="url(#shadow)"></use>
-        <text x="150" y="40" class="system-title">GitHub Environment</text>
+    <g id="github-environment" transform="translate(730, 120)">
+        <use href="#system-container" fill="#f6f0fa" stroke="#6e5494" stroke-width="3" filter="url(#shadow)"></use>
+        <text x="160" y="40" class="system-title">GitHub Environment</text>
         
         <!-- GitHub Enterprise -->
         <g transform="translate(20, 70)">
-            <use href="#component-container" fill="#6e5494" filter="url(#shadow)"></use>
-            <text x="130" y="35" class="component-title" fill="white">GitHub Enterprise</text>
-            <text x="130" y="55" class="component-subtitle" fill="#f0e8f5">Repositories, PRs</text>
+            <use href="#component-container" fill="url(#github-gradient)" filter="url(#shadow)"></use>
+            <text x="140" y="40" class="component-title" fill="white">GitHub Enterprise</text>
+            <text x="140" y="65" class="component-subtitle">Repositories, PRs</text>
         </g>
         
         <!-- GitHub Actions -->
-        <g transform="translate(20, 160)">
-            <use href="#component-container" fill="#2088ff" filter="url(#shadow)"></use>
-            <text x="130" y="35" class="component-title" fill="white">GitHub Actions</text>
-            <text x="130" y="55" class="component-subtitle" fill="#e0f0ff">CI/CD Workflows</text>
+        <g transform="translate(20, 170)">
+            <rect width="280" height="90" rx="6" fill="#2188ff" filter="url(#shadow)"></rect>
+            <text x="140" y="40" class="component-title" fill="white">GitHub Actions</text>
+            <text x="140" y="65" class="component-subtitle">CI/CD Workflows</text>
         </g>
     </g>
     
     <!-- Azure Integration Layer -->
-    <g id="azure-integration" transform="translate(350, 450)">
-        <use href="#system-container" width="500" fill="#f0f5fa" stroke="#0078d4" stroke-width="2" filter="url(#shadow)"></use>
-        <text x="250" y="40" class="system-title">Microsoft Azure Integration</text>
+    <g id="azure-integration" transform="translate(330, 420)">
+        <rect width="540" height="240" rx="12" fill="#f0f6fa" stroke="#0078d4" stroke-width="3" filter="url(#shadow)"></rect>
+        <text x="270" y="40" class="system-title">Microsoft Azure Integration</text>
         
         <!-- API Management -->
-        <g transform="translate(20, 70)">
-            <use href="#component-container" width="220" fill="#68217a" filter="url(#shadow)"></use>
-            <text x="110" y="35" class="component-title" fill="white">API Management</text>
-            <text x="110" y="55" class="component-subtitle" fill="#f2e5f5">Integration Gateway</text>
+        <g transform="translate(30, 70)">
+            <rect width="230" height="90" rx="6" fill="#7719aa" filter="url(#shadow)"></rect>
+            <text x="115" y="40" class="component-title" fill="white">API Management</text>
+            <text x="115" y="65" class="component-subtitle">Integration Gateway</text>
         </g>
         
         <!-- Key Vault -->
-        <g transform="translate(260, 70)">
-            <use href="#component-container" width="220" fill="#ffb900" filter="url(#shadow)"></use>
-            <text x="110" y="35" class="component-title" fill="#333333">Key Vault</text>
-            <text x="110" y="55" class="component-subtitle" fill="#333333">Secure Secret Storage</text>
+        <g transform="translate(280, 70)">
+            <rect width="230" height="90" rx="6" fill="#ffc83d" filter="url(#shadow)"></rect>
+            <text x="115" y="40" class="component-title" fill="#333333">Key Vault</text>
+            <text x="115" y="65" class="component-subtitle" fill="#333333">Secure Secret Storage</text>
         </g>
         
         <!-- Security Monitoring -->
-        <g transform="translate(140, 160)">
-            <use href="#component-container" width="220" fill="#004e8c" filter="url(#shadow)"></use>
-            <text x="110" y="35" class="component-title" fill="white">Microsoft Sentinel</text>
-            <text x="110" y="55" class="component-subtitle" fill="#e0e8f0">Security Monitoring</text>
+        <g transform="translate(155, 170)">
+            <rect width="230" height="90" rx="6" fill="#0053a0" filter="url(#shadow)"></rect>
+            <text x="115" y="40" class="component-title" fill="white">Security Monitoring</text>
+            <text x="115" y="65" class="component-subtitle">Audit & Logging</text>
         </g>
     </g>
     
     <!-- Connection Arrows -->
     <!-- SAP to Azure -->
     <g id="sap-to-azure">
-        <path d="M250,350 L400,450" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
-        <circle cx="290" cy="380" r="16" fill="#0078d7"></circle>
-        <text x="290" y="385" class="number-circle">1</text>
-        <text x="350" y="390" class="flow-label">Code Extraction</text>
+        <path d="M300,260 L460,420" stroke="#0078d7" stroke-width="3" fill="none" marker-end="url(#arrow)"></path>
+        <circle cx="330" cy="290" r="20" fill="#0078d7" filter="url(#shadow)"></circle>
+        <text x="330" y="296" class="number-circle">1</text>
+        <text x="390" y="330" class="flow-label" fill="#0062b0">Code Extraction</text>
     </g>
     
     <!-- Azure to GitHub -->
     <g id="azure-to-github">
-        <path d="M720,450 L880,350" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
-        <circle cx="820" cy="380" r="16" fill="#0078d7"></circle>
-        <text x="820" y="385" class="number-circle">2</text>
-        <text x="790" y="420" class="flow-label">Secure Code Delivery</text>
+        <path d="M750,420 L880,260" stroke="#0078d7" stroke-width="3" fill="none" marker-end="url(#arrow)"></path>
+        <circle cx="830" cy="290" r="20" fill="#0078d7" filter="url(#shadow)"></circle>
+        <text x="830" y="296" class="number-circle">2</text>
+        <text x="800" y="330" class="flow-label" fill="#0062b0">Code Delivery</text>
     </g>
     
     <!-- GitHub to Azure -->
     <g id="github-to-azure">
-        <path d="M880,410 L720,510" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
-        <circle cx="780" cy="480" r="16" fill="#0078d7"></circle>
-        <text x="780" y="485" class="number-circle">3</text>
-        <text x="840" y="460" class="flow-label">Webhooks &amp; Events</text>
+        <path d="M810,360 L670,460" stroke="#0078d7" stroke-width="3" fill="none" marker-end="url(#arrow)"></path>
+        <circle cx="720" cy="430" r="20" fill="#0078d7" filter="url(#shadow)"></circle>
+        <text x="720" y="436" class="number-circle">3</text>
+        <text x="770" y="410" class="flow-label" fill="#0062b0">Webhooks & Events</text>
     </g>
     
     <!-- Azure to SAP -->
     <g id="azure-to-sap">
-        <path d="M400,510 L250,410" stroke="#0078d7" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
-        <circle cx="290" cy="480" r="16" fill="#0078d7"></circle>
-        <text x="290" y="485" class="number-circle">4</text>
-        <text x="350" y="510" class="flow-label">Transport Management</text>
+        <path d="M440,460 L350,360" stroke="#0078d7" stroke-width="3" fill="none" marker-end="url(#arrow)"></path>
+        <circle cx="370" cy="430" r="20" fill="#0078d7" filter="url(#shadow)"></circle>
+        <text x="370" y="436" class="number-circle">4</text>
+        <text x="320" y="410" class="flow-label" fill="#0062b0">Transport Management</text>
     </g>
     
     <!-- Security Monitoring -->
     <g id="security-monitoring">
-        <path d="M250,300 C350,300 550,700 600,620" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow)"></path>
-        <path d="M930,300 C830,300 650,700 600,620" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow)"></path>
-        <circle cx="600" cy="670" r="16" fill="#d13438"></circle>
-        <text x="600" y="675" class="number-circle">5</text>
-        <text x="600" y="700" class="flow-label" fill="#d13438">Security Monitoring &amp; Logging</text>
+        <path d="M250,300 C350,300 550,700 600,620" stroke="#d13438" stroke-width="3" stroke-dasharray="7,5" fill="none" marker-end="url(#sec-arrow)"></path>
+        <path d="M930,300 C830,300 650,700 600,620" stroke="#d13438" stroke-width="3" stroke-dasharray="7,5" fill="none" marker-end="url(#sec-arrow)"></path>
+        <circle cx="600" cy="670" r="20" fill="#d13438" filter="url(#shadow)"></circle>
+        <text x="600" y="676" class="number-circle">5</text>
+        <text x="600" y="710" class="flow-label" fill="#d13438" font-weight="bold">Security Monitoring & Logging</text>
     </g>
     
     <!-- Legend -->
-    <g id="legend" transform="translate(100, 730)">
-        <rect width="1000" height="50" rx="4" fill="white" stroke="#666666"></rect>
+    <g id="legend" transform="translate(150, 720)">
+        <rect width="900" height="60" rx="8" fill="white" stroke="#dddddd" stroke-width="2"></rect>
         
         <!-- SAP Color -->
-        <rect x="20" y="15" width="20" height="20" rx="2" fill="#0070f2"></rect>
-        <text x="50" y="30">SAP Components</text>
+        <rect x="30" y="20" width="24" height="24" rx="4" fill="url(#sap-gradient)"></rect>
+        <text x="64" y="36" class="legend-text">SAP Components</text>
         
         <!-- GitHub Color -->
-        <rect x="200" y="15" width="20" height="20" rx="2" fill="#6e5494"></rect>
-        <text x="230" y="30">GitHub Components</text>
+        <rect x="220" y="20" width="24" height="24" rx="4" fill="url(#github-gradient)"></rect>
+        <text x="254" y="36" class="legend-text">GitHub Components</text>
         
         <!-- Azure Color -->
-        <rect x="400" y="15" width="20" height="20" rx="2" fill="#0078d4"></rect>
-        <text x="430" y="30">Azure Components</text>
+        <rect x="410" y="20" width="24" height="24" rx="4" fill="url(#azure-gradient)"></rect>
+        <text x="444" y="36" class="legend-text">Azure Components</text>
         
         <!-- Data Flow -->
-        <line x1="580" y1="25" x2="620" y2="25" stroke="#0078d7" stroke-width="2" marker-end="url(#arrow)"></line>
-        <text x="650" y="30">Data Flow</text>
+        <line x1="580" y1="32" x2="620" y2="32" stroke="#0078d7" stroke-width="3" marker-end="url(#arrow)"></line>
+        <text x="660" y="36" class="legend-text">Data Flow</text>
         
         <!-- Security Monitoring -->
-        <line x1="780" y1="25" x2="820" y2="25" stroke="#d13438" stroke-width="2" stroke-dasharray="5,5"></line>
-        <text x="850" y="30">Security Monitoring</text>
+        <line x1="750" y1="32" x2="790" y2="32" stroke="#d13438" stroke-width="3" stroke-dasharray="7,5"></line>
+        <text x="830" y="36" class="legend-text">Security Monitoring</text>
     </g>
 </svg>

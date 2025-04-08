@@ -1,32 +1,56 @@
 # 🔗 SAP-GitHub Integration Playbook
 
 <div align="center" class="svg-container">
-  <!-- Using both object and img as fallback for maximum compatibility -->
-  <object type="image/svg+xml" data="assets/images/architecture/high-level-architecture.svg" style="width: 700px; max-width: 100%;" aria-label="SAP-GitHub Integration Architecture">
-    <img src="assets/images/architecture/high-level-architecture.svg" alt="SAP-GitHub Integration Architecture" width="700" />
-  </object>
+  <img src="assets/images/architecture/high-level-architecture.svg" alt="SAP-GitHub Integration Architecture" width="800">
   
   *Strategic integration between SAP systems and GitHub for modern enterprise development*
 </div>
 
 ## 📋 Table of Contents
 
-- [Introduction](#introduction)
+- [About this Playbook](#about-this-playbook)
+- [Strategic Benefits](#strategic-benefits)
+- [Implementation Journey](#implementation-journey)
 - [Key Features](#key-features)
-- [Repository Structure](#repository-structure)
+- [Use Cases](#use-cases)
+- [Documentation Structure](#documentation-structure)
 - [Getting Started](#getting-started)
-- [Documentation](#documentation)
-- [Examples](#examples)
-- [Contributing](#contributing)
-- [License](#license)
+- [Complete Documentation](#complete-documentation)
+- [Contribution and Support](#contribution-and-support)
 
-## Introduction
+## About this Playbook
 
-The SAP-GitHub Integration Playbook provides comprehensive guidance for implementing a modern, secure, and efficient integration between SAP systems and GitHub. This integration enables organizations to leverage GitHub's collaborative development features while maintaining the governance and stability required for SAP systems.
+The **SAP-GitHub Integration Playbook** provides comprehensive guidance for implementing a modern, secure, and efficient integration between SAP systems and GitHub. This integration enables organizations to leverage GitHub's collaborative development features while maintaining the governance and stability required for SAP systems.
 
 This playbook is designed for SAP architects, developers, and operations teams looking to modernize their development practices by adopting industry-standard DevOps approaches while respecting the unique requirements of SAP environments.
 
+## Strategic Benefits
+
+Implementing this integration offers significant benefits for organizations:
+
+- **30-40% reduction in development cycle time**
+- **15-25% decrease in maintenance costs**
+- **20-30% fewer production defects**
+- **25-35% improvement in developer productivity**
+- **60-80% reduction in security vulnerabilities**
+
+For a detailed ROI analysis and case studies, see our [Executive Overview](docs/executive-overview.md).
+
+## Implementation Journey
+
+Our implementation approach follows a clear, structured path:
+
+1. **[Initial Assessment](docs/getting-started/prerequisites.md)** - Analysis of requirements and existing systems
+2. **[Planning](docs/getting-started/implementation-plan.md)** - Establishment of goals and timeline
+3. **[Infrastructure Setup](docs/documentation/guides/index.md)** - Preparation of SAP and GitHub systems
+4. **[Integration Implementation](docs/documentation/guides/workflows/index.md)** - Development of integration components
+5. **[Security Configuration](docs/documentation/guides/security-setup/index.md)** - Implementation of security controls
+6. **[Testing and Validation](docs/documentation/guides/tutorials/index.md)** - Comprehensive integration verification
+7. **[Operations and Maintenance](docs/documentation/operations/maintenance/index.md)** - Ongoing solution management
+
 ## Key Features
+
+This playbook covers the following integration features:
 
 - **Bidirectional Code Synchronization**: Seamless code flow between SAP systems and GitHub
 - **Automated Workflows**: CI/CD pipelines for SAP development
@@ -36,61 +60,67 @@ This playbook is designed for SAP architects, developers, and operations teams l
 - **AI-Assisted Development**: Custom GitHub Copilot integration for SAP development
 - **Comprehensive Monitoring**: End-to-end visibility of the development pipeline
 
-## Repository Structure
+## Use Cases
 
-This repository is organized as follows:
+This playbook covers various integration scenarios:
+
+### SAP ERP Systems (Traditional ABAP)
+- [With CHARM Implementation](docs/documentation/guides/erp-abap/with-charm.md)
+- [Without CHARM Implementation](docs/documentation/guides/erp-abap/without-charm.md)
+
+### Other SAP Systems
+- [SAP CRM](docs/documentation/guides/crm/index.md)
+- [SAP Business Technology Platform (BTP)](docs/documentation/guides/btp/index.md)
+- [Fiori and UI5 Applications](docs/documentation/guides/fiori-ui5/index.md)
+- [SAP HANA Applications](docs/documentation/architecture/hana-architecture.md)
+
+## Documentation Structure
 
 ```
-sap-github-integration-playbook/
-├── docs/                      # Comprehensive documentation
-│   ├── getting-started/       # Getting started guides
-│   ├── documentation/         # Detailed technical documentation  
-│   ├── examples/              # Implementation examples
-│   └── resources/             # Additional resources and guides
-├── assets/                    # Images, templates, and resources
-├── examples/                  # Sample code and configurations
-└── README.md                  # This file
+SAP-GitHub-Integration-Playbook/
+├── docs/                             # Comprehensive documentation
+│   ├── getting-started/              # Quick start guides
+│   ├── documentation/                # Detailed technical documentation
+│   │   ├── architecture/             # System architecture
+│   │   ├── guides/                   # Implementation guides
+│   │   ├── developer/                # Developer guides
+│   │   ├── operations/               # Operations and maintenance
+│   │   ├── reference/                # Reference documentation
+│   │   └── appendices/               # Additional resources
+│   ├── examples/                     # Implementation examples
+│   └── resources/                    # Additional resources and guides
+├── assets/                           # Images, templates, and resources
+├── examples/                         # Sample code and configurations
+└── README.md                         # This file
 ```
 
 ## Getting Started
 
 To get started with the SAP-GitHub integration:
 
-1. **Prerequisites**: Review the [prerequisites](docs/getting-started/prerequisites.md) to ensure your environment is ready
-2. **Architecture Overview**: Understand the [integration architecture](docs/documentation/architecture/overview.md)
-3. **Implementation Plan**: Follow the [implementation plan](docs/getting-started/implementation-plan.md)
-4. **Configuration Guide**: Set up the integration with the [configuration guide](docs/getting-started/configuration.md)
+1. **Business Overview**: Read our [Executive Overview](docs/executive-overview.md)
+2. **Prerequisites**: Review the [prerequisites](docs/getting-started/prerequisites.md) 
+3. **Architecture**: Understand the [integration architecture](docs/documentation/architecture/index.md)
+4. **Implementation Plan**: Follow the [implementation plan](docs/getting-started/implementation-plan.md)
+5. **Quick Guide**: Get started quickly with our [Quick Start](docs/getting-started/quick-start.md)
 
-## Documentation
+## Complete Documentation
 
-Complete documentation is available in the [docs](docs/) directory:
+Our comprehensive documentation is available in the [docs](docs/) directory:
 
-- [Getting Started Guides](docs/getting-started/README.md) - Quick start and onboarding
-- [Architecture Documentation](docs/documentation/architecture/README.md) - System architecture and design
-- [Developer Guides](docs/documentation/developer/README.md) - Developer-focused documentation
-- [Operations Guides](docs/documentation/operations/README.md) - Day-2 operations and maintenance
-- [Security Documentation](docs/documentation/security/README.md) - Security considerations and implementation
-- [Reference Documentation](docs/documentation/reference/README.md) - API references and detailed specifications
+- **[Getting Started Guides](docs/getting-started/index.md)** - For quick start and onboarding
+- **[Architecture Documentation](docs/documentation/architecture/index.md)** - System architecture and design
+- **[Implementation Guides](docs/documentation/guides/index.md)** - Detailed implementation instructions
+- **[Developer Guides](docs/documentation/developer/README.md)** - Developer-focused documentation
+- **[Operations Guides](docs/documentation/operations/README.md)** - Day-to-day operations and maintenance
+- **[Reference Documentation](docs/documentation/reference/README.md)** - APIs and detailed specifications
+- **[Practical Examples](examples/)** - Example code and reference implementations
 
-## Examples
+## Contribution and Support
 
-The [examples](examples/) directory contains practical examples and sample implementations:
-
-- [ABAP Integration](examples/abap-integration/) - Integration with ABAP systems
-- [GitHub Actions](examples/github-actions/) - Custom GitHub Actions for SAP
-- [API Management](examples/api-management/) - API configurations and examples
-- [Security Configurations](examples/security-config/) - Security implementation examples
-- [End-to-End Scenarios](examples/end-to-end/) - Complete implementation scenarios
-
----
-
-## ⚡ Contributing
-
-We welcome contributions to this project! Please see our [Contributing Guide](CONTRIBUTING.md) for more information.
-
-## ⚡ License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- **[How to Contribute](CONTRIBUTING.md)** - Guidelines for contributing to this project
+- **License** - This project is licensed under the [MIT License](LICENSE)
+- **Support** - For support issues, please open an [Issue](https://github.com/your-org/sap-github-integration-playbook/issues)
 
 ---
 

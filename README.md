@@ -1,7 +1,10 @@
 # 🔗 SAP-GitHub Integration Playbook
 
 <div align="center" class="svg-container">
-  <img src="assets/images/architecture/high-level-architecture.svg" alt="SAP-GitHub Integration Architecture" width="800">
+  <!-- Using both object and img as fallback for maximum compatibility -->
+  <object type="image/svg+xml" data="assets/images/architecture/high-level-architecture.svg" style="width: 700px; max-width: 100%;" aria-label="SAP-GitHub Integration Architecture">
+    <img src="assets/images/architecture/high-level-architecture.svg" alt="SAP-GitHub Integration Architecture" width="700" />
+  </object>
   
   *Strategic integration between SAP systems and GitHub for modern enterprise development*
 </div>

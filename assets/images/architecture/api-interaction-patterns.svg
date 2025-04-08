@@ -2,9 +2,9 @@
 <svg
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
-   width="800"
-   height="500"
-   viewBox="0 0 800 500"
+   width="1000"
+   height="600"
+   viewBox="0 0 1000 600"
    version="1.1"
    id="api-patterns">
   
@@ -18,64 +18,70 @@
     <style type="text/css">
       /* Base styles */
       .diagram-background {
-        fill: white;
+        fill: #FAFAFA;
       }
       
       /* SAP Components */
       .sap-component {
-        fill: #0BAF51;
-        stroke: #097F3A;
+        fill: #42A5F5;
+        stroke: #1976D2;
         stroke-width: 2;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.15));
       }
       
       /* GitHub Components */
       .github-component {
-        fill: #6E5494;
-        stroke: #4C3A68;
+        fill: #AB47BC;
+        stroke: #7E57C2;
         stroke-width: 2;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.15));
       }
       
       /* Integration Components */
       .integration-component {
-        fill: #6B6B6B;
-        stroke: #4A4A4A;
+        fill: #66BB6A;
+        stroke: #43A047;
         stroke-width: 2;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.15));
       }
       
       /* Connections */
       .connection {
-        stroke: #333333;
-        stroke-width: 2;
+        stroke: #9E9E9E;
+        stroke-width: 2.5;
         fill: none;
       }
       
       /* Text styles */
       .diagram-title {
-        font-family: 'Segoe UI', Arial, sans-serif;
-        font-size: 24px;
+        font-family: 'Arial', sans-serif;
+        font-size: 28px;
         font-weight: bold;
         text-anchor: middle;
+        fill: #212121;
       }
       
       .component-label {
-        font-family: 'Segoe UI', Arial, sans-serif;
-        font-size: 14px;
-        font-weight: semibold;
+        font-family: 'Arial', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
         text-anchor: middle;
         fill: white;
       }
       
       .pattern-title {
-        font-family: 'Segoe UI', Arial, sans-serif;
-        font-size: 18px;
+        font-family: 'Arial', sans-serif;
+        font-size: 22px;
         font-weight: bold;
         text-anchor: middle;
+        fill: #424242;
       }
       
       .pattern-description {
-        font-family: 'Segoe UI', Arial, sans-serif;
-        font-size: 12px;
+        font-family: 'Arial', sans-serif;
+        font-size: 14px;
         text-anchor: middle;
+        fill: #616161;
       }
     </style>
     
@@ -85,10 +91,10 @@
        viewBox="0 0 10 10"
        refX="9"
        refY="5"
-       markerWidth="6"
-       markerHeight="6"
+       markerWidth="7"
+       markerHeight="7"
        orient="auto">
-      <path d="M 0,0 L 10,5 L 0,10 z" fill="#333333" />
+      <path d="M 0,0 L 10,5 L 0,10 z" fill="#9E9E9E" />
     </marker>
     
     <!-- Bidirectional arrow markers -->
@@ -97,296 +103,296 @@
        viewBox="0 0 10 10"
        refX="5"
        refY="5"
-       markerWidth="6"
-       markerHeight="6"
+       markerWidth="7"
+       markerHeight="7"
        orient="auto">
-      <path d="M 0,0 L 10,5 L 0,10 z" fill="#333333" />
+      <path d="M 0,0 L 10,5 L 0,10 z" fill="#9E9E9E" />
     </marker>
   </defs>
   
   <!-- Background -->
   <rect
      class="diagram-background"
-     width="800"
-     height="500"
+     width="1000"
+     height="600"
      x="0"
      y="0"
-     rx="5"
-     ry="5" />
+     rx="8"
+     ry="8" />
   
   <!-- Title -->
   <text
      class="diagram-title"
-     x="400"
-     y="40">
+     x="500"
+     y="50">
     API Interaction Patterns
   </text>
   
   <!-- Pattern 1: Direct API Call -->
   <text
      class="pattern-title"
-     x="200"
-     y="80">
+     x="250"
+     y="100">
     Pattern 1: Direct API Call
   </text>
   
   <!-- SAP System (Pattern 1) -->
   <rect
      class="sap-component"
-     x="100"
-     y="100"
-     width="100"
-     height="70"
-     rx="10"
-     ry="10" />
+     x="120"
+     y="120"
+     width="130"
+     height="80"
+     rx="12"
+     ry="12" />
   <text
      class="component-label"
-     x="150"
-     y="140">
+     x="185"
+     y="165">
     SAP System
   </text>
   
   <!-- GitHub (Pattern 1) -->
   <rect
      class="github-component"
-     x="300"
-     y="100"
-     width="100"
-     height="70"
-     rx="10"
-     ry="10" />
+     x="350"
+     y="120"
+     width="130"
+     height="80"
+     rx="12"
+     ry="12" />
   <text
      class="component-label"
-     x="350"
-     y="140">
+     x="415"
+     y="165">
     GitHub API
   </text>
   
   <!-- Connection (Pattern 1) -->
   <path
      class="connection"
-     d="M 200,135 L 300,135"
+     d="M 250,160 L 350,160"
      marker-end="url(#arrow)" />
   
   <text
      class="pattern-description"
-     x="200"
-     y="200">
+     x="250"
+     y="230">
     Direct API calls from SAP to GitHub,
   </text>
   <text
      class="pattern-description"
-     x="200"
-     y="220">
+     x="250"
+     y="255">
     typically used for simple integrations
   </text>
   
   <!-- Pattern 2: API Gateway -->
   <text
      class="pattern-title"
-     x="600"
-     y="80">
+     x="750"
+     y="100">
     Pattern 2: API Gateway
   </text>
   
   <!-- SAP System (Pattern 2) -->
   <rect
      class="sap-component"
-     x="500"
-     y="100"
-     width="100"
-     height="70"
-     rx="10"
-     ry="10" />
+     x="620"
+     y="120"
+     width="130"
+     height="80"
+     rx="12"
+     ry="12" />
   <text
      class="component-label"
-     x="550"
-     y="140">
+     x="685"
+     y="165">
     SAP System
   </text>
   
   <!-- API Gateway (Pattern 2) -->
   <rect
      class="integration-component"
-     x="650"
-     y="100"
-     width="100"
-     height="70"
-     rx="10"
-     ry="10" />
+     x="820"
+     y="120"
+     width="130"
+     height="80"
+     rx="12"
+     ry="12" />
   <text
      class="component-label"
-     x="700"
-     y="140">
+     x="885"
+     y="165">
     API Gateway
   </text>
   
   <!-- GitHub (Pattern 2) -->
   <rect
      class="github-component"
-     x="650"
-     y="220"
-     width="100"
-     height="70"
-     rx="10"
-     ry="10" />
+     x="820"
+     y="260"
+     width="130"
+     height="80"
+     rx="12"
+     ry="12" />
   <text
      class="component-label"
-     x="700"
-     y="260">
+     x="885"
+     y="305">
     GitHub API
   </text>
   
   <!-- Connections (Pattern 2) -->
   <path
      class="connection"
-     d="M 600,135 L 650,135"
+     d="M 750,160 L 820,160"
      marker-end="url(#arrow)" />
   <path
      class="connection"
-     d="M 700,170 L 700,220"
+     d="M 885,200 L 885,260"
      marker-end="url(#arrow)" />
   
   <text
      class="pattern-description"
-     x="600"
-     y="200">
+     x="750"
+     y="230">
     API Gateway mediates calls between
   </text>
   <text
      class="pattern-description"
-     x="600"
-     y="320">
+     x="750"
+     y="370">
     systems, providing security and transformation
   </text>
   
   <!-- Pattern 3: Event-driven Integration -->
   <text
      class="pattern-title"
-     x="200"
-     y="380">
+     x="250"
+     y="430">
     Pattern 3: Event-driven Integration
   </text>
   
   <!-- SAP System (Pattern 3) -->
   <rect
      class="sap-component"
-     x="100"
-     y="400"
-     width="100"
-     height="70"
-     rx="10"
-     ry="10" />
+     x="120"
+     y="450"
+     width="130"
+     height="80"
+     rx="12"
+     ry="12" />
   <text
      class="component-label"
-     x="150"
-     y="440">
+     x="185"
+     y="495">
     SAP System
   </text>
   
   <!-- Event Bus (Pattern 3) -->
   <rect
      class="integration-component"
-     x="250"
-     y="400"
-     width="100"
-     height="70"
-     rx="10"
-     ry="10" />
+     x="300"
+     y="450"
+     width="130"
+     height="80"
+     rx="12"
+     ry="12" />
   <text
      class="component-label"
-     x="300"
-     y="440">
+     x="365"
+     y="495">
     Event Bus
   </text>
   
   <!-- GitHub (Pattern 3) -->
   <rect
      class="github-component"
-     x="400"
-     y="400"
-     width="100"
-     height="70"
-     rx="10"
-     ry="10" />
+     x="480"
+     y="450"
+     width="130"
+     height="80"
+     rx="12"
+     ry="12" />
   <text
      class="component-label"
-     x="450"
-     y="440">
+     x="545"
+     y="495">
     GitHub
   </text>
   
   <!-- Connections (Pattern 3) -->
   <path
      class="connection"
-     d="M 200,435 L 250,435"
+     d="M 250,490 L 300,490"
      marker-end="url(#arrow)" />
   <path
      class="connection"
-     d="M 350,435 L 400,435"
+     d="M 430,490 L 480,490"
      marker-end="url(#arrow)" />
   
   <text
      class="pattern-description"
-     x="250"
-     y="490">
+     x="300"
+     y="560">
     Event-based integration using message bus for asynchronous communication
   </text>
   
   <!-- Pattern 4: Hybrid Integration -->
   <text
      class="pattern-title"
-     x="650"
-     y="380">
+     x="750"
+     y="430">
     Pattern 4: Hybrid Integration
   </text>
   
   <!-- SAP System (Pattern 4) -->
   <rect
      class="sap-component"
-     x="550"
-     y="400"
-     width="100"
-     height="70"
-     rx="10"
-     ry="10" />
+     x="650"
+     y="450"
+     width="130"
+     height="80"
+     rx="12"
+     ry="12" />
   <text
      class="component-label"
-     x="600"
-     y="440">
+     x="715"
+     y="495">
     SAP System
   </text>
   
   <!-- GitHub (Pattern 4) -->
   <rect
      class="github-component"
-     x="750"
-     y="400"
-     width="100"
-     height="70"
-     rx="10"
-     ry="10" />
+     x="850"
+     y="450"
+     width="130"
+     height="80"
+     rx="12"
+     ry="12" />
   <text
      class="component-label"
-     x="800"
-     y="440">
+     x="915"
+     y="495">
     GitHub
   </text>
   
   <!-- Connection (Pattern 4) -->
   <path
      class="connection"
-     d="M 650,435 C 670,400 730,400 750,435"
+     d="M 780,480 C 800,450 830,450 850,480"
      marker-end="url(#arrow)" />
   <path
      class="connection"
-     d="M 750,465 C 730,500 670,500 650,465"
+     d="M 850,500 C 830,530 800,530 780,500"
      marker-end="url(#arrow)" />
   
   <text
      class="pattern-description"
-     x="650"
-     y="490">
+     x="785"
+     y="560">
     Combination of synchronous and asynchronous patterns
   </text>
 </svg> 

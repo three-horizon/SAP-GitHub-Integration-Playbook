@@ -1,229 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200px" height="800px" viewBox="0 0 1200 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>SAP-GitHub Integration - High-Level Architecture</title>
-    <desc>High-level architecture diagram showing SAP, GitHub and Azure integration components</desc>
-    <defs>
-        <rect id="system-container" width="320" height="240" rx="12"></rect>
-        <rect id="component-container" width="280" height="90" rx="6"></rect>
-        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
-            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
-            <feComponentTransfer>
-                <feFuncA type="linear" slope="0.15" />
-            </feComponentTransfer>
-            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-        </filter>
-        <linearGradient id="sap-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#3a8dee;stop-opacity:1" />
-        </linearGradient>
-        <linearGradient id="github-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color:#9d7fb2;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#8b6ca0;stop-opacity:1" />
-        </linearGradient>
-        <linearGradient id="azure-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color:#44a7e6;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#3798d8;stop-opacity:1" />
-        </linearGradient>
-        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
-            markerWidth="6" markerHeight="6" orient="auto">
-            <path d="M 0 0 L 10 5 L 0 10 z" fill="#6bacdd"/>
-        </marker>
-        <marker id="sec-arrow" viewBox="0 0 10 10" refX="9" refY="5"
-            markerWidth="6" markerHeight="6" orient="auto">
-            <path d="M 0 0 L 10 5 L 0 10 z" fill="#e67f83"/>
-        </marker>
-        <style type="text/css">
-            @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&amp;display=swap');
-            text {
-                font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-                font-size: 14px;
-                fill: #333333;
-            }
-            .title {
-                font-size: 28px;
-                font-weight: 600;
-                letter-spacing: 0.5px;
-            }
-            .subtitle {
-                font-size: 20px;
-                font-weight: 600;
-            }
-            .system-title {
-                font-size: 22px;
-                font-weight: 600;
-                text-anchor: middle;
-            }
-            .component-title {
-                font-size: 16px;
-                font-weight: 600;
-                text-anchor: middle;
-            }
-            .component-subtitle {
-                font-size: 13px;
-                text-anchor: middle;
-                fill: #ffffff;
-                opacity: 0.9;
-            }
-            .flow-label {
-                font-size: 14px;
-                font-weight: 600;
-                text-anchor: middle;
-            }
-            .number-circle {
-                font-size: 18px;
-                font-weight: 700;
-                text-anchor: middle;
-                fill: white;
-            }
-            .legend-text {
-                font-size: 15px;
-            }
-        </style>
-    </defs>
+<svg width="800" height="520" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Arrow marker definitions -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
     
-    <!-- Background -->
-    <g id="background">
-        <rect width="1200" height="800" rx="0" fill="#f5f7fa"></rect>
-    </g>
+    <!-- Gradient definitions for borders -->
+    <linearGradient id="github-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a794c7" />
+      <stop offset="100%" stop-color="#9580b3" />
+    </linearGradient>
+    <linearGradient id="microsoft-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#83c2ff" />
+      <stop offset="100%" stop-color="#6eb4f2" />
+    </linearGradient>
+    <linearGradient id="sap-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86d7a6" />
+      <stop offset="100%" stop-color="#6cc28e" />
+    </linearGradient>
+    <linearGradient id="security-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffa7a5" />
+      <stop offset="100%" stop-color="#ff8c89" />
+    </linearGradient>
     
-    <!-- Title -->
-    <g id="title-section">
-        <rect x="0" y="0" width="1200" height="80" fill="#eef1f5"></rect>
-        <text x="600" y="50" class="title" text-anchor="middle">SAP-GitHub Integration - High-Level Architecture</text>
-    </g>
-    
-    <!-- SAP Environment -->
-    <g id="sap-environment" transform="translate(100, 120)">
-        <use href="#system-container" fill="#f0f7ff" stroke="#6bacdd" stroke-width="2" filter="url(#shadow)"></use>
-        <text x="160" y="40" class="system-title">SAP Environment</text>
-        
-        <!-- SAP Systems -->
-        <g transform="translate(20, 70)">
-            <use href="#component-container" fill="url(#sap-gradient)" filter="url(#shadow)"></use>
-            <text x="140" y="40" class="component-title" fill="white">SAP Systems</text>
-            <text x="140" y="65" class="component-subtitle">DEV, QAS, PRD</text>
-        </g>
-        
-        <!-- abapGit -->
-        <g transform="translate(20, 170)">
-            <rect width="280" height="90" rx="6" fill="#af5f87" filter="url(#shadow)"></rect>
-            <text x="140" y="40" class="component-title" fill="white">abapGit</text>
-            <text x="140" y="65" class="component-subtitle">Git Client for ABAP</text>
-        </g>
-    </g>
-    
-    <!-- GitHub Environment -->
-    <g id="github-environment" transform="translate(780, 120)">
-        <use href="#system-container" fill="#f9f6fa" stroke="#9d7fb2" stroke-width="2" filter="url(#shadow)"></use>
-        <text x="160" y="40" class="system-title">GitHub Environment</text>
-        
-        <!-- GitHub Enterprise -->
-        <g transform="translate(20, 70)">
-            <use href="#component-container" fill="url(#github-gradient)" filter="url(#shadow)"></use>
-            <text x="140" y="40" class="component-title" fill="white">GitHub Enterprise</text>
-            <text x="140" y="65" class="component-subtitle">Repositories, PRs</text>
-        </g>
-        
-        <!-- GitHub Actions -->
-        <g transform="translate(20, 170)">
-            <rect width="280" height="90" rx="6" fill="#58a6f5" filter="url(#shadow)"></rect>
-            <text x="140" y="40" class="component-title" fill="white">GitHub Actions</text>
-            <text x="140" y="65" class="component-subtitle">CI/CD Workflows</text>
-        </g>
-    </g>
-    
-    <!-- Azure Integration Layer -->
-    <g id="azure-integration" transform="translate(300, 460)">
-        <rect width="600" height="240" rx="12" fill="#f0f6fa" stroke="#6bacdd" stroke-width="2" filter="url(#shadow)"></rect>
-        <text x="300" y="40" class="system-title">Microsoft Azure Integration</text>
-        
-        <!-- API Management -->
-        <g transform="translate(60, 70)">
-            <rect width="230" height="90" rx="6" fill="#a67fbc" filter="url(#shadow)"></rect>
-            <text x="115" y="40" class="component-title" fill="white">API Management</text>
-            <text x="115" y="65" class="component-subtitle">Integration Gateway</text>
-        </g>
-        
-        <!-- Key Vault -->
-        <g transform="translate(310, 70)">
-            <rect width="230" height="90" rx="6" fill="#ffd580" filter="url(#shadow)"></rect>
-            <text x="115" y="40" class="component-title" fill="#444444">Key Vault</text>
-            <text x="115" y="65" class="component-subtitle" fill="#444444">Secure Secret Storage</text>
-        </g>
-        
-        <!-- Security Monitoring -->
-        <g transform="translate(185, 170)">
-            <rect width="230" height="90" rx="6" fill="#4b88c5" filter="url(#shadow)"></rect>
-            <text x="115" y="40" class="component-title" fill="white">Security Monitoring</text>
-            <text x="115" y="65" class="component-subtitle">Audit & Logging</text>
-        </g>
-    </g>
-    
-    <!-- Connection Arrows -->
-    <!-- SAP to Azure -->
-    <g id="sap-to-azure">
-        <path d="M270,280 L400,460" stroke="#6bacdd" stroke-width="2.5" fill="none" marker-end="url(#arrow)"></path>
-        <circle cx="310" cy="340" r="18" fill="#6bacdd" filter="url(#shadow)"></circle>
-        <text x="310" y="346" class="number-circle">1</text>
-        <text x="355" y="380" class="flow-label" fill="#428cc7">Code Extraction</text>
-    </g>
-    
-    <!-- Azure to GitHub -->
-    <g id="azure-to-github">
-        <path d="M780,460 L880,280" stroke="#6bacdd" stroke-width="2.5" fill="none" marker-end="url(#arrow)"></path>
-        <circle cx="850" cy="340" r="18" fill="#6bacdd" filter="url(#shadow)"></circle>
-        <text x="850" y="346" class="number-circle">2</text>
-        <text x="820" y="380" class="flow-label" fill="#428cc7">Code Delivery</text>
-    </g>
-    
-    <!-- GitHub to Azure -->
-    <g id="github-to-azure">
-        <path d="M820,380 L710,480" stroke="#6bacdd" stroke-width="2.5" fill="none" marker-end="url(#arrow)"></path>
-        <circle cx="750" cy="430" r="18" fill="#6bacdd" filter="url(#shadow)"></circle>
-        <text x="750" y="436" class="number-circle">3</text>
-        <text x="790" y="420" class="flow-label" fill="#428cc7">Webhooks & Events</text>
-    </g>
-    
-    <!-- Azure to SAP -->
-    <g id="azure-to-sap">
-        <path d="M400,480 L270,380" stroke="#6bacdd" stroke-width="2.5" fill="none" marker-end="url(#arrow)"></path>
-        <circle cx="320" cy="430" r="18" fill="#6bacdd" filter="url(#shadow)"></circle>
-        <text x="320" y="436" class="number-circle">4</text>
-        <text x="280" y="420" class="flow-label" fill="#428cc7">Transport Management</text>
-    </g>
-    
-    <!-- Security Monitoring -->
-    <g id="security-monitoring">
-        <path d="M220,300 C350,350 550,730 600,650" stroke="#e67f83" stroke-width="2.5" stroke-dasharray="7,5" fill="none" marker-end="url(#sec-arrow)"></path>
-        <path d="M980,300 C850,350 650,730 600,650" stroke="#e67f83" stroke-width="2.5" stroke-dasharray="7,5" fill="none" marker-end="url(#sec-arrow)"></path>
-        <circle cx="600" cy="700" r="18" fill="#e67f83" filter="url(#shadow)"></circle>
-        <text x="600" y="706" class="number-circle">5</text>
-        <text x="600" y="730" class="flow-label" fill="#d45c60" font-weight="bold">Security Monitoring & Logging</text>
-    </g>
-    
-    <!-- Legend -->
-    <g id="legend" transform="translate(200, 750)">
-        <rect width="800" height="50" rx="8" fill="white" stroke="#dddddd" stroke-width="1.5"></rect>
-        
-        <!-- SAP Color -->
-        <rect x="30" y="15" width="20" height="20" rx="4" fill="url(#sap-gradient)"></rect>
-        <text x="60" y="30" class="legend-text">SAP Components</text>
-        
-        <!-- GitHub Color -->
-        <rect x="200" y="15" width="20" height="20" rx="4" fill="url(#github-gradient)"></rect>
-        <text x="230" y="30" class="legend-text">GitHub Components</text>
-        
-        <!-- Azure Color -->
-        <rect x="380" y="15" width="20" height="20" rx="4" fill="url(#azure-gradient)"></rect>
-        <text x="410" y="30" class="legend-text">Azure Components</text>
-        
-        <!-- Data Flow -->
-        <line x1="520" y1="25" x2="560" y2="25" stroke="#6bacdd" stroke-width="2.5" marker-end="url(#arrow)"></line>
-        <text x="600" y="30" class="legend-text">Data Flow</text>
-        
-        <!-- Security Monitoring -->
-        <line x1="670" y1="25" x2="710" y2="25" stroke="#e67f83" stroke-width="2.5" stroke-dasharray="7,5"></line>
-        <text x="750" y="30" class="legend-text">Security Monitoring</text>
-    </g>
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="520" fill="#F8F9FA" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">SAP-GitHub Enterprise Integration Architecture</text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666">High-Level Architecture Overview</text>
+  
+  <!-- Main Components - With white interiors and colored borders -->
+  
+  <!-- GitHub Enterprise -->
+  <rect x="100" y="120" width="180" height="180" rx="10" ry="10" fill="white" stroke="url(#github-gradient)" stroke-width="4" filter="url(#shadow)"/>
+  <text x="190" y="150" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">GitHub Enterprise</text>
+  
+  <text x="190" y="190" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Code Repository</text>
+  <text x="190" y="220" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Pull Requests</text>
+  <text x="190" y="250" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">GitHub Actions</text>
+  <text x="190" y="280" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">GitHub Copilot</text>
+  
+  <!-- Microsoft API Management -->
+  <rect x="310" y="160" width="180" height="100" rx="10" ry="10" fill="white" stroke="url(#microsoft-gradient)" stroke-width="4" filter="url(#shadow)"/>
+  <text x="400" y="190" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Microsoft API</text>
+  <text x="400" y="215" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Management</text>
+  <text x="400" y="245" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Integration Middleware</text>
+  
+  <!-- SAP Systems -->
+  <rect x="520" y="120" width="180" height="180" rx="10" ry="10" fill="white" stroke="url(#sap-gradient)" stroke-width="4" filter="url(#shadow)"/>
+  <text x="610" y="150" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">SAP Landscape</text>
+  
+  <text x="610" y="190" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Development (DEV)</text>
+  <text x="610" y="220" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Quality (QAS)</text>
+  <text x="610" y="250" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Production (PRD)</text>
+  <text x="610" y="280" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Transport Management</text>
+  
+  <!-- Security Layer - white interior -->
+  <rect x="100" y="330" width="600" height="60" rx="10" ry="10" fill="white" stroke="url(#security-gradient)" stroke-width="4" filter="url(#shadow)"/>
+  <text x="400" y="370" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Integrated Security: GitHub Advanced Security + Microsoft Sentinel</text>
+  
+  <!-- Connection Lines - Horizontal -->
+  <!-- GitHub to APIM -->
+  <path d="M280 190 L310 190" fill="none" stroke="#666" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- APIM to SAP -->
+  <path d="M490 190 L520 190" fill="none" stroke="#666" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- APIM to GitHub -->
+  <path d="M310 230 C300 230, 295 250, 280 250" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  
+  <!-- SAP to APIM -->
+  <path d="M520 230 C510 230, 505 250, 490 250" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Security connections - matching style of top arrows -->
+  <path d="M190 300 L190 330" fill="none" stroke="#666" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <path d="M400 260 L400 330" fill="none" stroke="#666" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <path d="M610 300 L610 330" fill="none" stroke="#666" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Legend - Moved to bottom -->
+  <rect x="100" y="420" width="600" height="70" rx="5" ry="5" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="400" y="440" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Legend</text>
+  
+  <!-- Legend items -->
+  <rect x="150" y="455" width="20" height="20" fill="white" stroke="url(#github-gradient)" stroke-width="2" rx="3" ry="3"/>
+  <text x="180" y="470" font-family="Arial, sans-serif" font-size="12" fill="#333">GitHub Enterprise</text>
+  
+  <rect x="280" y="455" width="20" height="20" fill="white" stroke="url(#microsoft-gradient)" stroke-width="2" rx="3" ry="3"/>
+  <text x="310" y="470" font-family="Arial, sans-serif" font-size="12" fill="#333">Microsoft APIM</text>
+  
+  <rect x="410" y="455" width="20" height="20" fill="white" stroke="url(#sap-gradient)" stroke-width="2" rx="3" ry="3"/>
+  <text x="440" y="470" font-family="Arial, sans-serif" font-size="12" fill="#333">SAP Systems</text>
+  
+  <rect x="540" y="455" width="20" height="20" fill="white" stroke="url(#security-gradient)" stroke-width="2" rx="3" ry="3"/>
+  <text x="570" y="470" font-family="Arial, sans-serif" font-size="12" fill="#333">Security Layer</text>
+  
+  <!-- Key Workflow Description -->
+  <text x="400" y="100" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666">Automated Development Workflow with Bidirectional Integration</text>
 </svg>

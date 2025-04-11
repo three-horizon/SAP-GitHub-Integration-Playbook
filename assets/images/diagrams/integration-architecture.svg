@@ -78,39 +78,27 @@
   <rect x="470" y="530" width="110" height="40" fill="#f66a0a" rx="5" ry="5" opacity="0.8" />
   <text x="525" y="555" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Webhooks</text>
   
-  <!-- Integration Arrows -->
-  <!-- GitHub Actions to SAP BTP -->
-  <line x1="320" y1="255" x2="480" y2="255" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
-  <text x="400" y="245" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#24292e">Deploy</text>
-  
-  <!-- GitHub Repository to abapGit -->
-  <line x1="320" y1="165" x2="480" y2="345" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
-  <text x="400" y="240" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#24292e">Clone/Pull</text>
-  
-  <!-- abapGit to GitHub Repository -->
-  <line x1="480" y1="335" x2="320" y2="155" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
-  <text x="380" y="220" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#24292e">Push</text>
-  
-  <!-- SAP Transport to GitHub Actions -->
-  <line x1="610" y1="345" x2="320" y2="255" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
-  <text x="470" y="290" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#24292e">Trigger CD</text>
-  
-  <!-- GitHub Issues to SAP BTP -->
-  <line x1="265" y1="380" x2="480" y2="255" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
-  <text x="370" y="330" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#24292e">Integration</text>
-  
-  <!-- SAP ABAP to Integration Components -->
-  <line x1="600" y1="200" x2="400" y2="480" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
-  
-  <!-- GitHub Repository to Integration Components -->
-  <line x1="200" y1="200" x2="400" y2="480" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
-  
   <!-- Arrow Marker definition -->
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#24292e" />
     </marker>
   </defs>
+  
+  <!-- SIMPLIFIED INTEGRATION ARROWS -->
+  <!-- GitHub Repository to abapGit - Two-way arrow -->
+  <path d="M320,165 Q400,165 480,345" stroke="#0366d6" stroke-width="3" fill="none" marker-end="url(#arrow)" stroke-dasharray="0" />
+  <path d="M480,335 Q400,260 320,155" stroke="#6f42c1" stroke-width="3" fill="none" marker-end="url(#arrow)" stroke-dasharray="0" />
+  <text x="400" y="185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#0366d6">Clone/Pull</text>
+  <text x="380" y="230" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6f42c1">Push</text>
+  
+  <!-- GitHub Actions to SAP BTP -->
+  <path d="M320,255 L480,255" stroke="#0366d6" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <text x="400" y="245" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#0366d6">Deploy</text>
+  
+  <!-- SAP Transport to GitHub Actions -->
+  <path d="M610,345 C510,325 400,295 320,255" stroke="#6f42c1" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+  <text x="450" y="315" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6f42c1">Trigger CI/CD</text>
   
   <!-- Legend -->
   <rect x="620" y="530" width="150" height="60" fill="white" rx="5" ry="5" stroke="#d1d5da" stroke-width="1" />

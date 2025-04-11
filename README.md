@@ -1,6 +1,6 @@
 # SAP-GitHub Integration Playbook
 
-![SAP-GitHub Integration Architecture](./assets/images/diagrams/integration-architecture.svg)
+![SAP-GitHub Integration Workflow](./assets/images/diagrams/integration-workflow.svg)
 
 A comprehensive guide for implementing version control, collaborative development, and continuous integration for SAP development objects using GitHub.
 

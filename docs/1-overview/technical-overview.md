@@ -6,7 +6,7 @@ This technical overview provides a concise introduction to the SAP-GitHub integr
 
 ## Integration Architecture
 
-[DIAGRAM: High-level architecture diagram showing SAP system, abapGit, GitHub, and CI/CD components with data flow arrows]
+![SAP-GitHub Integration Architecture](../../assets/images/diagrams/high-level-architecture.svg)
 
 The SAP-GitHub integration architecture consists of the following key components:
 
@@ -59,7 +59,16 @@ GitHub Copilot for ABAP (as of March 2025):
 
 ## Integration Flow
 
-[DIAGRAM: Process flow diagram showing the end-to-end development process from SAP through GitHub to deployment]
+[DIAGRAM: Workflow diagram showing:
+1. Developer coding in SAP system (top left)
+2. abapGit serializing objects to Git format (middle left)
+3. Push to GitHub repository (center)
+4. Pull request creation and code review (top right)
+5. CI/CD pipeline execution (middle right)
+6. Merge to main branch (bottom right)
+7. Pull changes back to other SAP systems (bottom left)
+8. Loop back to developer for next changes
+Arrows showing the circular flow through all steps]
 
 The typical integration flow follows these steps:
 

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="500" fill="#f6f8fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#24292e">SAP-GitHub Integration Architecture</text>
+  
+  <!-- SAP System Box -->
+  <rect x="100" y="100" width="180" height="100" fill="#0070f2" rx="5" ry="5" opacity="0.9" />
+  <text x="190" y="150" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">SAP System</text>
+  <text x="190" y="175" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">ABAP Development</text>
+  
+  <!-- abapGit Box -->
+  <rect x="310" y="125" width="180" height="90" fill="#4a5568" rx="5" ry="5" opacity="0.9" />
+  <text x="400" y="170" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">abapGit</text>
+  <text x="400" y="195" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Version Control Bridge</text>
+  
+  <!-- GitHub Box -->
+  <rect x="520" y="100" width="180" height="100" fill="#6e5494" rx="5" ry="5" opacity="0.9" />
+  <text x="610" y="150" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">GitHub</text>
+  <text x="610" y="175" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Repository</text>
+  
+  <!-- CI/CD Pipeline Box -->
+  <rect x="520" y="250" width="180" height="100" fill="#2ea44f" rx="5" ry="5" opacity="0.9" />
+  <text x="610" y="300" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">CI/CD Pipeline</text>
+  <text x="610" y="325" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Automated Testing</text>
+  
+  <!-- Developer Tools Box -->
+  <rect x="310" y="300" width="180" height="100" fill="#f97316" rx="5" ry="5" opacity="0.9" />
+  <text x="400" y="342" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Developer Tools</text>
+  <text x="400" y="367" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Eclipse + GitHub Copilot</text>
+  
+  <!-- SAP to abapGit Arrow -->
+  <line x1="280" y1="150" x2="310" y2="150" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- abapGit to GitHub Arrow -->
+  <line x1="490" y1="150" x2="520" y2="150" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- GitHub to CI/CD Arrow -->
+  <line x1="610" y1="200" x2="610" y2="250" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- CI/CD to Developer Tools Arrow -->
+  <line x1="520" y1="300" x2="490" y2="300" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Developer Tools to SAP Arrow -->
+  <line x1="400" y1="300" x2="190" y2="200" stroke="#24292e" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)" />
+  
+  <!-- Arrow Marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#24292e" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="100" y="420" width="600" height="40" fill="white" rx="5" ry="5" stroke="#d1d5da" stroke-width="1" />
+  <text x="120" y="445" font-family="Arial, sans-serif" font-size="14" fill="#24292e">Legend:</text>
+  
+  <rect x="190" y="430" width="20" height="20" fill="#0070f2" rx="3" ry="3" />
+  <text x="220" y="445" font-family="Arial, sans-serif" font-size="14" fill="#24292e">SAP System</text>
+  
+  <rect x="320" y="430" width="20" height="20" fill="#6e5494" rx="3" ry="3" />
+  <text x="350" y="445" font-family="Arial, sans-serif" font-size="14" fill="#24292e">GitHub</text>
+  
+  <rect x="450" y="430" width="20" height="20" fill="#2ea44f" rx="3" ry="3" />
+  <text x="480" y="445" font-family="Arial, sans-serif" font-size="14" fill="#24292e">CI/CD Pipeline</text>
+  
+  <rect x="580" y="430" width="20" height="20" fill="#f97316" rx="3" ry="3" />
+  <text x="610" y="445" font-family="Arial, sans-serif" font-size="14" fill="#24292e">Tools</text>
+</svg> 

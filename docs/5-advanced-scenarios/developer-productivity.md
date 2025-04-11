@@ -18,7 +18,7 @@ GitHub Copilot for ABAP offers the following capabilities:
    - Smart pattern recognition based on your coding style
    - Contextual awareness of SAP-specific objects and standards
 
-   ![ABAP Code Completion with GitHub Copilot](../assets/images/copilot/abap-completion-demo.png)
+   [DIAGRAM: ABAP code completion showing GitHub Copilot suggesting code completions in Eclipse for a SELECT statement on a customer table]
 
 2. **In-IDE Chat Support**
    - Integrated chat for ABAP-specific guidance and explanations
@@ -26,7 +26,7 @@ GitHub Copilot for ABAP offers the following capabilities:
    - Code explanations for complex ABAP structures
    - Best practice recommendations for SAP development
 
-   ![ABAP Chat Support with GitHub Copilot](../assets/images/copilot/abap-chat-demo.png)
+   [DIAGRAM: GitHub Copilot chat interface in Eclipse showing a conversation about ABAP data dictionary objects]
 
 3. **SAP-GitHub Integration Benefits**
    - Seamless assistance when pushing SAP changes to GitHub

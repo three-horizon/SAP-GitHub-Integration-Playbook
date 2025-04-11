@@ -16,7 +16,7 @@ Before beginning this tutorial, ensure you have:
 
 ## Workflow Overview
 
-[DIAGRAM: SAP-GitHub development workflow showing the cycle between SAP development, abapGit, GitHub repository, review, and deployment]
+![SAP-GitHub Development Workflow](../../assets/images/workflows/development-workflow.svg)
 
 This tutorial covers the implementation of a standard Git-based development workflow adapted for SAP development:
 
@@ -37,14 +37,14 @@ Continuing from Tutorial 2 where you verified your GitHub integration in Steps 6
 67. Navigate to your repository (the one you created in Steps 43-46 of Tutorial 2)
 68. Click on the branch icon in the abapGit toolbar (usually labeled "main")
 
-    [SCREENSHOT: abapGit repository screen with branch button highlighted]
+    [SCREENSHOT: abapGit repository screen showing the main interface with the branch button highlighted in red circle in the toolbar]
 
 69. In the branch dialog, click **Create New Branch**
 70. Enter a feature branch name using a descriptive convention: `feature/add-customer-list`
 71. Select "Create from: main" to base your new branch on the main branch
 72. Click **Create**
 
-    [SCREENSHOT: abapGit create branch dialog]
+    [SCREENSHOT: abapGit create branch dialog with branch name field filled and creation options]
 
 73. Verify that abapGit indicates you're now working on the new branch
 
@@ -84,7 +84,7 @@ With your feature branch created in Steps 66-73, you'll now implement a new feat
 
 79. Save and activate the program
 
-    [SCREENSHOT: SE80 with the new customer list program]
+    [SCREENSHOT: SE80 editor showing the customer list program code with syntax highlighting]
 
 ### Step 14: Commit and Push the Changes
 
@@ -96,12 +96,12 @@ After implementing your feature in Steps 74-79, you'll commit and push it to you
 83. Check the box next to your program to stage it
 84. Click the **Stage** button
 
-    [SCREENSHOT: abapGit stage screen with the new program selected]
+    [SCREENSHOT: abapGit stage screen showing the new program selected with checkbox and Stage button highlighted]
 
 85. Enter a descriptive commit message: "Add customer list program for data reporting"
 86. Click **Commit**
 
-    [SCREENSHOT: abapGit commit screen with message entered]
+    [SCREENSHOT: abapGit commit screen with message field filled and Commit button highlighted]
 
 87. When prompted, enter your GitHub credentials
 88. Click **Execute** to complete the push
@@ -115,7 +115,7 @@ With your changes committed to the feature branch in Steps 80-89, it's time to c
 91. GitHub should show a notification about your recently pushed branch
 92. Click on the **Compare & pull request** button
 
-    [SCREENSHOT: GitHub repository with compare & pull request notification]
+    [SCREENSHOT: GitHub repository page showing the compare & pull request notification banner for the newly pushed branch]
 
 93. Enter a pull request title: "Add customer list program"
 94. In the description, provide details about your changes:
@@ -129,7 +129,7 @@ With your changes committed to the feature branch in Steps 80-89, it's time to c
    ```
 95. Click **Create pull request**
 
-    [SCREENSHOT: GitHub create pull request screen]
+    [SCREENSHOT: GitHub create pull request screen with title and description filled in and Create pull request button highlighted]
 
 ### Step 16: Review and Merge the Pull Request
 
@@ -142,7 +142,7 @@ In a real-world scenario, another team member would review your changes. For thi
 100. Click the **Merge pull request** button
 101. Click **Confirm merge**
 
-     [SCREENSHOT: GitHub merged pull request screen]
+     [SCREENSHOT: GitHub merged pull request screen showing successful merge message and delete branch option]
 
 102. Verify that GitHub shows the pull request as merged
 103. Click on the **Delete branch** button to clean up the feature branch (optional)
@@ -155,13 +155,13 @@ Now that your changes are merged into the main branch on GitHub in Steps 96-103,
 105. Navigate to your repository
 106. Switch back to the main branch by clicking on the branch icon and selecting "main"
 
-     [SCREENSHOT: abapGit branch selection dialog]
+     [SCREENSHOT: abapGit branch selection dialog with "main" branch highlighted]
 
 107. Click the **Pull** button to fetch the latest changes from GitHub
 108. abapGit will display the changes from your merged pull request
 109. Confirm the pull operation
 
-     [SCREENSHOT: abapGit pull confirmation dialog]
+     [SCREENSHOT: abapGit pull confirmation dialog showing affected objects]
 
 110. Verify that your `Z_CUSTOMER_LIST` program is now part of the main branch in your SAP system
 

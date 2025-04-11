@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="500" fill="#f6f8fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#24292e">SAP-GitHub Deployment Workflow</text>
+  
+  <!-- Merge to Main -->
+  <rect x="100" y="100" width="160" height="70" fill="#6e5494" rx="5" ry="5" opacity="0.9" />
+  <text x="180" y="135" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Merge to Main</text>
+  <text x="180" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Changes merged to main</text>
+  
+  <!-- Release Tag Creation -->
+  <rect x="100" y="200" width="160" height="70" fill="#6e5494" rx="5" ry="5" opacity="0.9" />
+  <text x="180" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Create Release Tag</text>
+  <text x="180" y="255" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Tag with version info</text>
+  
+  <!-- CD Pipeline Trigger -->
+  <rect x="100" y="300" width="160" height="70" fill="#6e5494" rx="5" ry="5" opacity="0.9" />
+  <text x="180" y="335" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">CD Pipeline Trigger</text>
+  <text x="180" y="355" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">GitHub Actions CD workflow</text>
+  
+  <!-- QA Environment -->
+  <rect x="330" y="100" width="160" height="70" fill="#2ea44f" rx="5" ry="5" opacity="0.9" />
+  <text x="410" y="135" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">QA Environment</text>
+  <text x="410" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Deploy to QA system</text>
+  
+  <!-- QA Testing -->
+  <rect x="330" y="200" width="160" height="70" fill="#2ea44f" rx="5" ry="5" opacity="0.9" />
+  <text x="410" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">QA Testing</text>
+  <text x="410" y="255" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Integration & regression</text>
+  
+  <!-- QA Approval -->
+  <polygon points="410,300 370,330 450,330" fill="#d73a49" opacity="0.9" />
+  <text x="410" y="320" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">QA Approval</text>
+  
+  <!-- UAT Environment -->
+  <rect x="560" y="100" width="160" height="70" fill="#2ea44f" rx="5" ry="5" opacity="0.9" />
+  <text x="640" y="135" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">UAT Environment</text>
+  <text x="640" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Deploy to UAT system</text>
+  
+  <!-- UAT Validation -->
+  <rect x="560" y="200" width="160" height="70" fill="#2ea44f" rx="5" ry="5" opacity="0.9" />
+  <text x="640" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">User Acceptance</text>
+  <text x="640" y="255" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">User validation</text>
+  
+  <!-- UAT Approval -->
+  <polygon points="640,300 600,330 680,330" fill="#d73a49" opacity="0.9" />
+  <text x="640" y="320" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">UAT Approval</text>
+  
+  <!-- Production Environment -->
+  <rect x="560" y="360" width="160" height="70" fill="#0070f2" rx="5" ry="5" opacity="0.9" />
+  <text x="640" y="395" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Production</text>
+  <text x="640" y="415" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Deploy to Production</text>
+  
+  <!-- Transport Management -->
+  <rect x="330" y="360" width="160" height="70" fill="#0070f2" rx="5" ry="5" opacity="0.9" />
+  <text x="410" y="395" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Transport</text>
+  <text x="410" y="415" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">SAP Transport Management</text>
+  
+  <!-- Post-Deployment Verification -->
+  <rect x="330" y="460" width="390" height="30" fill="#2ea44f" rx="5" ry="5" opacity="0.9" />
+  <text x="525" y="480" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Post-Deployment Verification</text>
+  
+  <!-- Arrows -->
+  <!-- Merge to Main to Release Tag Creation -->
+  <line x1="180" y1="170" x2="180" y2="200" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Release Tag Creation to CD Pipeline Trigger -->
+  <line x1="180" y1="270" x2="180" y2="300" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- CD Pipeline Trigger to QA Environment -->
+  <line x1="260" y1="335" x2="330" y2="135" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- QA Environment to QA Testing -->
+  <line x1="410" y1="170" x2="410" y2="200" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- QA Testing to QA Approval -->
+  <line x1="410" y1="270" x2="410" y2="300" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- QA Approval to UAT Environment -->
+  <line x1="450" y1="330" x2="560" y2="135" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- UAT Environment to UAT Validation -->
+  <line x1="640" y1="170" x2="640" y2="200" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- UAT Validation to UAT Approval -->
+  <line x1="640" y1="270" x2="640" y2="300" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- UAT Approval to Transport Management -->
+  <line x1="600" y1="330" x2="410" y2="360" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Transport Management to Production Environment -->
+  <line x1="490" y1="395" x2="560" y2="395" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Production Environment to Post-Deployment Verification -->
+  <line x1="640" y1="430" x2="640" y2="460" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Transport Management to Post-Deployment Verification -->
+  <line x1="410" y1="430" x2="410" y2="460" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Failure path from QA Approval -->
+  <line x1="370" y1="330" x2="260" y2="330" stroke="#d73a49" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="260" y1="330" x2="260" y2="135" stroke="#d73a49" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="260" y1="135" x2="260" y2="100" stroke="#d73a49" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow-red)" />
+  
+  <!-- Failure path from UAT Approval -->
+  <line x1="600" y1="330" x2="260" y2="330" stroke="#d73a49" stroke-width="2" stroke-dasharray="5,3" />
+  
+  <!-- Arrow Marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#24292e" />
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d73a49" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="100" y="385" width="180" height="75" fill="white" rx="5" ry="5" stroke="#d1d5da" stroke-width="1" />
+  <text x="110" y="400" font-family="Arial, sans-serif" font-size="12" fill="#24292e">Legend:</text>
+  
+  <rect x="110" y="410" width="12" height="12" fill="#6e5494" rx="2" ry="2" />
+  <text x="130" y="420" font-family="Arial, sans-serif" font-size="10" fill="#24292e">GitHub Activities</text>
+  
+  <rect x="110" y="430" width="12" height="12" fill="#2ea44f" rx="2" ry="2" />
+  <text x="130" y="440" font-family="Arial, sans-serif" font-size="10" fill="#24292e">Testing Environments</text>
+  
+  <rect x="110" y="450" width="12" height="12" fill="#0070f2" rx="2" ry="2" />
+  <text x="130" y="460" font-family="Arial, sans-serif" font-size="10" fill="#24292e">Production Activities</text>
+  
+  <polygon points="206,425 200,432 212,432" fill="#d73a49" />
+  <text x="220" y="440" font-family="Arial, sans-serif" font-size="10" fill="#24292e">Approval Gates</text>
+  
+  <line x1="200" y1="455" x2="220" y2="455" stroke="#d73a49" stroke-width="2" stroke-dasharray="5,3" />
+  <text x="220" y="460" font-family="Arial, sans-serif" font-size="10" fill="#24292e">Failure Path</text>
+</svg> 

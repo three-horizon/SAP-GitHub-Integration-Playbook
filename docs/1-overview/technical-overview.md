@@ -16,6 +16,16 @@ The SAP-GitHub integration architecture consists of the following key components
 4. **CI/CD Pipeline**: Automated tools for testing, validation, and deployment
 5. **Developer Productivity Tools**: Including GitHub Copilot for ABAP
 
+For a more detailed view of the integration architecture including all components and their connections:
+
+![SAP-GitHub Detailed Integration Architecture](../../assets/images/diagrams/detailed-integration-architecture.svg)
+
+## Integration Workflow
+
+The following diagram illustrates the end-to-end workflow for SAP-GitHub integration, showing how code flows between systems and the key processes involved:
+
+![SAP-GitHub Integration Workflow](../../assets/images/diagrams/integration-workflow.svg)
+
 ## Key Components
 
 ### SAP System Requirements

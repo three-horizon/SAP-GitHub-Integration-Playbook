@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="500" fill="#f6f8fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#24292e">SAP-GitHub Integration Workflow</text>
+  
+  <!-- 1. SAP Development -->
+  <rect x="100" y="100" width="160" height="80" fill="#0070f2" rx="5" ry="5" opacity="0.9" />
+  <text x="180" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">1. SAP Development</text>
+  <text x="180" y="160" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Create/Modify ABAP Objects</text>
+  
+  <!-- 2. abapGit Serialization -->
+  <rect x="100" y="220" width="160" height="80" fill="#4a5568" rx="5" ry="5" opacity="0.9" />
+  <text x="180" y="260" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">2. abapGit</text>
+  <text x="180" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Serialize ABAP to Git</text>
+  
+  <!-- 3. Push to GitHub -->
+  <rect x="320" y="160" width="160" height="80" fill="#6e5494" rx="5" ry="5" opacity="0.9" />
+  <text x="400" y="200" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">3. Push to GitHub</text>
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Repository Update</text>
+  
+  <!-- 4. Pull Request -->
+  <rect x="540" y="100" width="160" height="80" fill="#6e5494" rx="5" ry="5" opacity="0.9" />
+  <text x="620" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">4. Pull Request</text>
+  <text x="620" y="160" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Request Code Review</text>
+  
+  <!-- 5. CI/CD Pipeline -->
+  <rect x="540" y="220" width="160" height="80" fill="#2ea44f" rx="5" ry="5" opacity="0.9" />
+  <text x="620" y="260" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">5. CI/CD Pipeline</text>
+  <text x="620" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Automated Testing</text>
+  
+  <!-- 6. Merge -->
+  <rect x="540" y="340" width="160" height="80" fill="#6e5494" rx="5" ry="5" opacity="0.9" />
+  <text x="620" y="380" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">6. Merge</text>
+  <text x="620" y="400" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Code Integration</text>
+  
+  <!-- 7. Pull to SAP -->
+  <rect x="320" y="340" width="160" height="80" fill="#0070f2" rx="5" ry="5" opacity="0.9" />
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">7. Pull to SAP</text>
+  <text x="400" y="400" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Update SAP Systems</text>
+  
+  <!-- 8. Loop Back -->
+  <rect x="100" y="340" width="160" height="80" fill="#d73a49" rx="5" ry="5" opacity="0.8" />
+  <text x="180" y="380" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">8. New Feature</text>
+  <text x="180" y="400" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Repeat Workflow</text>
+  
+  <!-- Arrows -->
+  <!-- 1 to 2 -->
+  <line x1="180" y1="180" x2="180" y2="220" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- 2 to 3 -->
+  <line x1="260" y1="260" x2="320" y2="200" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- 3 to 4 -->
+  <line x1="480" y1="180" x2="540" y2="140" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- 4 to 5 -->
+  <line x1="620" y1="180" x2="620" y2="220" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- 5 to 6 -->
+  <line x1="620" y1="300" x2="620" y2="340" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- 6 to 7 -->
+  <line x1="540" y1="380" x2="480" y2="380" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- 7 to 8 -->
+  <line x1="320" y1="380" x2="260" y2="380" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- 8 to 1 (complete the cycle) -->
+  <line x1="180" y1="340" x2="180" y2="180" stroke="#24292e" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)" />
+  
+  <!-- Arrow Marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#24292e" />
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="550" y="440" width="230" height="45" fill="white" rx="5" ry="5" stroke="#d1d5da" stroke-width="1" />
+  <text x="560" y="455" font-family="Arial, sans-serif" font-size="12" fill="#24292e">Legend:</text>
+  
+  <rect x="610" y="445" width="12" height="12" fill="#0070f2" rx="2" ry="2" />
+  <text x="630" y="455" font-family="Arial, sans-serif" font-size="10" fill="#24292e">SAP Activities</text>
+  
+  <rect x="705" y="445" width="12" height="12" fill="#6e5494" rx="2" ry="2" />
+  <text x="725" y="455" font-family="Arial, sans-serif" font-size="10" fill="#24292e">GitHub Activities</text>
+  
+  <rect x="610" y="465" width="12" height="12" fill="#2ea44f" rx="2" ry="2" />
+  <text x="630" y="475" font-family="Arial, sans-serif" font-size="10" fill="#24292e">CI/CD Activities</text>
+  
+  <rect x="705" y="465" width="12" height="12" fill="#d73a49" rx="2" ry="2" />
+  <text x="725" y="475" font-family="Arial, sans-serif" font-size="10" fill="#24292e">Development Cycle</text>
+</svg> 

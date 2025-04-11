@@ -6,73 +6,76 @@
   <!-- Title -->
   <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#24292e">SAP-GitHub Development Workflow</text>
   
-  <!-- Main Branch -->
-  <rect x="300" y="80" width="200" height="60" fill="#0070f2" rx="5" ry="5" opacity="0.9" />
-  <text x="400" y="115" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Main Branch</text>
-  <text x="400" y="135" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">GitHub Repository</text>
+  <!-- Step 1: Feature Branch Creation -->
+  <rect x="150" y="80" width="500" height="60" fill="#dafbe1" stroke="#2ea44f" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#24292e">1. Create Feature Branch from Main</text>
+  <text x="400" y="130" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#24292e">(git checkout -b feature/new-feature)</text>
   
-  <!-- Feature Branch Creation -->
-  <rect x="100" y="180" width="200" height="60" fill="#6e5494" rx="5" ry="5" opacity="0.8" />
-  <text x="200" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Feature Branch</text>
-  <text x="200" y="230" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">feature/add-customer-list</text>
+  <!-- Arrow 1 to 2 -->
+  <line x1="400" y1="140" x2="400" y2="170" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
   
-  <!-- SAP Development -->
-  <rect x="100" y="280" width="200" height="60" fill="#4a5568" rx="5" ry="5" opacity="0.8" />
-  <text x="200" y="310" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">SAP Development</text>
-  <text x="200" y="330" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Create/Modify ABAP Objects</text>
+  <!-- Step 2: Local Development -->
+  <rect x="150" y="170" width="500" height="60" fill="#dafbe1" stroke="#2ea44f" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="200" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#24292e">2. Local Development with GitHub Copilot</text>
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#24292e">(Code, Build, Unit Test)</text>
   
-  <!-- abapGit Push -->
-  <rect x="100" y="380" width="200" height="60" fill="#2ea44f" rx="5" ry="5" opacity="0.8" />
-  <text x="200" y="410" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">abapGit Push</text>
-  <text x="200" y="430" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Commit & Push to GitHub</text>
+  <!-- Arrow 2 to 3 -->
+  <line x1="400" y1="230" x2="400" y2="260" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
   
-  <!-- Pull Request -->
-  <rect x="500" y="180" width="200" height="60" fill="#6e5494" rx="5" ry="5" opacity="0.8" />
-  <text x="600" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Pull Request</text>
-  <text x="600" y="230" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Request Code Review</text>
+  <!-- Step 3: Commit Changes -->
+  <rect x="150" y="260" width="500" height="60" fill="#dafbe1" stroke="#2ea44f" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="290" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#24292e">3. Commit Changes</text>
+  <text x="400" y="310" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#24292e">(git add . && git commit -m "feat: implement new feature")</text>
   
-  <!-- Code Review -->
-  <rect x="500" y="280" width="200" height="60" fill="#4a5568" rx="5" ry="5" opacity="0.8" />
-  <text x="600" y="310" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Code Review</text>
-  <text x="600" y="330" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Team Reviews Changes</text>
+  <!-- Arrow 3 to 4 -->
+  <line x1="400" y1="320" x2="400" y2="350" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
   
-  <!-- Merge -->
-  <rect x="500" y="380" width="200" height="60" fill="#2ea44f" rx="5" ry="5" opacity="0.8" />
-  <text x="600" y="410" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Merge</text>
-  <text x="600" y="430" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Merge to Main Branch</text>
+  <!-- Step 4: Push to GitHub -->
+  <rect x="150" y="350" width="500" height="60" fill="#dafbe1" stroke="#2ea44f" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#24292e">4. Push to GitHub</text>
+  <text x="400" y="400" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#24292e">(git push origin feature/new-feature)</text>
   
-  <!-- Pull to SAP -->
-  <rect x="300" y="480" width="200" height="60" fill="#0070f2" rx="5" ry="5" opacity="0.9" />
-  <text x="400" y="510" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Pull to SAP</text>
-  <text x="400" y="530" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Update SAP System</text>
+  <!-- Arrow 4 to 5 -->
+  <line x1="400" y1="410" x2="400" y2="440" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
   
-  <!-- Arrows -->
-  <!-- Main to Feature Branch Arrow -->
-  <line x1="300" y1="110" x2="200" y2="180" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  <!-- Step 5: Create Pull Request -->
+  <rect x="150" y="440" width="500" height="60" fill="#f1f8ff" stroke="#0366d6" stroke-width="2" rx="5" ry="5" />
+  <text x="400" y="470" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#24292e">5. Create Pull Request</text>
+  <text x="400" y="490" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#24292e">(GitHub PR: feature/new-feature → main)</text>
   
-  <!-- Feature Branch to SAP Dev Arrow -->
-  <line x1="200" y1="240" x2="200" y2="280" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  <!-- CI/CD Box -->
+  <rect x="680" y="425" width="100" height="90" fill="#ffebda" stroke="#f66a0a" stroke-width="2" rx="5" ry="5" />
+  <text x="730" y="450" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#24292e">CI Pipeline</text>
+  <text x="730" y="470" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#24292e">- Lint</text>
+  <text x="730" y="490" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#24292e">- Test</text>
+  <text x="730" y="510" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#24292e">- Build</text>
   
-  <!-- SAP Dev to abapGit Push Arrow -->
-  <line x1="200" y1="340" x2="200" y2="380" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  <!-- CI/CD Trigger Arrow -->
+  <line x1="650" y1="470" x2="680" y2="470" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
   
-  <!-- abapGit Push to Pull Request Arrow -->
-  <line x1="300" y1="410" x2="500" y2="210" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  <!-- Arrow 5 to 6 -->
+  <line x1="400" y1="500" x2="400" y2="530" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
   
-  <!-- Pull Request to Code Review Arrow -->
-  <line x1="600" y1="240" x2="600" y2="280" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  <!-- Step 6: Code Review -->
+  <rect x="150" y="530" width="240" height="60" fill="#f1f8ff" stroke="#0366d6" stroke-width="2" rx="5" ry="5" />
+  <text x="270" y="560" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#24292e">6. Code Review</text>
+  <text x="270" y="580" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#24292e">(PR Comments, Approvals)</text>
   
-  <!-- Code Review to Merge Arrow -->
-  <line x1="600" y1="340" x2="600" y2="380" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  <!-- Step 7: Merge PR -->
+  <rect x="410" y="530" width="240" height="60" fill="#f1f8ff" stroke="#0366d6" stroke-width="2" rx="5" ry="5" />
+  <text x="530" y="560" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#24292e">7. Merge PR</text>
+  <text x="530" y="580" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#24292e">(Squash & Merge to main)</text>
   
-  <!-- Merge to Main Branch Arrow -->
-  <line x1="600" y1="380" x2="400" y2="140" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  <!-- Arrow 6 to 7 -->
+  <line x1="390" y1="560" x2="410" y2="560" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
   
-  <!-- Main Branch to Pull to SAP Arrow -->
-  <line x1="400" y1="140" x2="400" y2="480" stroke="#24292e" stroke-width="2" marker-end="url(#arrow)" />
+  <!-- Feedback Loop -->
+  <path d="M 150 410 Q 80 410 80 300 Q 80 200 150 200" fill="none" stroke="#d73a49" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)" />
+  <text x="60" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#d73a49" transform="rotate(-90 60,300)">Update based on feedback</text>
   
-  <!-- Pull to SAP to Next Feature Arrow -->
-  <line x1="300" y1="510" x2="100" y2="210" stroke="#24292e" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)" />
+  <!-- SAP Sync Loop -->
+  <path d="M 650 200 Q 720 200 720 300 Q 720 400 650 400" fill="none" stroke="#6f42c1" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)" />
+  <text x="740" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#6f42c1" transform="rotate(90 740,300)">Sync with SAP via abapGit</text>
   
   <!-- Arrow Marker definition -->
   <defs>
@@ -82,15 +85,21 @@
   </defs>
   
   <!-- Legend -->
-  <rect x="600" y="500" width="180" height="80" fill="white" rx="5" ry="5" stroke="#d1d5da" stroke-width="1" />
-  <text x="620" y="520" font-family="Arial, sans-serif" font-size="14" fill="#24292e">Legend:</text>
+  <rect x="20" y="20" width="140" height="120" fill="white" rx="5" ry="5" stroke="#d1d5da" stroke-width="1" />
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#24292e">Legend:</text>
   
-  <rect x="620" y="530" width="15" height="15" fill="#0070f2" rx="3" ry="3" />
-  <text x="645" y="542" font-family="Arial, sans-serif" font-size="12" fill="#24292e">Main Process</text>
+  <rect x="30" y="50" width="12" height="12" fill="#dafbe1" rx="2" ry="2" stroke="#2ea44f" stroke-width="1" />
+  <text x="50" y="60" font-family="Arial, sans-serif" font-size="10" fill="#24292e">Local Development</text>
   
-  <rect x="620" y="550" width="15" height="15" fill="#6e5494" rx="3" ry="3" />
-  <text x="645" y="562" font-family="Arial, sans-serif" font-size="12" fill="#24292e">GitHub Activities</text>
+  <rect x="30" y="70" width="12" height="12" fill="#f1f8ff" rx="2" ry="2" stroke="#0366d6" stroke-width="1" />
+  <text x="50" y="80" font-family="Arial, sans-serif" font-size="10" fill="#24292e">GitHub Activities</text>
   
-  <rect x="620" y="570" width="15" height="15" fill="#4a5568" rx="3" ry="3" />
-  <text x="645" y="582" font-family="Arial, sans-serif" font-size="12" fill="#24292e">Development Tasks</text>
+  <rect x="30" y="90" width="12" height="12" fill="#ffebda" rx="2" ry="2" stroke="#f66a0a" stroke-width="1" />
+  <text x="50" y="100" font-family="Arial, sans-serif" font-size="10" fill="#24292e">CI/CD Pipelines</text>
+  
+  <line x1="30" y1="115" x2="50" y2="115" stroke="#d73a49" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="70" y="120" font-family="Arial, sans-serif" font-size="10" fill="#24292e">Feedback Loop</text>
+  
+  <line x1="30" y1="130" x2="50" y2="130" stroke="#6f42c1" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="70" y="135" font-family="Arial, sans-serif" font-size="10" fill="#24292e">SAP Sync</text>
 </svg> 

@@ -11,6 +11,7 @@ This directory contains templates for creating consistent documentation across t
 | [Tutorial Template](tutorial-template.md) | Step-by-step guides | Template for creating procedural tutorials |
 | [API Documentation Template](api-doc-template.md) | API reference docs | Template for documenting APIs and interfaces |
 | [Best Practice Template](best-practice-template.md) | Best practices | Template for documenting recommended practices |
+| [Update Template](update-template.md) | Content updates | Template for making structured updates to playbook content |
 
 ## Using Templates
 

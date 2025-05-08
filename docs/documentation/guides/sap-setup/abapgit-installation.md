@@ -12,8 +12,8 @@
 - [Creating a Transaction Code (Optional)](#creating-a-transaction-code-optional)
 - [Setting up a Development Package for abapGit (Recommended)](#setting-up-a-development-package-for-abapgit-recommended)
 - [Updating abapGit](#updating-abapgit)
-- [➡
-️ ️ Next Steps](#next-steps)
+- [Version 1.128.0+ Enhancements](#version-1128-0-enhancements)
+- [➡️ Next Steps](#next-steps)
 - [Additional Resources](#additional-resources)
 
 
@@ -155,10 +155,94 @@ To update your abapGit installation:
 
 If using offline installation, repeat the installation steps with the newer version of the code.
 
+## Version 1.128.0+ Enhancements
+
+Version 1.128.0 and later releases of abapGit introduce several significant improvements:
+
+### HTTP/1.1 Protocol Support
+
+abapGit now leverages HTTP/1.1 protocol offering several benefits:
+
+- **Persistent connections**: Reduces connection overhead by reusing connections
+- **Request pipelining**: Allows multiple requests to be sent before receiving responses
+- **Chunked transfer encoding**: Improves handling of large files
+- **Enhanced header fields**: Better control over caching and compression
+
+These improvements result in faster clone, pull, and push operations, especially for repositories with many objects.
+
+### New Object Types Support
+
+Version 1.128.0+ adds support for several new object types:
+
+#### Event Consumption Models (EEEC)
+
+Event Consumption Models can now be fully versioned, including:
+- Event definitions
+- Event handlers
+- Channel configurations
+- Subscription settings
+
+```abap
+" Example workflow for Event Consumption Model
+" 1. Create/modify Event Consumption Model in transaction SEEC
+" 2. Stage and commit using abapGit
+" 3. Pull changes to other systems
+```
+
+#### Knowledge Transfer Documents (SKTD)
+
+Knowledge Transfer Documents can now be versioned with:
+- Document content and formatting
+- Embedded media and links
+- Document metadata
+
+#### API Release State Objects (APIS)
+
+API Release State Objects versioning now includes:
+- API definitions and interfaces
+- Versioning information
+- Release state metadata
+
+### UI Enhancements
+
+Recent versions include several UI improvements:
+
+- **Dark mode support**: Enables a dark theme for reduced eye strain
+- **Selective pull with "only my changes" option**: Allows developers to pull only changes they've made
+- **Enhanced repository overview**: More compact and informative repository listing
+- **Default Git user configuration**: Streamlined setup for Git user identity
+
+[SCREENSHOT: abapGit dark mode interface showing repository list]
+
+[SCREENSHOT: Selective pull dialog with "only my changes" option]
+
+### Performance Optimizations
+
+Version 1.128.0+ includes significant performance improvements:
+
+#### Folder Logic Enhancements
+
+- More efficient handling of deeply nested folder structures
+- Improved algorithm for determining object placement
+- Better handling of namespace prefixes
+
+#### Memory Usage Reduction
+
+- Optimized internal data structures
+- Reduced memory consumption during serialization
+- Improved garbage collection
+
+#### Resource Serialization Enhancements
+
+- Parallel processing for object serialization
+- Improved diff algorithms
+- Optimized XML generation
+
 ## ➡️ Next Steps
 
 Once abapGit is installed, proceed to:
 
+- [abapGit Configuration](abapgit-config.md)
 - [SAP Transport Layer Configuration](transport-layer.md)
 - [GitHub Enterprise Authentication Setup](../github-setup/authentication.md)
 - [SAP-GitHub Integration Setup](../../getting-started/installation.md)
@@ -168,10 +252,11 @@ Once abapGit is installed, proceed to:
 - [Official abapGit Documentation](https://docs.abapgit.org/)
 - [abapGit GitHub Repository](https://github.com/abapGit/abapGit)
 - [SAP Community Wiki: abapGit](https://wiki.scn.sap.com/wiki/display/ABAP/abapGit)
+- [abapGit Release Notes](https://github.com/abapGit/abapGit/releases)
 
 ---
 
-*Last Updated: [YYYY-MM-DD] for [abapGit version X.Y.Z]* 
+*Last Updated: 2024-05-15 for abapGit version 1.128.0* 
 ---
 
 

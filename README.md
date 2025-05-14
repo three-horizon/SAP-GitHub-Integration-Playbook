@@ -60,3 +60,6 @@ To begin your SAP-GitHub integration implementation:
 2. Verify your systems meet the [System Requirements](./docs/2-prerequisites/system-requirements.md)
 3. Start with [Tutorial 1: Installing abapGit in SAP System](./docs/3-setup-guide/installing-abapgit.md)
 4. Follow each tutorial in sequence, completing the verification steps
+
+## 👥 Credits
+This Mainframe CI/CD Modernization Playbook was developed by @paulanunes85.

@@ -62,4 +62,4 @@ To begin your SAP-GitHub integration implementation:
 4. Follow each tutorial in sequence, completing the verification steps
 
 ## 👥 Credits
-This SAP-GitHub Integration Playbook was developed by @paulanunes85.
+This SAP-GitHub Integration Playbook was developed by [@paulanunes85](https://github.com/paulanunes85).

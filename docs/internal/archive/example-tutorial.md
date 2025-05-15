@@ -177,10 +177,10 @@ After completing the SSL certificate configuration, let's verify that your abapG
 
 Now that you have successfully installed abapGit in your SAP system, you're ready to proceed to the next phase of the integration setup:
 
-1. **[Configuring abapGit for Your Project](../configure-abapgit.md)** - In this next tutorial, you'll set up your first ABAP project for GitHub integration, building directly on the abapGit installation you just completed.
+1. **[Configuring abapGit for Your Project](../3-setup-guide/configure-abapgit.md)** - In this next tutorial, you'll set up your first ABAP project for GitHub integration, building directly on the abapGit installation you just completed.
 
-2. After configuring your ABAP project, you'll need to **[Set Up GitHub Repository](../../github/repository-setup.md)** to store your code.
+2. After configuring your ABAP project, you'll need to **[Set Up GitHub Repository](../documentation/guides/github-setup/repository-setup.md)** to store your code.
 
-3. Finally, you'll establish connectivity between both systems in **[Configuring API Management](../api-setup.md)**.
+3. Finally, you'll establish connectivity between both systems in **[Configuring API Management](../documentation/guides/sap-setup/api-setup.md)**.
 
 By completing this tutorial, you've taken the first step toward integrating your SAP development with GitHub. The abapGit installation will serve as the foundation for all subsequent steps in the integration process.

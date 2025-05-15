@@ -26,9 +26,9 @@ Our goal is to provide a clear, structured path to successful integration that a
 
 This documentation is organized to support your implementation journey from start to finish:
 
-1. **For Business Decision Makers**: Begin with the [Executive Overview](./executive-overview.md) to understand ROI, business benefits, and implementation requirements.
+1. **For Business Decision Makers**: Begin with the business case and ROI analysis in the main playbook documentation.
 
-2. **For Project Managers**: Review the [Implementation Plan](./getting-started/implementation-plan.md) and [Implementation Checklist](./getting-started/implementation-checklist.md) to plan your project.
+2. **For Project Managers**: Review the Implementation Plan in the main documentation and the implementation checklists.
 
 3. **For Architects**: Explore the [Architecture Documentation](./documentation/architecture/index.md) to understand system design and integration patterns.
 
@@ -46,25 +46,25 @@ This playbook provides a sequential, step-by-step approach to implementing the S
 
 Follow these tutorials in sequence to implement the foundational SAP-GitHub integration:
 
-1. **[Tutorial 1: Installing abapGit in SAP System](./3-setup-guide/installing-abapgit.md)** (Steps 1-31)
+1. **[Tutorial 1: Installing abapGit in SAP System](../3-setup-guide/installing-abapgit.md)** (Steps 1-31)
    - Install the abapGit client in your SAP system
    - Configure SSL certificates for secure communication
    - Verify the installation
 
-2. **[Tutorial 2: Configuring abapGit for Your Project](./3-setup-guide/configure-abapgit.md)** (Steps 32-65)
+2. **[Tutorial 2: Configuring abapGit for Your Project](../3-setup-guide/configure-abapgit.md)** (Steps 32-65)
    - Create an ABAP package for your project
    - Set up a corresponding GitHub repository
    - Connect your SAP package to GitHub
    - Push your first ABAP program to GitHub
 
-3. **[Tutorial 3: Implementing Development Workflow](./4-workflow-tutorials/development-workflow.md)** (Steps 66-110)
+3. **[Tutorial 3: Implementing Development Workflow](../4-workflow-tutorials/development-workflow.md)** (Steps 66-110)
    - Create feature branches for development
    - Implement features in SAP
    - Commit and push changes to GitHub
    - Create and merge pull requests
    - Pull changes back to SAP
 
-4. **[Tutorial 4: Implementing Continuous Integration](./4-workflow-tutorials/continuous-integration.md)** (Steps 111-158)
+4. **[Tutorial 4: Implementing Continuous Integration](../4-workflow-tutorials/continuous-integration.md)** (Steps 111-158)
    - Set up GitHub Actions for automated testing
    - Configure ABAP syntax validation
    - Implement unit testing for SAP code
@@ -74,19 +74,19 @@ Follow these tutorials in sequence to implement the foundational SAP-GitHub inte
 
 After completing the core implementation path, explore these advanced scenarios:
 
-5. **[Tutorial 5: Implementing Code Reviews](./5-advanced-scenarios/code-reviews.md)**
+5. **[Tutorial 5: Implementing Code Reviews](../5-advanced-scenarios/code-reviews.md)**
    - Set up structured code review processes
    - Configure code quality gates
    - Implement automated code review checks
    - Document review standards and practices
 
-6. **[Tutorial 6: Security Hardening](./5-advanced-scenarios/security-hardening.md)**
+6. **[Tutorial 6: Security Hardening](../5-advanced-scenarios/security-hardening.md)**
    - Implement advanced security configurations
    - Set up branch protection rules
    - Configure secret scanning
    - Implement access controls
 
-7. **[Tutorial 7: Automated Deployment](./5-advanced-scenarios/automated-deployment.md)**
+7. **[Tutorial 7: Automated Deployment](../5-advanced-scenarios/automated-deployment.md)**
    - Configure deployment pipelines
    - Implement transport request automation
    - Set up environment-specific configurations
@@ -96,13 +96,13 @@ After completing the core implementation path, explore these advanced scenarios:
 
 These guides help you troubleshoot issues and maintain your integration:
 
-- **[Common Integration Issues](./6-troubleshooting/common-issues.md)**
+- **[Common Integration Issues](../6-troubleshooting/common-issues.md)**
   - Diagnose and resolve connectivity problems
   - Fix authentication failures
   - Resolve merge conflicts
   - Address transport request issues
 
-- **[Maintenance Guide](./6-troubleshooting/maintenance.md)**
+- **[Maintenance Guide](../6-troubleshooting/maintenance.md)**
   - Upgrade components
   - Monitor system health
   - Audit security configurations
@@ -112,27 +112,27 @@ These guides help you troubleshoot issues and maintain your integration:
 
 Before beginning the implementation, ensure you have:
 
-- **[System Requirements](./2-prerequisites/system-requirements.md)** - Check if your systems meet the requirements
-- **[Authorization Setup](./2-prerequisites/authorization-setup.md)** - Configure necessary authorizations
-- **[Network Configuration](./2-prerequisites/network-configuration.md)** - Set up required network access
+- **[System Requirements](../2-prerequisites/system-requirements.md)** - Check if your systems meet the requirements
+- **[Authorization Setup](../2-prerequisites/authorization-setup.md)** - Configure necessary authorizations
+- **[Network Configuration](../2-prerequisites/network-configuration.md)** - Set up required network access
 
 ## Architecture Overview
 
 For a technical understanding of the integration:
 
-- **[Architecture Overview](./1-overview/architecture-overview.md)** - Understand the component interactions
-- **[Security Architecture](./1-overview/security-architecture.md)** - Learn about the security model
-- **[Component Descriptions](./1-overview/components.md)** - Detailed component information
+- **[Architecture Overview](../1-overview/technical-overview.md)** - Understand the component interactions
+- **[Security Architecture](./documentation/reference/security-reference/security-architecture.md)** - Learn about the security model
+- **[Component Descriptions](../1-overview/components.md)** - Detailed component information
 
 ## Getting Started
 
 To begin your implementation:
 
-1. Review the [System Requirements](./2-prerequisites/system-requirements.md)
-2. Set up the necessary [Authorizations](./2-prerequisites/authorization-setup.md)
-3. Begin with [Tutorial 1: Installing abapGit in SAP System](./3-setup-guide/installing-abapgit.md)
+1. Review the [System Requirements](../2-prerequisites/system-requirements.md)
+2. Set up the necessary [Authorizations](../2-prerequisites/authorization-setup.md)
+3. Begin with [Tutorial 1: Installing abapGit in SAP System](../3-setup-guide/installing-abapgit.md)
 4. Follow each tutorial in sequence, verifying completion at each step
-5. Refer to the [Troubleshooting Guide](./6-troubleshooting/common-issues.md) if you encounter issues
+5. Refer to the [Troubleshooting Guide](../6-troubleshooting/common-issues.md) if you encounter issues
 
 ## Contributing
 

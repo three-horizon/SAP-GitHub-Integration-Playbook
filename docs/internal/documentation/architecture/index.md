@@ -112,7 +112,7 @@ The SAP-GitHub integration consists of five primary architectural layers:
 |-----------|---------|---------------|
 | **abapGit** | Open-source tool for version-controlling ABAP objects | [SAP ABAP Architecture](./sap-abap-architecture.md) |
 | **SAP Gateway** | OData services for integration | [Integration Architecture](./integration-architecture.md) |
-| **Transport Management** | Change control and release management | [Transport Security](./transport-security-dashboard.md) |
+| **Transport Management** | Change control and release management | [Transport Security](../guides/sap-setup/transport-security.md) |
 | **SAP BTP Integration** | Cloud integration services | [BTP Architecture](./btp-architecture.md) |
 | **SAPUI5/Fiori** | Modern SAP user interfaces | [Fiori/UI5 Architecture](./fiori-ui5-architecture.md) |
 
@@ -123,7 +123,7 @@ The SAP-GitHub integration consists of five primary architectural layers:
 | **API Gateway** | API management and security | [API Extension Framework](./api-extension-framework.md) |
 | **Context Store** | Development context preservation | [Context Store](./context-store.md) |
 | **Event Bus** | Asynchronous event processing | [Integration Architecture](./integration-architecture.md) |
-| **Transport API** | Transport request automation | [Transport Security](./transport-security-dashboard.md) |
+| **Transport API** | Transport request automation | [Transport Security](../guides/sap-setup/transport-security.md) |
 | **MCP Integration** | Model Context Protocol support | [MCP Integration](./mcp-integration.md) |
 
 ### GitHub Components
@@ -140,9 +140,9 @@ The SAP-GitHub integration consists of five primary architectural layers:
 
 | Component | Purpose | Documentation |
 |-----------|---------|---------------|
-| **Authentication Service** | Identity verification | [Security Architecture](./security-architecture.md) |
-| **Authorization Service** | Access control | [Security Architecture](./security-architecture.md) |
-| **Secret Management** | Secure credential handling | [Security Setup](../guides/security-setup/secret-management.md) |
+| **Authentication Service** | Identity verification | [Security Architecture](../reference/security-reference/security-architecture.md) |
+| **Authorization Service** | Access control | [Security Architecture](../reference/security-reference/security-architecture.md) |
+| **Secret Management** | Secure credential handling | [Secret Management](../guides/security-setup/secret-management.md) |
 | **Security Monitoring** | Threat detection and response | [Security Monitoring](../guides/security-setup/security-monitoring.md) |
 | **Compliance Engine** | Regulatory compliance verification | [Governance Model](./governance-model.md) |
 

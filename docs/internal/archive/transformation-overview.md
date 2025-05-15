@@ -111,8 +111,8 @@ Now that you have successfully connected your SAP system to GitHub (Steps 1-65),
 
 Before beginning this tutorial, ensure you have:
 
-- Completed all steps in [Tutorial 1: Installing abapGit in SAP System](../3-setup-guide/installing-abapgit.md) (Steps 1-31)
-- Completed all steps in [Tutorial 2: Configuring abapGit for Your Project](../3-setup-guide/configure-abapgit.md) (Steps 32-65)
+- Completed all steps in [Tutorial 1: Installing abapGit in SAP System](../docs/3-setup-guide/installing-abapgit.md) (Steps 1-31)
+- Completed all steps in [Tutorial 2: Configuring abapGit for Your Project](../docs/3-setup-guide/configure-abapgit.md) (Steps 32-65)
 ```
 
 #### Example 3: Verification Checkpoints

@@ -20,14 +20,14 @@ Before beginning this tutorial, ensure you have:
 ```mermaid
 flowchart TB
     dev[Developer Workstation] -- SAP GUI --> sap[SAP System]
-    subgraph Installation Process
+    github[GitHub] -- HTTPS --> proc
+    subgraph proc[Installation Process]
         step1[1. Install Standalone Version] --> step2[2. Create abapGit Package]
         step2 --> step3[3. Install Developer Version]
         step3 --> step4[4. Configure SSL Certificate]
         step4 --> step5[5. Verify Installation]
     end
-    sap --- Installation Process
-    github[GitHub] -- HTTPS --> Installation Process
+    sap --- proc
 ```
 
 The installation process follows these key steps:

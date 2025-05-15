@@ -20,7 +20,7 @@ The complete documentation is organized into sequential sections that guide you 
    - Including [Developer Productivity Tools](./docs/5-advanced-scenarios/developer-productivity.md) with GitHub Copilot for ABAP
 6. **[Troubleshooting](./docs/6-troubleshooting/index.md)** - Solutions for common issues
 
-See the [Documentation Index](./docs/new_index.md) for a complete overview of all available documentation.
+See the [Documentation Index](./docs/index.md) for a complete overview of all available documentation.
 
 ## Key Features
 

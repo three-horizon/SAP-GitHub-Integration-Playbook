@@ -1,12 +1,12 @@
-# Troubleshooting
+# 🔍 Troubleshooting
 
 This section provides guidance for diagnosing and resolving common issues that might arise during the implementation and operation of the SAP-GitHub integration. Use these resources to troubleshoot problems and maintain a smooth integration.
 
-## Contents
+## 📑 Contents
 
-- [Common Issues](./common-issues.md) - Solutions for frequently encountered problems
+- [❓ Common Issues](./common-issues.md) - Solutions for frequently encountered problems
 
-## Problem Areas
+## ⚠️ Problem Areas
 
 The troubleshooting guides cover issues in various areas:
 
@@ -20,7 +20,7 @@ The troubleshooting guides cover issues in various areas:
 - Performance optimization
 - Security concerns
 
-## Diagnostic Approach
+## 🔎 Diagnostic Approach
 
 When troubleshooting issues with the SAP-GitHub integration:
 
@@ -31,7 +31,7 @@ When troubleshooting issues with the SAP-GitHub integration:
 5. **Consult the documentation**: Check the troubleshooting guides for known solutions
 6. **Incremental testing**: Make small changes and test after each change
 
-## Prevention
+## 🛡️ Prevention
 
 To minimize issues with your SAP-GitHub integration:
 

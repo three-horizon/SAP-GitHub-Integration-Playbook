@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Comprehensive Integration Playbook for SAP and GitHub Platforms",
   "scripts": {
-    "validate-svg": "node scripts/svg-validation.js",
-    "convert-svg": "bash scripts/convert-svg-to-png.sh",
-    "svg-workflow": "npm run validate-svg && npm run convert-svg"
   },
   "private": true,
   "repository": {

@@ -17,7 +17,51 @@ Before beginning this tutorial, ensure you have:
 
 ## Continuous Integration Overview
 
-[DIAGRAM: SAP-GitHub CI workflow showing code commits, automated testing, code quality checks, and deployment validation]
+```mermaid
+flowchart TD
+    subgraph SAP 
+        dev["Developer"]
+        code["ABAP Code"]
+        test["Unit Tests"]
+        dev -->|writes| code
+        dev -->|creates| test
+    end
+    
+    subgraph GitHub
+        push["Push to GitHub"]
+        ghaction["GitHub Actions"]
+        syntax["Syntax Validation"]
+        unittest["Automated Testing"]
+        quality["Code Quality Checks"]
+        report["Test Reports"]
+        
+        push --> ghaction
+        ghaction --> syntax
+        ghaction --> unittest
+        ghaction --> quality
+        syntax --> report
+        unittest --> report
+        quality --> report
+    end
+    
+    subgraph Feedback
+        pr["Pull Request Status"]
+        review["Code Review"]
+        report --> pr
+        pr --> review
+    end
+    
+    code --> push
+    test --> push
+    
+    classDef sap fill:#f9f,stroke:#333,stroke-width:1px;
+    classDef github fill:#bbf,stroke:#333,stroke-width:1px;
+    classDef feedback fill:#bfb,stroke:#333,stroke-width:1px;
+    
+    class dev,code,test sap;
+    class push,ghaction,syntax,unittest,quality,report github;
+    class pr,review feedback;
+```
 
 This tutorial covers the setup of continuous integration for your SAP developments using GitHub Actions. By the end of this tutorial, you will have:
 

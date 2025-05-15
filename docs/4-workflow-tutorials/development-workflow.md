@@ -16,7 +16,41 @@ Before beginning this tutorial, ensure you have:
 
 ## Workflow Overview
 
-![SAP-GitHub Development Workflow](../../assets/images/workflows/development-workflow.svg)
+```mermaid
+flowchart TD
+    subgraph SAP System
+        feature_branch["1. Create Feature Branch"]
+        develop["2. Develop in SAP"]
+        stage["3. Stage Changes"]
+        commit["4. Commit and Push"]
+    end
+    
+    subgraph GitHub
+        pr["5. Create Pull Request"]
+        review["6. Code Review"]
+        merge["7. Merge to Main"]
+    end
+    
+    subgraph SAP Sync
+        pull["8. Pull Changes to SAP"]
+    end
+    
+    feature_branch --> develop
+    develop --> stage
+    stage --> commit
+    commit --> pr
+    pr --> review
+    review --> merge
+    merge --> pull
+    
+    classDef sap fill:#f9f,stroke:#333,stroke-width:1px;
+    classDef github fill:#bbf,stroke:#333,stroke-width:1px;
+    classDef sync fill:#bfb,stroke:#333,stroke-width:1px;
+    
+    class feature_branch,develop,stage,commit sap;
+    class pr,review,merge github;
+    class pull sync;
+```
 
 This tutorial covers the implementation of a standard Git-based development workflow adapted for SAP development:
 

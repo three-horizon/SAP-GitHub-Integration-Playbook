@@ -17,14 +17,18 @@ Before beginning this tutorial, ensure you have:
 
 ## Installation Overview
 
-[DIAGRAM: abapGit installation process showing:
-1. Developer workstation with SAP GUI connected to SAP system
-2. Installation of standalone version in SAP system
-3. Creation of abapGit package
-4. Installation of developer version from GitHub
-5. SSL certificate configuration for secure connection
-6. Verification and testing
-Arrows showing sequential steps and connections between components]
+```mermaid
+flowchart TB
+    dev[Developer Workstation] -- SAP GUI --> sap[SAP System]
+    subgraph Installation Process
+        step1[1. Install Standalone Version] --> step2[2. Create abapGit Package]
+        step2 --> step3[3. Install Developer Version]
+        step3 --> step4[4. Configure SSL Certificate]
+        step4 --> step5[5. Verify Installation]
+    end
+    sap --- Installation Process
+    github[GitHub] -- HTTPS --> Installation Process
+```
 
 The installation process follows these key steps:
 

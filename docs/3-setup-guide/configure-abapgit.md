@@ -16,7 +16,27 @@ Before beginning this tutorial, ensure you have:
 
 ## Configuration Overview
 
-[DIAGRAM: abapGit project configuration workflow showing connections between SAP objects, abapGit, and GitHub repository]
+```mermaid
+flowchart LR
+    subgraph SAP
+        package[ABAP Package]
+        objects[SAP Objects]
+        abapgit[abapGit Client]
+        package --> objects
+        objects <--> abapgit
+    end
+    
+    subgraph GitHub
+        repo[GitHub Repository]
+        gitfiles[Serialized Files]
+        repo --> gitfiles
+    end
+    
+    abapgit <-->|HTTPS| repo
+    
+    style package fill:#f9f,stroke:#333,stroke-width:2px
+    style repo fill:#bbf,stroke:#333,stroke-width:2px
+```
 
 ## Step-by-Step Configuration
 

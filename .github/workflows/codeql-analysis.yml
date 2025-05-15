@@ -1,0 +1,19 @@
+name: "Disable CodeQL Analysis"
+
+# This workflow is intentionally disabled for this documentation repository
+# This file exists to prevent GitHub from automatically enabling CodeQL
+
+on:
+  # Don't run automatically - set to manual only
+  workflow_dispatch:
+
+jobs:
+  no-analysis:
+    name: No CodeQL Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Skip Analysis
+        run: echo "CodeQL Analysis intentionally disabled for this documentation repository" 

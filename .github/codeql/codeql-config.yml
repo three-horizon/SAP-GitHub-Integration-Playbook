@@ -1,0 +1,17 @@
+name: "CodeQL Config"
+
+disable-default-queries: true
+
+queries:
+  - uses: security-and-quality
+
+paths:
+  - '**/*.md'
+  - '**/*.html'
+  
+paths-ignore:
+  - '**/*.py'
+  - '**/node_modules/**'
+
+languages:
+  - javascript  # Only analyze JavaScript if needed 

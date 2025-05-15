@@ -771,6 +771,7 @@ metrics:
 
 ## ➡️ Next Steps
 
-- Integrate with [SAP Solution Manager](../xml-config/system-connectivity.md) for comprehensive change management
-- Implement [API Management](../api-management/sap-to-github.md) for secure system connectivity
-- Configure [Security Settings](../security-config/oauth-configuration.md) for enhanced authentication
+- Implement [Continuous Deployment](../end-to-end/scenario-1.md) for automated deployments
+- Set up [API Management](../api-management/sap-to-github.md) for API integrations
+- Configure comprehensive change management with SAP Solution Manager
+- Explore [Security Configurations](../security/config/oauth-configuration.md) for enhanced security

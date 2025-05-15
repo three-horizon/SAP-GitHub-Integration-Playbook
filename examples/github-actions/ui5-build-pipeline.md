@@ -577,6 +577,7 @@ deploy-tenant:
 
 ## Next Steps
 
-- Integrate with [API Management](../api-management/sap-to-github.md) for backend API connectivity
-- Implement [Security Configurations](../security-config/oauth-configuration.md) for authentication
-- Set up [XML Configurations](../xml-config/system-connectivity.md) for system connectivity
+- Set up [API Management Policies](../api-management/sap-to-github.md) for managing API integrations
+- Configure [Security Settings](../security/config/oauth-configuration.md) for secure connectivity
+- Set up system connectivity configurations for robust integration
+- Implement the [ABAP Pipeline](./abap-pipeline.md) for comprehensive ABAP development

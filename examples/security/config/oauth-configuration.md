@@ -315,6 +315,7 @@ ENDCLASS.
 
 ## Next Steps
 
-- Implement [GitHub Actions Workflows](../github-actions/ui5-build-pipeline.md) to automate your development processes
-- Set up [API Management](../api-management/sap-to-github.md) for comprehensive API governance
-- Configure [System Connectivity](../xml-config/system-connectivity.md) for robust system integration
+- Implement [GitHub Actions Workflows](../../github-actions/abap-pipeline.md) for CI/CD
+- Set up [API Management](../../api-management/sap-to-github.md) for API security
+- Configure system connectivity for robust system integration
+- Explore [ABAP Integration](../../abap-integration/abapgit-integration.md) for SAP-specific security

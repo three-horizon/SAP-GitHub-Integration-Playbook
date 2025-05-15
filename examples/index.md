@@ -71,9 +71,9 @@ We welcome contributions of additional examples from the community. If you have 
 ## Next Steps
 
 - Browse the categories above to find examples relevant to your implementation
-- Review the [Implementation Checklists](../docs/6-appendices/implementation-checklist.md) to plan your integration
-- Explore [Case Studies](../docs/6-appendices/case-studies/index.md) for real-world implementation stories
-- Consult the [Reference Documentation](../docs/5-reference/index.md) for detailed technical information
+- Review the [Implementation Checklists](../docs/6-troubleshooting/index.md) to plan your integration
+- Explore [Case Studies](../docs/5-advanced-scenarios/index.md) for real-world implementation stories
+- Consult the [Reference Documentation](../docs/1-overview/index.md) for detailed technical information
 
 ---
 

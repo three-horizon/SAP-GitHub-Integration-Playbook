@@ -1,8 +1,3 @@
----
-layout: default
-title: ABAP Integration with abapGit
----
-
 # 🔄 ABAP Integration with abapGit
 
 <div align="center">

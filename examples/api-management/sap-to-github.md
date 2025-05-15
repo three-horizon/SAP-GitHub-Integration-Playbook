@@ -1,8 +1,3 @@
----
-layout: default
-title: SAP to GitHub Integration with API Management
----
-
 # 🔌 SAP to GitHub API Management Configuration Guide
 
 <div align="center">

@@ -1,8 +1,3 @@
----
-layout: default
-title: OAuth Configuration for SAP-GitHub Integration
----
-
 # 🔐 OAuth 2.0 Configuration for SAP-GitHub Integration
 
 <div align="center">

@@ -1,8 +1,3 @@
----
-layout: default
-title: GitHub Actions Workflow for ABAP
----
-
 # 🔄 GitHub Actions Workflow for ABAP Development
 
 <div align="center" class="svg-container">

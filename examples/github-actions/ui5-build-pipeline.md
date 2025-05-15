@@ -1,8 +1,3 @@
----
-layout: default
-title: UI5/Fiori Build Pipeline
----
-
 # 🔄 UI5/Fiori Build Pipeline
 
 <div align="center">

@@ -12,31 +12,15 @@ Scripts for quick and standardized development environment configuration:
 - Automated installation of development tools
 - CI/CD environment provisioning for SAP-GitHub
 
-### 2. [Quality Validation Tools](quality-validation/)
-
-Scripts to ensure code and process quality in the integration:
-
-- ABAP code quality checks for GitHub
-- Development standards compliance validation
-- Audit tools for SAP-GitHub integration
-
-### 3. [Testing Scripts](testing-scripts/)
-
-Scripts for test automation in SAP-GitHub integration scenarios:
-
-- Integration tests for SAP-GitHub connectors
-- CI/CD flow validation between SAP and GitHub
-- Simulation of transport and deployment scenarios
-
-### 4. [Utilities](utilities/)
+### 2. [Utilities](utilities/)
 
 General purpose utility scripts for the integration.
 
-### 5. [Validation](validation/)
+### 3. [Validation](validation/)
 
 Configuration validation scripts.
 
-### 6. [Setup](setup/)
+### 4. [Setup](setup/)
 
 Environment and dependency setup scripts.
 

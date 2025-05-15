@@ -1,0 +1,13 @@
+# Language detection overrides for GitHub
+
+# Mark Markdown files as detectable (documentation)
+*.md linguist-detectable=true
+*.html linguist-detectable=true
+
+# Exclude Python from language detection
+*.py linguist-generated=true
+*.py linguist-detectable=false
+
+# Documentation repository
+docs/ linguist-documentation=false
+*.md linguist-documentation=false 

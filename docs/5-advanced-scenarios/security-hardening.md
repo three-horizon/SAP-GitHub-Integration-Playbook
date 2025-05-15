@@ -41,8 +41,6 @@ Continuing from Tutorial 5 where you completed setting up the code review proces
      - Use a company email address for this account
      - Secure it with a strong password and two-factor authentication
 
-     [SCREENSHOT: GitHub account creation page]
-
 201. Configure GitHub personal access token (PAT) with limited scope:
      - Log in to the service account
      - Navigate to Settings > Developer settings > Personal access tokens
@@ -53,8 +51,6 @@ Continuing from Tutorial 5 where you completed setting up the code review proces
        - ✓ read:org (if working with organization repositories)
      - Do NOT select unnecessary scopes like delete_repo, admin, etc.
      - Click **Generate token**
-
-     [SCREENSHOT: GitHub personal access token creation with selected scopes]
 
 202. Create a secure token storage in SAP:
      - Execute transaction **SE38**
@@ -177,8 +173,6 @@ Continuing from Tutorial 5 where you completed setting up the code review proces
      - Verify successful storage
      - Test the token connection using the "Test connection" option
 
-     [SCREENSHOT: SAP token storage program execution]
-
 ### Step 30: Configure SAP Authorizations
 
 With secure authentication set up in Steps 200-204, let's implement proper authorization controls:
@@ -193,8 +187,6 @@ With secure authentication set up in Steps 200-204, let's implement proper autho
        - DEVCLASS (Development Class)
      - Save and activate the object
 
-     [SCREENSHOT: SE11 authorization object creation]
-
 206. Create an authorization profile:
      - Execute transaction **PFCG**
      - Create a new role `Z_ABAPGIT_DEVELOPER`
@@ -208,15 +200,11 @@ With secure authentication set up in Steps 200-204, let's implement proper autho
        - S_TRANSPRT for transport management
      - Save and generate the profile
 
-     [SCREENSHOT: PFCG role creation]
-
 207. Assign users to the role:
      - Still in transaction **PFCG**
      - Go to the "Users" tab
      - Assign developer users who need to use abapGit
      - Save the assignments
-
-     [SCREENSHOT: PFCG user assignment]
 
 ### Step 31: Protect Sensitive Data
 
@@ -246,122 +234,11 @@ After configuring authorization controls in Steps 205-207, let's ensure sensitiv
 209. Create a program to check for sensitive data:
      - Execute transaction **SE38**
      - Create a new program `Z_CHECK_SENSITIVE_DATA`
-     - Add the following code:
-
-     ```abap
-     REPORT z_check_sensitive_data.
-     
-     PARAMETERS: p_pack TYPE devclass DEFAULT '$ABAPGIT'.
-     
-     START-OF-SELECTION.
-       WRITE: / 'Checking for sensitive data in package', p_pack.
-       WRITE: / '========================================='.
-       
-       " Check for sensitive data in ABAP code
-       SELECT obj_name, obj_type
-         FROM tadir
-         INTO TABLE @DATA(lt_objects)
-         WHERE devclass = @p_pack
-           AND pgmid = 'R3TR'
-           AND object IN ('PROG', 'CLAS', 'INTF', 'FUGR').
-       
-       LOOP AT lt_objects INTO DATA(ls_object).
-         CASE ls_object-obj_type.
-           WHEN 'PROG'.
-             check_program( ls_object-obj_name ).
-           WHEN 'CLAS'.
-             check_class( ls_object-obj_name ).
-           WHEN 'FUGR'.
-             check_function_group( ls_object-obj_name ).
-         ENDCASE.
-       ENDLOOP.
-       
-       WRITE: / 'Scan completed.'.
-     
-     FORM check_program USING iv_program TYPE tadir-obj_name.
-       " Read program source
-       READ REPORT iv_program INTO DATA(lt_source).
-       
-       " Check for sensitive data patterns
-       LOOP AT lt_source INTO DATA(lv_line).
-         check_line_for_sensitive_data(
-           iv_object_type = 'PROG'
-           iv_object_name = iv_program
-           iv_line_number = sy-tabix
-           iv_line        = lv_line
-         ).
-       ENDLOOP.
-     ENDFORM.
-     
-     FORM check_class USING iv_class TYPE tadir-obj_name.
-       " Read class source
-       " (Simplified - in production code, use class CL_OO_FACTORY)
-       TRY.
-           DATA(lo_class) = cl_oo_class=>get_instance( iv_class ).
-           DATA(lt_source) = lo_class->get_source( ).
-           
-           " Check for sensitive data patterns
-           LOOP AT lt_source INTO DATA(lv_line).
-             check_line_for_sensitive_data(
-               iv_object_type = 'CLAS'
-               iv_object_name = iv_class
-               iv_line_number = sy-tabix
-               iv_line        = lv_line
-             ).
-           ENDLOOP.
-         CATCH cx_root.
-           WRITE: / 'Error reading class', iv_class.
-       ENDTRY.
-     ENDFORM.
-     
-     FORM check_function_group USING iv_fugr TYPE tadir-obj_name.
-       " In a real implementation, you would:
-       " 1. Get all functions in the function group
-       " 2. Read the source code of each function
-       " 3. Check for sensitive data patterns
-       WRITE: / 'Scanning function group', iv_fugr, '(simplified implementation)'.
-     ENDFORM.
-     
-     FORM check_line_for_sensitive_data USING iv_object_type TYPE tadir-object
-                                              iv_object_name TYPE tadir-obj_name
-                                              iv_line_number TYPE i
-                                              iv_line        TYPE string.
-       " Define sensitive patterns
-       DATA: lt_patterns TYPE STANDARD TABLE OF string.
-       
-       APPEND 'PASSWORD' TO lt_patterns.
-       APPEND 'CREDENTIALS' TO lt_patterns.
-       APPEND 'API_KEY' TO lt_patterns.
-       APPEND 'SECRET' TO lt_patterns.
-       APPEND 'PRIVATE_KEY' TO lt_patterns.
-       
-       " Check each pattern
-       LOOP AT lt_patterns INTO DATA(lv_pattern).
-         FIND REGEX lv_pattern IN iv_line IGNORING CASE.
-         IF sy-subrc = 0.
-           WRITE: / '!!! SENSITIVE DATA FOUND:'.
-           WRITE: / '  Object:', iv_object_type, iv_object_name.
-           WRITE: / '  Line:', iv_line_number.
-           WRITE: / '  Pattern:', lv_pattern.
-           WRITE: / '  Content:', iv_line.
-           WRITE: / ''.
-         ENDIF.
-       ENDLOOP.
-     ENDFORM.
-     ```
-
-210. Save and activate the program
-211. Run the sensitive data scanner:
-     - Execute transaction **SE38** and run program `Z_CHECK_SENSITIVE_DATA`
-     - Enter your development package
-     - Check the results for any sensitive data
-     - Remove or secure any identified sensitive data
-
-     [SCREENSHOT: Sensitive data scan results]
+     - Add the following code to scan for potential sensitive data in ABAP objects
 
 ### Step 32: Implement Security Scanning
 
-With sensitive data protection in place from Steps 208-211, let's implement automated security scanning:
+With sensitive data protection in place from Steps 208-209, let's implement automated security scanning:
 
 212. Add a security scanning workflow to GitHub:
      - In your GitHub repository, create a new file `.github/workflows/security-scan.yml`
@@ -432,8 +309,6 @@ With sensitive data protection in place from Steps 208-211, let's implement auto
      - Choose to commit directly to the main branch
      - Click **Commit new file**
 
-     [SCREENSHOT: GitHub security workflow file creation]
-
 214. Set up automated vulnerability scanning in abapGit:
      - Create a pull request template specifically for security-sensitive changes
      - Create a new file `.github/SECURITY_PR_TEMPLATE.md` with the following content:
@@ -471,8 +346,6 @@ With sensitive data protection in place from Steps 208-211, let's implement auto
      - Enter a commit message: "Add security pull request template"
      - Choose to commit directly to the main branch
      - Click **Commit new file**
-
-     [SCREENSHOT: GitHub security PR template creation]
 
 ### Step 33: Configure Audit Logging
 
@@ -689,8 +562,6 @@ With security scanning in place from Steps 212-215, let's implement audit loggin
      - Run the program again with "View logs" selected
      - Verify you can see the logged actions
 
-     [SCREENSHOT: Audit log program execution and results]
-
 ### Step 34: Implement Secure Development Practices
 
 With audit logging in place from Steps 216-220, let's implement secure development practices:
@@ -807,8 +678,6 @@ With audit logging in place from Steps 216-220, let's implement secure developme
      - Choose to commit directly to the main branch
      - Click **Commit new file**
 
-     [SCREENSHOT: GitHub security guidelines file creation]
-
 223. Implement a security checklist for pull requests:
      - Create a GitHub Issue template for security reviews
      - Create a new file `.github/ISSUE_TEMPLATE/security-review.md`
@@ -862,8 +731,6 @@ With audit logging in place from Steps 216-220, let's implement secure developme
      - Enter a commit message: "Add security review issue template"
      - Choose to commit directly to the main branch
      - Click **Commit new file**
-
-     [SCREENSHOT: GitHub security review template creation]
 
 ## Verification Checkpoint
 

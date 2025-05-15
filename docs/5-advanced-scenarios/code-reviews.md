@@ -38,8 +38,6 @@ Continuing from Tutorial 4 where you completed setting up the CI pipeline in Ste
 161. In the left sidebar, click on **Branches**
 162. In the "Branch protection rules" section, click **Add rule**
 
-     [SCREENSHOT: GitHub branch protection rule creation screen]
-
 163. In the "Branch name pattern" field, enter `main`
 164. Select the following options:
      - ✓ Require pull request reviews before merging
@@ -57,8 +55,6 @@ Continuing from Tutorial 4 where you completed setting up the CI pipeline in Ste
      - ✓ Require review from Code Owners
      
 167. Click **Create** to save the branch protection rule
-
-     [SCREENSHOT: Completed branch protection rule configuration]
 
 ### Step 25: Create a CODEOWNERS File
 
@@ -89,8 +85,6 @@ With branch protection rules in place from Steps 159-167, let's create a CODEOWN
 172. Enter a commit message: "Add CODEOWNERS file for code review assignments"
 173. Choose to commit directly to the main branch
 174. Click **Commit new file**
-
-     [SCREENSHOT: GitHub CODEOWNERS file editor with commit dialog]
 
 ### Step 26: Create a Pull Request Template
 
@@ -139,8 +133,6 @@ After configuring code owners in Steps 168-174, let's create a pull request temp
 178. Enter a commit message: "Add pull request template"
 179. Choose to commit directly to the main branch
 180. Click **Commit new file**
-
-     [SCREENSHOT: GitHub pull request template editor with commit dialog]
 
 ### Step 27: Create Code Review Guidelines
 
@@ -229,8 +221,6 @@ With the pull request template in place from Steps 175-180, let's create code re
 185. Choose to commit directly to the main branch
 186. Click **Commit new file**
 
-     [SCREENSHOT: GitHub code review guidelines editor with commit dialog]
-
 ### Step 28: Test the Code Review Process
 
 With the code review infrastructure set up in Steps 159-186, let's test the process:
@@ -290,8 +280,6 @@ With the code review infrastructure set up in Steps 159-186, let's test the proc
      - Notice that the pull request template is automatically loaded
      - Fill out the template with appropriate information
      - Click **Create pull request**
-     
-     [SCREENSHOT: GitHub pull request creation with template]
 
 192. Observe the automated checks:
      - The CI workflow should automatically start
@@ -307,8 +295,6 @@ With the code review infrastructure set up in Steps 159-186, let's test the proc
      - Click **Review changes**
      - Select **Request changes**
      - Submit the review
-     
-     [SCREENSHOT: GitHub code review interface with comments]
 
 194. Update the code based on the review:
      - Return to SAP GUI and update the program with field selection:

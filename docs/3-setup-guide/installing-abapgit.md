@@ -36,20 +36,14 @@ The installation process follows these key steps:
 2. Launch transaction **SE38** (ABAP Editor)
 3. Enter program name `ZABAPGIT_STANDALONE` and click **Create**
 
-   [SCREENSHOT: SE38 transaction screen showing program name input field with "ZABAPGIT_STANDALONE" entered and Create button highlighted]
-
 4. In the program attributes dialog:
    - Set program type to **Executable Program**
    - Enter a description like "abapGit Standalone"
    - Click **Save**
    
-   [SCREENSHOT: Program attributes dialog with program type set to Executable Program, description field filled, and Save button highlighted]
-
 5. Select appropriate package (local object is fine for initial installation)
 6. Copy the latest standalone abapGit code from the [official repository](https://raw.githubusercontent.com/abapGit/build/main/zabapgit.abap)
 7. Paste the code into the editor
-
-   [SCREENSHOT: ABAP Editor window showing pasted abapGit code with syntax highlighting]
 
 8. Click **Save** and then **Activate** (or use keyboard shortcuts Ctrl+S, Ctrl+F3)
 
@@ -61,8 +55,6 @@ After successfully installing the standalone version in Steps 1-8, you'll need t
 10. Select **Package** from the dropdown menu
 11. Enter `$ABAPGIT` as the package name (or use your own naming convention)
 12. Click **Create**
-
-   [SCREENSHOT: SE80 Object Navigator screen showing package creation with "$ABAPGIT" entered in the package field and Create button highlighted]
 
 13. In the package properties dialog:
     - Enter a meaningful description: "abapGit Development Package"
@@ -76,8 +68,6 @@ Now that you have created the package to hold the abapGit objects in Steps 9-13,
 
 14. Execute the standalone version by running transaction **SE38** and executing program `ZABAPGIT_STANDALONE` that you created in Steps 1-8
 
-    [SCREENSHOT: abapGit standalone initial screen showing the abapGit interface with menu options]
-
 15. In the abapGit interface, click on "New Online"
 16. Enter the following details:
     - Git Repository URL: `https://github.com/abapGit/abapGit.git`
@@ -85,12 +75,8 @@ Now that you have created the package to hold the abapGit objects in Steps 9-13,
     - Branch: main (default)
     - Click **Create Online Repo**
 
-    [SCREENSHOT: abapGit repository creation screen with URL, package, and branch fields filled in and Create Online Repo button highlighted]
-
 17. abapGit will show the repository overview with available objects
 18. Click **Pull** to download and install all objects
-
-    [SCREENSHOT: abapGit repository overview screen showing object list and Pull button highlighted]
 
 19. Confirm any dialogs regarding package assignment or transport requests
 20. Wait for the installation to complete
@@ -103,15 +89,11 @@ With abapGit now installed in Steps 14-20, you need to set up the SSL certificat
 22. Navigate to "SSL client SSL Client (Standard)"
 23. Double-click to open the certificate manager
 
-    [SCREENSHOT: STRUST transaction screen with SSL client SSL Client (Standard) node highlighted in the navigation tree]
-
 24. Click on the **Import Certificate** button
 25. In the dialog:
     - Enter `github.com` in the "PSE Object name" field
     - Set options to "Binary" and "Add to certificate list"
     - Click **Continue**
-
-    [SCREENSHOT: Certificate import dialog with github.com entered as PSE Object name and option selections]
 
 26. Navigate to GitHub in your browser and download the SSL certificate:
     - In most browsers, click the lock icon in the address bar
@@ -143,8 +125,6 @@ After completing the SSL certificate configuration in Steps 21-28, let's verify 
 
 30. Execute the program
 31. Verify that it displays "abapGit installed successfully!"
-
-    [SCREENSHOT: SAP output screen showing "abapGit installed successfully!" message]
 
 ## Verification Checkpoint
 

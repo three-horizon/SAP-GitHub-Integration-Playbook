@@ -28,8 +28,6 @@ Continuing from Tutorial 1 where you verified the abapGit installation in Steps 
 33. Select **Package** from the dropdown menu
 34. Enter a suitable package name (e.g., `Z_GITHUB_DEMO`) and click **Create**
 
-    [SCREENSHOT: SE80 package creation screen with Z_GITHUB_DEMO entered]
-
 35. In the package properties dialog:
     - Enter a meaningful description: "Demo Package for GitHub Integration"
     - Set package type to "Development"
@@ -48,15 +46,11 @@ Now that you have your ABAP package (created in Steps 32-35), you need to create
 41. Initialize the repository with a README file
 42. Click **Create repository**
 
-    [SCREENSHOT: GitHub create repository screen with settings highlighted]
-
 ### Step 8: Create abapGit Repository for Your Project
 
 With both your ABAP package (Steps 32-35) and GitHub repository (Steps 36-42) ready, you'll now connect them using abapGit:
 
 43. Execute the abapGit program by running transaction **SE38** and executing program `ZABAPGIT` that you installed in Tutorial 1
-
-    [SCREENSHOT: abapGit main screen]
 
 44. Click on the "+" icon (New Online)
 45. Enter the following details:
@@ -64,8 +58,6 @@ With both your ABAP package (Steps 32-35) and GitHub repository (Steps 36-42) re
     - Package: `Z_GITHUB_DEMO` (the package you created in Steps 32-35)
     - Branch: main (default)
     - Click **Create Online Repo**
-
-    [SCREENSHOT: abapGit repository creation screen with fields filled]
 
 46. abapGit will show your new repository connection with no objects
 
@@ -91,8 +83,6 @@ Now that you've established the connection between your ABAP package and GitHub 
 
 52. Save and activate the program
 
-    [SCREENSHOT: SE80 with the created program]
-
 ### Step 10: Push Your Code to GitHub
 
 Now that you have created a sample program in Steps 47-52, you'll push it to your GitHub repository:
@@ -103,12 +93,8 @@ Now that you have created a sample program in Steps 47-52, you'll push it to you
 56. Check the box next to your program to stage it
 57. Click the **Stage** button
 
-    [SCREENSHOT: abapGit stage screen with program selected]
-
 58. Enter a commit message that describes your changes (e.g., "Add hello world program")
 59. Click **Commit**
-
-    [SCREENSHOT: abapGit commit screen with message entered]
 
 60. When prompted, enter your GitHub username and password or personal access token
 61. Click **Execute** to complete the push
@@ -121,8 +107,6 @@ After pushing your code in Steps 53-61, let's verify that everything is working 
 63. Verify that your program appears in the repository
 64. Click on the program file to view its content
 65. Check that the commit message is displayed in the repository history
-
-    [SCREENSHOT: GitHub repository showing the pushed ABAP program]
 
 ## Verification Checkpoint
 

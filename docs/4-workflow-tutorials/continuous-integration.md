@@ -38,8 +38,6 @@ Continuing from Tutorial 3 where you completed your development workflow in Step
 113. GitHub will suggest workflows based on your repository content
 114. Click on **Set up a workflow yourself** to create a custom workflow
 
-     [SCREENSHOT: GitHub Actions setup screen]
-
 115. GitHub will create a `.github/workflows/main.yml` file in your repository
 116. Replace the default content with the following YAML configuration:
 
@@ -74,8 +72,6 @@ Continuing from Tutorial 3 where you completed your development workflow in Step
 118. Enter a commit message: "Add initial GitHub Actions workflow for ABAP CI"
 119. Choose to commit directly to the main branch
 120. Click **Commit new file**
-
-     [SCREENSHOT: GitHub workflow file editor with commit dialog]
 
 ### Step 19: Create ABAP Lint Configuration
 
@@ -135,8 +131,6 @@ With the GitHub Actions workflow set up in Steps 111-120, you need to configure 
 125. Enter a commit message: "Add abaplint configuration for syntax validation"
 126. Choose to commit directly to the main branch
 127. Click **Commit new file**
-
-     [SCREENSHOT: GitHub abaplint.json file editor with commit dialog]
 
 ### Step 20: Add ABAP Unit Test Configuration
 
@@ -211,8 +205,6 @@ After setting up syntax validation in Steps 121-127, let's configure automated u
 133. Choose to commit directly to the main branch
 134. Click **Commit changes**
 
-     [SCREENSHOT: GitHub workflow editor with updated YAML configuration]
-
 ### Step 21: Create a Test Class in SAP
 
 Now that you've configured the CI pipeline in Steps 128-134, let's create a test class in SAP for our customer list program:
@@ -223,8 +215,6 @@ Now that you've configured the CI pipeline in Steps 128-134, let's create a test
     - Set package to `Z_GITHUB_DEMO` (the package you created in Steps 32-35 of Tutorial 2)
     - Set a description: "Test class for customer list program"
     - Click **Save** and assign to an appropriate transport request
-
-     [SCREENSHOT: SE24 class creation screen]
 
 138. Go to the **Methods** tab and create a new method:
     - Method name: `TEST_CUSTOMER_DATA_SELECTION`
@@ -274,8 +264,6 @@ With the test class created in Steps 135-140, let's push it to GitHub:
 144. Check the box next to your class to stage it
 145. Click the **Stage** button
 
-     [SCREENSHOT: abapGit stage screen with test class selected]
-
 146. Enter a commit message: "Add unit test class for customer list program"
 147. Click **Commit**
 148. When prompted, enter your GitHub credentials
@@ -291,15 +279,11 @@ After pushing the test class in Steps 141-150, let's verify that the CI pipeline
 153. You should see a workflow run triggered by your recent push
 154. Click on the workflow run to see the details
 
-     [SCREENSHOT: GitHub Actions workflow run screen]
-
 155. Observe the progress of each job:
      - The syntax check job should run first
      - Once completed, the unit test job should run
 156. When both jobs complete, you should see green checkmarks indicating success
 157. Click on the unit test job to see detailed output
-
-     [SCREENSHOT: GitHub Actions unit test job details]
 
 158. Verify that the test artifacts were uploaded successfully
 

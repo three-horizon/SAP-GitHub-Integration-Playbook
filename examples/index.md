@@ -42,22 +42,18 @@ These examples cover various integration scenarios, technologies, and configurat
 - [Authentication Policies](api-management/authentication-policies.md) - Security policies for API authentication
 - [Rate Limiting Policies](api-management/rate-limiting.md) - Rate limiting and quota management
 - [Response Transformation](api-management/response-transformation.md) - Transforming API responses between systems
+- [Sample API Implementation](api-management/implementations/sample-api.abap) - Sample ABAP API implementation
+- [Sample API Configuration](api-management/configs/sample-policy.xml) - Sample API policy configuration
 
 ### Security Configuration Templates
 
-- [OAuth Configuration](security-config/oauth-configuration.md) - OAuth setup for secure authentication
-- [GitHub Enterprise Security](security-config/github-enterprise-security.md) - Security configuration for GitHub Enterprise
-- [Key Management](security-config/key-management.md) - Secure key management for integration scenarios
-- [Network Security Templates](security-config/network-security.md) - Firewall and network security configurations
-- [Audit and Compliance](security-config/audit-compliance.md) - Audit logging and compliance configurations
-
-### XML Configuration Templates
-
-- [CI/CD Pipeline Configuration](xml-config/cicd-pipeline.md) - XML configuration for CI/CD pipelines
-- [Transport Integration](xml-config/transport-integration.md) - XML templates for transport integration
-- [System Connectivity](xml-config/system-connectivity.md) - XML configuration for system connectivity
-- [Workflow Definitions](xml-config/workflow-definitions.md) - XML-based workflow definitions
-- [Event Processing](xml-config/event-processing.md) - XML configuration for event processing
+- [OAuth Configuration](security/config/oauth-configuration.md) - OAuth setup for secure authentication
+- [GitHub Enterprise Security](security/github-enterprise-security.md) - Security configuration for GitHub Enterprise
+- [Key Management](security/key-management.md) - Secure key management for integration scenarios
+- [Network Security Templates](security/network-security.md) - Firewall and network security configurations
+- [Audit and Compliance](security/audit-compliance.md) - Audit logging and compliance configurations
+- [Security Defender Integration](security/defender/index.md) - Integration with security monitoring tools
+- [Security Sentinel Integration](security/sentinel/index.md) - Integration with advanced threat detection
 
 ## How to Use These Examples
 
@@ -90,5 +86,3 @@ We welcome contributions to this project! Please see our [Contributing Guide](..
 This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
 
 ---
-
-🔄 Last updated: April 2025 | Contribute to this document through [Pull Requests](https://github.com/your-org/sap-github-integration-playbook/pulls)
